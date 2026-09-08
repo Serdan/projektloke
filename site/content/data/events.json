@@ -1,0 +1,277 @@
+[
+  {
+    "id": "b62-introduced",
+    "date": "2023-03-14",
+    "kind": "forslag",
+    "title": "B62 frems\u00E6ttes",
+    "summary": "Nye Borgerlige frems\u00E6tter et forslag om et generelt forbud mod kirurgisk eller medicinsk k\u00F8nsskiftebehandling af personer under 18 \u00E5r.",
+    "actorIds": [
+      "kim-edberg-andersen",
+      "peter-seier-christensen",
+      "pernille-vermund"
+    ],
+    "relatedRoute": "/politik/b62/",
+    "sourceIds": [
+      "ft-b62-proposal"
+    ]
+  },
+  {
+    "id": "b62-final-vote",
+    "date": "2023-06-02",
+    "kind": "afstemning",
+    "title": "B62 forkastes 28\u201380",
+    "summary": "DD, LA, KF, DF og NB stemmer for. S, V, M, SF, EL, RV og ALT stemmer imod.",
+    "actorIds": [
+      "danmarksdemokraterne",
+      "liberal-alliance",
+      "konservative",
+      "dansk-folkeparti",
+      "nye-borgerlige"
+    ],
+    "relatedRoute": "/politik/b62/",
+    "sourceIds": [
+      "ft-b62-vote"
+    ]
+  },
+  {
+    "id": "b12-introduced",
+    "date": "2024-10-02",
+    "kind": "forslag",
+    "title": "B12 frems\u00E6ttes",
+    "summary": "Fem konservative folketingsmedlemmer frems\u00E6tter et forslag om obligatorisk for\u00E6ldresamtykke til k\u00F8nsskiftebehandling for 15\u201317-\u00E5rige.",
+    "actorIds": [
+      "dina-raabjerg",
+      "birgitte-bergman",
+      "lise-bertelsen",
+      "mona-juul",
+      "per-larsen"
+    ],
+    "relatedRoute": "/politik/b12/",
+    "sourceIds": [
+      "ft-b12-proposal"
+    ]
+  },
+  {
+    "id": "b47-introduced",
+    "date": "2024-11-13",
+    "kind": "forslag",
+    "title": "B47 frems\u00E6ttes",
+    "summary": "S\u00F3lbj\u00F8rg Jakobsen, Susie Jessen, Dina Raabjerg og Mette Thiesen frems\u00E6tter et f\u00E6lles forslag om at begr\u00E6nse juridisk k\u00F8nsskifte mest muligt inden for menneskerettighedskonventionens rammer.",
+    "actorIds": [
+      "solbjoerg-jakobsen",
+      "susie-jessen",
+      "dina-raabjerg",
+      "mette-thiesen"
+    ],
+    "relatedRoute": "/politik/b47/",
+    "sourceIds": [
+      "ft-b47-proposal"
+    ]
+  },
+  {
+    "id": "b12-final-vote",
+    "date": "2025-01-23",
+    "kind": "afstemning",
+    "title": "B12 forkastes 30\u201379",
+    "summary": "DD, LA, KF, DF og BP stemmer for som partigrupper. S, V, SF, M, EL, RV og ALT stemmer imod.",
+    "actorIds": [
+      "danmarksdemokraterne",
+      "liberal-alliance",
+      "konservative",
+      "dansk-folkeparti",
+      "borgernes-parti"
+    ],
+    "relatedRoute": "/politik/b12/",
+    "sourceIds": [
+      "ft-b12-vote"
+    ]
+  },
+  {
+    "id": "b47-first-reading",
+    "date": "2025-02-25",
+    "kind": "folketingsdebat",
+    "title": "B47 f\u00F8rstebehandles",
+    "summary": "Forslaget om at begr\u00E6nse juridisk k\u00F8nsskifte debatteres i Folketingssalen.",
+    "actorIds": [
+      "liberal-alliance",
+      "danmarksdemokraterne",
+      "konservative",
+      "dansk-folkeparti"
+    ],
+    "relatedRoute": "/politik/b47/",
+    "sourceIds": [
+      "ft-b47-debate"
+    ]
+  },
+  {
+    "id": "b145-introduced",
+    "date": "2025-02-27",
+    "kind": "forslag",
+    "title": "B145 frems\u00E6ttes",
+    "summary": "Syv DF-medlemmer frems\u00E6tter et bredere forslag om juridisk k\u00F8nsskifte, X-pas, offentligt finansieret transitionbehandling og offentlige institutioners k\u00F8nspraksis.",
+    "actorIds": [
+      "dansk-folkeparti",
+      "mette-thiesen",
+      "morten-messerschmidt"
+    ],
+    "relatedRoute": "/politik/b145/",
+    "sourceIds": [
+      "ft-b145-proposal"
+    ]
+  },
+  {
+    "id": "b145-first-reading",
+    "date": "2025-05-02",
+    "kind": "folketingsdebat",
+    "title": "B145 f\u00F8rstebehandles",
+    "summary": "Folketinget debatterer DF-forslaget. Det n\u00E5r ikke til en endelig afstemning og bortfalder senere.",
+    "actorIds": [
+      "dansk-folkeparti",
+      "mette-thiesen"
+    ],
+    "relatedRoute": "/politik/b145/",
+    "sourceIds": [
+      "ft-b145-debate",
+      "ft-b145-overview"
+    ]
+  },
+  {
+    "id": "b47-final-vote",
+    "date": "2025-05-15",
+    "kind": "afstemning",
+    "title": "B47 forkastes 32\u201379",
+    "summary": "B47 forkastes ved den endelige afstemning. DD, LA, KF, DF og BP stemmer for som folketingsgrupper; S, V, SF, M, EL, RV og ALT stemmer imod. Ingen stemmer hverken for eller imod.",
+    "actorIds": [
+      "danmarksdemokraterne",
+      "liberal-alliance",
+      "konservative",
+      "dansk-folkeparti",
+      "borgernes-parti"
+    ],
+    "relatedRoute": "/politik/b47/",
+    "sourceIds": [
+      "ft-b47-vote"
+    ]
+  },
+  {
+    "id": "drr-b62-contact-2023",
+    "date": "2023-05-12",
+    "kind": "lobbyarbejde",
+    "title": "Dansk Regnbuer\u00E5d beskriver direkte kontakt til Sundhedsudvalget",
+    "summary": "I bilag 5 til B62 oplyste Dansk Regnbuer\u00E5d, at foreningen allerede havde kontaktet udvalgsmedlemmer via m\u00F8der, telefonsamtaler og e-mails og skulle have foretr\u00E6de for udvalget.",
+    "actorIds": [
+      "dansk-regnbueraad",
+      "marcus-dib-jensen",
+      "jesper-w-rasmussen"
+    ],
+    "relatedRoute": "/netvaerk/",
+    "sourceIds": [
+      "ft-b62-drr-submissions"
+    ]
+  },
+  {
+    "id": "drr-lgbai-join-2025",
+    "date": "2025-06-11",
+    "kind": "international forbindelse",
+    "title": "Dansk Regnbuer\u00E5d tilslutter sig LGB Alliance International",
+    "summary": "Foreningen vedtog at blive del af LGB Alliance International og oplyste, at netv\u00E6rket havde bedt Dansk Regnbuer\u00E5d repr\u00E6sentere Danmark.",
+    "actorIds": [
+      "dansk-regnbueraad",
+      "lgb-alliance-international",
+      "jesper-w-rasmussen",
+      "elisabeth-lynge"
+    ],
+    "relatedRoute": "/netvaerk/",
+    "sourceIds": [
+      "drr-lgbai-2025",
+      "drr-chair-report-2025"
+    ]
+  },
+  {
+    "id": "drr-raabjerg-question-2025",
+    "date": "2025-08-12",
+    "kind": "parlamentarisk videref\u00F8relse",
+    "title": "Dina Raabjerg rejser Dansk Regnbuer\u00E5ds klage i Folketinget",
+    "summary": "Raabjerg bad ligestillingsministeren kommentere Dansk Regnbuer\u00E5ds henvendelse og tage stilling til foreningens \u00F8nske om tilbagetr\u00E6kning eller v\u00E6sentlig revision af FSTB-videoer.",
+    "actorIds": [
+      "dina-raabjerg",
+      "dansk-regnbueraad"
+    ],
+    "relatedRoute": "/netvaerk/",
+    "sourceIds": [
+      "ft-liu-spm21-drr"
+    ]
+  },
+  {
+    "id": "toft-anglo-reference-event",
+    "date": "2023-12-04",
+    "kind": "medie",
+    "title": "Toft beskriver UK, USA og Canada som referencefelt",
+    "summary": "Dorte Toft skriver, at hun i flere \u00E5r har fulgt transrelaterede sp\u00F8rgsm\u00E5l blandt andet gennem udviklingen i Storbritannien, USA og Canada.",
+    "actorIds": [
+      "dorte-toft"
+    ],
+    "relatedRoute": "/medier/",
+    "sourceIds": [
+      "toft-det-der-braender-paa"
+    ]
+  },
+  {
+    "id": "raabjerg-cass-b12-event",
+    "date": "2024-11-14",
+    "kind": "international reference",
+    "title": "Cass Review bruges direkte i B12-debatten",
+    "summary": "Dina Raabjerg henviser under B12\u0027s f\u00F8rstebehandling eksplicit til Cass Review som international evaluering af behandling af transk\u00F8nnede b\u00F8rn og unge.",
+    "actorIds": [
+      "dina-raabjerg"
+    ],
+    "relatedRoute": "/politik/b12/",
+    "sourceIds": [
+      "ft-b12-debate"
+    ]
+  },
+  {
+    "id": "toft-berlingske-return-event",
+    "date": "2025-09-27",
+    "kind": "medie",
+    "title": "Toft genoptager m\u00E5nedlig Berlingske-klumme",
+    "summary": "Toft oplyser, at samarbejdet med Berlingske er genoptaget fra august 2025.",
+    "actorIds": [
+      "dorte-toft",
+      "berlingske"
+    ],
+    "relatedRoute": "/medier/",
+    "sourceIds": [
+      "toft-back-berlingske-2025"
+    ]
+  },
+  {
+    "id": "toft-fonsmark-event",
+    "date": "2026-02-12",
+    "kind": "medie",
+    "title": "Toft offentligg\u00F8r Fonsmark-indstilling",
+    "summary": "Toft offentligg\u00F8r, at hun er indstillet til Berlingskes Fonsmarkpris, og gengiver en begrundelse med eksplicit fokus p\u00E5 hendes transrelaterede arbejde.",
+    "actorIds": [
+      "dorte-toft",
+      "berlingske"
+    ],
+    "relatedRoute": "/medier/",
+    "sourceIds": [
+      "toft-fonsmark-2026"
+    ]
+  },
+  {
+    "id": "kvinderettigheder-b47-submission-event",
+    "date": "2025-04-24",
+    "kind": "parlamentarisk henvendelse",
+    "title": "Kvinderettigheder.dk sender henvendelse om B47",
+    "summary": "Kvinderettigheder.dk indsender materiale til Ligestillingsudvalgets behandling af B47; udvalget beder efterf\u00F8lgende ministeren kommentere henvendelsen.",
+    "actorIds": [
+      "kvinderettigheder-dk"
+    ],
+    "relatedRoute": "/politik/b47/",
+    "sourceIds": [
+      "ft-b47-kvinderettigheder-spm2"
+    ]
+  }
+]

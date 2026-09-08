@@ -1,0 +1,16 @@
+# Generated site output
+site/wwwroot/
+
+# .NET build output
+**/bin/
+**/obj/
+
+# IDE/editor state
+.vscode/
+.idea/
+*.user
+*.suo
+
+# OS noise
+.DS_Store
+Thumbs.db

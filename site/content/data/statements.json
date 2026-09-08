@@ -1,0 +1,86 @@
+[
+  {
+    "id": "bjoern-f1-what-is-a-woman",
+    "date": "2024-01-23",
+    "actorId": "mikkel-bjoern",
+    "kind": "forespørgselsdebat",
+    "excerpt": "Hvad er en kvinde? Og findes der kvinder med tissemænd?",
+    "context": "Under F1 om kønsbegrebet pressede Mikkel Bjørn gentagne gange andre ordførere til at definere kvinder biologisk og spurgte eksplicit, om kvinder kan have mandlige kønsorganer.",
+    "position": "restriction",
+    "themes": ["hvad er en kvinde", "biologisk køn", "transkvinder"],
+    "relatedRoute": "/politik/",
+    "sourceIds": ["ft-f1-2024-debate"]
+  },
+  {
+    "id": "thiesen-b47-two-sexes",
+    "date": "2025-02-25",
+    "actorId": "mette-thiesen",
+    "kind": "førstebehandling",
+    "excerpt": "Der er to køn – punktum",
+    "context": "Ved B47's førstebehandling argumenterede Mette Thiesen imod juridisk kønsskifte og beskrev køn som uforanderligt biologisk.",
+    "position": "restriction",
+    "themes": ["to køn", "biologisk køn", "juridisk kønsskifte", "anti-woke"],
+    "relatedRoute": "/politik/b47/",
+    "sourceIds": ["ft-b47-debate"]
+  },
+  {
+    "id": "edberg-b47-karen",
+    "date": "2025-02-25",
+    "actorId": "kim-edberg-andersen",
+    "kind": "kort bemærkning",
+    "excerpt": "Jeg vil gerne hedde Karen i dag, for jeg skal i svømmehallen.",
+    "context": "Kim Edberg Andersen brugte en hypotetisk mand, der skifter juridisk køn for at gå i kvinders omklædningsrum, som argument for at stramme reglerne.",
+    "position": "restriction",
+    "themes": ["selvidentifikation", "omklædningsrum", "kvinders rum", "misbrugshypotese"],
+    "relatedRoute": "/politik/b47/",
+    "sourceIds": ["ft-b47-debate"]
+  },
+  {
+    "id": "joergensen-b47-passport",
+    "date": "2025-02-25",
+    "actorId": "jan-e-joergensen",
+    "kind": "ordførertale",
+    "excerpt": "ubehagelige og ydmygende situation",
+    "context": "Jan E. Jørgensen forsvarede den praktiske funktion af juridisk kønsskifte: at transpersoner ikke skal forklare uoverensstemmelser mellem navn, fremtoning og CPR-oplysninger ved eksempelvis paskontrol.",
+    "position": "defense",
+    "themes": ["juridisk kønsskifte", "værdighed", "CPR", "paskontrol"],
+    "relatedRoute": "/politik/b47/",
+    "sourceIds": ["ft-b47-debate"]
+  },
+  {
+    "id": "valentin-b145-boksebold",
+    "date": "2025-05-02",
+    "actorId": "carl-valentin",
+    "kind": "ordførertale",
+    "excerpt": "bruge de transkønnede og andre minoriteter som boksebold",
+    "context": "Carl Valentin kritiserede B145 som del af en bredere populistisk udvikling og sagde, at transpersoner og andre minoriteter blev brugt politisk til at skabe opmærksomhed.",
+    "position": "critique",
+    "themes": ["politisk syndebuk", "Trump", "minoriteter", "transnationalisering"],
+    "relatedRoute": "/politik/b145/",
+    "sourceIds": ["ft-b145-debate"]
+  },
+  {
+    "id": "lund-b145-protect",
+    "date": "2025-05-02",
+    "actorId": "rosa-lund",
+    "kind": "ordførertale",
+    "excerpt": "vores opgave er at beskytte dem",
+    "context": "Rosa Lund afviste B145 og vendte trusselsrammen om: transpersoner er efter hendes argument ikke en trussel mod andre, men selv en udsat gruppe, som politikere bør beskytte.",
+    "position": "defense",
+    "themes": ["beskyttelse", "minoritetsrettigheder", "udsathed"],
+    "relatedRoute": "/politik/b145/",
+    "sourceIds": ["ft-b145-debate"]
+  },
+  {
+    "id": "nawa-b145-minority",
+    "date": "2025-05-02",
+    "actorId": "samira-nawa",
+    "kind": "ordførertale",
+    "excerpt": "der bliver talt sådan om en minoritet i vores samfund",
+    "context": "Samira Nawa kritiserede Mette Thiesens hamster/guldfisk-sammenligning og beskrev måden at omtale transpersoner på som grænseoverskridende.",
+    "position": "critique",
+    "themes": ["retorik", "minoriteter", "dehumaniserende analogi"],
+    "relatedRoute": "/politik/b145/",
+    "sourceIds": ["ft-b145-debate"]
+  }
+]

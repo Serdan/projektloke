@@ -1,0 +1,56 @@
+[
+  {
+    "route": "/",
+    "title": "Projekt Loke",
+    "description": "Projekt Loke dokumenterer udviklingen i bigotri i Danmark med s\u00E6rligt fokus p\u00E5 transfobi.",
+    "source": "home.html"
+  },
+  {
+    "route": "/politik/",
+    "title": "Politik",
+    "description": "Dokumentation af politiske forslag, afstemninger, partilinjer og retorik.",
+    "source": "politik.html"
+  },
+  {
+    "route": "/medier/",
+    "title": "Medier",
+    "description": "Analyse af journalistisk d\u00E6kning, dagsordenss\u00E6tning og medieakt\u00F8rer.",
+    "source": "medier.html"
+  },
+  {
+    "route": "/aktoerer/",
+    "title": "Akt\u00F8rer",
+    "description": "Profiler af politikere, organisationer og netv\u00E6rk med dokumenterede roller i udviklingen.",
+    "source": "aktoerer.html"
+  },
+  {
+    "route": "/retorik/",
+    "title": "Retorik",
+    "description": "Kontekstualiserede udtalelser og tilbagevendende politiske frames i den danske transdebat.",
+    "source": "retorik.html"
+  },
+  {
+    "route": "/netvaerk/",
+    "title": "Netv\u00E6rk",
+    "description": "Dokumenterede forbindelser mellem organisationer, politikere, parlamentariske processer og internationale milj\u00F8er.",
+    "source": "netvaerk.html"
+  },
+  {
+    "route": "/tidslinje/",
+    "title": "Tidslinje",
+    "description": "En kronologisk oversigt over centrale begivenheder, forslag og skift i den offentlige debat.",
+    "source": "tidslinje.html"
+  },
+  {
+    "route": "/metode/",
+    "title": "Metode",
+    "description": "Projektets kildeprincipper, begreber, dokumentationsstandard og rettelsespraksis.",
+    "source": "metode.html"
+  },
+  {
+    "route": "/404.html",
+    "title": "Siden blev ikke fundet",
+    "description": "Den \u00F8nskede side findes ikke.",
+    "source": "404.html"
+  }
+]

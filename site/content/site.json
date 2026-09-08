@@ -1,0 +1,38 @@
+{
+  "title": "Projekt Loke",
+  "language": "da",
+  "navigation": [
+    {
+      "label": "Politik",
+      "route": "/politik/"
+    },
+    {
+      "label": "Medier",
+      "route": "/medier/"
+    },
+    {
+      "label": "Akt\u00F8rer",
+      "route": "/aktoerer/"
+    },
+    {
+      "label": "Netv\u00E6rk",
+      "route": "/netvaerk/"
+    },
+    {
+      "label": "Retorik",
+      "route": "/retorik/"
+    },
+    {
+      "label": "Tidslinje",
+      "route": "/tidslinje/"
+    },
+    {
+      "label": "Kilder",
+      "route": "/kilder/"
+    },
+    {
+      "label": "Metode",
+      "route": "/metode/"
+    }
+  ]
+}

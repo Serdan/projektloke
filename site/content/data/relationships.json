@@ -1,0 +1,133 @@
+[
+  {
+    "id": "drr-b62-contact",
+    "date": "2023-05-12",
+    "kind": "parlamentarisk p\u00E5virkning",
+    "fromActorId": "dansk-regnbueraad",
+    "toActorId": null,
+    "toRoute": "/politik/b62/",
+    "toLabel": "B62 / Sundhedsudvalget",
+    "summary": "I sit B62-materiale oplyste Dansk Regnbuer\u00E5d, at foreningen allerede havde v\u00E6ret i kontakt med udvalgsmedlemmer gennem m\u00F8der, telefonsamtaler og e-mails, og at den skulle have foretr\u00E6de for Sundhedsudvalget.",
+    "sourceIds": [
+      "ft-b62-drr-submissions"
+    ]
+  },
+  {
+    "id": "drr-us-conference-2023",
+    "date": "2023-05-12",
+    "kind": "international kontakt",
+    "fromActorId": "dansk-regnbueraad",
+    "toActorId": null,
+    "toRoute": null,
+    "toLabel": "amerikanske transpolitiske akt\u00F8rer",
+    "summary": "I samme B62-bilag beskrev foreningen Marcus Dib Jensen som v\u00E6rende i USA p\u00E5 konference med ligesindede amerikanske transpolitiske akt\u00F8rer.",
+    "sourceIds": [
+      "ft-b62-drr-submissions"
+    ]
+  },
+  {
+    "id": "drr-lgbai-membership",
+    "date": "2025-06-11",
+    "kind": "internationalt medlemskab",
+    "fromActorId": "dansk-regnbueraad",
+    "toActorId": "lgb-alliance-international",
+    "toRoute": null,
+    "toLabel": null,
+    "summary": "Dansk Regnbuer\u00E5ds generalforsamling vedtog at tilslutte sig LGB Alliance International; foreningen oplyste samtidig, at netv\u00E6rket havde bedt den repr\u00E6sentere Danmark.",
+    "sourceIds": [
+      "drr-lgbai-2025",
+      "drr-chair-report-2025"
+    ]
+  },
+  {
+    "id": "raabjerg-drr-question",
+    "date": "2025-08-12",
+    "kind": "parlamentarisk videref\u00F8relse",
+    "fromActorId": "dina-raabjerg",
+    "toActorId": "dansk-regnbueraad",
+    "toRoute": null,
+    "toLabel": null,
+    "summary": "Dina Raabjerg gjorde Dansk Regnbuer\u00E5ds klage over st\u00F8tte til FSTB til et formelt udvalgssp\u00F8rgsm\u00E5l og bad ministeren forholde sig til foreningens krav om at tr\u00E6kke videoer tilbage eller revidere dem v\u00E6sentligt.",
+    "sourceIds": [
+      "ft-liu-spm21-drr"
+    ]
+  },
+  {
+    "id": "toft-anglo-reference-2023",
+    "date": "2023-12-04",
+    "kind": "internationalt referencefelt",
+    "fromActorId": "dorte-toft",
+    "toActorId": null,
+    "toRoute": null,
+    "toLabel": "UK, USA og Canada",
+    "summary": "Toft skrev, at hun i flere \u00E5r havde fulgt det, hun kalder transideologien, blandt andet ved at studere situationen i Storbritannien, USA og Canada.",
+    "sourceIds": [
+      "toft-det-der-braender-paa"
+    ]
+  },
+  {
+    "id": "raabjerg-cass-b12",
+    "date": "2024-11-14",
+    "kind": "international reference",
+    "fromActorId": "dina-raabjerg",
+    "toActorId": null,
+    "toRoute": "/politik/b12/",
+    "toLabel": "Cass Review i B12-debatten",
+    "summary": "Under f\u00F8rstebehandlingen af B12 henviste Dina Raabjerg eksplicit til Cass Review som international evaluering af behandling af transk\u00F8nnede b\u00F8rn og unge.",
+    "sourceIds": [
+      "ft-b12-debate"
+    ]
+  },
+  {
+    "id": "toft-berlingske-return-2025",
+    "date": "2025-09-27",
+    "kind": "medieplatform",
+    "fromActorId": "dorte-toft",
+    "toActorId": "berlingske",
+    "toRoute": null,
+    "toLabel": null,
+    "summary": "Toft oplyste, at hendes m\u00E5nedlige Berlingske-klumme var blevet genoptaget fra august 2025.",
+    "sourceIds": [
+      "toft-back-berlingske-2025"
+    ]
+  },
+  {
+    "id": "berlingske-fonsmark-toft-2026",
+    "date": "2026-02-12",
+    "kind": "institutionel anerkendelse",
+    "fromActorId": "berlingske",
+    "toActorId": "dorte-toft",
+    "toRoute": null,
+    "toLabel": null,
+    "summary": "If\u00F8lge Tofts egen gengivelse blev hun indstillet til Berlingskes Fonsmarkpris med en begrundelse, der fremh\u00E6vede hendes arbejde om transrelaterede sp\u00F8rgsm\u00E5l, kvinder og unge.",
+    "sourceIds": [
+      "toft-fonsmark-2026"
+    ]
+  },
+  {
+    "id": "toft-kvinderettigheder-cofounder",
+    "date": "2025-09-27",
+    "kind": "medstifter",
+    "fromActorId": "dorte-toft",
+    "toActorId": "kvinderettigheder-dk",
+    "toRoute": null,
+    "toLabel": null,
+    "summary": "Dorte Toft beskriver sig selv som medstifter af mediet Kvinderettigheder.dk.",
+    "sourceIds": [
+      "toft-back-berlingske-2025"
+    ]
+  },
+  {
+    "id": "kvinderettigheder-b47-submission",
+    "date": "2025-04-24",
+    "kind": "parlamentarisk henvendelse",
+    "fromActorId": "kvinderettigheder-dk",
+    "toActorId": null,
+    "toRoute": "/politik/b47/",
+    "toLabel": "B47 / Ligestillingsudvalget",
+    "summary": "Kvinderettigheder.dk indsendte en henvendelse under Folketingets behandling af B47. Dagen efter bad Ligestillingsudvalget ligestillingsministeren kommentere henvendelsen.",
+    "sourceIds": [
+      "ft-b47-kvinderettigheder-spm2"
+    ]
+  }
+]

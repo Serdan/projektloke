@@ -1,0 +1,192 @@
+[
+  {
+    "id": "b62-2022-23",
+    "code": "B62",
+    "title": "Forbud mod kirurgisk eller medicinsk k\u00F8nsskiftebehandling af b\u00F8rn under 18 \u00E5r",
+    "route": "/politik/b62/",
+    "session": "2022\u201323 (2. samling)",
+    "introduced": "2023-03-14",
+    "firstReading": "2023-05-09",
+    "finalVote": "2023-06-02",
+    "status": "Forkastet",
+    "summary": "B62 ville p\u00E5l\u00E6gge regeringen at forbyde kirurgisk eller medicinsk k\u00F8nsskiftebehandling af b\u00F8rn under 18 \u00E5r inden udgangen af 2023.",
+    "analysis": "B62 er det tidligste forslag i den publicerede k\u00E6de. Det var afgr\u00E6nset til mindre\u00E5rige og sundhedsbehandling, men gik l\u00E6ngere end krav om sk\u00E6rpet evidens eller kliniske retningslinjer ved at foresl\u00E5 et generelt lovforbud.",
+    "proposerIds": [
+      "kim-edberg-andersen",
+      "peter-seier-christensen",
+      "pernille-vermund"
+    ],
+    "supportPartyIds": [
+      "danmarksdemokraterne",
+      "liberal-alliance",
+      "konservative",
+      "dansk-folkeparti",
+      "nye-borgerlige"
+    ],
+    "opposeParties": [
+      "Socialdemokratiet",
+      "Venstre",
+      "Moderaterne",
+      "Socialistisk Folkeparti",
+      "Enhedslisten",
+      "Radikale Venstre",
+      "Alternativet"
+    ],
+    "voteFor": 28,
+    "voteAgainst": 80,
+    "voteAbstain": 0,
+    "voteSourceId": "ft-b62-vote",
+    "voteNote": null,
+    "sourceIds": [
+      "ft-b62-proposal",
+      "ft-b62-vote"
+    ],
+    "topics": [
+      "mindre\u00E5rige",
+      "sundhed",
+      "behandlingsforbud"
+    ]
+  },
+  {
+    "id": "b12-2024-25",
+    "code": "B12",
+    "title": "For\u00E6ldresamtykke til k\u00F8nsskiftebehandling for 15\u201317-\u00E5rige",
+    "route": "/politik/b12/",
+    "session": "2024\u201325",
+    "introduced": "2024-10-02",
+    "firstReading": "2024-11-14",
+    "finalVote": "2025-01-23",
+    "status": "Forkastet",
+    "summary": "B12 ville \u00E6ndre samtykkereglerne, s\u00E5 15\u201317-\u00E5rige ikke kunne igangs\u00E6tte k\u00F8nsskiftebehandling uden for\u00E6ldresamtykke.",
+    "analysis": "B12 var sn\u00E6vrere end B62: ikke et generelt behandlingsforbud, men en s\u00E6rregel om for\u00E6ldresamtykke. Sagen er samtidig vigtig, fordi forslaget blev fremsat af fem konservative medlemmer, herunder partileder Mona Juul, og fik st\u00F8tte fra DD, LA, KF, DF og BP ved den endelige afstemning.",
+    "proposerIds": [
+      "dina-raabjerg",
+      "birgitte-bergman",
+      "lise-bertelsen",
+      "mona-juul",
+      "per-larsen"
+    ],
+    "supportPartyIds": [
+      "danmarksdemokraterne",
+      "liberal-alliance",
+      "konservative",
+      "dansk-folkeparti",
+      "borgernes-parti"
+    ],
+    "opposeParties": [
+      "Socialdemokratiet",
+      "Venstre",
+      "Socialistisk Folkeparti",
+      "Moderaterne",
+      "Enhedslisten",
+      "Radikale Venstre",
+      "Alternativet"
+    ],
+    "voteFor": 30,
+    "voteAgainst": 79,
+    "voteAbstain": 1,
+    "voteSourceId": "ft-b12-vote",
+    "voteNote": "Jeppe S\u00F8e (UFG) stemte ogs\u00E5 for. Mike Villa Fonseca (UFG) stemte hverken for eller imod.",
+    "sourceIds": [
+      "ft-b12-proposal",
+      "ft-b12-debate",
+      "ft-b12-vote"
+    ],
+    "topics": [
+      "mindre\u00E5rige",
+      "sundhed",
+      "for\u00E6ldresamtykke"
+    ]
+  },
+  {
+    "id": "b47-2024-25",
+    "code": "B47",
+    "title": "Begr\u00E6nsning af retten til juridisk k\u00F8nsskifte",
+    "route": "/politik/b47/",
+    "session": "2024\u201325",
+    "introduced": "2024-11-13",
+    "firstReading": "2025-02-25",
+    "finalVote": "2025-05-15",
+    "status": "Forkastet",
+    "summary": "B47 ville p\u00E5l\u00E6gge regeringen at begr\u00E6nse retten til og muligheden for juridisk k\u00F8nsskifte mest muligt inden for rammerne af Den Europ\u00E6iske Menneskerettighedskonvention.",
+    "analysis": "Forslaget er et centralt datapunkt, fordi det ikke kun handler om behandling af mindre\u00E5rige eller andre afgr\u00E6nsede konflikter. Det retter sig direkte mod voksnes adgang til juridisk k\u00F8nsskifte og blev fremsat i f\u00E6llesskab af fire partier.",
+    "proposerIds": [
+      "solbjoerg-jakobsen",
+      "susie-jessen",
+      "dina-raabjerg",
+      "mette-thiesen"
+    ],
+    "supportPartyIds": [
+      "danmarksdemokraterne",
+      "liberal-alliance",
+      "konservative",
+      "dansk-folkeparti",
+      "borgernes-parti"
+    ],
+    "opposeParties": [
+      "Socialdemokratiet",
+      "Venstre",
+      "Socialistisk Folkeparti",
+      "Moderaterne",
+      "Enhedslisten",
+      "Radikale Venstre",
+      "Alternativet"
+    ],
+    "voteFor": 32,
+    "voteAgainst": 79,
+    "voteAbstain": 0,
+    "voteSourceId": "ft-b47-vote",
+    "voteNote": "Mike Villa Fonseca (UFG) og Jeppe S\u00F8e (UFG) stemte ogs\u00E5 for. Jon Stephensen (UFG) stemte imod.",
+    "sourceIds": [
+      "ft-b47-proposal",
+      "ft-b47-debate",
+      "ft-b47-vote"
+    ],
+    "topics": [
+      "voksne",
+      "juridisk k\u00F8nsskifte",
+      "civil registrering"
+    ]
+  },
+  {
+    "id": "b145-2024-25",
+    "code": "B145",
+    "title": "Staten og offentlige myndigheder skal kun anerkende to k\u00F8n",
+    "route": "/politik/b145/",
+    "session": "2024\u201325",
+    "introduced": "2025-02-27",
+    "firstReading": "2025-05-02",
+    "finalVote": null,
+    "status": "Bortfaldet",
+    "summary": "B145 foreslog at afskaffe juridisk k\u00F8nsskifte og X som k\u00F8nsbetegnelse i pas, stoppe offentligt finansieret transitionbehandling og \u00E6ndre myndigheders, institutioners og offentligt finansierede organisationers k\u00F8nspraksis.",
+    "analysis": "B145 udvider dagsordenen markant fra afgr\u00E6nsede sp\u00F8rgsm\u00E5l om mindre\u00E5riges behandling og B47s juridiske k\u00F8nsskifte til voksnes sundhedsbehandling, pas, offentlige institutioner og en gennemgang af lovgivningen. Forslaget blev alene fremsat af DF-medlemmer og bortfaldt uden endelig afstemning; det kan derfor ikke bruges som dokumentation for, at de \u00F8vrige partier bag B47 st\u00F8ttede hele dette program.",
+    "proposerIds": [
+      "mette-thiesen",
+      "alex-ahrendtsen",
+      "mikkel-bjoern",
+      "pia-kjaersgaard",
+      "peter-kofod",
+      "morten-messerschmidt",
+      "nick-zimmermann"
+    ],
+    "supportPartyIds": [],
+    "opposeParties": [],
+    "voteFor": null,
+    "voteAgainst": null,
+    "voteAbstain": null,
+    "voteSourceId": null,
+    "voteNote": null,
+    "sourceIds": [
+      "ft-b145-proposal",
+      "ft-b145-debate",
+      "ft-b145-overview"
+    ],
+    "topics": [
+      "voksne",
+      "juridisk k\u00F8nsskifte",
+      "pas",
+      "sundhed",
+      "offentlige institutioner"
+    ]
+  }
+]

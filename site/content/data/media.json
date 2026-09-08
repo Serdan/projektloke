@@ -1,0 +1,50 @@
+[
+  {
+    "id": "toft-anglo-reference-2023",
+    "date": "2023-12-04",
+    "kind": "selvbeskrivelse",
+    "title": "UK, USA og Canada som referencefelt",
+    "authorActorId": "dorte-toft",
+    "outletActorId": null,
+    "outletLabel": "dortetoft.dk",
+    "summary": "Dorte Toft beskrev, at hun i flere år havde fulgt det, hun kalder transideologien, blandt andet ved at studere udviklingen i Storbritannien, USA og Canada, og kritiserede samtidig DR, TV 2 og Politiken for efter hendes vurdering at dække emnet ensidigt.",
+    "frames": ["transideologi", "UK/USA/Canada", "unge", "kvinders rum", "mediekritik"],
+    "sourceIds": ["toft-det-der-braender-paa"]
+  },
+  {
+    "id": "toft-berlingske-contract-2025",
+    "date": "2025-02-23",
+    "kind": "platform",
+    "title": "Toft beskriver flerårig månedlig Berlingske-klumme",
+    "authorActorId": "dorte-toft",
+    "outletActorId": "berlingske",
+    "outletLabel": null,
+    "summary": "I et indlæg om at stoppe sin faste klumme beskrev Dorte Toft, at Berlingskes daværende debatredaktør Pierre Collignon i 2022 havde inviteret hende til at skrive månedligt for avisen.",
+    "frames": ["platforming", "kommentarstof"],
+    "sourceIds": ["toft-et-skifte-2025"]
+  },
+  {
+    "id": "toft-berlingske-return-2025",
+    "date": "2025-09-27",
+    "kind": "platform",
+    "title": "Månedlig Berlingske-klumme genoptages",
+    "authorActorId": "dorte-toft",
+    "outletActorId": "berlingske",
+    "outletLabel": null,
+    "summary": "Dorte Toft oplyste, at hun var vendt tilbage til Berlingske med en månedlig klumme fra august 2025. I samme indlæg beskrev hun detransition, omklædningsrum, retssager om køn og DBU som centrale emner i sit transrelaterede arbejde.",
+    "frames": ["detransition", "omklædningsrum", "ytringsfrihed", "sport", "transbevægelsen"],
+    "sourceIds": ["toft-back-berlingske-2025"]
+  },
+  {
+    "id": "toft-fonsmark-2026",
+    "date": "2026-02-12",
+    "kind": "institutionel anerkendelse",
+    "title": "Fonsmark-indstilling fremhæver transrelateret arbejde",
+    "authorActorId": "dorte-toft",
+    "outletActorId": "berlingske",
+    "outletLabel": null,
+    "summary": "Dorte Toft offentliggjorde, at hun var indstillet til Berlingskes Fonsmarkpris, og gengav en begrundelse, som fremhævede hendes arbejde om transrelaterede spørgsmål, kvinder og unge. Denne registrering dokumenterer Tofts egen gengivelse af indstillingen.",
+    "frames": ["transideologi", "kvinder", "unge", "ytringsfrihed", "institutionel anerkendelse"],
+    "sourceIds": ["toft-fonsmark-2026"]
+  }
+]
