@@ -548,5 +548,45 @@
     "published": "2026-07-09",
     "accessed": "2026-09-09",
     "note": "Folketingets aktuelle medlemsbiografi. Dokumenterer stiftelsen af Borgernes Parti i 2024, formandsposten og at Mathiesen har været registreret som BP-medlem af Folketinget siden 17. januar 2025."
+  },
+  {
+    "id": "drr-toft-rowling-2024",
+    "title": "Dorte Toft: J.K. Rowling risikerer fængsel for at kalde en mand for en mand",
+    "publisher": "Dansk Regnbueråd",
+    "type": "gengivelse",
+    "url": "https://www.danskregnbueraad.dk/nyt/dorte-toft-jk-rowling-risikerer-fngsel-for-at-kalde-en-mand-for-en-mand",
+    "published": "2024-03-23",
+    "accessed": "2026-09-09",
+    "note": "Dansk Regnbueråd gengiver et længere uddrag af Dorte Tofts Berlingske-kommentar om skotsk hadtalelovgivning, fejlkønning og J.K. Rowling."
+  },
+  {
+    "id": "toft-cass-review-2024",
+    "title": "The Cass Review: Tusindvis af kønsforvirrede børn svigtet",
+    "publisher": "POV International",
+    "type": "primærkilde",
+    "url": "https://pov.international/the-cass-review-konsforvirrede-born-svigtet/",
+    "published": "2024-04-15",
+    "accessed": "2026-09-09",
+    "note": "Dorte Tofts analyse af Cass Review og hendes fremstilling af transaktivisme, behandling af børn og reaktioner på rapporten."
+  },
+  {
+    "id": "toft-prisen-smuttede-2026",
+    "title": "Prisen smuttede, men hvilken glæde",
+    "publisher": "Dorte Toft",
+    "type": "primærkilde",
+    "url": "https://dortetoft.dk/2026/04/02/prisen-smuttede-men-hvilken-glaede/",
+    "published": "2026-04-02",
+    "accessed": "2026-09-09",
+    "note": "Tofts eget indlæg efter Fonsmarkprisen, hvor hun beskriver sit arbejde med transideologi som et spørgsmål om en pris for andre og knytter kritik af hendes arbejde til chikane og ytringsfrihed."
+  },
+  {
+    "id": "toft-cass-bma-2026",
+    "title": "The Cass Review: Faglighed vinder over transaktivisme i lægesammenslutning",
+    "publisher": "POV International",
+    "type": "primærkilde",
+    "url": "https://pov.international/the-cass-review-faglighed-over-transaktivisme/",
+    "published": "2026-05-09",
+    "accessed": "2026-09-09",
+    "note": "Dorte Tofts kommentar om British Medical Association og Cass Review, hvor hun stiller transaktivisme over for faglighed og professionalisme."
   }
 ]

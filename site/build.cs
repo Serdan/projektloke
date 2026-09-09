@@ -86,7 +86,7 @@ var publicDataRoot = Path.Combine(outputRoot, "data");
 Directory.CreateDirectory(publicDataRoot);
 var publicIndex = new
 {
-    schemaVersion = 7,
+    schemaVersion = 8,
     proposals = proposals.OrderByDescending(proposal => proposal.Introduced).Select(proposal => new
     {
         proposal.Id, proposal.Code, proposal.Title, proposal.Route, proposal.Session, proposal.Introduced, proposal.FirstReading,
@@ -420,6 +420,7 @@ static string RenderStatementList(
             "restriction" => "Restriktiv position",
             "defense" => "Forsvar for rettigheder",
             "critique" => "Kritik af restriktion",
+            "trans-critical" => "Transkritisk position",
             _ => item.Position
         };
         return $"""

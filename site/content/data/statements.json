@@ -7,9 +7,15 @@
     "excerpt": "Hvad er en kvinde? Og findes der kvinder med tissemænd?",
     "context": "Under F1 om kønsbegrebet pressede Mikkel Bjørn gentagne gange andre ordførere til at definere kvinder biologisk og spurgte eksplicit, om kvinder kan have mandlige kønsorganer.",
     "position": "restriction",
-    "themes": ["hvad er en kvinde", "biologisk køn", "transkvinder"],
+    "themes": [
+      "hvad er en kvinde",
+      "biologisk køn",
+      "transkvinder"
+    ],
     "relatedRoute": "/politik/",
-    "sourceIds": ["ft-f1-2024-debate"]
+    "sourceIds": [
+      "ft-f1-2024-debate"
+    ]
   },
   {
     "id": "thiesen-b47-two-sexes",
@@ -19,9 +25,16 @@
     "excerpt": "Der er to køn – punktum",
     "context": "Ved B47's førstebehandling argumenterede Mette Thiesen imod juridisk kønsskifte og beskrev køn som uforanderligt biologisk.",
     "position": "restriction",
-    "themes": ["to køn", "biologisk køn", "juridisk kønsskifte", "anti-woke"],
+    "themes": [
+      "to køn",
+      "biologisk køn",
+      "juridisk kønsskifte",
+      "anti-woke"
+    ],
     "relatedRoute": "/politik/b47/",
-    "sourceIds": ["ft-b47-debate"]
+    "sourceIds": [
+      "ft-b47-debate"
+    ]
   },
   {
     "id": "edberg-b47-karen",
@@ -31,9 +44,16 @@
     "excerpt": "Jeg vil gerne hedde Karen i dag, for jeg skal i svømmehallen.",
     "context": "Kim Edberg Andersen brugte en hypotetisk mand, der skifter juridisk køn for at gå i kvinders omklædningsrum, som argument for at stramme reglerne.",
     "position": "restriction",
-    "themes": ["selvidentifikation", "omklædningsrum", "kvinders rum", "misbrugshypotese"],
+    "themes": [
+      "selvidentifikation",
+      "omklædningsrum",
+      "kvinders rum",
+      "misbrugshypotese"
+    ],
     "relatedRoute": "/politik/b47/",
-    "sourceIds": ["ft-b47-debate"]
+    "sourceIds": [
+      "ft-b47-debate"
+    ]
   },
   {
     "id": "joergensen-b47-passport",
@@ -43,9 +63,16 @@
     "excerpt": "ubehagelige og ydmygende situation",
     "context": "Jan E. Jørgensen forsvarede den praktiske funktion af juridisk kønsskifte: at transpersoner ikke skal forklare uoverensstemmelser mellem navn, fremtoning og CPR-oplysninger ved eksempelvis paskontrol.",
     "position": "defense",
-    "themes": ["juridisk kønsskifte", "værdighed", "CPR", "paskontrol"],
+    "themes": [
+      "juridisk kønsskifte",
+      "værdighed",
+      "CPR",
+      "paskontrol"
+    ],
     "relatedRoute": "/politik/b47/",
-    "sourceIds": ["ft-b47-debate"]
+    "sourceIds": [
+      "ft-b47-debate"
+    ]
   },
   {
     "id": "valentin-b145-boksebold",
@@ -55,9 +82,16 @@
     "excerpt": "bruge de transkønnede og andre minoriteter som boksebold",
     "context": "Carl Valentin kritiserede B145 som del af en bredere populistisk udvikling og sagde, at transpersoner og andre minoriteter blev brugt politisk til at skabe opmærksomhed.",
     "position": "critique",
-    "themes": ["politisk syndebuk", "Trump", "minoriteter", "transnationalisering"],
+    "themes": [
+      "politisk syndebuk",
+      "Trump",
+      "minoriteter",
+      "transnationalisering"
+    ],
     "relatedRoute": "/politik/b145/",
-    "sourceIds": ["ft-b145-debate"]
+    "sourceIds": [
+      "ft-b145-debate"
+    ]
   },
   {
     "id": "lund-b145-protect",
@@ -67,9 +101,15 @@
     "excerpt": "vores opgave er at beskytte dem",
     "context": "Rosa Lund afviste B145 og vendte trusselsrammen om: transpersoner er efter hendes argument ikke en trussel mod andre, men selv en udsat gruppe, som politikere bør beskytte.",
     "position": "defense",
-    "themes": ["beskyttelse", "minoritetsrettigheder", "udsathed"],
+    "themes": [
+      "beskyttelse",
+      "minoritetsrettigheder",
+      "udsathed"
+    ],
     "relatedRoute": "/politik/b145/",
-    "sourceIds": ["ft-b145-debate"]
+    "sourceIds": [
+      "ft-b145-debate"
+    ]
   },
   {
     "id": "nawa-b145-minority",
@@ -79,8 +119,169 @@
     "excerpt": "der bliver talt sådan om en minoritet i vores samfund",
     "context": "Samira Nawa kritiserede Mette Thiesens hamster/guldfisk-sammenligning og beskrev måden at omtale transpersoner på som grænseoverskridende.",
     "position": "critique",
-    "themes": ["retorik", "minoriteter", "dehumaniserende analogi"],
+    "themes": [
+      "retorik",
+      "minoriteter",
+      "dehumaniserende analogi"
+    ],
     "relatedRoute": "/politik/b145/",
-    "sourceIds": ["ft-b145-debate"]
+    "sourceIds": [
+      "ft-b145-debate"
+    ]
+  },
+  {
+    "id": "toft-2023-womens-spaces-cost",
+    "date": "2023-12-04",
+    "actorId": "dorte-toft",
+    "kind": "blogindlæg",
+    "excerpt": "hensyn til mænd, der “føler” sig som kvinde, trumfer behovet for tryghed",
+    "context": "Toft fremstiller adgang til omklædningsrum og kvindefængsler som en konflikt mellem kvinders tryghed og hensyn til transkvinder, som hun omtaler som mænd, der føler sig som kvinder.",
+    "position": "trans-critical",
+    "themes": [
+      "kvinders rum",
+      "tryghed",
+      "transkvinder som mænd",
+      "rettigheder som nulsum"
+    ],
+    "relatedRoute": "/aktoerer/dorte-toft/",
+    "sourceIds": [
+      "toft-det-der-braender-paa"
+    ]
+  },
+  {
+    "id": "toft-2024-misgendering-reality",
+    "date": "2024-03-23",
+    "actorId": "dorte-toft",
+    "kind": "Berlingske-kommentar, gengivet",
+    "excerpt": "Er for eksempel det at kalde en transkvinde for en mand lig med had eller blot en realitet?",
+    "context": "I en kommentar om skotsk hadtalelovgivning kobler Toft fejlkønning til ytringsfrihed og formulerer biologisk køn som den mulige “realitet” over for en transkvindes kønsidentitet.",
+    "position": "trans-critical",
+    "themes": [
+      "ytringsfrihed",
+      "fejlkønning",
+      "biologisk køn",
+      "transkvinder som mænd"
+    ],
+    "relatedRoute": "/aktoerer/dorte-toft/",
+    "sourceIds": [
+      "drr-toft-rowling-2024"
+    ]
+  },
+  {
+    "id": "toft-2024-activism-treatment",
+    "date": "2024-04-15",
+    "actorId": "dorte-toft",
+    "kind": "POV-analyse",
+    "excerpt": "Transaktivister ser ikke med milde øjne på foreslåede ændringer i behandlingssystemet",
+    "context": "I sin analyse af Cass Review fremstiller Toft transaktivisme som en kraft, der modsætter sig ændringer i behandlingssystemet og som mistænkeliggør bekymring om behandling af børn som transfobi.",
+    "position": "trans-critical",
+    "themes": [
+      "transaktivisme",
+      "børnebehandling",
+      "Cass Review",
+      "faglighed kontra aktivisme"
+    ],
+    "relatedRoute": "/aktoerer/dorte-toft/",
+    "sourceIds": [
+      "toft-cass-review-2024"
+    ]
+  },
+  {
+    "id": "toft-2025-movement-cost",
+    "date": "2025-09-27",
+    "actorId": "dorte-toft",
+    "kind": "blogindlæg",
+    "excerpt": "transbevægelsen koster for kvinder, sårbare unge, ytringsfriheden og det gode sprog",
+    "context": "Ved lanceringen af Kvinderettigheder.dk beskriver Toft sit stofområde gennem en tilbagevendende omkostningsramme: transbevægelsens krav fremstilles som noget, andre grupper betaler en pris for.",
+    "position": "trans-critical",
+    "themes": [
+      "omkostningsramme",
+      "kvinder",
+      "sårbare unge",
+      "ytringsfrihed",
+      "sprog"
+    ],
+    "relatedRoute": "/aktoerer/dorte-toft/",
+    "sourceIds": [
+      "toft-back-berlingske-2025"
+    ]
+  },
+  {
+    "id": "toft-2025-trans-woman-man",
+    "date": "2025-09-27",
+    "actorId": "dorte-toft",
+    "kind": "blogindlæg",
+    "excerpt": "transkvinde, altså en mand",
+    "context": "I omtalen af en retssag gør Toft sin kønsforståelse eksplicit ved kategorisk at beskrive en transkvinde som en mand. Formuleringen er kort, men central for hendes gennemgående skel mellem kønsidentitet og biologisk køn.",
+    "position": "trans-critical",
+    "themes": [
+      "transkvinder som mænd",
+      "biologisk køn",
+      "juridisk køn",
+      "fejlkønning"
+    ],
+    "relatedRoute": "/aktoerer/dorte-toft/",
+    "sourceIds": [
+      "toft-back-berlingske-2025"
+    ]
+  },
+  {
+    "id": "toft-2026-price-for-women",
+    "date": "2026-02-12",
+    "actorId": "dorte-toft",
+    "kind": "blogindlæg",
+    "excerpt": "transideologien – der kommer med en pris for kvinder, sårbare teenagere, ytringsfrihed og det gode sprog",
+    "context": "Toft beskriver selv dette som den problemstilling, hun gennem seks år har forsøgt at belyse. Omkostningsrammen er dermed ikke kun et enkeltstående argument, men en eksplicit sammenfatning af hendes eget transrelaterede arbejde.",
+    "position": "trans-critical",
+    "themes": [
+      "transideologi",
+      "omkostningsramme",
+      "kvinder",
+      "sårbare unge",
+      "ytringsfrihed",
+      "sprog"
+    ],
+    "relatedRoute": "/aktoerer/dorte-toft/",
+    "sourceIds": [
+      "toft-fonsmark-2026"
+    ]
+  },
+  {
+    "id": "toft-2026-price-for-others",
+    "date": "2026-04-02",
+    "actorId": "dorte-toft",
+    "kind": "blogindlæg",
+    "excerpt": "transideologen kommer med en pris for andre",
+    "context": "Efter Fonsmarkprisen gentager Toft omkostningsrammen i mere generel form og placerer samtidig sig selv blandt personer, der udsættes for karaktermord og chikane for at rejse sådanne kritikpunkter.",
+    "position": "trans-critical",
+    "themes": [
+      "transideologi",
+      "omkostningsramme",
+      "chikane",
+      "ytringsfrihed"
+    ],
+    "relatedRoute": "/aktoerer/dorte-toft/",
+    "sourceIds": [
+      "toft-prisen-smuttede-2026"
+    ]
+  },
+  {
+    "id": "toft-2026-activism-professionalism",
+    "date": "2026-05-09",
+    "actorId": "dorte-toft",
+    "kind": "POV-kommentar",
+    "excerpt": "transaktivisme kan trumfe professionalisme – selv i lægeverdenen",
+    "context": "I en kommentar om British Medical Associations håndtering af Cass Review stiller Toft transaktivisme direkte over for faglighed og professionalisme som konkurrerende kræfter.",
+    "position": "trans-critical",
+    "themes": [
+      "transaktivisme",
+      "faglighed kontra aktivisme",
+      "lægeverdenen",
+      "Cass Review"
+    ],
+    "relatedRoute": "/aktoerer/dorte-toft/",
+    "sourceIds": [
+      "toft-cass-bma-2026"
+    ]
   }
 ]
