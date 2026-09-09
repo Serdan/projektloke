@@ -492,5 +492,175 @@
     "sourceIds": [
       "ft-b145-debate"
     ]
+  },
+  {
+    "id": "bjoern-f1-ideologues",
+    "date": "2024-01-23",
+    "actorId": "mikkel-bjoern",
+    "kind": "forespørgselsdebat",
+    "excerpt": "venstrefløjens ideologer",
+    "context": "Bjørn fremstillede offentlige myndigheders kønssprog som resultat af identitetspolitisk ideologi snarere end neutral faglig terminologi.",
+    "position": "restriction",
+    "themes": [
+      "politiseret sprog",
+      "identitetspolitik",
+      "virkelighedsramme"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-f1-2024-debate"
+    ]
+  },
+  {
+    "id": "bjoern-f1-snow-tiger",
+    "date": "2024-01-23",
+    "actorId": "mikkel-bjoern",
+    "kind": "ordførertale",
+    "excerpt": "sibirisk snetiger",
+    "context": "Bjørn brugte en artsanalogi som reductio ad absurdum mod tanken om, at kønsidentitet kan afvige fra biologisk køn.",
+    "position": "restriction",
+    "themes": [
+      "analogi",
+      "kønsidentitet",
+      "biologisk køn"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-f1-2024-debate"
+    ]
+  },
+  {
+    "id": "jakobsen-f1-identity-biology",
+    "date": "2024-01-23",
+    "actorId": "solbjoerg-jakobsen",
+    "kind": "kort bemærkning",
+    "excerpt": "kønsidentitet ... biologiske køn",
+    "context": "Jakobsen accepterede, at kønsidentitet kan afvige fra biologisk køn, men fastholdt de to som adskilte kategorier.",
+    "position": "restriction",
+    "themes": [
+      "kønsidentitet",
+      "biologisk køn",
+      "kategorisk skel"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-f1-2024-debate"
+    ]
+  },
+  {
+    "id": "jessen-f1-hormones",
+    "date": "2024-01-23",
+    "actorId": "susie-jessen",
+    "kind": "ordførertale",
+    "excerpt": "fodret med hormoner",
+    "context": "Jessen beskrev behandling af transunge med et passivt og alarmpræget billede og koblede det til irreversible beslutninger i puberteten.",
+    "position": "restriction",
+    "themes": [
+      "børn og unge",
+      "hormoner",
+      "irreversibilitet",
+      "medicinsk risiko"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-f1-2024-debate"
+    ]
+  },
+  {
+    "id": "nawa-f1-eye-level",
+    "date": "2024-01-23",
+    "actorId": "samira-nawa",
+    "kind": "ordførertale",
+    "excerpt": "møde de mennesker ... i øjenhøjde",
+    "context": "Nawa forsvarede offentlige institutioners brug af respektfuldt sprog som et spørgsmål om at møde borgere på deres egne præmisser.",
+    "position": "defense",
+    "themes": [
+      "respekt",
+      "sprog",
+      "offentlige institutioner",
+      "værdighed"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-f1-2024-debate"
+    ]
+  },
+  {
+    "id": "edberg-b47-assigned-reality",
+    "date": "2025-02-25",
+    "actorId": "kim-edberg-andersen",
+    "kind": "kort bemærkning",
+    "excerpt": "tildelt en virkelighed",
+    "context": "Edberg Andersen vendte formuleringen om tildelt køn til en påstand om, at biologisk køn ved fødslen er en uomgængelig social og juridisk virkelighed.",
+    "position": "restriction",
+    "themes": [
+      "biologisk køn",
+      "virkelighedsramme",
+      "juridisk kønsskifte"
+    ],
+    "relatedRoute": "/politik/b47/",
+    "sourceIds": [
+      "ft-b47-debate"
+    ]
+  },
+  {
+    "id": "jakobsen-b47-harmful-trends",
+    "date": "2025-02-25",
+    "actorId": "solbjoerg-jakobsen",
+    "kind": "kort bemærkning",
+    "excerpt": "skadelige tendenser",
+    "context": "Jakobsen beskrev den internationale udvikling omkring juridisk køn som noget Danmark burde stå imod og forsøge at påvirke internationalt.",
+    "position": "restriction",
+    "themes": [
+      "internationalisering",
+      "juridisk kønsskifte",
+      "tilbagerulning"
+    ],
+    "relatedRoute": "/politik/b47/",
+    "sourceIds": [
+      "ft-b47-debate"
+    ]
+  },
+  {
+    "id": "raabjerg-b12-uk-hormones",
+    "date": "2024-11-14",
+    "actorId": "dina-raabjerg",
+    "kind": "begrundelse",
+    "excerpt": "helt stoppet ... hormoner",
+    "context": "Raabjerg brugte Storbritannien som argument for opbremsning. Formuleringen var bredere end NHS Englands politik på tidspunktet: rutinemæssige pubertetsblokkere var stoppet, mens maskuliniserende/feminiserende hormoner fortsat kunne tilbydes fra 16 år under skærpede kriterier.",
+    "position": "restriction",
+    "themes": [
+      "Storbritannien",
+      "Cass Review",
+      "hormoner",
+      "faktatjek",
+      "børn og unge"
+    ],
+    "relatedRoute": "/politik/b12/",
+    "sourceIds": [
+      "ft-b12-debate",
+      "nhs-cass-implementation-2024",
+      "nhs-puberty-blockers-policy-2024"
+    ]
+  },
+  {
+    "id": "raabjerg-b12-evidence",
+    "date": "2024-11-14",
+    "actorId": "dina-raabjerg",
+    "kind": "kort bemærkning",
+    "excerpt": "manglende evidens",
+    "context": "Raabjerg gjorde usikkerhed i evidensgrundlaget til et centralt argument for større forsigtighed med medicinsk behandling af mindreårige og henviste eksplicit til Cass Review.",
+    "position": "restriction",
+    "themes": [
+      "evidens",
+      "Cass Review",
+      "forsigtighedsprincip",
+      "børn og unge"
+    ],
+    "relatedRoute": "/politik/b12/",
+    "sourceIds": [
+      "ft-b12-debate",
+      "nhs-cass-implementation-2024"
+    ]
   }
 ]

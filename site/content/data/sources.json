@@ -608,5 +608,25 @@
     "published": "2023-07-25",
     "accessed": "2026-09-09",
     "note": "Dansk Regnbueråds kritik af BUPL og pædagogisk materiale om transkønnede børn. Overskriften bruger betegnelsen “transvanviddet” og teksten fremstiller udviklingen som grænseforskydning."
+  },
+  {
+    "id": "nhs-cass-implementation-2024",
+    "title": "Children and young people’s gender services: implementing the Cass Review recommendations",
+    "publisher": "NHS England",
+    "type": "primærkilde",
+    "url": "https://www.england.nhs.uk/long-read/children-and-young-peoples-gender-services-implementing-the-cass-review-recommendations/",
+    "published": "2024-08-07",
+    "accessed": "2026-09-09",
+    "note": "NHS Englands implementeringsplan efter Cass Review. Dokumenterer, at rutinemæssig brug af pubertetsblokkere var stoppet, mens maskuliniserende/feminiserende hormoner fortsat kunne tilbydes fra 16 år med stor forsigtighed."
+  },
+  {
+    "id": "nhs-puberty-blockers-policy-2024",
+    "title": "Clinical policy: puberty suppressing hormones",
+    "publisher": "NHS England",
+    "type": "primærkilde",
+    "url": "https://www.england.nhs.uk/publication/clinical-policy-puberty-suppressing-hormones/",
+    "published": "2024-03-12",
+    "accessed": "2026-09-09",
+    "note": "NHS Englands politik fra marts 2024: pubertetsblokkere var ikke længere en rutinemæssig behandlingsmulighed for børn og unge med kønsinkongruens eller kønsdysfori."
   }
 ]
