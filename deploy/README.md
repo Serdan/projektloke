@@ -18,9 +18,10 @@ Create an Ubuntu Droplet with an SSH key, then from the repository root:
 ```sh
 ./deploy/provision.sh <droplet-ip>
 ./deploy/deploy.sh <droplet-ip>
+./deploy/check.sh <droplet-ip>
 ```
 
-Create DNS A records for both `projektloke.dk` and `www.projektloke.dk` pointing at the Droplet before expecting Caddy to obtain certificates.
+Create DNS A records (and AAAA records when IPv6 is enabled) for both `projektloke.dk` and `www.projektloke.dk`, and make sure the registrar delegates the domain to the authoritative DNS provider, before expecting Caddy to obtain certificates.
 
 ## Routine deployment
 
@@ -29,6 +30,8 @@ Create DNS A records for both `projektloke.dk` and `www.projektloke.dk` pointing
 ```
 
 The deploy script rebuilds `wwwroot`, publishes `site/app.cs` as a self-contained Linux x64 native executable, uploads the release, replaces `/srv/projektloke`, and restarts `projektloke.service`.
+
+`check.sh` verifies that the systemd service is active and that the application returns HTTP 200 on its localhost-only endpoint.
 
 ## Server exposure
 
