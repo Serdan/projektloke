@@ -318,5 +318,95 @@
     "published": "2026-09-09",
     "accessed": "2026-09-09",
     "note": "Partiets aktuelle politikside oplyser, at Det Konservative Folkeparti er imod juridisk og fysisk kønsskifte for børn under 18 år."
+  },
+  {
+    "id": "ft-mf-susie-jessen",
+    "title": "Susie Jessen – medlemsbiografi",
+    "publisher": "Folketinget",
+    "type": "primærkilde",
+    "url": "https://www.ft.dk/medlemmer/mf/s/susie-jessen",
+    "published": "2026-09-09",
+    "accessed": "2026-09-09",
+    "note": "Folketingets aktuelle medlemsbiografi. Dokumenterer medlemskab, politisk ordførerskab og perioden som ligestillingsordfører 2022-2025."
+  },
+  {
+    "id": "ft-mf-kim-edberg-andersen",
+    "title": "Kim Edberg Andersen – medlemsbiografi",
+    "publisher": "Folketinget",
+    "type": "primærkilde",
+    "url": "https://www.ft.dk/medlemmer/mf/k/kim-edberg-andersen",
+    "published": "2026-07-01",
+    "accessed": "2026-09-09",
+    "note": "Folketingets medlemsbiografi. Dokumenterer skiftet fra Nye Borgerlige via UFG til Danmarksdemokraterne i marts 2024."
+  },
+  {
+    "id": "ft-mf-pernille-vermund",
+    "title": "Pernille Vermund – medlemsbiografi",
+    "publisher": "Folketinget",
+    "type": "primærkilde",
+    "url": "https://www.ft.dk/medlemmer/mf/p/pernille-vermund",
+    "published": "2026-09-09",
+    "accessed": "2026-09-09",
+    "note": "Folketingets aktuelle medlemsbiografi. Dokumenterer medlemsperioder for Nye Borgerlige, UFG og Liberal Alliance."
+  },
+  {
+    "id": "ft-mf-birgitte-bergman",
+    "title": "Birgitte Bergman – medlemsbiografi",
+    "publisher": "Folketinget",
+    "type": "primærkilde",
+    "url": "https://www.ft.dk/medlemmer/mf/b/birgitte-bergman",
+    "published": "2026-07-01",
+    "accessed": "2026-09-09",
+    "note": "Folketingets medlemsbiografi. Dokumenterer hendes medlemsperioder, herunder perioden som stedfortræder 26. august 2024 til 30. april 2025."
+  },
+  {
+    "id": "ft-mf-mona-juul",
+    "title": "Mona Juul – medlemsbiografi",
+    "publisher": "Folketinget",
+    "type": "primærkilde",
+    "url": "https://www.ft.dk/medlemmer/mf/m/mona-juul",
+    "published": "2026-07-09",
+    "accessed": "2026-09-09",
+    "note": "Folketingets medlemsbiografi. Dokumenterer at Mona Juul har været politisk leder og formand for Det Konservative Folkeparti siden 2024."
+  },
+  {
+    "id": "drr-chair-change-2023",
+    "title": "Dansk Regnbueråd får ny formand",
+    "publisher": "Dansk Regnbueråd",
+    "type": "primærkilde",
+    "url": "https://www.danskregnbueraad.dk/nyt/dansk-regnbuerd-fr-ny-formand",
+    "published": "2023-09-13",
+    "accessed": "2026-09-09",
+    "note": "Foreningens meddelelse om Marcus Dib Jensens afgang og Jesper W. Rasmussens overtagelse. Beskriver også Rasmussens rolle i politik, mediestrategi, sociale medier, taler, videoer og hjemmeside siden foreningens start."
+  },
+  {
+    "id": "drr-new-chair-message-2025",
+    "title": "En hilsen fra Dansk Regnbueråds nye forkvinde",
+    "publisher": "Dansk Regnbueråd",
+    "type": "primærkilde",
+    "url": "https://www.danskregnbueraad.dk/nyt/en-hilsen-fra-dansk-regnbuerds-nye-forkvinde",
+    "published": "2025-06-11",
+    "accessed": "2026-09-09",
+    "note": "Elisabeth Lynges egen hilsen ved overtagelsen af formandsposten og hendes beskrivelse af foreningens LGB-orientering."
+  },
+  {
+    "id": "drr-current-board-2026",
+    "title": "Kontakt & Info – bestyrelse",
+    "publisher": "Dansk Regnbueråd",
+    "type": "primærkilde",
+    "url": "https://www.danskregnbueraad.dk/kontakt-os",
+    "published": "2026-09-09",
+    "accessed": "2026-09-09",
+    "note": "Foreningens aktuelle bestyrelsesoversigt. Elisabeth Lynge står som formand; Ivan Hemmingsen som næstformand; Jesper W. Rasmussen som bestyrelsesmedlem."
+  },
+  {
+    "id": "lgballiance-lgb-international-launch",
+    "title": "Launching LGB International",
+    "publisher": "LGB Alliance UK",
+    "type": "primærkilde",
+    "url": "https://lgballiance.org.uk/launching-lgb-international/",
+    "published": "2025-09-20",
+    "accessed": "2026-09-09",
+    "note": "LGB Alliance UK beskriver lanceringen af LGB International sammen med 17 andre nationale grupper og netværkets formål: international interessevaretagelse, udvikling af nationale tilknyttede grupper samt deling af information, færdigheder og ressourcer."
   }
 ]

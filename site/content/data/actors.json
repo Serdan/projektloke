@@ -24,9 +24,19 @@
     "kind": "person",
     "affiliation": "Danmarksdemokraterne",
     "route": "/aktoerer/susie-jessen/",
-    "summary": "Medforslagsstiller til B47.",
+    "summary": "Danmarksdemokraternes politiske ordfører og tidligere ligestillingsordfører; medforslagsstiller til B47 i 2024.",
     "sourceIds": [
       "ft-b47-proposal"
+    ],
+    "profile": [
+      "Susie Jessen har været medlem af Folketinget for Danmarksdemokraterne siden 2022 og politisk ordfører siden partiets første valgperiode. Hun var samtidig ligestillingsordfører fra 2022 til 2025.",
+      "B47 blev derfor ikke kun fremsat af et tilfældigt medlem af Danmarksdemokraterne: Jessen var partiets ligestillingsordfører, da hun stod som en af fire forslagsstillere sammen med Sólbjørg Jakobsen, Dina Raabjerg og Mette Thiesen. Ved den endelige afstemning stemte alle 10 tilstedeværende DD-medlemmer for forslaget.",
+      "Efter valget i 2026 er Jessen fortsat politisk ordfører og blev formand for Folketingets Indenrigs-, Bolig- og Landdistriktsudvalg. Projekt Loke bruger hendes rolle omkring B47 som dokumentation for partiforankring, ikke som bevis for at hun alene formulerede Danmarksdemokraternes transpolitik."
+    ],
+    "profileSourceIds": [
+      "ft-mf-susie-jessen",
+      "ft-b47-proposal",
+      "ft-b47-vote"
     ]
   },
   {
@@ -208,9 +218,19 @@
     "kind": "person",
     "affiliation": "Nye Borgerlige",
     "route": "/aktoerer/kim-edberg-andersen/",
-    "summary": "Medforslagsstiller til B62 som medlem af Nye Borgerlige.",
+    "summary": "Medforslagsstiller til B62 som medlem af Nye Borgerlige; senere Danmarksdemokrat og ordfører i B47-debatten.",
     "sourceIds": [
       "ft-b62-proposal"
+    ],
+    "profile": [
+      "Kim Edberg Andersen blev valgt for Nye Borgerlige i 2022 og var medforslagsstiller til B62 i marts 2023. Han forlod Nye Borgerliges folketingsgruppe i januar 2024 og blev medlem af Danmarksdemokraterne i marts samme år.",
+      "Ved førstebehandlingen af B47 optrådte han som Danmarksdemokraternes ordfører. Dermed går hans dokumenterede deltagelse på området på tværs af to partier: fra et konkret behandlingsforslag under Nye Borgerlige til debatten om juridisk kønsskifte for Danmarksdemokraterne.",
+      "Projekt Loke registrerer dette som personlig kontinuitet i hans parlamentariske engagement. Det er ikke i sig selv dokumentation for, at politikken blev overført mellem partierne af Andersen."
+    ],
+    "profileSourceIds": [
+      "ft-mf-kim-edberg-andersen",
+      "ft-b62-proposal",
+      "ft-b47-debate"
     ]
   },
   {
@@ -230,8 +250,18 @@
     "kind": "person",
     "affiliation": "Nye Borgerlige",
     "route": "/aktoerer/pernille-vermund/",
-    "summary": "Medforslagsstiller til B62 som medlem af Nye Borgerlige.",
+    "summary": "Medforslagsstiller til B80 i 2020 og B62 i 2023 som Nye Borgerlige-politiker; medlem af Liberal Alliance siden 2024.",
     "sourceIds": [
+      "ft-b62-proposal"
+    ],
+    "profile": [
+      "Pernille Vermund var medstifter og mangeårig leder af Nye Borgerlige. På transområdet findes der en dokumenteret parlamentarisk linje før B62: allerede i november 2020 var hun medforslagsstiller til B80, som ville pålægge regeringen ikke at indføre juridisk kønsskifte for personer under 18 år.",
+      "I marts 2023 var Vermund igen medforslagsstiller, denne gang til B62 om behandling af mindreårige. Hun forlod Nye Borgerlige i januar 2024 og tilsluttede sig kort efter Liberal Alliance, hvor hun fortsat er folketingsmedlem.",
+      "B80 er også relevant for den bredere borgerlige kontinuitet, fordi forslaget blev fremsat på tværs af DF, KF, NB og LA. Vermunds senere partiskifte til LA skal derfor ikke læses som begyndelsen på hendes engagement i emnet; hendes dokumenterede parlamentariske position går mindst tilbage til 2020."
+    ],
+    "profileSourceIds": [
+      "ft-mf-pernille-vermund",
+      "ft-b80-2021",
       "ft-b62-proposal"
     ]
   },
@@ -241,9 +271,20 @@
     "kind": "person",
     "affiliation": "Det Konservative Folkeparti",
     "route": "/aktoerer/birgitte-bergman/",
-    "summary": "Medforslagsstiller til B12 for Det Konservative Folkeparti.",
+    "summary": "Konservativ medforslagsstiller til B80 i 2020 samt B12 og B72 under sin stedfortræderperiode i 2024-25.",
     "sourceIds": [
       "ft-b12-proposal"
+    ],
+    "profile": [
+      "Birgitte Bergman var medforslagsstiller til B80 i 2020, hvor DF, KF, Nye Borgerlige og Liberal Alliance i fællesskab forsøgte at blokere juridisk kønsskifte for personer under 18 år.",
+      "Hun var ikke fast medlem af Folketinget i begyndelsen af valgperioden 2022-26, men indtrådte som stedfortræder for Mette Abildgaard fra august 2024 til april 2025. I den periode var hun medforslagsstiller til B12 om forældresamtykke til behandling af 15-17-årige og B72 om gebyr ved juridisk kønsskifte.",
+      "Hendes profil viser dermed, at den konservative deltagelse i de senere forslag havde en personlig forbindelse tilbage til B80 i 2020, selv om partiets konkrete forslag og begrundelser ændrede sig over tid."
+    ],
+    "profileSourceIds": [
+      "ft-mf-birgitte-bergman",
+      "ft-b80-2021",
+      "ft-b12-proposal",
+      "ft-b72-proposal"
     ]
   },
   {
@@ -263,9 +304,19 @@
     "kind": "person",
     "affiliation": "Det Konservative Folkeparti",
     "route": "/aktoerer/mona-juul/",
-    "summary": "Medforslagsstiller til B12 for Det Konservative Folkeparti.",
+    "summary": "Formand og politisk leder for Det Konservative Folkeparti siden 2024; medforslagsstiller til B12 og B72.",
     "sourceIds": [
       "ft-b12-proposal"
+    ],
+    "profile": [
+      "Mona Juul blev politisk leder og formand for Det Konservative Folkeparti i 2024. Det er derfor institutionelt relevant, at hun samme efterår stod som medforslagsstiller til to konservative forslag på transområdet.",
+      "B12 ville kræve forældresamtykke til kønsskiftebehandling for 15-17-årige. B72, fremsat sammen med Dina Raabjerg og Birgitte Bergman, ville indføre et administrationsgebyr ved juridisk kønsskifte; det forslag blev senere trukket tilbage.",
+      "Juuls medforslagsstillelse betyder ikke, at alle detaljer nødvendigvis var hendes initiativ. Men fordi hun allerede var partiets politiske leder, er B12 og B72 dokumentation for, at området i 2024 ikke kun blev båret af en enkelt ligestillingsordfører på partiets periferi."
+    ],
+    "profileSourceIds": [
+      "ft-mf-mona-juul",
+      "ft-b12-proposal",
+      "ft-b72-proposal"
     ]
   },
   {
@@ -382,10 +433,20 @@
     "shortName": "LGB Alliance International",
     "affiliation": null,
     "route": "/aktoerer/lgb-alliance-international/",
-    "summary": "Internationalt netværk, som Dansk Regnbueråd tilsluttede sig i juni 2025 og efter eget udsagn blev bedt om at repræsentere Danmark i.",
+    "summary": "Internationalt LGB-netværk, som Dansk Regnbueråd tilsluttede sig i juni 2025 og oplyste at være blevet bedt om at repræsentere Danmark i.",
     "sourceIds": [
       "drr-lgbai-2025",
       "drr-chair-report-2025"
+    ],
+    "profile": [
+      "Dansk Regnbueråd bruger betegnelsen LGB Alliance International om det internationale netværk, organisationen tilsluttede sig i juni 2025. LGB Alliance UK beskriver den formaliserede føderation som LGB International og oplyser, at den blev lanceret sammen med 17 andre nationale LGB-grupper.",
+      "Ifølge LGB Alliance UK skal føderationen arbejde over for blandt andet FN-organer og multinationale institutioner, støtte udviklingen af nationale tilknyttede grupper og dele information, færdigheder og ressourcer på tværs af lande. Det gør medlemskabet relevant som en organisatorisk forbindelse, ikke blot som et fælles navn eller ideologisk slægtskab.",
+      "Jesper W. Rasmussen oplyste i sin formandsberetning, at netværket havde spurgt Dansk Regnbueråd, om organisationen ville repræsentere Danmark. Projekt Loke registrerer dette som dokumenteret medlemskab og international koordinationsstruktur; det er ikke i sig selv bevis for, at udenlandske aktører bestemmer DRR’s danske politiske aktiviteter."
+    ],
+    "profileSourceIds": [
+      "lgballiance-lgb-international-launch",
+      "drr-chair-report-2025",
+      "drr-lgbai-2025"
     ]
   },
   {
@@ -395,8 +456,17 @@
     "shortName": null,
     "affiliation": "Dansk Regnbueråd",
     "route": "/aktoerer/marcus-dib-jensen/",
-    "summary": "Daværende formand for Dansk Regnbueråd under foreningens arbejde omkring B62. Foreningens bilag 5 beskrev ham som deltagende fra en konference i USA med ligesindede amerikanske transpolitiske aktører.",
+    "summary": "Dansk Regnbueråds første formand 2022-23 og formand under organisationens B62-arbejde; forlod posten i september 2023 efter intern uenighed om andre politiske emner.",
     "sourceIds": [
+      "ft-b62-drr-submissions"
+    ],
+    "profile": [
+      "Marcus Dib Jensen stod i spidsen for Dansk Regnbueråd fra foreningens etablering i 2022 til september 2023. DRR beskrev selv hans rolle som central for lanceringen og foreningens profilering af transpolitiske spørgsmål.",
+      "Under B62 var han formand, da organisationen dokumenterede direkte kontakt med Sundhedsudvalgets medlemmer. I bilag 5 beskrev DRR desuden Jensen som deltagende fra en konference i USA med ligesindede amerikanske transpolitiske aktører.",
+      "Jensen trådte tilbage som formand i september 2023. Ifølge DRR skyldtes bruddet uenighed om, hvor bredt organisationen skulle engagere sig politisk, konkret om den foreslåede koranlov, ikke et opgør om foreningens transpolitiske linje. Det er en vigtig afgrænsning af, hvad formandsskiftet dokumenterer."
+    ],
+    "profileSourceIds": [
+      "drr-chair-change-2023",
       "ft-b62-drr-submissions"
     ]
   },
@@ -407,10 +477,21 @@
     "shortName": null,
     "affiliation": "Dansk Regnbueråd",
     "route": "/aktoerer/jesper-w-rasmussen/",
-    "summary": "Tidligere formand og senere næstformand i Dansk Regnbueråd. Foreningen placerede i 2025 ansvaret for det internationale samarbejde hos ham.",
+    "summary": "Central organisator i Dansk Regnbueråd siden starten; formand 2023-25 og ansvarlig for internationalt samarbejde i forbindelse med tilslutningen til LGB International.",
     "sourceIds": [
       "drr-lgbai-2025",
       "drr-chair-report-2025"
+    ],
+    "profile": [
+      "Jesper W. Rasmussen var næstformand fra Dansk Regnbueråds start og overtog formandsposten efter Marcus Dib Jensen i september 2023. I forbindelse med formandsskiftet beskrev DRR ham som tæt involveret i udformning og kommunikation af politik og mediestrategi samt i sociale medier, taler, videoer og hjemmeside siden foreningens start.",
+      "Som formand beskrev Rasmussen i 2025 kontakt med LGB Alliance UK-medstifter Bev Jackson og oplyste, at det internationale netværk havde spurgt Dansk Regnbueråd, om organisationen ville repræsentere Danmark. Ved samme generalforsamling trådte han tilbage som formand til fordel for Elisabeth Lynge og fik ansvar for det internationale samarbejde.",
+      "DRR meddelte i juni 2025, at Rasmussen igen blev næstformand. Den aktuelle bestyrelsesoversigt viser imidlertid Ivan Hemmingsen som næstformand og Rasmussen som almindeligt bestyrelsesmedlem. Profilen skelner derfor mellem hans dokumenterede rolle i 2025 og hans nuværende titel."
+    ],
+    "profileSourceIds": [
+      "drr-chair-change-2023",
+      "drr-chair-report-2025",
+      "drr-lgbai-2025",
+      "drr-current-board-2026"
     ]
   },
   {
@@ -420,9 +501,19 @@
     "shortName": null,
     "affiliation": "Dansk Regnbueråd",
     "route": "/aktoerer/elisabeth-lynge/",
-    "summary": "Forkvinde for Dansk Regnbueråd fra juni 2025, da foreningen samtidig tilsluttede sig LGB Alliance International.",
+    "summary": "Formand for Dansk Regnbueråd siden juni 2025; overtog posten samtidig med organisationens formelle tilslutning til det internationale LGB-netværk.",
     "sourceIds": [
       "drr-lgbai-2025"
+    ],
+    "profile": [
+      "Elisabeth Lynge var næstformand i Dansk Regnbueråd, før hun overtog formandsposten i juni 2025. Formandsskiftet blev af organisationen selv beskrevet som en strategisk videreudvikling med større vægt på kvinder og piger.",
+      "I sin egen tiltrædelseshilsen beskrev Lynge Dansk Regnbueråd som en forening for homoseksuelle og biseksuelle og trak en eksplicit skillelinje mellem seksuel orientering og transkønnethed. Samme generalforsamling vedtog at tilslutte organisationen til det internationale LGB-netværk.",
+      "DRR’s aktuelle bestyrelsesoversigt viser fortsat Lynge som formand. Hendes tiltræden markerer derfor både en ledelsesændring og den periode, hvor organisationen formelt fjernede T’et fra sin egen organisatoriske identitet."
+    ],
+    "profileSourceIds": [
+      "drr-new-chair-message-2025",
+      "drr-lgbai-2025",
+      "drr-current-board-2026"
     ]
   },
   {
