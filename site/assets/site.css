@@ -77,15 +77,10 @@ img { max-width: 100%; }
 }
 
 .brand-mark {
-  display: grid;
-  width: 2rem;
+  display: block;
+  width: auto;
   height: 2rem;
-  place-items: center;
-  background: var(--ink);
-  color: var(--paper);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.25rem;
-  font-weight: 700;
+  flex: 0 0 auto;
 }
 
 .primary-nav {
