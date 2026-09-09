@@ -325,7 +325,7 @@
     "publisher": "Folketinget",
     "type": "primærkilde",
     "url": "https://www.ft.dk/medlemmer/mf/s/susie-jessen",
-    "published": "2026-09-09",
+    "published": "2026-08-10",
     "accessed": "2026-09-09",
     "note": "Folketingets aktuelle medlemsbiografi. Dokumenterer medlemskab, politisk ordførerskab og perioden som ligestillingsordfører 2022-2025."
   },
@@ -335,7 +335,7 @@
     "publisher": "Folketinget",
     "type": "primærkilde",
     "url": "https://www.ft.dk/medlemmer/mf/k/kim-edberg-andersen",
-    "published": "2026-07-01",
+    "published": "2026-07-09",
     "accessed": "2026-09-09",
     "note": "Folketingets medlemsbiografi. Dokumenterer skiftet fra Nye Borgerlige via UFG til Danmarksdemokraterne i marts 2024."
   },
@@ -345,7 +345,7 @@
     "publisher": "Folketinget",
     "type": "primærkilde",
     "url": "https://www.ft.dk/medlemmer/mf/p/pernille-vermund",
-    "published": "2026-09-09",
+    "published": "2026-08-11",
     "accessed": "2026-09-09",
     "note": "Folketingets aktuelle medlemsbiografi. Dokumenterer medlemsperioder for Nye Borgerlige, UFG og Liberal Alliance."
   },
@@ -355,7 +355,7 @@
     "publisher": "Folketinget",
     "type": "primærkilde",
     "url": "https://www.ft.dk/medlemmer/mf/b/birgitte-bergman",
-    "published": "2026-07-01",
+    "published": "2026-07-09",
     "accessed": "2026-09-09",
     "note": "Folketingets medlemsbiografi. Dokumenterer hendes medlemsperioder, herunder perioden som stedfortræder 26. august 2024 til 30. april 2025."
   },
@@ -408,5 +408,55 @@
     "published": "2025-09-20",
     "accessed": "2026-09-09",
     "note": "LGB Alliance UK beskriver lanceringen af LGB International sammen med 17 andre nationale grupper og netværkets formål: international interessevaretagelse, udvikling af nationale tilknyttede grupper samt deling af information, færdigheder og ressourcer."
+  },
+  {
+    "id": "ft-mf-morten-messerschmidt",
+    "title": "Morten Messerschmidt – medlemsbiografi",
+    "publisher": "Folketinget",
+    "type": "primærkilde",
+    "url": "https://www.ft.dk/medlemmer/mf/m/morten-messerschmidt",
+    "published": "2026-08-07",
+    "accessed": "2026-09-09",
+    "note": "Folketingets aktuelle medlemsbiografi. Dokumenterer formandsposten i Dansk Folkeparti fra 2022 og den parlamentariske karriere."
+  },
+  {
+    "id": "ft-mf-jan-e-joergensen",
+    "title": "Jan E. Jørgensen – medlemsbiografi",
+    "publisher": "Folketinget",
+    "type": "primærkilde",
+    "url": "https://www.ft.dk/medlemmer/mf/j/jan-e-joergensen",
+    "published": "2026-03-24",
+    "accessed": "2026-09-09",
+    "note": "Folketingets arkiverede medlemsbiografi. Dokumenterer medlemsperioden til 24. marts 2026 og rollen som Venstres politiske ordfører 2024-2026."
+  },
+  {
+    "id": "ft-mf-carl-valentin",
+    "title": "Carl Valentin – medlemsbiografi",
+    "publisher": "Folketinget",
+    "type": "primærkilde",
+    "url": "https://www.ft.dk/medlemmer/mf/c/carl-valentin",
+    "published": "2026-08-05",
+    "accessed": "2026-09-09",
+    "note": "Folketingets medlemsbiografi. Dokumenterer blandt andet perioden som SFs ligestillingsordfører 2024-2025."
+  },
+  {
+    "id": "ft-mf-rosa-lund",
+    "title": "Rosa Lund – medlemsbiografi",
+    "publisher": "Folketinget",
+    "type": "primærkilde",
+    "url": "https://www.ft.dk/medlemmer/mf/r/rosa-lund",
+    "published": "2026-08-28",
+    "accessed": "2026-09-09",
+    "note": "Folketingets medlemsbiografi. Dokumenterer blandt andet perioden som Enhedslistens ligestillingsordfører 2022-2026."
+  },
+  {
+    "id": "ft-mf-samira-nawa",
+    "title": "Samira Nawa – medlemsbiografi",
+    "publisher": "Folketinget",
+    "type": "primærkilde",
+    "url": "https://www.ft.dk/medlemmer/mf/s/samira-nawa",
+    "published": "2026-08-05",
+    "accessed": "2026-09-09",
+    "note": "Folketingets aktuelle medlemsbiografi. Dokumenterer perioden som Radikale Venstres ligestillingsordfører 2019-2026 og udnævnelsen til klima-, energi- og forsyningsminister i juni 2026."
   }
 ]

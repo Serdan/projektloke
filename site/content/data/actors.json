@@ -389,9 +389,19 @@
     "kind": "person",
     "affiliation": "Dansk Folkeparti",
     "route": "/aktoerer/morten-messerschmidt/",
-    "summary": "Medforslagsstiller til B145 for Dansk Folkeparti.",
+    "summary": "Formand for Dansk Folkeparti siden 2022 og medforslagsstiller til B145, partiets bredeste dokumenterede transpolitiske forslag i materialet.",
     "sourceIds": [
       "ft-b145-proposal"
+    ],
+    "profile": [
+      "Morten Messerschmidt har været formand for Dansk Folkeparti siden 2022. Hans rolle i Projekt Lokes materiale er især institutionel: han stod som medforslagsstiller til B145 sammen med Mette Thiesen og øvrige DF-medlemmer.",
+      "B145 gik væsentligt videre end de tidligere enkeltsager. Forslaget omfattede blandt andet afskaffelse af juridisk kønsskifte og X-markering i pas, stop for offentligt finansieret transitionbehandling og ændringer i offentlige institutioners kønspraksis. At partiformanden stod på forslaget gør det rimeligt at behandle B145 som et ledelsesforankret DF-udspil frem for et enkelt medlems soloprojekt.",
+      "Profilen skelner samtidig mellem denne dokumenterede forankring og stærkere påstande om, hvem der konkret formulerede de enkelte elementer i forslaget; de sidste påstande kræver særskilt dokumentation."
+    ],
+    "profileSourceIds": [
+      "ft-mf-morten-messerschmidt",
+      "ft-b145-proposal",
+      "ft-b145-debate"
     ]
   },
   {
@@ -547,6 +557,16 @@
     "sourceIds": [
       "toft-et-skifte-2025",
       "toft-back-berlingske-2025"
+    ],
+    "profile": [
+      "Berlingske optræder i Projekt Loke primært som medieplatform snarere end som én samlet politisk aktør. Den dokumenterede forbindelse i det nuværende materiale er især Dorte Tofts tilbagevendende klumme og den institutionelle anerkendelse, hun selv beskriver omkring Fonsmarkprisen.",
+      "Ifølge Toft inviterede daværende debatredaktør Pierre Collignon hende i 2022 til at skrive en månedlig klumme. Hun afsluttede den faste aftale i februar 2025, men oplyste senere, at samarbejdet blev genoptaget fra august samme år.",
+      "Projekt Loke bruger derfor Berlingske som eksempel på vedvarende platforming af kønskritisk kommentarstof. Det er ikke det samme som at hævde, at avisens nyhedsredaktion eller alle dens ledende redaktører deler Tofts synspunkter. Den skelnen er central for medieanalysen."
+    ],
+    "profileSourceIds": [
+      "toft-et-skifte-2025",
+      "toft-back-berlingske-2025",
+      "toft-fonsmark-2026"
     ]
   },
   {
@@ -556,8 +576,18 @@
     "shortName": null,
     "affiliation": "Venstre",
     "route": "/aktoerer/jan-e-joergensen/",
-    "summary": "Venstre-politiker, som under B47 forsvarede den praktiske funktion af juridisk kønsskifte og stemte imod forslaget.",
+    "summary": "Venstres politiske ordfører under B47-debatten; argumenterede imod forslaget og for den praktiske funktion af juridisk kønsskifte.",
     "sourceIds": [
+      "ft-b47-debate",
+      "ft-b47-vote"
+    ],
+    "profile": [
+      "Jan E. Jørgensen var folketingsmedlem for Venstre frem til marts 2026 og fungerede som partiets politiske ordfører fra 2024 til 2026. Under førstebehandlingen af B47 repræsenterede han dermed et centralt regeringspartis modstand mod forslaget.",
+      "I debatten forsvarede Jørgensen juridisk kønsskifte som en ordning med praktisk betydning og advarede imod situationer, hvor manglende sammenhæng mellem juridiske dokumenter og en persons sociale liv kan blive ubehagelig eller ydmygende. Venstre stemte samlet imod B47 blandt de tilstedeværende medlemmer.",
+      "Hans profil er relevant, fordi den viser, at modstanden mod de borgerlige restriktionsforslag ikke kun kom fra venstrefløjen eller LGBT-organisationer; den fandtes også i et liberalt regeringsparti."
+    ],
+    "profileSourceIds": [
+      "ft-mf-jan-e-joergensen",
       "ft-b47-debate",
       "ft-b47-vote"
     ]
@@ -569,8 +599,17 @@
     "shortName": null,
     "affiliation": "Socialistisk Folkeparti",
     "route": "/aktoerer/carl-valentin/",
-    "summary": "SF-politiker, som under B145 kritiserede brugen af transpersoner og andre minoriteter som politisk mål og knyttede udviklingen til Trump-inspiration.",
+    "summary": "SFs ligestillingsordfører under B145-debatten; kritiserede forslaget som del af en politisk brug af transpersoner og andre minoriteter som mål.",
     "sourceIds": [
+      "ft-b145-debate"
+    ],
+    "profile": [
+      "Carl Valentin var SFs ligestillingsordfører fra 2024 til 2025 og talte for partiet under førstebehandlingen af B145. Hans indlæg er derfor et dokumenteret svar fra den relevante SF-ordfører, ikke blot en enkelt personlig reaktion.",
+      "Valentin kritiserede Dansk Folkepartis forslag for at bruge transpersoner og andre minoriteter som politisk boksebold og knyttede udviklingen til inspiration fra den amerikanske højrefløj omkring Donald Trump. B145 nåede ikke til en endelig afstemning, så hans indlæg dokumenterer SFs debatposition snarere end en slutafstemning om netop dette forslag.",
+      "Profilen er medtaget som modstemme, fordi Projekt Loke også skal dokumentere, hvordan den restriktive dagsorden blev udfordret og fortolket af politiske modstandere."
+    ],
+    "profileSourceIds": [
+      "ft-mf-carl-valentin",
       "ft-b145-debate"
     ]
   },
@@ -581,8 +620,17 @@
     "shortName": null,
     "affiliation": "Enhedslisten",
     "route": "/aktoerer/rosa-lund/",
-    "summary": "Enhedslisten-politiker, som under B145 eksplicit argumenterede for at beskytte transpersoner som en udsat minoritet.",
+    "summary": "Enhedslistens ligestillingsordfører 2022-26; argumenterede under B145 for at beskytte transpersoner som en udsat minoritet.",
     "sourceIds": [
+      "ft-b145-debate"
+    ],
+    "profile": [
+      "Rosa Lund var Enhedslistens ligestillingsordfører fra 2022 til 2026. Under B145 repræsenterede hun derfor partiets relevante ordførerposition i debatten om Dansk Folkepartis brede forslag.",
+      "Lund placerede debatten i en minoritetsbeskyttelsesramme og argumenterede eksplicit for, at Folketingets opgave var at beskytte transpersoner frem for at gøre deres rettigheder til genstand for politisk tilbagerulning.",
+      "Hendes profil supplerer de restriktive aktører med en vedvarende parlamentarisk modposition. Den dokumenterer ikke i sig selv effekten af Enhedslistens modstand, men gør det muligt at følge, hvem der formulerede de tydeligste modargumenter i Folketinget."
+    ],
+    "profileSourceIds": [
+      "ft-mf-rosa-lund",
       "ft-b145-debate"
     ]
   },
@@ -593,8 +641,17 @@
     "shortName": null,
     "affiliation": "Radikale Venstre",
     "route": "/aktoerer/samira-nawa/",
-    "summary": "Radikal politiker, som under B145 kritiserede både forslagets indhold og Mette Thiesens hamster/guldfisk-analogi om transpersoner.",
+    "summary": "Radikale Venstres ligestillingsordfører 2019-26; kritiserede B145 og Mette Thiesens retorik. Klima-, energi- og forsyningsminister siden juni 2026.",
     "sourceIds": [
+      "ft-b145-debate"
+    ],
+    "profile": [
+      "Samira Nawa var Radikale Venstres ligestillingsordfører fra 2019 til 2026 og deltog i den rolle i debatten om B145. Hun blev i juni 2026 udnævnt til klima-, energi- og forsyningsminister.",
+      "Under B145 kritiserede Nawa både forslagets indhold og den måde transpersoner blev omtalt på. Hun reagerede blandt andet på Mette Thiesens hamster/guldfisk-analogi og fremhævede, at Folketinget talte om en minoritet i det danske samfund.",
+      "Nawas lange periode som ligestillingsordfører gør hende til en nyttig kontinuitetsfigur på modstandersiden: hendes dokumenterede position omkring B145 kan ses i sammenhæng med flere års ansvar for partiets ligestillingsområde, ikke kun den enkelte debatdag."
+    ],
+    "profileSourceIds": [
+      "ft-mf-samira-nawa",
       "ft-b145-debate"
     ]
   },
