@@ -662,5 +662,175 @@
       "ft-b12-debate",
       "nhs-cass-implementation-2024"
     ]
+  },
+  {
+    "id": "kjaersgaard-b80-changing-room",
+    "date": "2021-04-13",
+    "actorId": "pia-kjaersgaard",
+    "kind": "kort bemærkning",
+    "excerpt": "gå i bad med pigerne?",
+    "context": "Kjærsgaard brugte omklædningsrum og sport som konkrete følgeeksempler i modstanden mod juridisk kønsskifte for mindreårige. Argumenttypen foregriber de senere konflikter om kvinders rum.",
+    "position": "restriction",
+    "themes": [
+      "omklædningsrum",
+      "sport",
+      "juridisk kønsskifte",
+      "børn og unge"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-b80-2021-debate"
+    ]
+  },
+  {
+    "id": "kjaersgaard-b80-crazy-idea",
+    "date": "2021-04-13",
+    "actorId": "pia-kjaersgaard",
+    "kind": "kort bemærkning",
+    "excerpt": "en forrykt idé",
+    "context": "Senere i B80-debatten delegitimerede Kjærsgaard selve forslaget om juridisk kønsskifte for børn som grundlæggende urimeligt frem for blot teknisk problematisk.",
+    "position": "restriction",
+    "themes": [
+      "delegitimering",
+      "juridisk kønsskifte",
+      "børn og unge"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-b80-2021-debate"
+    ]
+  },
+  {
+    "id": "kf-b80-adults-not-children",
+    "date": "2021-04-13",
+    "actorId": "konservative",
+    "kind": "ordførertale",
+    "excerpt": "en sag for voksne, ikke for børn",
+    "context": "Det konservative indlæg, oplæst af Niels Flemming Hansen som stedfortræder for Birgitte Bergman, gjorde voksen/barn-skellet til hovedramme for partiets modstand mod juridisk kønsskifte for mindreårige.",
+    "position": "restriction",
+    "themes": [
+      "voksne og børn",
+      "juridisk kønsskifte",
+      "beskyttelse",
+      "identitetspolitik"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-b80-2021-debate"
+    ]
+  },
+  {
+    "id": "nawa-b80-no-harm-to-others",
+    "date": "2021-04-13",
+    "actorId": "samira-nawa",
+    "kind": "kort bemærkning",
+    "excerpt": "skader jo ikke os andre",
+    "context": "Nawa vendte nulsumstænkningen om: juridisk kønsskifte for et lille antal børn blev fremstillet som en hjælp til dem uden tilsvarende tab af frihed eller rettigheder for andre.",
+    "position": "defense",
+    "themes": [
+      "ikke-nulsum",
+      "juridisk kønsskifte",
+      "børn og unge",
+      "frihed"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-b80-2021-debate"
+    ]
+  },
+  {
+    "id": "df-f13-evidence-safety",
+    "date": "2023-06-01",
+    "actorId": "dansk-folkeparti",
+    "kind": "forespørgsel",
+    "excerpt": "mangler viden ... effekt og sikkerhed",
+    "context": "F13 gjorde usikkerhed om effekt og sikkerhed til Dansk Folkepartis centrale institutionelle ramme for at kræve stop for pubertetsblokkere og krydshormoner til børn.",
+    "position": "restriction",
+    "themes": [
+      "evidens",
+      "sikkerhed",
+      "hormoner",
+      "børn og unge"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-f13-2023-debate"
+    ]
+  },
+  {
+    "id": "df-b145-only-two-sexes",
+    "date": "2025-02-27",
+    "actorId": "dansk-folkeparti",
+    "kind": "beslutningsforslag",
+    "excerpt": "kun anerkende to køn",
+    "context": "B145 formaliserede en bredere DF-ramme end behandlingsspørgsmålet alene: staten og offentlige myndigheder skulle bygge deres praksis på en biologisk kønsforståelse, og juridisk kønsskifte skulle afskaffes.",
+    "position": "restriction",
+    "themes": [
+      "to køn",
+      "biologisk realitet",
+      "offentlige institutioner",
+      "juridisk kønsskifte"
+    ],
+    "relatedRoute": "/politik/b145/",
+    "sourceIds": [
+      "ft-b145-proposal"
+    ]
+  },
+  {
+    "id": "bjoern-f13-harm-benefit",
+    "date": "2023-06-01",
+    "actorId": "mikkel-bjoern",
+    "kind": "begrundelse",
+    "excerpt": "større skade end gavn",
+    "context": "Som ordfører for forespørgerne gjorde Bjørn risikoen for skade til den centrale usikkerhedsramme: spørgsmålet var ikke, om børn med kønsligt ubehag skulle hjælpes, men om den medicinske behandling kunne gøre mere skade end gavn.",
+    "position": "restriction",
+    "themes": [
+      "skade versus gavn",
+      "hormoner",
+      "børn og unge",
+      "medicinsk risiko"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-f13-2023-debate"
+    ]
+  },
+  {
+    "id": "bjoern-f13-gut-feeling",
+    "date": "2023-06-01",
+    "actorId": "mikkel-bjoern",
+    "kind": "begrundelse",
+    "excerpt": "Det er mavefornemmelser",
+    "context": "Bjørn beskrev vurderingen af, hvilke børn der fortsat ville have kønsdysfori, som utilstrækkeligt forudsigelig og reducerede det kliniske skøn til “mavefornemmelser”.",
+    "position": "restriction",
+    "themes": [
+      "evidens",
+      "klinisk skøn",
+      "kønsdysfori",
+      "usikkerhed"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-f13-2023-debate"
+    ]
+  },
+  {
+    "id": "bjoern-f13-consequences",
+    "date": "2023-06-01",
+    "actorId": "mikkel-bjoern",
+    "kind": "begrundelse",
+    "excerpt": "umuligt kan forstå de fulde konsekvenser",
+    "context": "Bjørn fremstillede mindreåriges beslutningskompetence som utilstrækkelig i forhold til hormonbehandlingens mulige langsigtede konsekvenser.",
+    "position": "restriction",
+    "themes": [
+      "beslutningskompetence",
+      "børn og unge",
+      "irreversibilitet",
+      "hormoner"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-f13-2023-debate"
+    ]
   }
 ]
