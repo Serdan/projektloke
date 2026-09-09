@@ -1,0 +1,27 @@
+[Unit]
+Description=Projekt Loke web application
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=projektloke
+Group=projektloke
+WorkingDirectory=/srv/projektloke
+ExecStart=/srv/projektloke/app --urls http://127.0.0.1:5080
+Restart=on-failure
+RestartSec=3
+Environment=ASPNETCORE_ENVIRONMENT=Production
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+LockPersonality=true
+MemoryDenyWriteExecute=false
+
+[Install]
+WantedBy=multi-user.target
