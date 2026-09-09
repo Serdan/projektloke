@@ -255,6 +255,13 @@ h2 {
 .section-heading > p:not(.kicker) { grid-row: 2; max-width: 42rem; color: var(--muted); font-size: 1.1rem; }
 .section-heading.compact { margin-bottom: 2rem; }
 
+.profile-copy {
+  max-width: 52rem;
+  font-size: 1.08rem;
+}
+
+.profile-copy p + p { margin-top: 1.25rem; }
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

@@ -1,14 +1,19 @@
 [
   {
     "id": "solbjoerg-jakobsen",
-    "name": "S\u00F3lbj\u00F8rg Jakobsen",
+    "name": "Sólbjørg Jakobsen",
     "kind": "person",
     "affiliation": "Liberal Alliance",
     "route": "/aktoerer/solbjoerg-jakobsen/",
-    "summary": "Medforslagsstiller til B47 og ordf\u00F8rer for forslagsstillerne ved frems\u00E6ttelsen.",
+    "summary": "Medforslagsstiller til B47 og ordfører for forslagsstillerne ved fremsættelsen.",
     "sourceIds": [
       "ft-b47-proposal",
-      "ft-b47-debate"
+      "ft-b47-debate",
+      "ft-mf-solbjoerg-jakobsen"
+    ],
+    "profile": [
+      "I perioden omkring B47 var Sólbjørg Jakobsen Liberal Alliances ligestillingsordfører. Hun var en af de fire tværborgerlige forslagsstillere og fungerede som ordfører for forslagsstillerne under Folketingets behandling.",
+      "B47 gjorde juridisk kønsskifte til et spørgsmål om institutionelle grænser. I førstebehandlingen knyttede Jakobsen forslaget til blandt andet CPR-systemet, omklædningsrum, sport og fængsler og argumenterede for at begrænse retten mest muligt inden for rammerne af Den Europæiske Menneskerettighedskonvention. Projekt Loke registrerer hende derfor som en central parlamentarisk aktør i overgangen fra debat om behandling af mindreårige til bredere krav om begrænsning af juridisk kønsskifte."
     ]
   },
   {
@@ -28,10 +33,18 @@
     "kind": "person",
     "affiliation": "Det Konservative Folkeparti",
     "route": "/aktoerer/dina-raabjerg/",
-    "summary": "Medforslagsstiller til B12 og B47 for Det Konservative Folkeparti.",
+    "summary": "Tidligere konservativ ligestillingsordfører og medforslagsstiller til B12, B47 og B72; bragte i 2025 også en henvendelse fra Dansk Regnbueråd ind i et udvalgsspørgsmål.",
     "sourceIds": [
       "ft-b12-proposal",
-      "ft-b47-proposal"
+      "ft-b47-proposal",
+      "ft-mf-dina-raabjerg",
+      "ft-b72-proposal",
+      "ft-liu-spm21-drr"
+    ],
+    "profile": [
+      "Dina Raabjerg var medlem af Folketinget for Det Konservative Folkeparti fra marts 2024 til marts 2026 og var blandt andet partiets ligestillingsordfører. På transområdet optræder hun i flere forskellige parlamentariske spor i samme periode.",
+      "Hun var medforslagsstiller til B12 om forældresamtykke til kønsskiftebehandling for 15-17-årige og til B47 om at begrænse juridisk kønsskifte. I november 2024 fremsatte hun desuden B72 sammen med Birgitte Bergman og Mona Juul; forslaget ville indføre et administrationsgebyr ved juridisk kønsskifte og blev trukket tilbage i januar 2025.",
+      "I august 2025 bragte Raabjerg også en henvendelse fra Dansk Regnbueråd ind i Folketingets arbejde ved at bede ligestillingsministeren kommentere organisationens kritik af FSTB-materiale. Det dokumenterer en konkret forbindelse mellem en udenparlamentarisk aktør og et parlamentarisk spørgsmål, uden i sig selv at vise at organisationen styrede den konservative politik."
     ]
   },
   {
@@ -40,11 +53,17 @@
     "kind": "person",
     "affiliation": "Dansk Folkeparti",
     "route": "/aktoerer/mette-thiesen/",
-    "summary": "Medforslagsstiller til B47 og f\u00F8rsteforslagsstiller til B145 for Dansk Folkeparti.",
+    "summary": "Medforslagsstiller til B47 og førsteforslagsstiller til B145 for Dansk Folkeparti.",
     "sourceIds": [
       "ft-b145-debate",
       "ft-b145-proposal",
-      "ft-b47-proposal"
+      "ft-b47-proposal",
+      "ft-mf-mette-thiesen"
+    ],
+    "profile": [
+      "Mette Thiesen har været folketingsmedlem for Dansk Folkeparti siden februar 2023 efter tidligere at have siddet for Nye Borgerlige. Hun har været næstformand for Dansk Folkepartis folketingsgruppe siden 2023.",
+      "I Projekt Lokes materiale forbinder hun to forskellige stadier af den parlamentariske udvikling: Hun var medforslagsstiller til det tværborgerlige B47 om juridisk kønsskifte og førsteforslagsstiller til B145, hvor Dansk Folkeparti samlede en langt bredere pakke af krav om juridisk køn, pas, behandling og offentlige institutioner.",
+      "Thiesens taler er samtidig blandt de tydeligste eksempler i materialet på en konfrontatorisk retorisk linje. Projektet adskiller denne retorik fra den formelle politik: profilen viser både hendes konkrete forslag og de udsagn, der allerede er registreret fra Folketingets debatter."
     ]
   },
   {
@@ -214,19 +233,25 @@
   },
   {
     "id": "mikkel-bjoern",
-    "name": "Mikkel Bj\u00F8rn",
+    "name": "Mikkel Bjørn",
     "kind": "person",
     "affiliation": "Dansk Folkeparti",
     "route": "/aktoerer/mikkel-bjoern/",
-    "summary": "Dansk Folkeparti-politiker. Stillede F1 om k\u00F8nsbegrebet i januar 2024 og var senere medforslagsstiller til B145.",
+    "summary": "Dansk Folkeparti-politiker. Stillede F1 om kønsbegrebet i januar 2024 og var senere medforslagsstiller til B145.",
     "sourceIds": [
       "ft-f1-2024-debate",
-      "ft-b145-proposal"
+      "ft-b145-proposal",
+      "ft-mf-mikkel-bjoern"
+    ],
+    "profile": [
+      "Mikkel Bjørn blev valgt for Nye Borgerlige i 2022 og skiftede til Dansk Folkeparti i januar 2023. Han var Dansk Folkepartis ligestillingsordfører i 2023-2024.",
+      "I januar 2024 var Bjørn en central aktør i Folketingets F1-debat om kønsbegrebet, hvor Dansk Folkeparti gjorde definitionen af køn til et selvstændigt parlamentarisk tema. Året efter var han medforslagsstiller til B145, som ville pålægge staten og offentlige myndigheder kun at anerkende to køn og samtidig ændre en række regler og offentlige praksisser.",
+      "Forløbet gør Bjørn relevant som forbindelse mellem den retoriske dagsordenssætning i F1 og den senere formulering af et bredt beslutningsforslag."
     ]
   },
   {
     "id": "pia-kjaersgaard",
-    "name": "Pia Kj\u00E6rsgaard",
+    "name": "Pia Kjærsgaard",
     "kind": "person",
     "affiliation": "Dansk Folkeparti",
     "route": "/aktoerer/pia-kjaersgaard/",
@@ -270,15 +295,21 @@
   },
   {
     "id": "dansk-regnbueraad",
-    "name": "Dansk Regnbuer\u00E5d",
+    "name": "Dansk Regnbueråd",
     "kind": "organization",
     "shortName": "DRR",
     "affiliation": null,
     "route": "/aktoerer/dansk-regnbueraad/",
-    "summary": "Dansk organisation med vedvarende aktivitet p\u00E5 transpolitiske sp\u00F8rgsm\u00E5l. Under B62 beskrev foreningen direkte kontakt til Sundhedsudvalgets medlemmer; i 2025 tilsluttede den sig LGB Alliance International.",
+    "summary": "Dansk organisation med vedvarende aktivitet på transpolitiske spørgsmål. Under B62 beskrev foreningen direkte kontakt til Sundhedsudvalgets medlemmer; i 2025 tilsluttede den sig LGB Alliance International.",
     "sourceIds": [
       "ft-b62-drr-submissions",
-      "drr-lgbai-2025"
+      "drr-lgbai-2025",
+      "drr-12-goals"
+    ],
+    "profile": [
+      "Dansk Regnbueråd blev lanceret i 2022 som en alternativ LGBT-organisation. Organisationens egen oversigt over 12 politiske hovedmål angiver stop for medicinsk kønsskifte til børn og modstand mod juridisk kønsskifte til børn som to tidlige hovedprioriteter.",
+      "Organisationen har ikke kun deltaget i den offentlige debat. Under B62 dokumenterede dens egne henvendelser til Folketinget møder, telefonsamtaler og e-mails med medlemmer af Sundhedsudvalget samt planlagt foretræde for udvalget. Det gør DRR relevant som organiseret politisk aktør snarere end alene som kommentator.",
+      "I 2025 sluttede Dansk Regnbueråd sig til LGB Alliance International. Foreningen oplyste samtidig, at det internationale samarbejde lå hos Jesper W. Rasmussen; hans formandsberetning beskrev både kontakt med LGB Alliance UK-medstifter Bev Jackson og at LGB Alliance International havde bedt DRR repræsentere Danmark. Projekt Loke registrerer disse forbindelser som dokumenterede kontakter, ikke som bevis for udenlandsk styring."
     ]
   },
   {
@@ -288,7 +319,7 @@
     "shortName": "LGB Alliance International",
     "affiliation": null,
     "route": "/aktoerer/lgb-alliance-international/",
-    "summary": "Internationalt netv\u00E6rk, som Dansk Regnbuer\u00E5d tilsluttede sig i juni 2025 og efter eget udsagn blev bedt om at repr\u00E6sentere Danmark i.",
+    "summary": "Internationalt netværk, som Dansk Regnbueråd tilsluttede sig i juni 2025 og efter eget udsagn blev bedt om at repræsentere Danmark i.",
     "sourceIds": [
       "drr-lgbai-2025",
       "drr-chair-report-2025"
@@ -299,9 +330,9 @@
     "name": "Marcus Dib Jensen",
     "kind": "person",
     "shortName": null,
-    "affiliation": "Dansk Regnbuer\u00E5d",
+    "affiliation": "Dansk Regnbueråd",
     "route": "/aktoerer/marcus-dib-jensen/",
-    "summary": "Dav\u00E6rende formand for Dansk Regnbuer\u00E5d under foreningens arbejde omkring B62. Foreningens bilag 5 beskrev ham som deltagende fra en konference i USA med ligesindede amerikanske transpolitiske akt\u00F8rer.",
+    "summary": "Daværende formand for Dansk Regnbueråd under foreningens arbejde omkring B62. Foreningens bilag 5 beskrev ham som deltagende fra en konference i USA med ligesindede amerikanske transpolitiske aktører.",
     "sourceIds": [
       "ft-b62-drr-submissions"
     ]
@@ -311,9 +342,9 @@
     "name": "Jesper W. Rasmussen",
     "kind": "person",
     "shortName": null,
-    "affiliation": "Dansk Regnbuer\u00E5d",
+    "affiliation": "Dansk Regnbueråd",
     "route": "/aktoerer/jesper-w-rasmussen/",
-    "summary": "Tidligere formand og senere n\u00E6stformand i Dansk Regnbuer\u00E5d. Foreningen placerede i 2025 ansvaret for det internationale samarbejde hos ham.",
+    "summary": "Tidligere formand og senere næstformand i Dansk Regnbueråd. Foreningen placerede i 2025 ansvaret for det internationale samarbejde hos ham.",
     "sourceIds": [
       "drr-lgbai-2025",
       "drr-chair-report-2025"
@@ -324,9 +355,9 @@
     "name": "Elisabeth Lynge",
     "kind": "person",
     "shortName": null,
-    "affiliation": "Dansk Regnbuer\u00E5d",
+    "affiliation": "Dansk Regnbueråd",
     "route": "/aktoerer/elisabeth-lynge/",
-    "summary": "Forkvinde for Dansk Regnbuer\u00E5d fra juni 2025, da foreningen samtidig tilsluttede sig LGB Alliance International.",
+    "summary": "Forkvinde for Dansk Regnbueråd fra juni 2025, da foreningen samtidig tilsluttede sig LGB Alliance International.",
     "sourceIds": [
       "drr-lgbai-2025"
     ]
@@ -338,11 +369,16 @@
     "shortName": null,
     "affiliation": "Journalist og kommentator",
     "route": "/aktoerer/dorte-toft/",
-    "summary": "Journalist og kommentator med tilbagevendende transrelateret stof. Hun beskriver selv UK, USA og Canada som et referencefelt og har haft en m\u00E5nedlig klumme i Berlingske.",
+    "summary": "Journalist og kommentator med tilbagevendende transrelateret stof. Hun beskriver selv UK, USA og Canada som et referencefelt og har haft en månedlig klumme i Berlingske.",
     "sourceIds": [
       "toft-det-der-braender-paa",
       "toft-et-skifte-2025",
       "toft-back-berlingske-2025"
+    ],
+    "profile": [
+      "Dorte Toft er journalist og kommentator og har over flere år gjort transrelaterede spørgsmål til et tilbagevendende arbejdsområde. I sin egen beskrivelse af arbejdet fremhæver hun udviklingen i Storbritannien, USA og Canada som et vigtigt referencefelt og kritiserer samtidig danske mediers behandling af emnet.",
+      "Berlingske inviterede ifølge Toft selv hende i 2022 til at skrive en månedlig klumme. Hun afsluttede den faste aftale i februar 2025, men oplyste senere, at samarbejdet blev genoptaget fra august samme år. Projekt Loke behandler dette som dokumentation for vedvarende platforming af en tydelig kønskritisk kommentator, ikke som dokumentation for at Berlingskes redaktion deler alle hendes synspunkter.",
+      "Toft beskriver sig desuden som medstifter af Kvinderettigheder.dk. Den forbindelse er relevant, fordi platformen senere optrådte direkte i Folketingets behandling af B47."
     ]
   },
   {
@@ -352,7 +388,7 @@
     "shortName": null,
     "affiliation": null,
     "route": "/aktoerer/berlingske/",
-    "summary": "Dansk landsd\u00E6kkende avis. Dorte Toft beskriver, at Berlingske inviterede hende til en m\u00E5nedlig klumme i 2022, og at samarbejdet blev genoptaget i 2025.",
+    "summary": "Dansk landsdækkende avis. Dorte Toft beskriver, at Berlingske inviterede hende til en månedlig klumme i 2022, og at samarbejdet blev genoptaget i 2025.",
     "sourceIds": [
       "toft-et-skifte-2025",
       "toft-back-berlingske-2025"
@@ -360,12 +396,12 @@
   },
   {
     "id": "jan-e-joergensen",
-    "name": "Jan E. J\u00F8rgensen",
+    "name": "Jan E. Jørgensen",
     "kind": "person",
     "shortName": null,
     "affiliation": "Venstre",
     "route": "/aktoerer/jan-e-joergensen/",
-    "summary": "Venstre-politiker, som under B47 forsvarede den praktiske funktion af juridisk k\u00F8nsskifte og stemte imod forslaget.",
+    "summary": "Venstre-politiker, som under B47 forsvarede den praktiske funktion af juridisk kønsskifte og stemte imod forslaget.",
     "sourceIds": [
       "ft-b47-debate",
       "ft-b47-vote"
@@ -378,7 +414,7 @@
     "shortName": null,
     "affiliation": "Socialistisk Folkeparti",
     "route": "/aktoerer/carl-valentin/",
-    "summary": "SF-politiker, som under B145 kritiserede brugen af transpersoner og andre minoriteter som politisk m\u00E5l og knyttede udviklingen til Trump-inspiration.",
+    "summary": "SF-politiker, som under B145 kritiserede brugen af transpersoner og andre minoriteter som politisk mål og knyttede udviklingen til Trump-inspiration.",
     "sourceIds": [
       "ft-b145-debate"
     ]
@@ -402,7 +438,7 @@
     "shortName": null,
     "affiliation": "Radikale Venstre",
     "route": "/aktoerer/samira-nawa/",
-    "summary": "Radikal politiker, som under B145 kritiserede b\u00E5de forslagets indhold og Mette Thiesens hamster/guldfisk-analogi om transpersoner.",
+    "summary": "Radikal politiker, som under B145 kritiserede både forslagets indhold og Mette Thiesens hamster/guldfisk-analogi om transpersoner.",
     "sourceIds": [
       "ft-b145-debate"
     ]
@@ -418,6 +454,11 @@
     "sourceIds": [
       "toft-back-berlingske-2025",
       "ft-b47-kvinderettigheder-spm2"
+    ],
+    "profile": [
+      "Kvinderettigheder.dk er registreret både som medie- og aktivistisk platform, fordi den kombinerer publicering med direkte politisk intervention. Dorte Toft beskriver sig selv som medstifter af platformen.",
+      "Den 24. april 2025 indsendte Kvinderettigheder.dk en henvendelse under Folketingets behandling af B47. Dagen efter bad Ligestillingsudvalget ministeren kommentere materialet. Det dokumenterer, at platformens materiale indgik i den parlamentariske behandling af et konkret forslag om juridisk kønsskifte.",
+      "Projekt Loke bruger ikke henvendelsen som bevis for, at Kvinderettigheder.dk formulerede B47 eller kontrollerede forslagsstillerne. Den registreres som et efterprøvbart eksempel på kontakt mellem aktivistisk mediearbejde og Folketingets udvalgsproces."
     ]
   }
 ]

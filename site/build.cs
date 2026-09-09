@@ -86,7 +86,7 @@ var publicDataRoot = Path.Combine(outputRoot, "data");
 Directory.CreateDirectory(publicDataRoot);
 var publicIndex = new
 {
-    schemaVersion = 6,
+    schemaVersion = 7,
     proposals = proposals.OrderByDescending(proposal => proposal.Introduced).Select(proposal => new
     {
         proposal.Id, proposal.Code, proposal.Title, proposal.Route, proposal.Session, proposal.Introduced, proposal.FirstReading,
@@ -99,7 +99,7 @@ var publicIndex = new
     }),
     actors = actors.OrderBy(actor => actor.Name).Select(actor => new
     {
-        actor.Id, actor.Name, actor.Kind, actor.ShortName, actor.Affiliation, actor.Route, actor.SourceIds
+        actor.Id, actor.Name, actor.Kind, actor.ShortName, actor.Affiliation, actor.Route, actor.Summary, actor.Profile, actor.SourceIds
     }),
     media = media.OrderByDescending(item => item.Date),
     statements = statements.OrderByDescending(item => item.Date),
@@ -587,6 +587,15 @@ static string RenderActor(
     var statementHtml = relatedStatements.Length == 0
         ? "<p>Ingen særskilt registrerede udtalelser endnu.</p>"
         : RenderStatementList(relatedStatements, actorById, sourceById);
+    var profileHtml = actor.Profile is not { Length: > 0 } ? "" : $"""
+      <section class="shell section-block actor-profile">
+        <div class="section-heading compact">
+          <p class="kicker">Profil</p>
+          <h2>Rolle i den dokumenterede udvikling</h2>
+        </div>
+        <div class="profile-copy">{string.Join(Environment.NewLine, actor.Profile.Select(paragraph => $"<p>{Encode(paragraph)}</p>"))}</div>
+      </section>
+    """;
 
     return $"""
       <section class="page-hero shell actor-hero">
@@ -595,6 +604,8 @@ static string RenderActor(
         {(string.IsNullOrWhiteSpace(actor.Affiliation) ? "" : $"<p class=\"actor-affiliation\">{Encode(actor.Affiliation)}</p>")}
         <p class="lede">{Encode(actor.Summary)} {RenderInlineSources(actor.SourceIds, sourceById)}</p>
       </section>
+
+      {profileHtml}
 
       <section class="shell section-block">
         <div class="section-heading compact">
@@ -715,7 +726,7 @@ sealed record Site(string Title, string Language, NavigationItem[] Navigation);
 sealed record NavigationItem(string Label, string Route);
 sealed record Page(string Route, string Title, string Description, string Source);
 sealed record Source(string Id, string Title, string Publisher, string Type, string Url, string Published, string Accessed, string Note);
-sealed record Actor(string Id, string Name, string Kind, string? ShortName, string? Affiliation, string Route, string Summary, string[] SourceIds);
+sealed record Actor(string Id, string Name, string Kind, string? ShortName, string? Affiliation, string Route, string Summary, string[]? Profile, string[] SourceIds);
 sealed record Proposal(
     string Id,
     string Code,
