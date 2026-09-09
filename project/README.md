@@ -1,5 +1,11 @@
 # Project
 
-Internal planning and administration for Projekt Loke.
+Project-level methodology and administration.
 
-Use this area for scope decisions, methodology, editorial standards, contact lists, task tracking, publication plans, and other material that supports the project but is neither source material nor publishable site content.
+Tracked/public documents:
+
+- `methodology.md` — evidence and claim standards.
+- `editorial-policy.md` — publication and fairness rules.
+- `roadmap.md` — current development/research direction.
+
+`private/` is ignored by Git and is intended for internal planning that should not be exposed in the public repository.

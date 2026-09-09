@@ -2,11 +2,7 @@
 
 Working analysis for Projekt Loke.
 
-Use this area for timelines, actor and organization dossiers, policy tracking, media analysis, claim verification, and notes that may later feed the public site.
+- `workbench/` — private, unpublished active research: cases, media, networks and actor dossiers. Ignored by Git.
+- `published/` — research deliberately reviewed for exposure in the public repository.
 
-Research files should distinguish:
-
-- primary-source facts;
-- secondary reporting;
-- interpretation;
-- unresolved questions.
+Working research should distinguish primary-source facts, secondary reporting, interpretation and unresolved questions. The site is a curated publication layer, not the research notebook.

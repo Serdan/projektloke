@@ -14,3 +14,11 @@ site/wwwroot/
 # OS noise
 .DS_Store
 Thumbs.db
+
+# Private working material
+correspondence/*
+!correspondence/README.md
+research/workbench/
+sources/inbox/
+sources/archive/
+project/private/

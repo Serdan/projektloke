@@ -1,7 +1,10 @@
 # Sources
 
-Source archive and indexes for Projekt Loke.
+Source acquisition and preservation for Projekt Loke.
 
-Prefer primary material: Folketing records, party documents, organizational publications, court material, official reports, and original media articles. Preserve publication dates, URLs or identifiers, and access dates where useful.
+- `inbox/` — newly acquired material awaiting review.
+- `archive/` — private preserved copies of important or fragile source material.
+- `public/` — deliberately redistributable preserved sources tracked in the public repository.
+- `catalog.md` — policy for how this archive relates to the public site's source registry.
 
-Do not treat this directory as the public presentation layer; the site should cite or summarize material from here rather than duplicate the archive blindly.
+`inbox/` and `archive/` are ignored by Git. The machine-readable public source registry lives in `site/content/data/sources.json`; this directory should not become a second manually maintained metadata database.

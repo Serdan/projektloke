@@ -21,7 +21,6 @@ No `.csproj` and no site framework are required. The build and server are .NET f
 - `build.cs` — static-site generator and evidence-model validator.
 - `app.cs` — minimal static-file server.
 - `wwwroot/` — generated output; safe to delete and rebuild.
-- `legacy/` — original hand-written prototype retained for reference.
 
 ## Build
 
