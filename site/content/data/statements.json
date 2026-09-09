@@ -22,7 +22,7 @@
     "date": "2025-02-25",
     "actorId": "mette-thiesen",
     "kind": "førstebehandling",
-    "excerpt": "Der er to køn – punktum",
+    "excerpt": "to køn – punktum",
     "context": "Ved B47's førstebehandling argumenterede Mette Thiesen imod juridisk kønsskifte og beskrev køn som uforanderligt biologisk.",
     "position": "restriction",
     "themes": [
@@ -41,7 +41,7 @@
     "date": "2025-02-25",
     "actorId": "kim-edberg-andersen",
     "kind": "kort bemærkning",
-    "excerpt": "Jeg vil gerne hedde Karen i dag, for jeg skal i svømmehallen.",
+    "excerpt": "Karen ... svømmehallen",
     "context": "Kim Edberg Andersen brugte en hypotetisk mand, der skifter juridisk køn for at gå i kvinders omklædningsrum, som argument for at stramme reglerne.",
     "position": "restriction",
     "themes": [
@@ -79,7 +79,7 @@
     "date": "2025-05-02",
     "actorId": "carl-valentin",
     "kind": "ordførertale",
-    "excerpt": "bruge de transkønnede og andre minoriteter som boksebold",
+    "excerpt": "politisk boksebold",
     "context": "Carl Valentin kritiserede B145 som del af en bredere populistisk udvikling og sagde, at transpersoner og andre minoriteter blev brugt politisk til at skabe opmærksomhed.",
     "position": "critique",
     "themes": [
@@ -98,7 +98,7 @@
     "date": "2025-05-02",
     "actorId": "rosa-lund",
     "kind": "ordførertale",
-    "excerpt": "vores opgave er at beskytte dem",
+    "excerpt": "beskytte dem",
     "context": "Rosa Lund afviste B145 og vendte trusselsrammen om: transpersoner er efter hendes argument ikke en trussel mod andre, men selv en udsat gruppe, som politikere bør beskytte.",
     "position": "defense",
     "themes": [
@@ -116,7 +116,7 @@
     "date": "2025-05-02",
     "actorId": "samira-nawa",
     "kind": "ordførertale",
-    "excerpt": "der bliver talt sådan om en minoritet i vores samfund",
+    "excerpt": "en minoritet i vores samfund",
     "context": "Samira Nawa kritiserede Mette Thiesens hamster/guldfisk-sammenligning og beskrev måden at omtale transpersoner på som grænseoverskridende.",
     "position": "critique",
     "themes": [
@@ -282,6 +282,215 @@
     "relatedRoute": "/aktoerer/dorte-toft/",
     "sourceIds": [
       "toft-cass-bma-2026"
+    ]
+  },
+  {
+    "id": "drr-2023-transvanviddet",
+    "date": "2023-07-25",
+    "actorId": "dansk-regnbueraad",
+    "kind": "organisationsartikel",
+    "excerpt": "transvanviddet",
+    "context": "Dansk Regnbueråd bruger ordet i overskriften på en kritik af BUPL. Betegnelsen gør transinkluderende pædagogik til et spørgsmål om irrationalitet snarere end en almindelig faglig eller politisk uenighed.",
+    "position": "trans-critical",
+    "themes": [
+      "delegitimering",
+      "transideologi",
+      "pædagogik",
+      "woke"
+    ],
+    "relatedRoute": "/aktoerer/dansk-regnbueraad/",
+    "sourceIds": [
+      "drr-bupl-transvanviddet-2023"
+    ]
+  },
+  {
+    "id": "drr-2024-queer-ideologisk-behandling",
+    "date": "2024-02-04",
+    "actorId": "dansk-regnbueraad",
+    "kind": "organisationsartikel",
+    "excerpt": "en queer-ideologisk ... behandling",
+    "context": "I omtalen af behandling af kønsdysfori hos børn beskriver Dansk Regnbueråd behandlingsmodellen som ideologisk funderet og sætter dermed faglig behandling og queer/trans-ideologi op som modsætninger.",
+    "position": "trans-critical",
+    "themes": [
+      "aktivisme versus faglighed",
+      "børn",
+      "queer-ideologi",
+      "medicinsk transition"
+    ],
+    "relatedRoute": "/aktoerer/dansk-regnbueraad/",
+    "sourceIds": [
+      "drr-nyt-transkritisk-2024"
+    ]
+  },
+  {
+    "id": "drr-2025-men-claim-women",
+    "date": "2025-06-11",
+    "actorId": "jesper-w-rasmussen",
+    "kind": "formandsberetning",
+    "excerpt": "mænd, der påstår de er kvinder",
+    "context": "I formandsberetningen beskriver Jesper W. Rasmussen konflikten om kvinders rettigheder gennem en kategorisk afvisning af transkvinders køn og gør dermed biologisk køn til den afgørende politiske kategori.",
+    "position": "trans-critical",
+    "themes": [
+      "transkvinder som mænd",
+      "biologisk køn",
+      "kvinders rettigheder",
+      "rettigheder som nulsum"
+    ],
+    "relatedRoute": "/aktoerer/jesper-w-rasmussen/",
+    "sourceIds": [
+      "drr-chair-report-2025"
+    ]
+  },
+  {
+    "id": "drr-2025-women-pay-price",
+    "date": "2025-06-11",
+    "actorId": "jesper-w-rasmussen",
+    "kind": "formandsberetning",
+    "excerpt": "det er kvinderne, der betaler prisen",
+    "context": "Rasmussen fremstiller transrelaterede rettigheder som en ny form for ulighed, hvor fremskridt for transpersoner sker på bekostning af kvinder. Det er en tydelig nulsumskonstruktion af rettighedskonflikten.",
+    "position": "trans-critical",
+    "themes": [
+      "kvinders rettigheder",
+      "rettigheder som nulsum",
+      "omkostningsramme",
+      "transideologi"
+    ],
+    "relatedRoute": "/aktoerer/jesper-w-rasmussen/",
+    "sourceIds": [
+      "drr-chair-report-2025"
+    ]
+  },
+  {
+    "id": "drr-2025-no-trans-children",
+    "date": "2025-06-11",
+    "actorId": "jesper-w-rasmussen",
+    "kind": "formandsberetning",
+    "excerpt": "Der findes ikke “transbørn”. Der findes kun - børn.",
+    "context": "Rasmussen afviser “transbørn” som en meningsfuld kategori og knytter afvisningen til krav om fuldt stop for medicinsk transition af mindreårige.",
+    "position": "trans-critical",
+    "themes": [
+      "børn",
+      "transidentitet som ideologi",
+      "medicinsk transition",
+      "biologisk køn"
+    ],
+    "relatedRoute": "/aktoerer/jesper-w-rasmussen/",
+    "sourceIds": [
+      "drr-chair-report-2025"
+    ]
+  },
+  {
+    "id": "thiesen-b47-lie-repeated",
+    "date": "2025-02-25",
+    "actorId": "mette-thiesen",
+    "kind": "kort bemærkning",
+    "excerpt": "En løgn bliver ikke sand",
+    "context": "Under B47 bruger Thiesen løgn/sandhed som ramme for juridisk kønsskifte og fremstiller statens juridiske anerkendelse af køn som en faktuel usandhed.",
+    "position": "restriction",
+    "themes": [
+      "sandhed versus løgn",
+      "biologisk køn",
+      "juridisk kønsskifte",
+      "delegitimering"
+    ],
+    "relatedRoute": "/politik/b47/",
+    "sourceIds": [
+      "ft-b47-debate"
+    ]
+  },
+  {
+    "id": "thiesen-b47-hamster-goldfish",
+    "date": "2025-02-25",
+    "actorId": "mette-thiesen",
+    "kind": "kort bemærkning",
+    "excerpt": "hamster ... guldfisk",
+    "context": "Thiesen bruger dyreanalogien til at argumentere for, at juridisk eller social anerkendelse ikke kan ændre biologisk køn. Analogien blev senere kritiseret i Folketinget som grænseoverskridende omtale af en minoritet.",
+    "position": "restriction",
+    "themes": [
+      "biologisk køn",
+      "dyreanalogi",
+      "juridisk kønsskifte",
+      "virkelighed versus identitet"
+    ],
+    "relatedRoute": "/politik/b47/",
+    "sourceIds": [
+      "ft-b47-debate"
+    ]
+  },
+  {
+    "id": "thiesen-b47-wokevenstre",
+    "date": "2025-02-25",
+    "actorId": "mette-thiesen",
+    "kind": "kort bemærkning",
+    "excerpt": "Wokevenstre",
+    "context": "Thiesen bruger betegnelsen om Venstre under B47 og placerer dermed partiets forsvar for juridisk kønsskifte i en bredere “woke”-konflikt snarere end alene som en konkret administrativ uenighed.",
+    "position": "restriction",
+    "themes": [
+      "woke",
+      "polarisering",
+      "juridisk kønsskifte",
+      "partipolitisk delegitimering"
+    ],
+    "relatedRoute": "/politik/b47/",
+    "sourceIds": [
+      "ft-b47-debate"
+    ]
+  },
+  {
+    "id": "thiesen-b145-jonna-man",
+    "date": "2025-05-02",
+    "actorId": "mette-thiesen",
+    "kind": "ordførertale",
+    "excerpt": "Jonna er ... en mand",
+    "context": "Under B145 gør Thiesen sin kønsforståelse eksplicit: en transkvindes sociale liv og navn kan accepteres, men kønskategorien afvises og erstattes med biologisk køn.",
+    "position": "restriction",
+    "themes": [
+      "transkvinder som mænd",
+      "biologisk køn",
+      "social tolerance",
+      "identitet versus virkelighed"
+    ],
+    "relatedRoute": "/politik/b145/",
+    "sourceIds": [
+      "ft-b145-debate"
+    ]
+  },
+  {
+    "id": "thiesen-b145-woke-infected",
+    "date": "2025-05-02",
+    "actorId": "mette-thiesen",
+    "kind": "ordførertale",
+    "excerpt": "woke inficere",
+    "context": "Thiesen fremstiller transrelaterede institutionelle ændringer som resultat af en ideologisk “infektion”. Dermed udvides kritikken fra konkrete regler til et billede af samfundsmæssig ideologisk gennemtrængning.",
+    "position": "restriction",
+    "themes": [
+      "woke",
+      "samfundsmæssig infiltration",
+      "transideologi",
+      "moralsk fare"
+    ],
+    "relatedRoute": "/politik/b145/",
+    "sourceIds": [
+      "ft-b145-debate"
+    ]
+  },
+  {
+    "id": "thiesen-b145-smadrer-krop",
+    "date": "2025-05-02",
+    "actorId": "mette-thiesen",
+    "kind": "ordførertale",
+    "excerpt": "smadrer deres krop",
+    "context": "I B145-debatten beskriver Thiesen hormonbehandling af mindreårige med stærkt fysisk skade-sprog og kobler behandlingen til voksnes politiske ideologi.",
+    "position": "restriction",
+    "themes": [
+      "børn",
+      "medicinsk transition",
+      "kropslig skade",
+      "ideologi"
+    ],
+    "relatedRoute": "/politik/b145/",
+    "sourceIds": [
+      "ft-b145-debate"
     ]
   }
 ]
