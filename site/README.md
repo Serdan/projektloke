@@ -14,7 +14,7 @@ No `.csproj` and no site framework are required. The build and server are .NET f
 - `content/data/proposals.json` — political cases and vote metadata.
 - `content/data/events.json` — dated events used to generate the timeline.
 - `content/data/relationships.json` — sourced links between actors, political cases and external networks.
-- `content/data/media.json` — media/platform records and recurring frames.
+- `content/data/media.json` — media/platform records and recurring themes.
 - `content/data/statements.json` — short parliamentary excerpts with context, themes and position.
 - `templates/layout.html` — shared document shell.
 - `assets/` — authored CSS and progressively enhanced JavaScript.

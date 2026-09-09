@@ -58,7 +58,7 @@ foreach (var page in pages)
         .Replace("{{actorList}}", RenderActorList(actors))
         .Replace("{{relationships}}", RenderRelationships(relationships, actorById, sourceById))
         .Replace("{{mediaList}}", RenderMediaList(media, actorById, sourceById))
-        .Replace("{{mediaFrames}}", RenderMediaFrames(media))
+        .Replace("{{mediaThemes}}", RenderMediaThemes(media))
         .Replace("{{mediaCount}}", media.Length.ToString(CultureInfo.InvariantCulture))
         .Replace("{{statementList}}", RenderStatementList(statements, actorById, sourceById))
         .Replace("{{statementThemes}}", RenderStatementThemes(statements))
@@ -86,7 +86,7 @@ var publicDataRoot = Path.Combine(outputRoot, "data");
 Directory.CreateDirectory(publicDataRoot);
 var publicIndex = new
 {
-    schemaVersion = 5,
+    schemaVersion = 6,
     proposals = proposals.OrderByDescending(proposal => proposal.Introduced).Select(proposal => new
     {
         proposal.Id, proposal.Code, proposal.Title, proposal.Route, proposal.Session, proposal.Introduced, proposal.FirstReading,
@@ -355,20 +355,20 @@ static string RenderMediaList(
             <h3>{Encode(item.Title)}</h3>
             <p class="media-byline"><a href="{Encode(author.Route)}">{Encode(author.Name)}</a> · {outlet}</p>
             <p>{Encode(item.Summary)} {RenderInlineSources(item.SourceIds, sourceById)}</p>
-            <div class="topic-row">{string.Join("", item.Frames.Select(frame => $"<span>{Encode(frame)}</span>"))}</div>
+            <div class="topic-row">{string.Join("", item.Themes.Select(theme => $"<span>{Encode(theme)}</span>"))}</div>
           </article>
         """;
     }));
 
-static string RenderMediaFrames(IEnumerable<MediaItem> media)
+static string RenderMediaThemes(IEnumerable<MediaItem> media)
 {
-    var frames = media
-        .SelectMany(item => item.Frames)
+    var themes = media
+        .SelectMany(item => item.Themes)
         .GroupBy(frame => frame, StringComparer.OrdinalIgnoreCase)
         .OrderByDescending(group => group.Count())
         .ThenBy(group => group.Key, StringComparer.CurrentCultureIgnoreCase);
 
-    return string.Join(Environment.NewLine, frames.Select(group => $"""
+    return string.Join(Environment.NewLine, themes.Select(group => $"""
       <div class="frame-row">
         <span>{Encode(group.Key)}</span>
         <strong>{group.Count()}</strong>
@@ -739,6 +739,6 @@ sealed record Proposal(
     string[] SourceIds,
     string[] Topics);
 sealed record TimelineEvent(string Id, string Date, string Kind, string Title, string Summary, string[] ActorIds, string RelatedRoute, string[] SourceIds);
-sealed record MediaItem(string Id, string Date, string Kind, string Title, string AuthorActorId, string? OutletActorId, string? OutletLabel, string Summary, string[] Frames, string[] SourceIds);
+sealed record MediaItem(string Id, string Date, string Kind, string Title, string AuthorActorId, string? OutletActorId, string? OutletLabel, string Summary, string[] Themes, string[] SourceIds);
 sealed record Statement(string Id, string Date, string ActorId, string Kind, string Excerpt, string Context, string Position, string[] Themes, string RelatedRoute, string[] SourceIds);
 sealed record Relationship(string Id, string Date, string Kind, string FromActorId, string? ToActorId, string? ToRoute, string? ToLabel, string Summary, string[] SourceIds);
