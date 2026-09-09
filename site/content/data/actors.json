@@ -186,8 +186,18 @@
     "kind": "party",
     "shortName": "BP",
     "route": "/aktoerer/borgernes-parti/",
-    "summary": "BP stemte for B12 og B47 ved de endelige afstemninger.",
+    "summary": "Borgernes Parti stemte for B12 og B47 ved de endelige afstemninger; begge BP-stemmer blev afgivet af partistifter og formand Lars Boje Mathiesen.",
     "sourceIds": [
+      "ft-b12-vote",
+      "ft-b47-vote"
+    ],
+    "profile": [
+      "Borgernes Parti blev stiftet af Lars Boje Mathiesen i 2024. Folketinget registrerer ham som medlem af Borgernes Partis gruppe fra 17. januar 2025, få dage før den endelige afstemning om B12.",
+      "Ved både B12 den 23. januar 2025 og B47 den 15. maj 2025 blev Borgernes Partis registrerede stemme afgivet for forslaget. I begge tilfælde var Lars Boje Mathiesen partiets folketingsrepræsentant. Det betyder, at BP bør tælles med i den parlamentariske støtte, men partiets stemme i disse sager repræsenterede én folketingsstemme og skal ikke fremstilles som en stor gruppeopbakning.",
+      "Mathiesen havde tidligere været medlem af Nye Borgerlige og kortvarigt partiformand i 2023. Projekt Loke registrerer den biografiske forbindelse, men udleder ikke af den alene, at Borgernes Partis senere positioner var organisatorisk videreført fra Nye Borgerlige."
+    ],
+    "profileSourceIds": [
+      "ft-mf-lars-boje-mathiesen",
       "ft-b12-vote",
       "ft-b47-vote"
     ]
@@ -239,8 +249,17 @@
     "kind": "person",
     "affiliation": "Nye Borgerlige",
     "route": "/aktoerer/peter-seier-christensen/",
-    "summary": "Medforslagsstiller til B62 som medlem af Nye Borgerlige.",
+    "summary": "Medforslagsstiller til B62 og på daværende tidspunkt formand for Nye Borgerliges folketingsgruppe samt partiets mangeårige politiske næstformand.",
     "sourceIds": [
+      "ft-b62-proposal"
+    ],
+    "profile": [
+      "Peter Seier Christensen var politisk næstformand for Nye Borgerlige fra 2015 til 2023 og formand for partiets folketingsgruppe fra 2020 til 2023. Da B62 blev fremsat i marts 2023, var han dermed en del af partiets øverste parlamentariske ledelse.",
+      "Han stod som medforslagsstiller til B62 sammen med Kim Edberg Andersen og Pernille Vermund. Kombinationen af Vermund som partileder og Seier Christensen som gruppeformand gør B62 til et forslag med tydelig ledelsesforankring i det daværende Nye Borgerlige.",
+      "Seier Christensen forlod Nye Borgerlige i januar 2024 og sad resten af valgperioden uden for folketingsgrupperne. Profilen bruger derfor hans 2023-titler til at beskrive B62 på fremsættelsestidspunktet og ikke som en nuværende partifunktion."
+    ],
+    "profileSourceIds": [
+      "ft-mf-peter-seier-christensen",
       "ft-b62-proposal"
     ]
   },
@@ -293,8 +312,17 @@
     "kind": "person",
     "affiliation": "Det Konservative Folkeparti",
     "route": "/aktoerer/lise-bertelsen/",
-    "summary": "Medforslagsstiller til B12 for Det Konservative Folkeparti.",
+    "summary": "Konservativ medforslagsstiller til B12; folketingsmedlem siden 2022 og med faglig baggrund som specialpædagog i børne- og ungdomspsykiatrien.",
     "sourceIds": [
+      "ft-b12-proposal"
+    ],
+    "profile": [
+      "Lise Bertelsen har været konservativt folketingsmedlem siden 2022 og var en af fem konservative medforslagsstillere til B12 om forældresamtykke til kønsskiftebehandling for 15-17-årige.",
+      "Folketingets biografi angiver, at Bertelsen er uddannet specialpædagog og siden 1999 har arbejdet i børne- og ungdomspsykiatrien, hvorfra hun har politisk orlov. Det er relevant baggrund for en profil om et forslag vedrørende unge og behandling, men Projekt Loke bruger ikke hendes profession som dokumentation for medicinsk ekspertise eller som forklaring på hendes politiske position.",
+      "Bertelsen har ikke i det nuværende materiale samme selvstændige transpolitiske spor som Dina Raabjerg eller Mona Juul. Hendes dokumenterede betydning er derfor primært, at B12 havde bredere konservativ medforslagsstillelse end partiets ligestillingsordfører alene."
+    ],
+    "profileSourceIds": [
+      "ft-mf-lise-bertelsen",
       "ft-b12-proposal"
     ]
   },
@@ -325,8 +353,17 @@
     "kind": "person",
     "affiliation": "Det Konservative Folkeparti",
     "route": "/aktoerer/per-larsen/",
-    "summary": "Medforslagsstiller til B12 for Det Konservative Folkeparti.",
+    "summary": "Tidligere konservativt folketingsmedlem og en af fem medforslagsstillere til B12 i 2024.",
     "sourceIds": [
+      "ft-b12-proposal"
+    ],
+    "profile": [
+      "Per Larsen sad i Folketinget for Det Konservative Folkeparti fra 2019 til valget i marts 2026. I Projekt Lokes nuværende materiale optræder han som en af fem konservative medforslagsstillere til B12.",
+      "Hans medforslagsstillelse er især relevant som mål for forslagets interne partiforankring. B12 blev ikke fremsat alene af ligestillingsordfører Dina Raabjerg, men også af Birgitte Bergman, Lise Bertelsen, partileder Mona Juul og Per Larsen.",
+      "Der er endnu ikke registreret et særskilt, længere transpolitisk spor for Larsen i materialet. Profilen gør derfor ikke hans rolle større end dokumentationen bærer, men bevarer ham som del af den parlamentariske kæde omkring B12."
+    ],
+    "profileSourceIds": [
+      "ft-mf-per-larsen",
       "ft-b12-proposal"
     ]
   },
@@ -336,8 +373,17 @@
     "kind": "person",
     "affiliation": "Dansk Folkeparti",
     "route": "/aktoerer/alex-ahrendtsen/",
-    "summary": "Medforslagsstiller til B145 for Dansk Folkeparti.",
+    "summary": "Langvarigt DF-medlem og medforslagsstiller til B145; blev formand for Dansk Folkepartis folketingsgruppe efter valget i 2026.",
     "sourceIds": [
+      "ft-b145-proposal"
+    ],
+    "profile": [
+      "Alex Ahrendtsen har siddet i Folketinget for Dansk Folkeparti siden 2011 og var medforslagsstiller til B145 i februar 2025. Forslaget var partiets bredeste transpolitiske forslag i Projekt Lokes nuværende materiale.",
+      "Ahrendtsen blev først formand for Dansk Folkepartis folketingsgruppe i 2026. Den titel skal derfor ikke bruges til at forstærke hans rolle på fremsættelsestidspunktet i 2025. Det relevante for B145 er, at han allerede da var et mangeårigt DF-medlem og stod som officiel medforslagsstiller.",
+      "Hans senere valg som gruppeformand er en efterfølgende institutionel udvikling, som gør det relevant at følge, om emnet fortsætter under den nye gruppeledelse, men det dokumenterer ikke i sig selv nye positioner."
+    ],
+    "profileSourceIds": [
+      "ft-mf-alex-ahrendtsen",
       "ft-b145-proposal"
     ]
   },
@@ -367,8 +413,17 @@
     "kind": "person",
     "affiliation": "Dansk Folkeparti",
     "route": "/aktoerer/pia-kjaersgaard/",
-    "summary": "Medforslagsstiller til B145 for Dansk Folkeparti.",
+    "summary": "Medstifter og tidligere formand for Dansk Folkeparti, værdiordfører 2020-26 og medforslagsstiller til B145.",
     "sourceIds": [
+      "ft-b145-proposal"
+    ],
+    "profile": [
+      "Pia Kjærsgaard medstiftede Dansk Folkeparti i 1995 og var partiets formand frem til 2012. Hun var senere Folketingets formand og fungerede som DF’s værdiordfører fra 2020 til sin udtræden af Folketinget i marts 2026.",
+      "Kjærsgaard stod som medforslagsstiller til B145 i februar 2025. Hendes underskrift er institutionelt interessant, fordi forslaget dermed havde støtte fra både den siddende partiformand Morten Messerschmidt, den siddende gruppeformand Peter Kofod og partiets historiske stifter og daværende værdiordfører.",
+      "Det siger noget om bredden af opbakningen i partiets ledende lag, men ikke hvem der udarbejdede forslagsteksten. Projekt Loke holder derfor medforslagsstillelse og forfatterskab adskilt."
+    ],
+    "profileSourceIds": [
+      "ft-mf-pia-kjaersgaard",
       "ft-b145-proposal"
     ]
   },
@@ -378,8 +433,17 @@
     "kind": "person",
     "affiliation": "Dansk Folkeparti",
     "route": "/aktoerer/peter-kofod/",
-    "summary": "Medforslagsstiller til B145 for Dansk Folkeparti.",
+    "summary": "Formand for Dansk Folkepartis folketingsgruppe siden 2022 og medforslagsstiller til B145.",
     "sourceIds": [
+      "ft-b145-proposal"
+    ],
+    "profile": [
+      "Peter Kofod har været formand for Dansk Folkepartis folketingsgruppe siden 2022. Da B145 blev fremsat i februar 2025, havde han derfor en central parlamentarisk ledelsesrolle i partiet.",
+      "Kofod stod som medforslagsstiller til B145 sammen med blandt andre partiformand Morten Messerschmidt, Mette Thiesen og Pia Kjærsgaard. Det understøtter, at forslaget var bredt forankret blandt DF’s ledende folketingsmedlemmer og ikke kun et individuelt initiativ fra førsteforslagsstilleren.",
+      "Fra 2026 er Kofod også registreret som politisk ordfører. Som med Alex Ahrendtsens senere gruppeformandskab behandles den titel som en efterfølgende udvikling og ikke som en rolle, han havde ved B145’s fremsættelse."
+    ],
+    "profileSourceIds": [
+      "ft-mf-peter-kofod",
       "ft-b145-proposal"
     ]
   },
@@ -410,8 +474,18 @@
     "kind": "person",
     "affiliation": "Dansk Folkeparti",
     "route": "/aktoerer/nick-zimmermann/",
-    "summary": "Medforslagsstiller til B145 for Dansk Folkeparti.",
+    "summary": "DF-medforslagsstiller til B145; blev efter valget i 2026 formand for Folketingets Beskæftigelses- og Ligestillingsudvalg.",
     "sourceIds": [
+      "ft-b145-proposal"
+    ],
+    "profile": [
+      "Nick Zimmermann har været medlem af Folketinget for Dansk Folkeparti siden 2022 og stod som medforslagsstiller til B145 i februar 2025. Han havde på dette tidspunkt en række andre ordførerskaber, men var ikke formand for Folketingets ligestillingsudvalg.",
+      "Efter valget i 2026 blev Zimmermann den 12. juni valgt som formand for det nye Beskæftigelses- og Ligestillingsudvalg. Det er en senere udvikling, men relevant for Projekt Loke, fordi en politiker der allerede havde medforslagsstillet B145 nu leder et udvalg med ligestilling i ressortområdet.",
+      "Profilen skelner bevidst mellem de to tidspunkter: B145 dokumenterer Zimmermanns position som medforslagsstiller i 2025; udvalgsformandsposten dokumenterer hans institutionelle placering fra juni 2026. Den ene bruges ikke som bevis for, hvordan han vil forvalte den anden."
+    ],
+    "profileSourceIds": [
+      "ft-mf-nick-zimmermann",
+      "ft-nick-beu-chair-2026",
       "ft-b145-proposal"
     ]
   },
