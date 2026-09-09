@@ -10,14 +10,25 @@ var fileProvider = new PhysicalFileProvider(webRoot);
 
 app.Use(async (context, next) =>
 {
+    if (!HttpMethods.IsGet(context.Request.Method) && !HttpMethods.IsHead(context.Request.Method))
+    {
+        context.Response.StatusCode = StatusCodes.Status405MethodNotAllowed;
+        context.Response.Headers.Allow = "GET, HEAD";
+        return;
+    }
+
     var requestPath = context.Request.Path.Value ?? "/";
 
     if (requestPath.EndsWith('/'))
     {
         var relative = requestPath.Trim('/').Replace('/', Path.DirectorySeparatorChar);
-        var index = Path.Combine(webRoot, relative, "index.html");
+        var index = Path.GetFullPath(Path.Combine(webRoot, relative, "index.html"));
+        var relativeIndex = Path.GetRelativePath(webRoot, index);
+        var insideWebRoot = relativeIndex != ".."
+            && !relativeIndex.StartsWith(".." + Path.DirectorySeparatorChar, StringComparison.Ordinal)
+            && !Path.IsPathRooted(relativeIndex);
 
-        if (File.Exists(index))
+        if (insideWebRoot && File.Exists(index))
         {
             context.Response.ContentType = "text/html; charset=utf-8";
             await context.Response.SendFileAsync(index);

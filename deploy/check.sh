@@ -2,7 +2,7 @@
 set -euo pipefail
 
 host=${1:?Usage: deploy/check.sh <droplet-ip-or-hostname>}
-remote=${PROJEKTLOKE_SSH_USER:-root}@${host}
+remote=${PROJEKTLOKE_SSH_USER:-projektloke-deploy}@${host}
 ssh_opts=(-o StrictHostKeyChecking=accept-new -o BatchMode=yes -o ConnectTimeout=10)
 
 service=$(ssh "${ssh_opts[@]}" "$remote" "systemctl is-active projektloke.service")

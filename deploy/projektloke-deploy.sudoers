@@ -1,0 +1,1 @@
+projektloke-deploy ALL=(root) NOPASSWD: /usr/bin/systemctl stop projektloke.service, /usr/bin/systemctl restart projektloke.service, /usr/bin/systemctl start projektloke.service

@@ -1,11 +1,35 @@
+{
+    servers {
+        strict_sni_host on
+        max_header_size 32KB
+        timeouts {
+            read_header 10s
+            read_body 10s
+            write 30s
+            idle 60s
+        }
+    }
+}
+
 projektloke.dk, www.projektloke.dk {
     encode zstd gzip
-    reverse_proxy 127.0.0.1:5080
+
+    @unsupported_method not method GET HEAD
+    respond @unsupported_method 405
 
     header {
+        -Server
+        -Via
         Strict-Transport-Security "max-age=31536000; includeSubDomains"
         X-Content-Type-Options "nosniff"
         Referrer-Policy "strict-origin-when-cross-origin"
         X-Frame-Options "DENY"
+        Content-Security-Policy "default-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; form-action 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'"
+        Permissions-Policy "accelerometer=(), autoplay=(), camera=(), geolocation=(), gyroscope=(), magnetometer=(), microphone=(), payment=(), usb=()"
+    }
+
+    reverse_proxy 127.0.0.1:5080 {
+        header_down -Server
+        header_down -Via
     }
 }
