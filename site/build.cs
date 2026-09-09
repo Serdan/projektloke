@@ -99,7 +99,7 @@ var publicIndex = new
     }),
     actors = actors.OrderBy(actor => actor.Name).Select(actor => new
     {
-        actor.Id, actor.Name, actor.Kind, actor.ShortName, actor.Affiliation, actor.Route, actor.Summary, actor.Profile, actor.SourceIds
+        actor.Id, actor.Name, actor.Kind, actor.ShortName, actor.Affiliation, actor.Route, actor.Summary, actor.Profile, actor.ProfileSourceIds, actor.SourceIds
     }),
     media = media.OrderByDescending(item => item.Date),
     statements = statements.OrderByDescending(item => item.Date),
@@ -168,7 +168,10 @@ static void Validate(
     }
 
     foreach (var actor in actors)
+    {
         RequireSources($"actor {actor.Id}", actor.SourceIds, sourceById);
+        RequireSources($"actor profile {actor.Id}", actor.ProfileSourceIds ?? [], sourceById);
+    }
 
     foreach (var proposal in proposals)
     {
@@ -587,6 +590,7 @@ static string RenderActor(
     var statementHtml = relatedStatements.Length == 0
         ? "<p>Ingen særskilt registrerede udtalelser endnu.</p>"
         : RenderStatementList(relatedStatements, actorById, sourceById);
+    var profileCitations = RenderInlineSources(actor.ProfileSourceIds ?? [], sourceById);
     var profileHtml = actor.Profile is not { Length: > 0 } ? "" : $"""
       <section class="shell section-block actor-profile">
         <div class="section-heading compact">
@@ -594,6 +598,7 @@ static string RenderActor(
           <h2>Rolle i den dokumenterede udvikling</h2>
         </div>
         <div class="profile-copy">{string.Join(Environment.NewLine, actor.Profile.Select(paragraph => $"<p>{Encode(paragraph)}</p>"))}</div>
+        {(string.IsNullOrWhiteSpace(profileCitations) ? "" : $"<p class=\"evidence-meta\">Profilkilder: {profileCitations}</p>")}
       </section>
     """;
 
@@ -643,7 +648,7 @@ static string RenderActor(
 
       <section class="shell section-block">
         <p class="kicker">Kilder til denne profil</p>
-        {RenderSources(actor.SourceIds, sourceById)}
+        {RenderSources(actor.SourceIds.Concat(actor.ProfileSourceIds ?? []).Distinct(StringComparer.OrdinalIgnoreCase), sourceById)}
       </section>
     """;
 }
@@ -726,7 +731,7 @@ sealed record Site(string Title, string Language, NavigationItem[] Navigation);
 sealed record NavigationItem(string Label, string Route);
 sealed record Page(string Route, string Title, string Description, string Source);
 sealed record Source(string Id, string Title, string Publisher, string Type, string Url, string Published, string Accessed, string Note);
-sealed record Actor(string Id, string Name, string Kind, string? ShortName, string? Affiliation, string Route, string Summary, string[]? Profile, string[] SourceIds);
+sealed record Actor(string Id, string Name, string Kind, string? ShortName, string? Affiliation, string Route, string Summary, string[]? Profile, string[]? ProfileSourceIds, string[] SourceIds);
 sealed record Proposal(
     string Id,
     string Code,

@@ -268,5 +268,55 @@
     "published": "2026-09-09",
     "accessed": "2026-09-09",
     "note": "Foreningens egen oversigt over 12 sagspolitiske mål. Siden beskriver stop for medicinsk kønsskifte til børn og modstand mod juridisk kønsskifte til børn som to tidlige hovedprioriteter."
+  },
+  {
+    "id": "ft-l182-2014-vote",
+    "title": "L 182 – endelig afstemning om juridisk kønsskifte",
+    "publisher": "Folketinget",
+    "type": "primærkilde",
+    "url": "https://www.ft.dk/samling/20131/lovforslag/l182/99/367/afstemning.htm?sortedBy=Folketingsgruppe",
+    "published": "2014-06-11",
+    "accessed": "2026-09-09",
+    "note": "Endelig vedtagelse af juridisk kønsskifte for voksne. S, RV, SF og EL stemte for; V, DF, LA og KF stemte imod."
+  },
+  {
+    "id": "ft-l182-2014-debate",
+    "title": "L 182 – 1. behandling om juridisk kønsskifte",
+    "publisher": "Folketinget",
+    "type": "primærkilde",
+    "url": "https://www.ft.dk/samling/20131/lovforslag/L182/BEH1-91/forhandling.htm",
+    "published": "2014-05-20",
+    "accessed": "2026-09-09",
+    "note": "Folketingets forhandling. LA og KF begrundede deres modstand med blandt andet ønsket om sammenhæng mellem biologisk og juridisk køn."
+  },
+  {
+    "id": "ft-b80-2021",
+    "title": "B 80 – ingen juridisk kønsskifte for børn",
+    "publisher": "Folketinget",
+    "type": "primærkilde",
+    "url": "https://www.ft.dk/samling/20201/beslutningsforslag/B80/index.htm",
+    "published": "2021-05-25",
+    "accessed": "2026-09-09",
+    "note": "Tværborgerligt forslag fra DF, KF, NB og LA om ikke at indføre juridisk kønsskifte for personer under 18. Forkastet 21-74."
+  },
+  {
+    "id": "ft-l65-2022",
+    "title": "L 65 – transpersoners forældreskab og navneændring",
+    "publisher": "Folketinget",
+    "type": "primærkilde",
+    "url": "https://www.ft.dk/samling/20211/lovforslag/l65/index.htm",
+    "published": "2022-02-10",
+    "accessed": "2026-09-09",
+    "note": "Lov om bl.a. registrering af transpersoners forældreskab i overensstemmelse med juridisk køn og lettere navneændring. KF og LA stemte for; DF stemte imod."
+  },
+  {
+    "id": "kf-boern-koensskifte-2026",
+    "title": "Børn og unge",
+    "publisher": "Det Konservative Folkeparti",
+    "type": "primærkilde",
+    "url": "https://konservative.dk/politik/born-og-unge/",
+    "published": "2026-09-09",
+    "accessed": "2026-09-09",
+    "note": "Partiets aktuelle politikside oplyser, at Det Konservative Folkeparti er imod juridisk og fysisk kønsskifte for børn under 18 år."
   }
 ]

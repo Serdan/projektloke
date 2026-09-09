@@ -8,12 +8,14 @@
     "summary": "Medforslagsstiller til B47 og ordfører for forslagsstillerne ved fremsættelsen.",
     "sourceIds": [
       "ft-b47-proposal",
-      "ft-b47-debate",
-      "ft-mf-solbjoerg-jakobsen"
+      "ft-b47-debate"
     ],
     "profile": [
       "I perioden omkring B47 var Sólbjørg Jakobsen Liberal Alliances ligestillingsordfører. Hun var en af de fire tværborgerlige forslagsstillere og fungerede som ordfører for forslagsstillerne under Folketingets behandling.",
       "B47 gjorde juridisk kønsskifte til et spørgsmål om institutionelle grænser. I førstebehandlingen knyttede Jakobsen forslaget til blandt andet CPR-systemet, omklædningsrum, sport og fængsler og argumenterede for at begrænse retten mest muligt inden for rammerne af Den Europæiske Menneskerettighedskonvention. Projekt Loke registrerer hende derfor som en central parlamentarisk aktør i overgangen fra debat om behandling af mindreårige til bredere krav om begrænsning af juridisk kønsskifte."
+    ],
+    "profileSourceIds": [
+      "ft-mf-solbjoerg-jakobsen"
     ]
   },
   {
@@ -45,7 +47,8 @@
       "Dina Raabjerg var medlem af Folketinget for Det Konservative Folkeparti fra marts 2024 til marts 2026 og var blandt andet partiets ligestillingsordfører. På transområdet optræder hun i flere forskellige parlamentariske spor i samme periode.",
       "Hun var medforslagsstiller til B12 om forældresamtykke til kønsskiftebehandling for 15-17-årige og til B47 om at begrænse juridisk kønsskifte. I november 2024 fremsatte hun desuden B72 sammen med Birgitte Bergman og Mona Juul; forslaget ville indføre et administrationsgebyr ved juridisk kønsskifte og blev trukket tilbage i januar 2025.",
       "I august 2025 bragte Raabjerg også en henvendelse fra Dansk Regnbueråd ind i Folketingets arbejde ved at bede ligestillingsministeren kommentere organisationens kritik af FSTB-materiale. Det dokumenterer en konkret forbindelse mellem en udenparlamentarisk aktør og et parlamentarisk spørgsmål, uden i sig selv at vise at organisationen styrede den konservative politik."
-    ]
+    ],
+    "profileSourceIds": []
   },
   {
     "id": "mette-thiesen",
@@ -57,13 +60,15 @@
     "sourceIds": [
       "ft-b145-debate",
       "ft-b145-proposal",
-      "ft-b47-proposal",
-      "ft-mf-mette-thiesen"
+      "ft-b47-proposal"
     ],
     "profile": [
       "Mette Thiesen har været folketingsmedlem for Dansk Folkeparti siden februar 2023 efter tidligere at have siddet for Nye Borgerlige. Hun har været næstformand for Dansk Folkepartis folketingsgruppe siden 2023.",
       "I Projekt Lokes materiale forbinder hun to forskellige stadier af den parlamentariske udvikling: Hun var medforslagsstiller til det tværborgerlige B47 om juridisk kønsskifte og førsteforslagsstiller til B145, hvor Dansk Folkeparti samlede en langt bredere pakke af krav om juridisk køn, pas, behandling og offentlige institutioner.",
       "Thiesens taler er samtidig blandt de tydeligste eksempler i materialet på en konfrontatorisk retorisk linje. Projektet adskiller denne retorik fra den formelle politik: profilen viser både hendes konkrete forslag og de udsagn, der allerede er registreret fra Folketingets debatter."
+    ],
+    "profileSourceIds": [
+      "ft-mf-mette-thiesen"
     ]
   },
   {
@@ -77,6 +82,17 @@
       "ft-b62-vote",
       "ft-b12-vote",
       "ft-b47-vote"
+    ],
+    "profile": [
+      "Liberal Alliances modstand mod selvdeklareret juridisk kønsskifte begyndte ikke med den nyere transpolitiske debat. Da Folketinget i 2014 vedtog L182, stemte LA imod. Partiets ordfører Merete Riisager fremhævede samtidig voksnes frihed til at ændre deres krop, men afviste at staten skulle registrere et juridisk køn, som ikke fulgte det biologiske køn.",
+      "I 2021 var Henrik Dahl og Ole Birk Olesen blandt forslagsstillerne til B80, som ville afskære juridisk kønsskifte for personer under 18 år. Året efter stemte LA derimod for L65, som blandt andet tilpassede regler om transpersoners forældreskab og gjorde navneændring lettere. Det viser, at partiets linje ikke kan beskrives som modstand mod enhver juridisk anerkendelse af transpersoner.",
+      "I Projekt Lokes nyere materiale stemte LA for B62 og B12 og var direkte med til at fremsætte B47 gennem Sólbjørg Jakobsen. Forløbet peger derfor på en længerevarende skepsis over for selvbestemmelse om juridisk køn og behandling af mindreårige, kombineret med støtte til visse praktiske rettighedstilpasninger."
+    ],
+    "profileSourceIds": [
+      "ft-l182-2014-vote",
+      "ft-l182-2014-debate",
+      "ft-b80-2021",
+      "ft-l65-2022"
     ]
   },
   {
@@ -90,6 +106,15 @@
       "ft-b62-vote",
       "ft-b12-vote",
       "ft-b47-vote"
+    ],
+    "profile": [
+      "Danmarksdemokraterne blev først stiftet i 2022, men partiet optræder konsekvent på den restriktive side i de tre efterfølgende beslutningsforslag, som nåede en endelig afstemning i Projekt Lokes materiale: B62, B12 og B47.",
+      "Ved B47 var partiets rolle ikke begrænset til at stemme for. Susie Jessen var en af de fire tværborgerlige forslagsstillere, og Kim Edberg Andersen var partiets ordfører under behandlingen. Dermed deltog DD både i formuleringen af forslaget og i den parlamentariske argumentation for det.",
+      "Det nuværende materiale viser derfor en tydelig parlamentarisk linje fra partiets første år, men ikke en ældre historik svarende til LA, KF og DF, fordi Danmarksdemokraterne ikke eksisterede under de tidligere forløb."
+    ],
+    "profileSourceIds": [
+      "ft-b47-proposal",
+      "ft-b47-debate"
     ]
   },
   {
@@ -104,6 +129,19 @@
       "ft-b12-proposal",
       "ft-b12-vote",
       "ft-b47-vote"
+    ],
+    "profile": [
+      "Det Konservative Folkeparti har en dokumenterbar skeptisk linje over for juridisk kønsskifte, der går tilbage til lovens indførelse i 2014. Partiet stemte imod L182 og argumenterede dengang for, at der skulle være en objektiv sammenhæng mellem fysisk og registreret køn.",
+      "I 2021 var Birgitte Bergman og Mai Mercado blandt forslagsstillerne til B80 om ikke at indføre juridisk kønsskifte for børn. KF stemte året efter for L65 om blandt andet transpersoners forældreskab og navneændring, hvilket viser en mere selektiv linje end et generelt nej til alle tilpasninger.",
+      "I 2023-25 støttede partiet B62, fremsatte B12 med fem konservative medlemmer og deltog gennem Dina Raabjerg i B47. Raabjerg, Bergman og Mona Juul fremsatte desuden B72 om et gebyr ved juridisk kønsskifte. Partiets aktuelle politikside går videre og siger direkte, at KF er imod både juridisk og fysisk kønsskifte for personer under 18 år."
+    ],
+    "profileSourceIds": [
+      "ft-l182-2014-vote",
+      "ft-l182-2014-debate",
+      "ft-b80-2021",
+      "ft-l65-2022",
+      "ft-b72-proposal",
+      "kf-boern-koensskifte-2026"
     ]
   },
   {
@@ -117,6 +155,18 @@
       "ft-b62-vote",
       "ft-b12-vote",
       "ft-b47-vote",
+      "ft-b145-proposal"
+    ],
+    "profile": [
+      "Dansk Folkeparti har den mest sammenhængende restriktive linje blandt de partier, der optræder gennem hele Projekt Lokes tidsforløb. DF stemte imod L182, da juridisk kønsskifte for voksne blev indført i 2014, og var med til at fremsætte B80 mod juridisk kønsskifte for børn i 2020-21.",
+      "I modsætning til LA og KF stemte DF også imod L65 i 2022, som blandt andet ændrede regler om transpersoners forældreskab og navne. I den følgende valgperiode stemte partiet for B62, B12 og B47.",
+      "Med F1-debatten om kønsbegrebet i januar 2024 og B145 i 2025 blev linjen bredere end enkelte regler om behandling eller CPR. B145 samlede krav om juridisk kønsskifte, X i pas, offentligt finansieret transitionbehandling og offentlige institutioners kønspraksis i ét forslag."
+    ],
+    "profileSourceIds": [
+      "ft-l182-2014-vote",
+      "ft-b80-2021",
+      "ft-l65-2022",
+      "ft-f1-2024-debate",
       "ft-b145-proposal"
     ]
   },
@@ -141,6 +191,15 @@
     "summary": "Partiets folketingsgruppe stemte for B62 ved den endelige afstemning.",
     "sourceIds": [
       "ft-b62-vote"
+    ],
+    "profile": [
+      "Nye Borgerlige var tidligt med til at gøre transpolitiske spørgsmål til et selvstændigt parlamentarisk konfliktfelt. I 2020 var Mette Thiesen og Pernille Vermund blandt de tværborgerlige forslagsstillere til B80, som ville forhindre juridisk kønsskifte for børn under 18 år.",
+      "I 2023 kom B62 fra tre medlemmer af Nye Borgerlige: Kim Edberg Andersen, Peter Seier Christensen og Pernille Vermund. Forslaget ville forbyde kirurgisk eller medicinsk kønsskiftebehandling af personer under 18 år og blev støttet af NB's folketingsgruppe.",
+      "Flere af de personer, der bar denne politik, skiftede senere politisk hjemsted. Projektet behandler derfor Nye Borgerlige som et vigtigt tidligt organisatorisk led i forløbet, men følger aktørerne videre på tværs af senere partiskift."
+    ],
+    "profileSourceIds": [
+      "ft-b80-2021",
+      "ft-b62-proposal"
     ]
   },
   {
@@ -240,13 +299,15 @@
     "summary": "Dansk Folkeparti-politiker. Stillede F1 om kønsbegrebet i januar 2024 og var senere medforslagsstiller til B145.",
     "sourceIds": [
       "ft-f1-2024-debate",
-      "ft-b145-proposal",
-      "ft-mf-mikkel-bjoern"
+      "ft-b145-proposal"
     ],
     "profile": [
       "Mikkel Bjørn blev valgt for Nye Borgerlige i 2022 og skiftede til Dansk Folkeparti i januar 2023. Han var Dansk Folkepartis ligestillingsordfører i 2023-2024.",
       "I januar 2024 var Bjørn en central aktør i Folketingets F1-debat om kønsbegrebet, hvor Dansk Folkeparti gjorde definitionen af køn til et selvstændigt parlamentarisk tema. Året efter var han medforslagsstiller til B145, som ville pålægge staten og offentlige myndigheder kun at anerkende to køn og samtidig ændre en række regler og offentlige praksisser.",
       "Forløbet gør Bjørn relevant som forbindelse mellem den retoriske dagsordenssætning i F1 og den senere formulering af et bredt beslutningsforslag."
+    ],
+    "profileSourceIds": [
+      "ft-mf-mikkel-bjoern"
     ]
   },
   {
@@ -303,13 +364,15 @@
     "summary": "Dansk organisation med vedvarende aktivitet på transpolitiske spørgsmål. Under B62 beskrev foreningen direkte kontakt til Sundhedsudvalgets medlemmer; i 2025 tilsluttede den sig LGB Alliance International.",
     "sourceIds": [
       "ft-b62-drr-submissions",
-      "drr-lgbai-2025",
-      "drr-12-goals"
+      "drr-lgbai-2025"
     ],
     "profile": [
       "Dansk Regnbueråd blev lanceret i 2022 som en alternativ LGBT-organisation. Organisationens egen oversigt over 12 politiske hovedmål angiver stop for medicinsk kønsskifte til børn og modstand mod juridisk kønsskifte til børn som to tidlige hovedprioriteter.",
       "Organisationen har ikke kun deltaget i den offentlige debat. Under B62 dokumenterede dens egne henvendelser til Folketinget møder, telefonsamtaler og e-mails med medlemmer af Sundhedsudvalget samt planlagt foretræde for udvalget. Det gør DRR relevant som organiseret politisk aktør snarere end alene som kommentator.",
       "I 2025 sluttede Dansk Regnbueråd sig til LGB Alliance International. Foreningen oplyste samtidig, at det internationale samarbejde lå hos Jesper W. Rasmussen; hans formandsberetning beskrev både kontakt med LGB Alliance UK-medstifter Bev Jackson og at LGB Alliance International havde bedt DRR repræsentere Danmark. Projekt Loke registrerer disse forbindelser som dokumenterede kontakter, ikke som bevis for udenlandsk styring."
+    ],
+    "profileSourceIds": [
+      "drr-12-goals"
     ]
   },
   {
@@ -379,7 +442,8 @@
       "Dorte Toft er journalist og kommentator og har over flere år gjort transrelaterede spørgsmål til et tilbagevendende arbejdsområde. I sin egen beskrivelse af arbejdet fremhæver hun udviklingen i Storbritannien, USA og Canada som et vigtigt referencefelt og kritiserer samtidig danske mediers behandling af emnet.",
       "Berlingske inviterede ifølge Toft selv hende i 2022 til at skrive en månedlig klumme. Hun afsluttede den faste aftale i februar 2025, men oplyste senere, at samarbejdet blev genoptaget fra august samme år. Projekt Loke behandler dette som dokumentation for vedvarende platforming af en tydelig kønskritisk kommentator, ikke som dokumentation for at Berlingskes redaktion deler alle hendes synspunkter.",
       "Toft beskriver sig desuden som medstifter af Kvinderettigheder.dk. Den forbindelse er relevant, fordi platformen senere optrådte direkte i Folketingets behandling af B47."
-    ]
+    ],
+    "profileSourceIds": []
   },
   {
     "id": "berlingske",
@@ -459,6 +523,7 @@
       "Kvinderettigheder.dk er registreret både som medie- og aktivistisk platform, fordi den kombinerer publicering med direkte politisk intervention. Dorte Toft beskriver sig selv som medstifter af platformen.",
       "Den 24. april 2025 indsendte Kvinderettigheder.dk en henvendelse under Folketingets behandling af B47. Dagen efter bad Ligestillingsudvalget ministeren kommentere materialet. Det dokumenterer, at platformens materiale indgik i den parlamentariske behandling af et konkret forslag om juridisk kønsskifte.",
       "Projekt Loke bruger ikke henvendelsen som bevis for, at Kvinderettigheder.dk formulerede B47 eller kontrollerede forslagsstillerne. Den registreres som et efterprøvbart eksempel på kontakt mellem aktivistisk mediearbejde og Folketingets udvalgsproces."
-    ]
+    ],
+    "profileSourceIds": []
   }
 ]
