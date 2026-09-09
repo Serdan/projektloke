@@ -832,5 +832,119 @@
     "sourceIds": [
       "ft-f13-2023-debate"
     ]
+  },
+  {
+    "id": "vermund-l61-how-many-sexes",
+    "date": "2024-11-12",
+    "actorId": "pernille-vermund",
+    "kind": "kort bemærkning",
+    "excerpt": "hvor mange køn er der?",
+    "context": "Vermund trak den bredere konflikt om kønsidentiteter ind i en debat om selskabers kønsbalance og brugte spørgsmålet om antal køn til at fremstille lovens binære måltal som inkonsistente med inkluderende kønssprog.",
+    "position": "trans-critical",
+    "themes": [
+      "hvor mange køn",
+      "kønsidentitet",
+      "offentligt sprog",
+      "inkonsistensargument"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-l61-debate"
+    ]
+  },
+  {
+    "id": "vermund-l61-strategic-identity",
+    "date": "2024-11-12",
+    "actorId": "pernille-vermund",
+    "kind": "kort bemærkning",
+    "excerpt": "identificerer jeg mig som det modsatte køn",
+    "context": "Vermund brugte en hypotese om strategisk selvidentifikation for at opnå adgang til en ledelsespost. Argumentet følger samme misbrugshypotese, som optræder i debatter om juridisk kønsskifte og kønsopdelte rum.",
+    "position": "trans-critical",
+    "themes": [
+      "selvidentifikation",
+      "misbrugshypotese",
+      "kønsidentitet",
+      "ledelsesposter"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-l61-debate"
+    ]
+  },
+  {
+    "id": "kofod-b12-children-no-transition",
+    "date": "2024-11-14",
+    "actorId": "peter-kofod",
+    "kind": "ordførertale",
+    "excerpt": "Børn skal ikke skifte køn",
+    "context": "Kofod formulerede Dansk Folkepartis position mere kategorisk end B12 selv, som alene handlede om forældresamtykke for 15-17-årige: efter hans argument burde kønsskifte vente til myndighedsalderen.",
+    "position": "restriction",
+    "themes": [
+      "børn og unge",
+      "myndighedsalder",
+      "kønsskifte",
+      "kategorisk forbud"
+    ],
+    "relatedRoute": "/politik/b12/",
+    "sourceIds": [
+      "ft-b12-debate"
+    ]
+  },
+  {
+    "id": "kofod-b12-wait-adulthood",
+    "date": "2024-11-14",
+    "actorId": "peter-kofod",
+    "kind": "ordførertale",
+    "excerpt": "vente, til man når myndighedsalderen",
+    "context": "Kofod koblede retten til at træffe beslutningen til myndighedsalderen og til personligt ansvar for behandlingens konsekvenser.",
+    "position": "restriction",
+    "themes": [
+      "myndighedsalder",
+      "beslutningskompetence",
+      "konsekvenser",
+      "børn og unge"
+    ],
+    "relatedRoute": "/politik/b12/",
+    "sourceIds": [
+      "ft-b12-debate"
+    ]
+  },
+  {
+    "id": "messerschmidt-2023-medical-experiments",
+    "date": "2023-06-17",
+    "actorId": "morten-messerschmidt",
+    "kind": "Folkemødet / pressemeddelelse",
+    "excerpt": "håbløse medicinske eksperimenter",
+    "context": "Ved DF’s Folkemøde-kampagne “Beskyt vores børn” beskrev Messerschmidt medicinsk transition af unge som eksperimenter og placerede behandlingen i en skade- og beskyttelsesramme.",
+    "position": "restriction",
+    "themes": [
+      "medicinske eksperimenter",
+      "børn og unge",
+      "beskyttelse",
+      "skaderamme"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "df-press-children-transition-2023"
+    ]
+  },
+  {
+    "id": "messerschmidt-2023-vocal-minority",
+    "date": "2023-06-17",
+    "actorId": "morten-messerschmidt",
+    "kind": "Folkemødet / pressemeddelelse",
+    "excerpt": "højtråbende minoritet",
+    "context": "Messerschmidt fremstillede en aktivistisk minoritet som en pressionskraft over for psykiatere, psykologer, læger og politikere. Det gør professionspres til en del af hans forklaring på behandlingspraksis.",
+    "position": "restriction",
+    "themes": [
+      "aktivisme",
+      "professionspres",
+      "minoritet",
+      "medicinsk behandling"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "df-press-children-transition-2023"
+    ]
   }
 ]

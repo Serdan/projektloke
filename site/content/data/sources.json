@@ -648,5 +648,25 @@
     "published": "2023-06-01",
     "accessed": "2026-09-09",
     "note": "Folketingets forhandling af F13, stillet af Dansk Folkepartis folketingsgruppe, om evidens og sikkerhed ved hormonbehandling af børn med kønsdysfori."
+  },
+  {
+    "id": "ft-l61-debate",
+    "title": "L 61 – 1. behandling af kønsbalanceloven",
+    "publisher": "Folketinget",
+    "type": "primærkilde",
+    "url": "https://www.ft.dk/samling/20241/lovforslag/L61/BEH1-17/forhandling.htm",
+    "published": "2024-11-12",
+    "accessed": "2026-09-09",
+    "note": "Folketingets fulde referat. Indeholder bl.a. Pernille Vermunds spørgsmål om antal køn og strategisk selvidentifikation i forbindelse med kønsbalanceloven."
+  },
+  {
+    "id": "df-press-children-transition-2023",
+    "title": "DF: Stop de skadelige forsøg på at lade børn skifte køn",
+    "publisher": "Dansk Folkepartis folketingsgruppe / LOCAL EYES",
+    "type": "gengivelse af pressemeddelelse",
+    "url": "https://localeyes.dk/ritzau/r53468-9999-prm-df-stop-de-skadelige-forsoeg-paa-at-lade-boern-skifte-koen/",
+    "published": "2023-06-17",
+    "accessed": "2026-09-09",
+    "note": "Gengivelse af pressemeddelelse fra Dansk Folkepartis folketingsgruppe fra Folkemødet. Indeholder direkte citater fra Morten Messerschmidt om behandling af transunge."
   }
 ]
