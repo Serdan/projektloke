@@ -29,6 +29,13 @@ var relationships = Read<Relationship[]>(Path.Combine(dataRoot, "relationships.j
 var media = Read<MediaItem[]>(Path.Combine(dataRoot, "media.json"));
 var statements = Read<Statement[]>(Path.Combine(dataRoot, "statements.json"));
 var layout = File.ReadAllText(templatePath);
+var themeAliases = Read<Dictionary<string, string>>(Path.Combine(dataRoot, "theme-aliases.json"));
+var pageUpdates = Read<Dictionary<string, string>>(Path.Combine(contentRoot, "page-updates.json"));
+string[] NormalizeThemes(string[] themes) => themes
+    .Select(theme => themeAliases.GetValueOrDefault(theme, theme))
+    .Distinct(StringComparer.OrdinalIgnoreCase).ToArray();
+statements = statements.Select(item => item with { Themes = NormalizeThemes(item.Themes) }).ToArray();
+media = media.Select(item => item with { Themes = NormalizeThemes(item.Themes) }).ToArray();
 
 var sourceById = sources.ToDictionary(source => source.Id, StringComparer.OrdinalIgnoreCase);
 var actorById = actors.ToDictionary(actor => actor.Id, StringComparer.OrdinalIgnoreCase);
@@ -39,6 +46,10 @@ var allRoutes = pages.Select(page => page.Route)
     .ToArray();
 
 Validate(site, pages, sources, actors, proposals, events, relationships, media, statements, sourceById, actorById, allRoutes);
+
+foreach (var route in allRoutes)
+    if (!pageUpdates.TryGetValue(route, out var date) || !DateOnly.TryParseExact(date, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out _))
+        throw new InvalidOperationException($"Missing or invalid update date for {route}.");
 
 if (Directory.Exists(outputRoot))
     Directory.Delete(outputRoot, recursive: true);
@@ -86,7 +97,9 @@ var publicDataRoot = Path.Combine(outputRoot, "data");
 Directory.CreateDirectory(publicDataRoot);
 var publicIndex = new
 {
-    schemaVersion = 8,
+    schemaVersion = 9,
+    themeAliases,
+    pageUpdates,
     proposals = proposals.OrderByDescending(proposal => proposal.Introduced).Select(proposal => new
     {
         proposal.Id, proposal.Code, proposal.Title, proposal.Route, proposal.Session, proposal.Introduced, proposal.FirstReading,
@@ -117,6 +130,9 @@ void WritePage(string route, string pageTitle, string description, string body)
 
     var html = layout
         .Replace("{{language}}", Encode(site.Language))
+        .Replace("{{pageClass}}", route == "/" ? "home-page" : "inner-page")
+        .Replace("{{pageUpdated}}", pageUpdates.TryGetValue(route, out var updated)
+            ? $"<p class=\"page-updated\">Siden opdateret <time datetime=\"{Encode(updated)}\">{FormatDate(updated)}</time> · <a href=\"/rettelser/\">Rettelser og kontakt</a></p>" : "")
         .Replace("{{title}}", Encode(title))
         .Replace("{{description}}", Encode(description))
         .Replace("{{siteTitle}}", Encode(site.Title))
@@ -185,8 +201,13 @@ static void Validate(
         RequireSources($"event {item.Id}", item.SourceIds, sourceById);
         RequireActors($"event {item.Id}", item.ActorIds, actorById);
 
-        if (!allRoutes.Contains(item.RelatedRoute, StringComparer.OrdinalIgnoreCase))
+        var target = item.RelatedRoute.Split('#', 2);
+        if (!allRoutes.Contains(target[0], StringComparer.OrdinalIgnoreCase))
             throw new InvalidOperationException($"Event {item.Id} points to unknown route {item.RelatedRoute}.");
+        if (target.Length == 2 && !(
+            target[0] == "/medier/" && media.Any(record => "medie-" + record.Id == target[1]) ||
+            target[0] == "/netvaerk/" && relationships.Any(record => "relation-" + record.Id == target[1])))
+            throw new InvalidOperationException($"Event {item.Id} points to unknown record {item.RelatedRoute}.");
     }
 
     foreach (var item in media)
@@ -203,6 +224,8 @@ static void Validate(
     {
         RequireSources($"statement {statement.Id}", statement.SourceIds, sourceById);
         RequireActors($"statement {statement.Id}", [statement.ActorId], actorById);
+        if (actorById[statement.ActorId].Kind == "person" && string.IsNullOrWhiteSpace(statement.Affiliation))
+            throw new InvalidOperationException($"Statement {statement.Id} needs an affiliation at the time of the statement.");
         if (!allRoutes.Contains(statement.RelatedRoute, StringComparer.OrdinalIgnoreCase))
             throw new InvalidOperationException($"Statement {statement.Id} points to unknown route {statement.RelatedRoute}.");
     }
@@ -289,13 +312,14 @@ static string RenderTimeline(
         var actors = string.Join(" · ", item.ActorIds.Select(id => $"<a href=\"{Encode(actorById[id].Route)}\">{Encode(actorById[id].ShortName ?? actorById[id].Name)}</a>"));
         var citations = RenderInlineSources(item.SourceIds, sourceById);
         return $"""
-          <article class="timeline-item">
+          <article class="timeline-item" id="begivenhed-{Encode(item.Id)}" data-record data-date="{Encode(item.Date)}" data-kind="{Encode(item.Kind)}">
             <div class="timeline-date">{FormatDateCompact(item.Date)}</div>
             <div>
               <p class="label">{Encode(item.Kind)}</p>
               <h2><a href="{Encode(item.RelatedRoute)}">{Encode(item.Title)}</a></h2>
               <p>{Encode(item.Summary)} {citations}</p>
               <p class="timeline-actors">{actors}</p>
+              <a class="record-link" href="/tidslinje/#begivenhed-{Encode(item.Id)}">Link til begivenheden</a>
             </div>
           </article>
         """;
@@ -331,7 +355,7 @@ static string RenderActorList(IEnumerable<Actor> actors)
 static string RenderActorCards(IEnumerable<Actor> actors) => string.Join(
     Environment.NewLine,
     actors.Select(actor => $"""
-      <a class="entity-card" href="{Encode(actor.Route)}">
+      <a class="entity-card" data-record data-kind="{Encode(actor.Kind switch { "party" => "Parti", "organization" => "Organisation", "media" => "Medie", _ => "Person" })}" href="{Encode(actor.Route)}">
         <span class="entity-kind">{Encode(actor.Kind switch { "party" => "Parti", "organization" => "Organisation", "media" => "Medie", _ => actor.Affiliation ?? "Person" })}</span>
         <strong>{Encode(actor.Name)}</strong>
         <span>{Encode(actor.Summary)}</span>
@@ -350,15 +374,15 @@ static string RenderMediaList(
             ? $"<a href=\"{Encode(actorById[item.OutletActorId].Route)}\">{Encode(actorById[item.OutletActorId].Name)}</a>"
             : Encode(item.OutletLabel ?? "Ukendt medie");
         return $"""
-          <article class="media-record">
+          <article class="media-record" id="medie-{Encode(item.Id)}" data-record data-date="{Encode(item.Date)}" data-actors="{Encode(JsonSerializer.Serialize(new[] { author.Name }))}" data-themes="{Encode(JsonSerializer.Serialize(item.Themes))}">
             <div class="media-record-meta">
               <time datetime="{Encode(item.Date)}">{FormatDate(item.Date)}</time>
               <span>{Encode(item.Kind)}</span>
             </div>
-            <h3>{Encode(item.Title)}</h3>
+            <h3><a href="/medier/#medie-{Encode(item.Id)}">{Encode(item.Title)}</a></h3>
             <p class="media-byline"><a href="{Encode(author.Route)}">{Encode(author.Name)}</a> · {outlet}</p>
             <p>{Encode(item.Summary)} {RenderInlineSources(item.SourceIds, sourceById)}</p>
-            <div class="topic-row">{string.Join("", item.Themes.Select(theme => $"<span>{Encode(theme)}</span>"))}</div>
+            <div class="topic-row">{RenderTopicLinks(item.Themes, "/medier/")}</div>
           </article>
         """;
     }));
@@ -372,10 +396,10 @@ static string RenderMediaThemes(IEnumerable<MediaItem> media)
         .ThenBy(group => group.Key, StringComparer.CurrentCultureIgnoreCase);
 
     return string.Join(Environment.NewLine, themes.Select(group => $"""
-      <div class="frame-row">
+      <a class="frame-row" href="/medier/?tema={Uri.EscapeDataString(group.Key)}#{Encode("medie-" + media.OrderByDescending(item => item.Date).First(item => item.Themes.Contains(group.Key, StringComparer.OrdinalIgnoreCase)).Id)}">
         <span>{Encode(group.Key)}</span>
         <strong>{group.Count()}</strong>
-      </div>
+      </a>
     """));
 }
 static string RenderRelationships(
@@ -392,7 +416,7 @@ static string RenderRelationships(
                 ? $"<a href=\"{Encode(item.ToRoute)}\">{Encode(item.ToLabel ?? item.ToRoute)}</a>"
                 : Encode(item.ToLabel ?? "Ukendt mål");
         return $"""
-          <article class="relationship-card">
+          <article class="relationship-card" id="relation-{Encode(item.Id)}" data-record data-date="{Encode(item.Date)}" data-kind="{Encode(item.Kind)}">
             <div class="relationship-meta">
               <time datetime="{Encode(item.Date)}">{FormatDate(item.Date)}</time>
               <span>{Encode(item.Kind)}</span>
@@ -403,6 +427,7 @@ static string RenderRelationships(
               <span>{target}</span>
             </div>
             <p>{Encode(item.Summary)} {RenderInlineSources(item.SourceIds, sourceById)}</p>
+            <a class="record-link" href="/netvaerk/#relation-{Encode(item.Id)}">Link til relationen</a>
           </article>
         """;
     }));
@@ -424,16 +449,19 @@ static string RenderStatementList(
             _ => item.Position
         };
         return $"""
-          <article class="statement-record statement-{Encode(item.Position)}">
+          <article class="statement-record statement-{Encode(item.Position)}" id="udtalelse-{Encode(item.Id)}" data-record data-date="{Encode(item.Date)}" data-actors="{Encode(JsonSerializer.Serialize(new[] { actor.Name }))}" data-themes="{Encode(JsonSerializer.Serialize(item.Themes))}">
             <div class="statement-record-meta">
               <time datetime="{Encode(item.Date)}">{FormatDate(item.Date)}</time>
               <span>{Encode(label)}</span>
               <span>{Encode(item.Kind)}</span>
             </div>
-            <p class="statement-speaker"><a href="{Encode(actor.Route)}">{Encode(actor.Name)}</a>{(string.IsNullOrWhiteSpace(actor.Affiliation) ? "" : $" · {Encode(actor.Affiliation)}")}</p>
+            <p class="statement-speaker"><a href="{Encode(actor.Route)}">{Encode(actor.Name)}</a>{(string.IsNullOrWhiteSpace(item.Affiliation) ? "" : $" · {Encode(item.Affiliation)}")}</p>
             <blockquote><p>“{Encode(item.Excerpt)}”</p></blockquote>
-            <p>{Encode(item.Context)} {RenderInlineSources(item.SourceIds, sourceById)}</p>
-            <div class="topic-row">{string.Join("", item.Themes.Select(theme => $"<span>{Encode(theme)}</span>"))}</div>
+            <p><strong>Kontekst og analyse:</strong> {Encode(item.Context)}</p>
+            <p class="statement-sources">{string.Join(" · ", item.SourceIds.Select(id => $"<a href=\"{Encode(sourceById[id].Url)}\" rel=\"external noreferrer\">{Encode(sourceById[id].Title)}</a>"))}</p>
+            {(string.IsNullOrWhiteSpace(item.Passage) ? "" : $"<p class=\"passage-reference\">Find passagen: {Encode(item.Passage)}</p>")}
+            <p><a class="record-link" href="/retorik/#udtalelse-{Encode(item.Id)}">Link til udtalelsen</a></p>
+            <div class="topic-row">{RenderTopicLinks(item.Themes, "/retorik/")}</div>
           </article>
         """;
     }));
@@ -447,10 +475,10 @@ static string RenderStatementThemes(IEnumerable<Statement> statements)
         .ThenBy(group => group.Key, StringComparer.CurrentCultureIgnoreCase);
 
     return string.Join(Environment.NewLine, themes.Select(group => $"""
-      <div class="frame-row">
+      <a class="frame-row" href="/retorik/?tema={Uri.EscapeDataString(group.Key)}#{Encode("udtalelse-" + statements.OrderByDescending(item => item.Date).First(item => item.Themes.Contains(group.Key, StringComparer.OrdinalIgnoreCase)).Id)}">
         <span>{Encode(group.Key)}</span>
         <strong>{group.Count()}</strong>
-      </div>
+      </a>
     """));
 }
 static string RenderProposal(
@@ -658,12 +686,12 @@ static string RenderSourceIndex(IEnumerable<Source> sources) => $"""
   <section class="page-hero shell">
     <p class="kicker">Dokumentation</p>
     <h1>Kilder</h1>
-    <p class="lede">Det offentlige kilderegister samler de dokumenter, som de publicerede sider bygger på. Hver kilde har et stabilt internt ID, så relationerne kan valideres ved build.</p>
+    <p class="lede">Det offentlige kilderegister samler de dokumenter, som de publicerede sider bygger på. Find originalteksten, se hvem der har udgivet den, og hvornår vi har gennemgået den.</p>
   </section>
   <section class="shell section-block">
-    <div class="source-index">
+    <div class="source-collection" data-collection="sources"><div class="source-index">
       {string.Join(Environment.NewLine, sources.OrderByDescending(source => source.Published).Select(source => RenderSource(source)))}
-    </div>
+    </div></div>
   </section>
 """;
 
@@ -674,7 +702,7 @@ static string RenderSource(Source source, int? number = null)
 {
     var prefix = number is null ? "" : $"<span class=\"source-number\">[{number}]</span> ";
     return $"""
-      <article class="source-record" id="source-{Encode(source.Id)}">
+      <article class="source-record" id="source-{Encode(source.Id)}" data-record data-kind="{Encode(source.Type)}">
         <p>{prefix}<a href="{Encode(source.Url)}" rel="external noreferrer">{Encode(source.Title)}</a></p>
         <p class="source-meta">{Encode(source.Publisher)} · {Encode(source.Type)} · {FormatDate(source.Published)} · hentet {FormatDate(source.Accessed)}</p>
         <p>{Encode(source.Note)}</p>
@@ -685,7 +713,7 @@ static string RenderSource(Source source, int? number = null)
 
 static string RenderInlineSources(IEnumerable<string> sourceIds, IReadOnlyDictionary<string, Source> sourceById) => string.Join(
     " ",
-    sourceIds.Select((id, index) => $"<a class=\"citation\" href=\"{Encode(sourceById[id].Url)}\" rel=\"external noreferrer\" aria-label=\"Kilde: {Encode(sourceById[id].Title)}\">[{index + 1}]</a>"));
+    sourceIds.Select((id, index) => $"<a class=\"citation\" href=\"{Encode(sourceById[id].Url)}\" rel=\"external noreferrer\" aria-label=\"Kilde: {Encode(sourceById[id].Title)}\">[kilde]</a>"));
 
 static string RenderNavigation(NavigationItem[] items, string currentRoute) => string.Join(
     Environment.NewLine,
@@ -724,6 +752,9 @@ static void CopyDirectory(string source, string destination)
         CopyDirectory(directory, Path.Combine(destination, Path.GetFileName(directory)));
 }
 
+static string RenderTopicLinks(IEnumerable<string> themes, string route) => string.Join("", themes.Select(theme =>
+    $"<a href=\"{route}?tema={Uri.EscapeDataString(theme)}#materiale\">{Encode(theme)}</a>"));
+
 static string FormatDate(string value) => DateOnly.Parse(value, CultureInfo.InvariantCulture).ToString("d. MMMM yyyy", CultureInfo.GetCultureInfo("da-DK"));
 static string FormatDateCompact(string value) => DateOnly.Parse(value, CultureInfo.InvariantCulture).ToString("dd.MM.yy", CultureInfo.InvariantCulture);
 static string Encode(string value) => HtmlEncoder.Default.Encode(value);
@@ -757,5 +788,5 @@ sealed record Proposal(
     string[] Topics);
 sealed record TimelineEvent(string Id, string Date, string Kind, string Title, string Summary, string[] ActorIds, string RelatedRoute, string[] SourceIds);
 sealed record MediaItem(string Id, string Date, string Kind, string Title, string AuthorActorId, string? OutletActorId, string? OutletLabel, string Summary, string[] Themes, string[] SourceIds);
-sealed record Statement(string Id, string Date, string ActorId, string Kind, string Excerpt, string Context, string Position, string[] Themes, string RelatedRoute, string[] SourceIds);
+sealed record Statement(string Id, string Date, string ActorId, string Kind, string Excerpt, string Context, string Position, string[] Themes, string RelatedRoute, string[] SourceIds, string? Affiliation, string? Passage);
 sealed record Relationship(string Id, string Date, string Kind, string FromActorId, string? ToActorId, string? ToRoute, string? ToLabel, string Summary, string[] SourceIds);

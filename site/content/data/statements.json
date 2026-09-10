@@ -15,7 +15,8 @@
     "relatedRoute": "/politik/",
     "sourceIds": [
       "ft-f1-2024-debate"
-    ]
+    ],
+    "affiliation": "Dansk Folkeparti"
   },
   {
     "id": "thiesen-b47-two-sexes",
@@ -34,7 +35,8 @@
     "relatedRoute": "/politik/b47/",
     "sourceIds": [
       "ft-b47-debate"
-    ]
+    ],
+    "affiliation": "Dansk Folkeparti"
   },
   {
     "id": "edberg-b47-karen",
@@ -53,7 +55,8 @@
     "relatedRoute": "/politik/b47/",
     "sourceIds": [
       "ft-b47-debate"
-    ]
+    ],
+    "affiliation": "Danmarksdemokraterne"
   },
   {
     "id": "joergensen-b47-passport",
@@ -72,7 +75,8 @@
     "relatedRoute": "/politik/b47/",
     "sourceIds": [
       "ft-b47-debate"
-    ]
+    ],
+    "affiliation": "Venstre"
   },
   {
     "id": "valentin-b145-boksebold",
@@ -91,14 +95,15 @@
     "relatedRoute": "/politik/b145/",
     "sourceIds": [
       "ft-b145-debate"
-    ]
+    ],
+    "affiliation": "Socialistisk Folkeparti"
   },
   {
     "id": "lund-b145-protect",
     "date": "2025-05-02",
     "actorId": "rosa-lund",
     "kind": "ordførertale",
-    "excerpt": "beskytte dem",
+    "excerpt": "Tværtimod er det transpersoner, der er udsatte og truede. Derfor synes jeg, at vores opgave er at beskytte dem.",
     "context": "Rosa Lund afviste B145 og vendte trusselsrammen om: transpersoner er efter hendes argument ikke en trussel mod andre, men selv en udsat gruppe, som politikere bør beskytte.",
     "position": "defense",
     "themes": [
@@ -109,7 +114,9 @@
     "relatedRoute": "/politik/b145/",
     "sourceIds": [
       "ft-b145-debate"
-    ]
+    ],
+    "affiliation": "Enhedslisten",
+    "passage": "B145, 1. behandling, 2. maj 2025 kl. 10.18. Rosa Lunds ordførertale, andet afsnit."
   },
   {
     "id": "nawa-b145-minority",
@@ -127,7 +134,8 @@
     "relatedRoute": "/politik/b145/",
     "sourceIds": [
       "ft-b145-debate"
-    ]
+    ],
+    "affiliation": "Radikale Venstre"
   },
   {
     "id": "toft-2023-womens-spaces-cost",
@@ -146,7 +154,8 @@
     "relatedRoute": "/aktoerer/dorte-toft/",
     "sourceIds": [
       "toft-det-der-braender-paa"
-    ]
+    ],
+    "affiliation": "Journalist og kommentator"
   },
   {
     "id": "toft-2024-misgendering-reality",
@@ -165,7 +174,8 @@
     "relatedRoute": "/aktoerer/dorte-toft/",
     "sourceIds": [
       "drr-toft-rowling-2024"
-    ]
+    ],
+    "affiliation": "Journalist og kommentator"
   },
   {
     "id": "toft-2024-activism-treatment",
@@ -184,7 +194,8 @@
     "relatedRoute": "/aktoerer/dorte-toft/",
     "sourceIds": [
       "toft-cass-review-2024"
-    ]
+    ],
+    "affiliation": "Journalist og kommentator"
   },
   {
     "id": "toft-2025-movement-cost",
@@ -204,7 +215,8 @@
     "relatedRoute": "/aktoerer/dorte-toft/",
     "sourceIds": [
       "toft-back-berlingske-2025"
-    ]
+    ],
+    "affiliation": "Journalist og kommentator"
   },
   {
     "id": "toft-2025-trans-woman-man",
@@ -223,7 +235,8 @@
     "relatedRoute": "/aktoerer/dorte-toft/",
     "sourceIds": [
       "toft-back-berlingske-2025"
-    ]
+    ],
+    "affiliation": "Journalist og kommentator"
   },
   {
     "id": "toft-2026-price-for-women",
@@ -244,7 +257,8 @@
     "relatedRoute": "/aktoerer/dorte-toft/",
     "sourceIds": [
       "toft-fonsmark-2026"
-    ]
+    ],
+    "affiliation": "Journalist og kommentator"
   },
   {
     "id": "toft-2026-price-for-others",
@@ -263,7 +277,8 @@
     "relatedRoute": "/aktoerer/dorte-toft/",
     "sourceIds": [
       "toft-prisen-smuttede-2026"
-    ]
+    ],
+    "affiliation": "Journalist og kommentator"
   },
   {
     "id": "toft-2026-activism-professionalism",
@@ -282,7 +297,8 @@
     "relatedRoute": "/aktoerer/dorte-toft/",
     "sourceIds": [
       "toft-cass-bma-2026"
-    ]
+    ],
+    "affiliation": "Journalist og kommentator"
   },
   {
     "id": "drr-2023-transvanviddet",
@@ -301,7 +317,8 @@
     "relatedRoute": "/aktoerer/dansk-regnbueraad/",
     "sourceIds": [
       "drr-bupl-transvanviddet-2023"
-    ]
+    ],
+    "affiliation": null
   },
   {
     "id": "drr-2024-queer-ideologisk-behandling",
@@ -320,7 +337,8 @@
     "relatedRoute": "/aktoerer/dansk-regnbueraad/",
     "sourceIds": [
       "drr-nyt-transkritisk-2024"
-    ]
+    ],
+    "affiliation": null
   },
   {
     "id": "drr-2025-men-claim-women",
@@ -339,7 +357,8 @@
     "relatedRoute": "/aktoerer/jesper-w-rasmussen/",
     "sourceIds": [
       "drr-chair-report-2025"
-    ]
+    ],
+    "affiliation": "Dansk Regnbueråd"
   },
   {
     "id": "drr-2025-women-pay-price",
@@ -358,7 +377,8 @@
     "relatedRoute": "/aktoerer/jesper-w-rasmussen/",
     "sourceIds": [
       "drr-chair-report-2025"
-    ]
+    ],
+    "affiliation": "Dansk Regnbueråd"
   },
   {
     "id": "drr-2025-no-trans-children",
@@ -377,7 +397,8 @@
     "relatedRoute": "/aktoerer/jesper-w-rasmussen/",
     "sourceIds": [
       "drr-chair-report-2025"
-    ]
+    ],
+    "affiliation": "Dansk Regnbueråd"
   },
   {
     "id": "thiesen-b47-lie-repeated",
@@ -396,14 +417,15 @@
     "relatedRoute": "/politik/b47/",
     "sourceIds": [
       "ft-b47-debate"
-    ]
+    ],
+    "affiliation": "Dansk Folkeparti"
   },
   {
     "id": "thiesen-b47-hamster-goldfish",
     "date": "2025-02-25",
     "actorId": "mette-thiesen",
     "kind": "kort bemærkning",
-    "excerpt": "hamster ... guldfisk",
+    "excerpt": "en hamster ikke bliver en guldfisk af at leve i et akvarium",
     "context": "Thiesen bruger dyreanalogien til at argumentere for, at juridisk eller social anerkendelse ikke kan ændre biologisk køn. Analogien blev senere kritiseret i Folketinget som grænseoverskridende omtale af en minoritet.",
     "position": "restriction",
     "themes": [
@@ -415,7 +437,9 @@
     "relatedRoute": "/politik/b47/",
     "sourceIds": [
       "ft-b47-debate"
-    ]
+    ],
+    "affiliation": "Dansk Folkeparti",
+    "passage": "B47, 1. behandling, 25. februar 2025 kl. 17.52. Mette Thiesens korte bemærkning til ligestillingsministeren."
   },
   {
     "id": "thiesen-b47-wokevenstre",
@@ -434,7 +458,8 @@
     "relatedRoute": "/politik/b47/",
     "sourceIds": [
       "ft-b47-debate"
-    ]
+    ],
+    "affiliation": "Dansk Folkeparti"
   },
   {
     "id": "thiesen-b145-jonna-man",
@@ -453,7 +478,8 @@
     "relatedRoute": "/politik/b145/",
     "sourceIds": [
       "ft-b145-debate"
-    ]
+    ],
+    "affiliation": "Dansk Folkeparti"
   },
   {
     "id": "thiesen-b145-woke-infected",
@@ -472,7 +498,8 @@
     "relatedRoute": "/politik/b145/",
     "sourceIds": [
       "ft-b145-debate"
-    ]
+    ],
+    "affiliation": "Dansk Folkeparti"
   },
   {
     "id": "thiesen-b145-smadrer-krop",
@@ -491,7 +518,8 @@
     "relatedRoute": "/politik/b145/",
     "sourceIds": [
       "ft-b145-debate"
-    ]
+    ],
+    "affiliation": "Dansk Folkeparti"
   },
   {
     "id": "bjoern-f1-ideologues",
@@ -509,7 +537,8 @@
     "relatedRoute": "/politik/",
     "sourceIds": [
       "ft-f1-2024-debate"
-    ]
+    ],
+    "affiliation": "Dansk Folkeparti"
   },
   {
     "id": "bjoern-f1-snow-tiger",
@@ -527,7 +556,8 @@
     "relatedRoute": "/politik/",
     "sourceIds": [
       "ft-f1-2024-debate"
-    ]
+    ],
+    "affiliation": "Dansk Folkeparti"
   },
   {
     "id": "jakobsen-f1-identity-biology",
@@ -545,7 +575,8 @@
     "relatedRoute": "/politik/",
     "sourceIds": [
       "ft-f1-2024-debate"
-    ]
+    ],
+    "affiliation": "Liberal Alliance"
   },
   {
     "id": "jessen-f1-hormones",
@@ -564,7 +595,8 @@
     "relatedRoute": "/politik/",
     "sourceIds": [
       "ft-f1-2024-debate"
-    ]
+    ],
+    "affiliation": "Danmarksdemokraterne"
   },
   {
     "id": "nawa-f1-eye-level",
@@ -583,7 +615,8 @@
     "relatedRoute": "/politik/",
     "sourceIds": [
       "ft-f1-2024-debate"
-    ]
+    ],
+    "affiliation": "Radikale Venstre"
   },
   {
     "id": "edberg-b47-assigned-reality",
@@ -601,7 +634,8 @@
     "relatedRoute": "/politik/b47/",
     "sourceIds": [
       "ft-b47-debate"
-    ]
+    ],
+    "affiliation": "Danmarksdemokraterne"
   },
   {
     "id": "jakobsen-b47-harmful-trends",
@@ -619,7 +653,8 @@
     "relatedRoute": "/politik/b47/",
     "sourceIds": [
       "ft-b47-debate"
-    ]
+    ],
+    "affiliation": "Liberal Alliance"
   },
   {
     "id": "raabjerg-b12-uk-hormones",
@@ -641,7 +676,8 @@
       "ft-b12-debate",
       "nhs-cass-implementation-2024",
       "nhs-puberty-blockers-policy-2024"
-    ]
+    ],
+    "affiliation": "Det Konservative Folkeparti"
   },
   {
     "id": "raabjerg-b12-evidence",
@@ -661,7 +697,8 @@
     "sourceIds": [
       "ft-b12-debate",
       "nhs-cass-implementation-2024"
-    ]
+    ],
+    "affiliation": "Det Konservative Folkeparti"
   },
   {
     "id": "kjaersgaard-b80-changing-room",
@@ -680,7 +717,8 @@
     "relatedRoute": "/politik/",
     "sourceIds": [
       "ft-b80-2021-debate"
-    ]
+    ],
+    "affiliation": "Dansk Folkeparti"
   },
   {
     "id": "kjaersgaard-b80-crazy-idea",
@@ -698,7 +736,8 @@
     "relatedRoute": "/politik/",
     "sourceIds": [
       "ft-b80-2021-debate"
-    ]
+    ],
+    "affiliation": "Dansk Folkeparti"
   },
   {
     "id": "kf-b80-adults-not-children",
@@ -717,7 +756,8 @@
     "relatedRoute": "/politik/",
     "sourceIds": [
       "ft-b80-2021-debate"
-    ]
+    ],
+    "affiliation": null
   },
   {
     "id": "nawa-b80-no-harm-to-others",
@@ -736,7 +776,8 @@
     "relatedRoute": "/politik/",
     "sourceIds": [
       "ft-b80-2021-debate"
-    ]
+    ],
+    "affiliation": "Radikale Venstre"
   },
   {
     "id": "df-f13-evidence-safety",
@@ -755,7 +796,8 @@
     "relatedRoute": "/politik/",
     "sourceIds": [
       "ft-f13-2023-debate"
-    ]
+    ],
+    "affiliation": null
   },
   {
     "id": "df-b145-only-two-sexes",
@@ -774,7 +816,8 @@
     "relatedRoute": "/politik/b145/",
     "sourceIds": [
       "ft-b145-proposal"
-    ]
+    ],
+    "affiliation": null
   },
   {
     "id": "bjoern-f13-harm-benefit",
@@ -793,7 +836,8 @@
     "relatedRoute": "/politik/",
     "sourceIds": [
       "ft-f13-2023-debate"
-    ]
+    ],
+    "affiliation": "Dansk Folkeparti"
   },
   {
     "id": "bjoern-f13-gut-feeling",
@@ -812,7 +856,8 @@
     "relatedRoute": "/politik/",
     "sourceIds": [
       "ft-f13-2023-debate"
-    ]
+    ],
+    "affiliation": "Dansk Folkeparti"
   },
   {
     "id": "bjoern-f13-consequences",
@@ -831,7 +876,8 @@
     "relatedRoute": "/politik/",
     "sourceIds": [
       "ft-f13-2023-debate"
-    ]
+    ],
+    "affiliation": "Dansk Folkeparti"
   },
   {
     "id": "vermund-l61-how-many-sexes",
@@ -850,7 +896,8 @@
     "relatedRoute": "/politik/",
     "sourceIds": [
       "ft-l61-debate"
-    ]
+    ],
+    "affiliation": "Liberal Alliance"
   },
   {
     "id": "vermund-l61-strategic-identity",
@@ -869,7 +916,8 @@
     "relatedRoute": "/politik/",
     "sourceIds": [
       "ft-l61-debate"
-    ]
+    ],
+    "affiliation": "Liberal Alliance"
   },
   {
     "id": "kofod-b12-children-no-transition",
@@ -888,7 +936,8 @@
     "relatedRoute": "/politik/b12/",
     "sourceIds": [
       "ft-b12-debate"
-    ]
+    ],
+    "affiliation": "Dansk Folkeparti"
   },
   {
     "id": "kofod-b12-wait-adulthood",
@@ -907,7 +956,8 @@
     "relatedRoute": "/politik/b12/",
     "sourceIds": [
       "ft-b12-debate"
-    ]
+    ],
+    "affiliation": "Dansk Folkeparti"
   },
   {
     "id": "messerschmidt-2023-medical-experiments",
@@ -926,7 +976,8 @@
     "relatedRoute": "/politik/",
     "sourceIds": [
       "df-press-children-transition-2023"
-    ]
+    ],
+    "affiliation": "Dansk Folkeparti"
   },
   {
     "id": "messerschmidt-2023-vocal-minority",
@@ -945,6 +996,7 @@
     "relatedRoute": "/politik/",
     "sourceIds": [
       "df-press-children-transition-2023"
-    ]
+    ],
+    "affiliation": "Dansk Folkeparti"
   }
 ]

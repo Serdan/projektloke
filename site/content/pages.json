@@ -2,7 +2,7 @@
   {
     "route": "/",
     "title": "Projekt Loke",
-    "description": "Projekt Loke dokumenterer udviklingen i fordomme og fjendtlighed mod minoriteter i Danmark med s\u00E6rligt fokus p\u00E5 transfobi.",
+    "description": "Projekt Loke dokumenterer udviklingen i fordomme og fjendtlighed mod minoriteter i Danmark med særligt fokus på transfobi.",
     "source": "home.html"
   },
   {
@@ -14,25 +14,25 @@
   {
     "route": "/medier/",
     "title": "Medier",
-    "description": "Analyse af journalistisk d\u00E6kning, dagsordenss\u00E6tning og medieakt\u00F8rer.",
+    "description": "Analyse af journalistisk dækning, dagsordenssætning og medieaktører.",
     "source": "medier.html"
   },
   {
     "route": "/aktoerer/",
-    "title": "Akt\u00F8rer",
-    "description": "Profiler af politikere, organisationer og netv\u00E6rk med dokumenterede roller i udviklingen.",
+    "title": "Aktører",
+    "description": "Profiler af politikere, organisationer og netværk med dokumenterede roller i udviklingen.",
     "source": "aktoerer.html"
   },
   {
     "route": "/retorik/",
     "title": "Retorik",
-    "description": "Kontekstualiserede udtalelser og tilbagevendende politiske argumentationsm\u00F8nstre i den danske transdebat.",
+    "description": "Kontekstualiserede udtalelser og tilbagevendende politiske argumentationsmønstre i den danske transdebat.",
     "source": "retorik.html"
   },
   {
     "route": "/netvaerk/",
-    "title": "Netv\u00E6rk",
-    "description": "Dokumenterede forbindelser mellem organisationer, politikere, parlamentariske processer og internationale milj\u00F8er.",
+    "title": "Netværk",
+    "description": "Dokumenterede forbindelser mellem organisationer, politikere, parlamentariske processer og internationale miljøer.",
     "source": "netvaerk.html"
   },
   {
@@ -50,7 +50,13 @@
   {
     "route": "/404.html",
     "title": "Siden blev ikke fundet",
-    "description": "Den \u00F8nskede side findes ikke.",
+    "description": "Den ønskede side findes ikke.",
     "source": "404.html"
+  },
+  {
+    "route": "/rettelser/",
+    "title": "Rettelser og kontakt",
+    "description": "Synlige rettelser, opdateringer og mulighed for at foreslå en rettelse til Projekt Loke.",
+    "source": "rettelser.html"
   }
 ]
