@@ -1,0 +1,53 @@
+[
+  {
+    "id": "york-review-methodology-conflict",
+    "materialId": "cass-york-reviews-2024",
+    "kind": "methodological-disagreement",
+    "scope": "partial-overlap",
+    "title": "Noone og BMA/HEOR er uenige om York-reviewenes metodiske svagheder",
+    "summary": "Noone m.fl. vurderer alle syv York-reviews til høj risiko for bias med ROBIS. BMA/HEORs senere reanalyse fastholder evidensusikkerheden, men finder ikke belæg for de stærkeste konkrete påstande om systematisk udeladelse af gode studier eller skævvred kvalitetsvurdering. Relationerne overlapper metodisk, men er ikke direkte modsætninger, fordi BMA/HEOR ikke gentager en fuld ROBIS-vurdering af alle syv reviews.",
+    "assessmentIds": [
+      "noone-york-robis-high-risk",
+      "bma-york-systematic-skew-dispute"
+    ],
+    "resolutionStatus": "unresolved",
+    "sourceIds": [
+      "noone-cass-critique-2025",
+      "bma-cass-review-2026"
+    ]
+  },
+  {
+    "id": "sst-youth-risk-policy-conflict",
+    "materialId": "sst-draft-guidance-2024",
+    "kind": "clinical-interpretation-disagreement",
+    "scope": "partial-overlap",
+    "title": "Faglige høringssvar vægter samme evidensusikkerhed forskelligt",
+    "summary": "Både Dansk Pædiatrisk Selskab og Børne- og Ungdomspsykiatrisk Selskab beskriver betydelig evidensusikkerhed. Førstnævnte lægger vægt på mere restriktiv og protokolleret praksis, mens sidstnævnte samtidig fremhæver positive observationsfund og risici ved ikke-behandling. Uenigheden gælder derfor især de kliniske og politiske konsekvenser af usikkerheden, ikke om evidensen har høj sikkerhed.",
+    "assessmentIds": [
+      "dps-paediatrics-restrictive-under-uncertainty",
+      "bupdk-uncertainty-does-not-remove-treatment-risk-balance"
+    ],
+    "resolutionStatus": "unresolved",
+    "sourceIds": [
+      "dps-paediatrics-koensinkongruens-2025",
+      "bup-dk-koensinkongruens-2025"
+    ]
+  },
+  {
+    "id": "sst-autism-threshold-conflict",
+    "materialId": "sst-draft-guidance-2024",
+    "kind": "clinical-interpretation-disagreement",
+    "scope": "partial-overlap",
+    "title": "Faglige svar er uenige om, hvor meget autisme bør ændre behandlingstærsklen",
+    "summary": "Dansk Psykolog Forening fremhæver, at autisme ikke i sig selv bør afskære reel udredning eller behandling, mens Dansk Psykiatrisk Selskab efterlyser særlig forsigtighed ved autismespektrumforstyrrelse. Positionerne kan delvist sameksistere, men indebærer forskellig vægtning af autisme i adgangs- og risikovurderingen og registreres derfor som delvist overlappende fortolkningsuenighed, ikke som direkte faktuel modsigelse.",
+    "assessmentIds": [
+      "dp-autism-not-automatic-barrier",
+      "dps-psychiatry-autism-special-caution"
+    ],
+    "resolutionStatus": "unresolved",
+    "sourceIds": [
+      "dp-koensinkongruens-2025",
+      "dps-psychiatry-koensinkongruens-2025"
+    ]
+  }
+]

@@ -22,14 +22,24 @@
         "support": "supports",
         "relevance": "direct",
         "methodologicalStrengthOverride": "moderate",
-        "note": "BMA/HEOR auditerer 28 behandlingsrelaterede udsagn og klassificerer dem efter, hvor godt de citerede kilder understøtter dem."
+        "note": "BMA/HEOR auditerer 28 behandlingsrelaterede udsagn og klassificerer dem efter, hvor godt de citerede kilder understøtter dem.",
+        "id": "bma-cass-treatment-support-audit",
+        "sourceIds": [
+          "bma-cass-review-2026"
+        ],
+        "locator": "Claim audit of 28 treatment-impact statements"
       },
       {
         "claim": "Cass kan samlet beskrives som uden evidensmæssigt grundlag.",
         "support": "does-not-support",
         "relevance": "direct",
         "methodologicalStrengthOverride": "moderate",
-        "note": "Efterprøvningen finder både fuldt, delvist og ikke-understøttede udsagn og fastholder samtidig betydelig evidensusikkerhed; den bærer ikke en blanket-afvisning af hele rapporten."
+        "note": "Efterprøvningen finder både fuldt, delvist og ikke-understøttede udsagn og fastholder samtidig betydelig evidensusikkerhed; den bærer ikke en blanket-afvisning af hele rapporten.",
+        "id": "bma-cass-blanket-no-evidence-boundary",
+        "sourceIds": [
+          "bma-cass-review-2026"
+        ],
+        "locator": "Treatment evidence / statement-audit conclusions"
       }
     ]
   },
@@ -56,7 +66,12 @@
         "support": "supports",
         "relevance": "direct",
         "methodologicalStrengthOverride": "moderate",
-        "note": "Det er selve hovedresultatet af Noone m.fl.s strukturerede ROBIS-vurdering."
+        "note": "Det er selve hovedresultatet af Noone m.fl.s strukturerede ROBIS-vurdering.",
+        "id": "noone-york-robis-high-risk",
+        "sourceIds": [
+          "noone-cass-critique-2025"
+        ],
+        "locator": "ROBIS appraisal of the seven Cass-commissioned York reviews"
       }
     ]
   },
@@ -101,7 +116,12 @@
         "support": "supports",
         "relevance": "direct",
         "methodologicalStrengthOverride": "moderate",
-        "note": "Artiklen gennemgår konkrete kritikpunkter og argumenterer imod dem; den efterprøver ikke dermed alle Cass-konklusioner."
+        "note": "Artiklen gennemgår konkrete kritikpunkter og argumenterer imod dem; den efterprøver ikke dermed alle Cass-konklusioner.",
+        "id": "mcdeavitt-early-cass-critique-errors",
+        "sourceIds": [
+          "mcdeavitt-cass-factcheck-2025"
+        ],
+        "locator": "Fact-check of peer-reviewed and grey Cass critiques"
       }
     ]
   },
@@ -128,7 +148,12 @@
         "support": "disputes",
         "relevance": "direct",
         "methodologicalStrengthOverride": "moderate",
-        "note": "HEOR-reanalysen fandt ikke belæg for de stærkeste versioner af disse metodeanklager."
+        "note": "HEOR-reanalysen fandt ikke belæg for de stærkeste versioner af disse metodeanklager.",
+        "id": "bma-york-systematic-skew-dispute",
+        "sourceIds": [
+          "bma-cass-review-2026"
+        ],
+        "locator": "HEOR reanalysis of review methods / quality appraisal"
       }
     ]
   },
@@ -148,7 +173,21 @@
     "evidenceRole": "commentary",
     "qualityNote": "Fagligt høringssvar fra en professionel interessent. Det dokumenterer selskabets vurdering af udkastet, men er ikke en systematisk eller peer-reviewed evidenssyntese.",
     "evidentiaryRelevance": "direct",
-    "relevanceNote": "Høringssvaret er afgivet direkte til Sundhedsstyrelsens udkast og vurderer konkrete dele af den foreslåede ungdomspraksis."
+    "relevanceNote": "Høringssvaret er afgivet direkte til Sundhedsstyrelsens udkast og vurderer konkrete dele af den foreslåede ungdomspraksis.",
+    "claimAssessments": [
+      {
+        "id": "dps-paediatrics-restrictive-under-uncertainty",
+        "claim": "Evidensusikkerheden taler for en mere restriktiv og protokolleret ungdomspraksis.",
+        "support": "supports",
+        "relevance": "direct",
+        "methodologicalStrengthOverride": "limited",
+        "note": "Høringssvaret dokumenterer selskabets kliniske og politiske vurdering under usikkerhed; det er ikke et universelt empirisk resultat om, hvilken praksis usikkerheden nødvendigvis kræver.",
+        "sourceIds": [
+          "dps-paediatrics-koensinkongruens-2025"
+        ],
+        "locator": "Høringssvar om ungdomsbehandling og protokolleret opfølgning"
+      }
+    ]
   },
   {
     "id": "bupdk-sst-draft-2025",
@@ -166,7 +205,21 @@
     "evidenceRole": "commentary",
     "qualityNote": "Fagligt høringssvar fra en professionel interessent. Det er relevant ekspertfortolkning, men ikke en selvstændig systematisk evidensanalyse.",
     "evidentiaryRelevance": "direct",
-    "relevanceNote": "Høringssvaret er afgivet direkte til Sundhedsstyrelsens udkast og diskuterer dets evidens- og risikovurdering."
+    "relevanceNote": "Høringssvaret er afgivet direkte til Sundhedsstyrelsens udkast og diskuterer dets evidens- og risikovurdering.",
+    "claimAssessments": [
+      {
+        "id": "bupdk-uncertainty-does-not-remove-treatment-risk-balance",
+        "claim": "Evidensusikkerhed udelukker ikke potentielle gevinster ved behandling eller sundhedsrisici ved ikke-behandling.",
+        "support": "supports",
+        "relevance": "direct",
+        "methodologicalStrengthOverride": "limited",
+        "note": "Høringssvaret fremhæver positive observationsfund og risici ved ikke-behandling samtidig med, at det anerkender usikkerheden.",
+        "sourceIds": [
+          "bup-dk-koensinkongruens-2025"
+        ],
+        "locator": "Høringssvar om evidensusikkerhed, observationsfund og risici ved ikke-behandling"
+      }
+    ]
   },
   {
     "id": "dsam-sst-draft-2025",
@@ -202,7 +255,21 @@
     "evidenceRole": "commentary",
     "qualityNote": "Fagligt høringssvar fra en professionel interessent. Det dokumenterer foreningens faglige position om autisme og adgang, men er ikke peer-reviewed eller systematisk evidenssyntese.",
     "evidentiaryRelevance": "direct",
-    "relevanceNote": "Høringssvaret kommenterer direkte udkastets håndtering af autisme og adgang til udredning/behandling."
+    "relevanceNote": "Høringssvaret kommenterer direkte udkastets håndtering af autisme og adgang til udredning/behandling.",
+    "claimAssessments": [
+      {
+        "id": "dp-autism-not-automatic-barrier",
+        "claim": "Autisme bør ikke i sig selv afskære reel udredning eller behandling.",
+        "support": "supports",
+        "relevance": "direct",
+        "methodologicalStrengthOverride": "limited",
+        "note": "Høringssvaret fremsætter denne faglige position direkte; det er en klinisk vurdering, ikke et selvstændigt effektstudie.",
+        "sourceIds": [
+          "dp-koensinkongruens-2025"
+        ],
+        "locator": "Høringssvar om autisme og adgang til udredning/behandling"
+      }
+    ]
   },
   {
     "id": "dps-psychiatry-sst-draft-autism-2025",
@@ -220,7 +287,21 @@
     "evidenceRole": "commentary",
     "qualityNote": "Fagligt høringssvar fra en professionel interessent. Det dokumenterer selskabets risikovurdering og anbefaling om forsigtighed, ikke et selvstændigt empirisk effektstudie.",
     "evidentiaryRelevance": "direct",
-    "relevanceNote": "Høringssvaret kommenterer direkte udkastets håndtering af autisme og behovet for forsigtighed."
+    "relevanceNote": "Høringssvaret kommenterer direkte udkastets håndtering af autisme og behovet for forsigtighed.",
+    "claimAssessments": [
+      {
+        "id": "dps-psychiatry-autism-special-caution",
+        "claim": "Autismespektrumforstyrrelse bør udløse særlig forsigtighed før kønsbekræftende behandling.",
+        "support": "supports",
+        "relevance": "direct",
+        "methodologicalStrengthOverride": "limited",
+        "note": "Høringssvaret fremsætter en særlig forsigtighedsposition ved autisme; det dokumenterer selskabets kliniske risikovurdering, ikke en automatisk kontraindikation.",
+        "sourceIds": [
+          "dps-psychiatry-koensinkongruens-2025"
+        ],
+        "locator": "Høringssvar om autismespektrumforstyrrelse og særlig forsigtighed"
+      }
+    ]
   },
   {
     "id": "york-guideline-quality-wpath-2024",
@@ -245,14 +326,24 @@
         "support": "supports",
         "relevance": "direct",
         "methodologicalStrengthOverride": "moderate",
-        "note": "York inkluderer SOC8 i den systematiske guideline-vurdering."
+        "note": "York inkluderer SOC8 i den systematiske guideline-vurdering.",
+        "id": "york-wpath-agree-appraisal",
+        "sourceIds": [
+          "york-guideline-quality-review-2024"
+        ],
+        "locator": "AGREE II guideline-quality appraisal including WPATH SOC8"
       },
       {
         "claim": "Alle konkrete kliniske anbefalinger i SOC8 er derfor forkerte.",
         "support": "does-not-support",
         "relevance": "contextual",
         "methodologicalStrengthOverride": "limited",
-        "note": "AGREE II vurderer guidelineudvikling og rapportering; det er ikke direkte effekt-evidens for hver enkelt anbefaling."
+        "note": "AGREE II vurderer guidelineudvikling og rapportering; det er ikke direkte effekt-evidens for hver enkelt anbefaling.",
+        "id": "york-wpath-all-recommendations-boundary",
+        "sourceIds": [
+          "york-guideline-quality-review-2024"
+        ],
+        "locator": "Scope of guideline-quality review"
       }
     ]
   }

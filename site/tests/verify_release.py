@@ -55,12 +55,16 @@ for anchor in ('udtalelse-raabjerg-b12-evidence', 'udtalelse-toft-2024-activism-
     assert anchor in cass_page.ids, ('Cass material missing related record', anchor)
 for anchor in ('material-link-noone-cass-methodology-2025', 'material-link-bma-york-reanalysis-2026', 'material-health-youth-evidence-boundary'):
     assert anchor in york_page.ids, ('York material missing related record', anchor)
+for anchor in ('claim-noone-york-robis-high-risk', 'claim-bma-york-systematic-skew-dispute', 'evidence-conflict-york-review-methodology-conflict'):
+    assert anchor in york_page.ids, ('York material missing claim provenance/conflict record', anchor)
 sst2018_page = pages[root / 'materiale/sst-vejledning-2018/index.html']
 sst_draft_page = pages[root / 'materiale/sst-hoeringsudkast-2024/index.html']
 for anchor in ('material-health-autism-caution', 'material-health-psychiatric-gate', 'material-health-reference-traceability'):
     assert anchor in sst2018_page.ids, ('2018 guidance missing linked health analysis', anchor)
 for anchor in ('material-link-dps-paediatrics-sst-draft-2025', 'material-link-bupdk-sst-draft-2025', 'material-link-dsam-sst-draft-2025', 'material-link-dp-sst-draft-autism-2025', 'material-link-dps-psychiatry-sst-draft-autism-2025', 'begivenhed-raabjerg-dps-hearing-question-2025', 'begivenhed-raabjerg-autism-hearing-question-2025'):
     assert anchor in sst_draft_page.ids, ('SST draft missing direct response or uptake', anchor)
+for anchor in ('claim-dps-paediatrics-restrictive-under-uncertainty', 'claim-bupdk-uncertainty-does-not-remove-treatment-risk-balance', 'claim-dp-autism-not-automatic-barrier', 'claim-dps-psychiatry-autism-special-caution', 'evidence-conflict-sst-youth-risk-policy-conflict', 'evidence-conflict-sst-autism-threshold-conflict'):
+    assert anchor in sst_draft_page.ids, ('SST draft missing claim provenance/conflict record', anchor)
 wpath_page = pages[root / 'materiale/wpath-soc8/index.html']
 for anchor in ('material-link-york-guideline-quality-wpath-2024', 'material-health-autism-caution', 'material-health-psychiatric-gate', 'material-health-youth-evidence-boundary'):
     assert anchor in wpath_page.ids, ('WPATH SOC8 missing linked critique or health analysis', anchor)
@@ -76,7 +80,7 @@ judgment_html = (root / 'materiale/hoejesteret-faengselsdom-2024/index.html').re
 assert '/politik/b47/' in judgment_html, 'Supreme Court material must link to B47 political uptake'
 b47_html = (root / 'politik/b47/index.html').read_text()
 assert '/materiale/hoejesteret-faengselsdom-2024/' in b47_html, 'B47 must link back to the Supreme Court material node'
-assert data['schemaVersion'] >= 15, 'Claim-level relevance and quality overrides require schema version 15+'
+assert data['schemaVersion'] >= 16, 'Claim provenance and evidence conflicts require schema version 16+'
 b47_data = next(item for item in data['proposals'] if item['id'] == 'b47-2024-25')
 assert 'supreme-court-prison-gender-2024' in b47_data.get('materialIds', []), 'Public proposal data must preserve material links'
 statements = {item['id']: item for item in data['statements']}
@@ -85,8 +89,10 @@ source_ids = {item['id'] for item in source_statements}
 assert set(statements) == source_ids, 'Public data index must contain every source statement exactly once'
 source_materials = json.loads((root.parent / 'content/data/materials.json').read_text())
 source_material_links = json.loads((root.parent / 'content/data/material-links.json').read_text())
+source_evidence_conflicts = json.loads((root.parent / 'content/data/evidence-conflicts.json').read_text())
 assert {item['id'] for item in data['materials']} == {item['id'] for item in source_materials}, 'Public data index must contain every material exactly once'
 assert {item['id'] for item in data['materialLinks']} == {item['id'] for item in source_material_links}, 'Public data index must contain every material link exactly once'
+assert {item['id'] for item in data['evidenceConflicts']} == {item['id'] for item in source_evidence_conflicts}, 'Public data index must contain every evidence conflict exactly once'
 quality_fields = ('independence', 'peerReviewStatus', 'methodologicalStrength', 'evidenceRole', 'qualityNote')
 allowed_quality = {
     'independence': {'independent', 'commissioned-independent', 'institutional', 'stakeholder'},
@@ -110,10 +116,28 @@ for collection_name, source_items, public_items in (
             assert item.get('evidentiaryRelevance') in {'direct', 'substantial', 'contextual'}, ('invalid material-link evidentiary relevance', item['id'])
             assert item.get('relevanceNote'), ('missing material-link relevance note', item['id'])
             for claim in item.get('claimAssessments', []):
+                assert claim.get('id'), ('missing claim id', item['id'])
                 assert claim.get('support') in {'supports', 'partially-supports', 'disputes', 'does-not-support'}, ('invalid claim support', item['id'])
                 assert claim.get('relevance') in {'direct', 'substantial', 'contextual'}, ('invalid claim relevance', item['id'])
                 assert claim.get('methodologicalStrengthOverride') in {'strong', 'moderate', 'limited', 'not-applicable'}, ('invalid claim strength override', item['id'])
                 assert claim.get('claim') and claim.get('note'), ('incomplete claim assessment', item['id'])
+                assert claim.get('sourceIds'), ('missing claim provenance', item['id'], claim['id'])
+source_registry_ids = {item['id'] for item in data['sources']}
+claims = [(link, claim) for link in source_material_links for claim in link.get('claimAssessments', [])]
+claim_ids = [claim['id'] for _, claim in claims]
+assert len(claim_ids) == len(set(claim_ids)), 'Claim assessment IDs must be globally unique'
+claim_by_id = {claim['id']: (link, claim) for link, claim in claims}
+for link, claim in claims:
+    assert set(claim['sourceIds']) <= source_registry_ids, ('unknown claim source', link['id'], claim['id'])
+for conflict in source_evidence_conflicts:
+    assert conflict['kind'] in {'methodological-disagreement', 'clinical-interpretation-disagreement'}, ('invalid evidence conflict kind', conflict['id'])
+    assert conflict['scope'] in {'direct-conflict', 'partial-overlap'}, ('invalid evidence conflict scope', conflict['id'])
+    assert conflict['resolutionStatus'] in {'unresolved', 'partially-resolved', 'resolved'}, ('invalid conflict resolution', conflict['id'])
+    assert len(conflict['assessmentIds']) >= 2 and len(conflict['assessmentIds']) == len(set(conflict['assessmentIds'])), ('invalid conflict assessments', conflict['id'])
+    assert set(conflict['assessmentIds']) <= set(claim_by_id), ('unknown conflict claim', conflict['id'])
+    assert all(claim_by_id[cid][0]['materialId'] == conflict['materialId'] for cid in conflict['assessmentIds']), ('cross-material conflict', conflict['id'])
+    assert set(conflict['sourceIds']) <= source_registry_ids, ('unknown conflict source', conflict['id'])
+
 for material in source_materials:
     material_path = root / material['route'].lstrip('/') / 'index.html'
     assert material_path.is_file(), ('missing material page', material['id'], material['route'])

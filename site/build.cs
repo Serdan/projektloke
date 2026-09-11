@@ -29,6 +29,7 @@ var relationships = Read<Relationship[]>(Path.Combine(dataRoot, "relationships.j
 var media = Read<MediaItem[]>(Path.Combine(dataRoot, "media.json"));
 var materials = Read<Material[]>(Path.Combine(dataRoot, "materials.json"));
 var materialLinks = Read<MaterialLink[]>(Path.Combine(dataRoot, "material-links.json"));
+var evidenceConflicts = Read<EvidenceConflict[]>(Path.Combine(dataRoot, "evidence-conflicts.json"));
 var statements = Read<Statement[]>(Path.Combine(dataRoot, "statements.json"));
 var healthcare = Read<HealthcareRecord[]>(Path.Combine(dataRoot, "healthcare.json"));
 var youthTreatmentStats = Read<YouthTreatmentStat[]>(Path.Combine(dataRoot, "youth-treatment.json"));
@@ -51,7 +52,7 @@ var allRoutes = pages.Select(page => page.Route)
     .Append("/kilder/")
     .ToArray();
 
-Validate(site, pages, sources, actors, proposals, events, relationships, media, materials, materialLinks, statements, healthcare, youthTreatmentStats, sourceById, actorById, materialById, allRoutes);
+Validate(site, pages, sources, actors, proposals, events, relationships, media, materials, materialLinks, evidenceConflicts, statements, healthcare, youthTreatmentStats, sourceById, actorById, materialById, allRoutes);
 
 foreach (var route in allRoutes)
     if (!pageUpdates.TryGetValue(route, out var date) || !DateOnly.TryParseExact(date, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out _))
@@ -114,7 +115,7 @@ foreach (var actor in actors)
     WritePage(actor.Route, actor.Name, actor.Summary, RenderActor(actor, proposals, events, relationships, media, statements, actorById, sourceById));
 
 foreach (var material in materials)
-    WritePage(material.Route, material.Title, material.Summary, RenderMaterial(material, materialLinks, proposals, media, relationships, events, statements, healthcare, materialById, actorById, sourceById));
+    WritePage(material.Route, material.Title, material.Summary, RenderMaterial(material, materialLinks, evidenceConflicts, proposals, media, relationships, events, statements, healthcare, materialById, actorById, sourceById));
 
 WritePage(
     "/kilder/",
@@ -126,7 +127,7 @@ var publicDataRoot = Path.Combine(outputRoot, "data");
 Directory.CreateDirectory(publicDataRoot);
 var publicIndex = new
 {
-    schemaVersion = 15,
+    schemaVersion = 16,
     themeAliases,
     pageUpdates,
     proposals = proposals.OrderByDescending(proposal => proposal.Introduced).Select(proposal => new
@@ -146,6 +147,7 @@ var publicIndex = new
     media = media.OrderByDescending(item => item.Date),
     materials = materials.OrderByDescending(item => item.Date),
     materialLinks,
+    evidenceConflicts,
     statements = statements.OrderByDescending(item => item.Date),
     relationships = relationships.OrderByDescending(item => item.Date),
     healthcare,
@@ -154,7 +156,7 @@ var publicIndex = new
 };
 File.WriteAllText(Path.Combine(publicDataRoot, "index.json"), JsonSerializer.Serialize(publicIndex, new JsonSerializerOptions(JsonSerializerDefaults.Web) { WriteIndented = true }));
 
-Console.WriteLine($"Built {generated} pages from {proposals.Length} proposals, {events.Length} events, {media.Length} media records, {materials.Length} materials, {materialLinks.Length} material links, {statements.Length} statements, {relationships.Length} relationships, {actors.Length} actors and {sources.Length} sources.");
+Console.WriteLine($"Built {generated} pages from {proposals.Length} proposals, {events.Length} events, {media.Length} media records, {materials.Length} materials, {materialLinks.Length} material links, {evidenceConflicts.Length} evidence conflicts, {statements.Length} statements, {relationships.Length} relationships, {actors.Length} actors and {sources.Length} sources.");
 
 void WritePage(string route, string pageTitle, string description, string body)
 {
@@ -191,6 +193,7 @@ static void Validate(
     MediaItem[] media,
     Material[] materials,
     MaterialLink[] materialLinks,
+    EvidenceConflict[] evidenceConflicts,
     Statement[] statements,
     HealthcareRecord[] healthcare,
     YouthTreatmentStat[] youthTreatmentStats,
@@ -211,6 +214,10 @@ static void Validate(
     RequireUnique(media.Select(item => item.Id), "media id");
     RequireUnique(materials.Select(item => item.Id), "material id");
     RequireUnique(materialLinks.Select(item => item.Id), "material link id");
+    RequireUnique(evidenceConflicts.Select(item => item.Id), "evidence conflict id");
+    var claimRefs = materialLinks.SelectMany(link => (link.ClaimAssessments ?? []).Select(claim => (Link: link, Claim: claim))).ToArray();
+    RequireUnique(claimRefs.Select(item => item.Claim.Id), "claim assessment id");
+    var claimById = claimRefs.ToDictionary(item => item.Claim.Id, StringComparer.OrdinalIgnoreCase);
     RequireUnique(statements.Select(item => item.Id), "statement id");
     RequireUnique(healthcare.Select(item => item.Id), "healthcare id");
     RequireUnique(allRoutes, "generated route");
@@ -302,6 +309,8 @@ static void Validate(
             throw new InvalidOperationException($"Material link {link.Id} needs a relevance note.");
         foreach (var claim in link.ClaimAssessments ?? [])
         {
+            if (string.IsNullOrWhiteSpace(claim.Id))
+                throw new InvalidOperationException($"Material link {link.Id} has a claim assessment without id.");
             if (claim.Support is not ("supports" or "partially-supports" or "disputes" or "does-not-support"))
                 throw new InvalidOperationException($"Material link {link.Id} has unknown claim support {claim.Support}.");
             if (claim.Relevance is not ("direct" or "substantial" or "contextual"))
@@ -310,7 +319,34 @@ static void Validate(
                 throw new InvalidOperationException($"Material link {link.Id} has unknown claim methodological-strength override {claim.MethodologicalStrengthOverride}.");
             if (string.IsNullOrWhiteSpace(claim.Claim) || string.IsNullOrWhiteSpace(claim.Note))
                 throw new InvalidOperationException($"Material link {link.Id} has an incomplete claim assessment.");
+            if (claim.SourceIds.Length == 0)
+                throw new InvalidOperationException($"Claim assessment {claim.Id} needs claim-level provenance.");
+            RequireSources($"claim assessment {claim.Id}", claim.SourceIds, sourceById);
         }
+    }
+
+    foreach (var conflict in evidenceConflicts)
+    {
+        if (!materialById.ContainsKey(conflict.MaterialId))
+            throw new InvalidOperationException($"Evidence conflict {conflict.Id} points to unknown material {conflict.MaterialId}.");
+        if (conflict.Kind is not ("methodological-disagreement" or "clinical-interpretation-disagreement"))
+            throw new InvalidOperationException($"Evidence conflict {conflict.Id} has unknown kind {conflict.Kind}.");
+        if (conflict.Scope is not ("direct-conflict" or "partial-overlap"))
+            throw new InvalidOperationException($"Evidence conflict {conflict.Id} has unknown scope {conflict.Scope}.");
+        if (conflict.ResolutionStatus is not ("unresolved" or "partially-resolved" or "resolved"))
+            throw new InvalidOperationException($"Evidence conflict {conflict.Id} has unknown resolution status {conflict.ResolutionStatus}.");
+        if (conflict.AssessmentIds.Length < 2 || conflict.AssessmentIds.Distinct(StringComparer.OrdinalIgnoreCase).Count() != conflict.AssessmentIds.Length)
+            throw new InvalidOperationException($"Evidence conflict {conflict.Id} needs at least two unique claim assessments.");
+        foreach (var assessmentId in conflict.AssessmentIds)
+        {
+            if (!claimById.TryGetValue(assessmentId, out var claimRef))
+                throw new InvalidOperationException($"Evidence conflict {conflict.Id} points to unknown claim assessment {assessmentId}.");
+            if (!string.Equals(claimRef.Link.MaterialId, conflict.MaterialId, StringComparison.OrdinalIgnoreCase))
+                throw new InvalidOperationException($"Evidence conflict {conflict.Id} crosses material boundaries through claim {assessmentId}.");
+        }
+        if (string.IsNullOrWhiteSpace(conflict.Title) || string.IsNullOrWhiteSpace(conflict.Summary))
+            throw new InvalidOperationException($"Evidence conflict {conflict.Id} needs title and summary.");
+        RequireSources($"evidence conflict {conflict.Id}", conflict.SourceIds, sourceById);
     }
 
     foreach (var statement in statements)
@@ -506,6 +542,28 @@ static string SupportLabel(string value) => value switch
     _ => value
 };
 
+static string ConflictKindLabel(string value) => value switch
+{
+    "methodological-disagreement" => "Metodisk uenighed",
+    "clinical-interpretation-disagreement" => "Klinisk fortolkningsuenighed",
+    _ => value
+};
+
+static string ConflictScopeLabel(string value) => value switch
+{
+    "direct-conflict" => "Direkte konflikt",
+    "partial-overlap" => "Delvist overlap",
+    _ => value
+};
+
+static string ConflictResolutionLabel(string value) => value switch
+{
+    "unresolved" => "Uafklaret",
+    "partially-resolved" => "Delvist afklaret",
+    "resolved" => "Afklaret",
+    _ => value
+};
+
 static string QualityLabel(string value) => value switch
 {
     "independent" => "Uafhængig",
@@ -539,7 +597,7 @@ static string RenderSourceQuality(string independence, string peerReviewStatus, 
         : $"<section class=\"band subdued source-quality\"><div class=\"shell compact-block\"><p class=\"kicker\">Kildekvalitet</p>{facts}<p>{Encode(qualityNote)}</p></div></section>";
 }
 
-static string RenderClaimAssessments(IEnumerable<ClaimAssessment>? claims)
+static string RenderClaimAssessments(IEnumerable<ClaimAssessment>? claims, IReadOnlyDictionary<string, Source> sourceById)
 {
     var items = claims?.ToArray() ?? [];
     if (items.Length == 0) return "";
@@ -548,10 +606,11 @@ static string RenderClaimAssessments(IEnumerable<ClaimAssessment>? claims)
         <p class="kicker">Påstandsniveau</p>
         <div class="evidence-list">
           {string.Join(Environment.NewLine, items.Select(item => $"""
-            <article class="evidence-card" data-claim-assessment data-claim-support="{Encode(item.Support)}" data-claim-relevance="{Encode(item.Relevance)}" data-methodological-strength-override="{Encode(item.MethodologicalStrengthOverride)}">
+            <article class="evidence-card" id="claim-{Encode(item.Id)}" data-claim-assessment data-claim-support="{Encode(item.Support)}" data-claim-relevance="{Encode(item.Relevance)}" data-methodological-strength-override="{Encode(item.MethodologicalStrengthOverride)}">
               <p class="evidence-meta">{Encode(SupportLabel(item.Support))} · relevans: {Encode(RelevanceLabel(item.Relevance))} · metodisk styrke for denne påstand: {Encode(QualityLabel(item.MethodologicalStrengthOverride))}</p>
               <h3>{Encode(item.Claim)}</h3>
               <p>{Encode(item.Note)}</p>
+              <p class="evidence-meta"><strong>Påstandsproveniens:</strong> {RenderInlineSources(item.SourceIds, sourceById)}{(string.IsNullOrWhiteSpace(item.Locator) ? "" : $" · {Encode(item.Locator)}")}</p>
             </article>
           """))}
         </div>
@@ -572,6 +631,7 @@ static string RenderMaterialList(IEnumerable<Material> materials) => string.Join
 static string RenderMaterial(
     Material material,
     IEnumerable<MaterialLink> materialLinks,
+    IEnumerable<EvidenceConflict> evidenceConflicts,
     IEnumerable<Proposal> proposals,
     IEnumerable<MediaItem> media,
     IEnumerable<Relationship> relationships,
@@ -583,6 +643,8 @@ static string RenderMaterial(
     IReadOnlyDictionary<string, Source> sourceById)
 {
     var links = materialLinks.Where(item => string.Equals(item.MaterialId, material.Id, StringComparison.OrdinalIgnoreCase)).ToArray();
+    var claimById = links.SelectMany(item => item.ClaimAssessments ?? []).ToDictionary(item => item.Id, StringComparer.OrdinalIgnoreCase);
+    var conflicts = evidenceConflicts.Where(item => string.Equals(item.MaterialId, material.Id, StringComparison.OrdinalIgnoreCase)).ToArray();
     var critiques = links.Where(item => item.Category == "critique").ToArray();
     var checks = links.Where(item => item.Category == "rebuttal").ToArray();
     var responses = links.Where(item => item.Category == "response").ToArray();
@@ -601,10 +663,25 @@ static string RenderMaterial(
         <p>{Encode(item.Summary)} {RenderInlineSources(item.SourceIds, sourceById)}</p>
         {RenderSourceQuality(item.Independence, item.PeerReviewStatus, item.MethodologicalStrength, item.EvidenceRole, item.QualityNote, compact: true)}
         <div class="source-quality compact-quality" data-evidentiary-relevance="{Encode(item.EvidentiaryRelevance)}"><p class="evidence-meta"><strong>Evidentiær relevans:</strong> {Encode(RelevanceLabel(item.EvidentiaryRelevance))}</p><p class="evidence-meta">{Encode(item.RelevanceNote)}</p></div>
-        {RenderClaimAssessments(item.ClaimAssessments)}
+        {RenderClaimAssessments(item.ClaimAssessments, sourceById)}
       </article>
     """));
 
+    var conflictHtml = conflicts.Length == 0 ? "" : string.Join(Environment.NewLine, conflicts.Select(item => $"""
+      <article class="evidence-card" id="evidence-conflict-{Encode(item.Id)}" data-evidence-conflict data-conflict-scope="{Encode(item.Scope)}" data-resolution-status="{Encode(item.ResolutionStatus)}">
+        <p class="evidence-meta">{Encode(ConflictKindLabel(item.Kind))} · {Encode(ConflictScopeLabel(item.Scope))} · {Encode(ConflictResolutionLabel(item.ResolutionStatus))}</p>
+        <h3>{Encode(item.Title)}</h3>
+        <p>{Encode(item.Summary)} {RenderInlineSources(item.SourceIds, sourceById)}</p>
+        <p class="evidence-meta"><strong>Koblede påstandsvurderinger:</strong> {string.Join(" · ", item.AssessmentIds.Select(id => $"<a href=\"#claim-{Encode(id)}\">{Encode(claimById[id].Claim)}</a>"))}</p>
+      </article>
+    """));
+    var conflictSection = conflicts.Length == 0 ? "" : $"""
+      <div class="case-section">
+        <p class="kicker">Evidenskonflikter</p>
+        <h2>Hvor vurderinger faktisk overlapper og er uenige</h2>
+        <div class="evidence-list">{conflictHtml}</div>
+      </div>
+    """;
     var critiqueHtml = critiques.Length == 0 ? "<p>Ingen særskilt registreret ekspertkritik endnu.</p>" : RenderLinkCards(critiques);
     var checkHtml = checks.Length == 0 ? "<p>Ingen særskilt registreret efterprøvning endnu.</p>" : RenderLinkCards(checks);
     var responseHtml = responses.Length == 0 ? "<p>Ingen særskilt registrerede faglige svar endnu.</p>" : RenderLinkCards(responses);
@@ -664,6 +741,8 @@ static string RenderMaterial(
             <h2>Høringssvar og andre direkte reaktioner</h2>
             <div class="evidence-list">{responseHtml}</div>
           </div>
+
+          {conflictSection}
 
           <div class="case-section">
             <p class="kicker">Sundhed</p>
@@ -1277,6 +1356,7 @@ sealed record TimelineEvent(string Id, string Date, string Kind, string Title, s
 sealed record MediaItem(string Id, string Date, string Kind, string Title, string? AuthorActorId, string? AuthorLabel, string? OutletActorId, string? OutletLabel, string CorpusRole, string Summary, string[] Themes, string[] SourceIds, string[]? MaterialIds);
 sealed record Material(string Id, string Title, string ShortTitle, string Kind, string Date, string Route, string Summary, string[] Analysis, string[] SourceIds, string Independence, string PeerReviewStatus, string MethodologicalStrength, string EvidenceRole, string QualityNote, string[]? RelatedMaterialIds);
 sealed record MaterialLink(string Id, string MaterialId, string Category, string Kind, string Title, string Summary, string[] SourceIds, string Independence, string PeerReviewStatus, string MethodologicalStrength, string EvidenceRole, string QualityNote, string EvidentiaryRelevance, string RelevanceNote, ClaimAssessment[]? ClaimAssessments);
-sealed record ClaimAssessment(string Claim, string Support, string Relevance, string MethodologicalStrengthOverride, string Note);
+sealed record ClaimAssessment(string Id, string Claim, string Support, string Relevance, string MethodologicalStrengthOverride, string Note, string[] SourceIds, string? Locator);
+sealed record EvidenceConflict(string Id, string MaterialId, string Kind, string Scope, string Title, string Summary, string[] AssessmentIds, string ResolutionStatus, string[] SourceIds);
 sealed record Statement(string Id, string Date, string ActorId, string Kind, string Excerpt, string Context, string Position, string[] Themes, string RelatedRoute, string[] SourceIds, string? Affiliation, string? Passage, string[]? MaterialIds);
 sealed record Relationship(string Id, string Date, string Kind, string FromActorId, string? ToActorId, string? ToRoute, string? ToLabel, string Summary, string[] SourceIds);
