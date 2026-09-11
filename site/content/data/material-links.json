@@ -13,7 +13,25 @@
     "peerReviewStatus": "not-peer-reviewed",
     "methodologicalStrength": "moderate",
     "evidenceRole": "commentary",
-    "qualityNote": "BMA-gennemgangen er en ekstern efterprøvning med en særskilt HEOR-reanalyse og claim-audit. Den er ikke journal-peer-reviewed, men bruger en eksplicit og efterprøvbar analyseproces."
+    "qualityNote": "BMA-gennemgangen er en ekstern efterprøvning med en særskilt HEOR-reanalyse og claim-audit. Den er ikke journal-peer-reviewed, men bruger en eksplicit og efterprøvbar analyseproces.",
+    "evidentiaryRelevance": "direct",
+    "relevanceNote": "Efterprøvningen auditerer konkrete behandlingsudsagn i Cass-rapporten og er derfor direkte relevant for spørgsmålet om rapportens evidensfremstilling.",
+    "claimAssessments": [
+      {
+        "claim": "Cass-rapportens behandlingsudsagn er ikke alle lige godt understøttet af de citerede kilder.",
+        "support": "supports",
+        "relevance": "direct",
+        "methodologicalStrengthOverride": "moderate",
+        "note": "BMA/HEOR auditerer 28 behandlingsrelaterede udsagn og klassificerer dem efter, hvor godt de citerede kilder understøtter dem."
+      },
+      {
+        "claim": "Cass kan samlet beskrives som uden evidensmæssigt grundlag.",
+        "support": "does-not-support",
+        "relevance": "direct",
+        "methodologicalStrengthOverride": "moderate",
+        "note": "Efterprøvningen finder både fuldt, delvist og ikke-understøttede udsagn og fastholder samtidig betydelig evidensusikkerhed; den bærer ikke en blanket-afvisning af hele rapporten."
+      }
+    ]
   },
   {
     "id": "noone-cass-methodology-2025",
@@ -29,7 +47,18 @@
     "peerReviewStatus": "peer-reviewed",
     "methodologicalStrength": "moderate",
     "evidenceRole": "commentary",
-    "qualityNote": "Peer-reviewed metodekritik uafhængig af York/Cass-teamet. ROBIS giver en struktureret ramme, men flere af kritikpunkterne er senere blevet bestridt, så vurderingen behandles som vægtig metodekritik frem for endelig facit."
+    "qualityNote": "Peer-reviewed metodekritik uafhængig af York/Cass-teamet. ROBIS giver en struktureret ramme, men flere af kritikpunkterne er senere blevet bestridt, så vurderingen behandles som vægtig metodekritik frem for endelig facit.",
+    "evidentiaryRelevance": "direct",
+    "relevanceNote": "ROBIS-analysen vurderer de syv York-reviews, som materialet består af, direkte.",
+    "claimAssessments": [
+      {
+        "claim": "De syv York-reviews har høj risiko for bias efter ROBIS.",
+        "support": "supports",
+        "relevance": "direct",
+        "methodologicalStrengthOverride": "moderate",
+        "note": "Det er selve hovedresultatet af Noone m.fl.s strukturerede ROBIS-vurdering."
+      }
+    ]
   },
   {
     "id": "grijseels-cass-commentary-2024",
@@ -45,7 +74,9 @@
     "peerReviewStatus": "peer-reviewed",
     "methodologicalStrength": "limited",
     "evidenceRole": "commentary",
-    "qualityNote": "Peer-reviewed kritisk kommentar med konkrete claim-level eksempler, men ikke en fuld systematisk reanalyse af hele Cass-rapporten eller dens evidensgrundlag."
+    "qualityNote": "Peer-reviewed kritisk kommentar med konkrete claim-level eksempler, men ikke en fuld systematisk reanalyse af hele Cass-rapporten eller dens evidensgrundlag.",
+    "evidentiaryRelevance": "direct",
+    "relevanceNote": "Kommentaren efterprøver konkrete biologiske, demografiske og kausale udsagn i Cass-rapporten."
   },
   {
     "id": "mcdeavitt-cass-factcheck-2025",
@@ -61,7 +92,18 @@
     "peerReviewStatus": "peer-reviewed",
     "methodologicalStrength": "moderate",
     "evidenceRole": "commentary",
-    "qualityNote": "Peer-reviewed gennemgang af eksisterende Cass-kritikker. Den er uafhængig af Cass-teamet, men er primært en kritisk litteratur-/fact-check-øvelse snarere end ny primær effektforskning."
+    "qualityNote": "Peer-reviewed gennemgang af eksisterende Cass-kritikker. Den er uafhængig af Cass-teamet, men er primært en kritisk litteratur-/fact-check-øvelse snarere end ny primær effektforskning.",
+    "evidentiaryRelevance": "contextual",
+    "relevanceNote": "Artiklen efterprøver primært kritik af Cass snarere end at reanalysere hele Cass-rapporten direkte; den er derfor kontekstuel modkritik.",
+    "claimAssessments": [
+      {
+        "claim": "Flere udbredte tidlige kritikpunkter mod Cass indeholder fejl eller mangler kontekst.",
+        "support": "supports",
+        "relevance": "direct",
+        "methodologicalStrengthOverride": "moderate",
+        "note": "Artiklen gennemgår konkrete kritikpunkter og argumenterer imod dem; den efterprøver ikke dermed alle Cass-konklusioner."
+      }
+    ]
   },
   {
     "id": "bma-york-reanalysis-2026",
@@ -77,7 +119,18 @@
     "peerReviewStatus": "not-peer-reviewed",
     "methodologicalStrength": "moderate",
     "evidenceRole": "evidence-synthesis",
-    "qualityNote": "BMA bestilte en særskilt HEOR-reanalyse af centrale metodiske spørgsmål. Den er ikke journal-peer-reviewed, men er en eksplicit sekundær efterprøvning af reviewmetode og studiekvalitet."
+    "qualityNote": "BMA bestilte en særskilt HEOR-reanalyse af centrale metodiske spørgsmål. Den er ikke journal-peer-reviewed, men er en eksplicit sekundær efterprøvning af reviewmetode og studiekvalitet.",
+    "evidentiaryRelevance": "direct",
+    "relevanceNote": "HEOR-reanalysen efterprøver centrale metodeanklager mod de Cass-bestilte York-reviews direkte.",
+    "claimAssessments": [
+      {
+        "claim": "York-reviewene systematisk udelod høj-kvalitetsstudier eller skævvred kvalitetsvurderingen.",
+        "support": "disputes",
+        "relevance": "direct",
+        "methodologicalStrengthOverride": "moderate",
+        "note": "HEOR-reanalysen fandt ikke belæg for de stærkeste versioner af disse metodeanklager."
+      }
+    ]
   },
   {
     "id": "dps-paediatrics-sst-draft-2025",
@@ -93,7 +146,9 @@
     "peerReviewStatus": "not-peer-reviewed",
     "methodologicalStrength": "limited",
     "evidenceRole": "commentary",
-    "qualityNote": "Fagligt høringssvar fra en professionel interessent. Det dokumenterer selskabets vurdering af udkastet, men er ikke en systematisk eller peer-reviewed evidenssyntese."
+    "qualityNote": "Fagligt høringssvar fra en professionel interessent. Det dokumenterer selskabets vurdering af udkastet, men er ikke en systematisk eller peer-reviewed evidenssyntese.",
+    "evidentiaryRelevance": "direct",
+    "relevanceNote": "Høringssvaret er afgivet direkte til Sundhedsstyrelsens udkast og vurderer konkrete dele af den foreslåede ungdomspraksis."
   },
   {
     "id": "bupdk-sst-draft-2025",
@@ -109,7 +164,9 @@
     "peerReviewStatus": "not-peer-reviewed",
     "methodologicalStrength": "limited",
     "evidenceRole": "commentary",
-    "qualityNote": "Fagligt høringssvar fra en professionel interessent. Det er relevant ekspertfortolkning, men ikke en selvstændig systematisk evidensanalyse."
+    "qualityNote": "Fagligt høringssvar fra en professionel interessent. Det er relevant ekspertfortolkning, men ikke en selvstændig systematisk evidensanalyse.",
+    "evidentiaryRelevance": "direct",
+    "relevanceNote": "Høringssvaret er afgivet direkte til Sundhedsstyrelsens udkast og diskuterer dets evidens- og risikovurdering."
   },
   {
     "id": "dsam-sst-draft-2025",
@@ -125,7 +182,9 @@
     "peerReviewStatus": "not-peer-reviewed",
     "methodologicalStrength": "limited",
     "evidenceRole": "commentary",
-    "qualityNote": "Fagligt høringssvar fra en professionel interessent. Det dokumenterer en klinisk vurdering af tærskler og konsekvenser, ikke ny primær forskning."
+    "qualityNote": "Fagligt høringssvar fra en professionel interessent. Det dokumenterer en klinisk vurdering af tærskler og konsekvenser, ikke ny primær forskning.",
+    "evidentiaryRelevance": "direct",
+    "relevanceNote": "Høringssvaret kommenterer direkte det foreslåede varighedskriterium i udkastet."
   },
   {
     "id": "dp-sst-draft-autism-2025",
@@ -141,7 +200,9 @@
     "peerReviewStatus": "not-peer-reviewed",
     "methodologicalStrength": "limited",
     "evidenceRole": "commentary",
-    "qualityNote": "Fagligt høringssvar fra en professionel interessent. Det dokumenterer foreningens faglige position om autisme og adgang, men er ikke peer-reviewed eller systematisk evidenssyntese."
+    "qualityNote": "Fagligt høringssvar fra en professionel interessent. Det dokumenterer foreningens faglige position om autisme og adgang, men er ikke peer-reviewed eller systematisk evidenssyntese.",
+    "evidentiaryRelevance": "direct",
+    "relevanceNote": "Høringssvaret kommenterer direkte udkastets håndtering af autisme og adgang til udredning/behandling."
   },
   {
     "id": "dps-psychiatry-sst-draft-autism-2025",
@@ -157,7 +218,9 @@
     "peerReviewStatus": "not-peer-reviewed",
     "methodologicalStrength": "limited",
     "evidenceRole": "commentary",
-    "qualityNote": "Fagligt høringssvar fra en professionel interessent. Det dokumenterer selskabets risikovurdering og anbefaling om forsigtighed, ikke et selvstændigt empirisk effektstudie."
+    "qualityNote": "Fagligt høringssvar fra en professionel interessent. Det dokumenterer selskabets risikovurdering og anbefaling om forsigtighed, ikke et selvstændigt empirisk effektstudie.",
+    "evidentiaryRelevance": "direct",
+    "relevanceNote": "Høringssvaret kommenterer direkte udkastets håndtering af autisme og behovet for forsigtighed."
   },
   {
     "id": "york-guideline-quality-wpath-2024",
@@ -173,6 +236,24 @@
     "peerReviewStatus": "peer-reviewed",
     "methodologicalStrength": "moderate",
     "evidenceRole": "evidence-synthesis",
-    "qualityNote": "Peer-reviewed systematisk guideline-vurdering udført af York som del af det Cass-bestilte arbejde. AGREE II giver en struktureret metode, men vurderingen af guidelinekvalitet er ikke det samme som direkte evidens om behandlingseffekt."
+    "qualityNote": "Peer-reviewed systematisk guideline-vurdering udført af York som del af det Cass-bestilte arbejde. AGREE II giver en struktureret metode, men vurderingen af guidelinekvalitet er ikke det samme som direkte evidens om behandlingseffekt.",
+    "evidentiaryRelevance": "substantial",
+    "relevanceNote": "York-reviewet inkluderer WPATH SOC8 i en systematisk tværgående guideline-vurdering. Det er væsentligt relevant for guidelineudviklingens kvalitet, men ikke en fuld særskilt evaluering af alle SOC8-anbefalinger.",
+    "claimAssessments": [
+      {
+        "claim": "WPATH SOC8s guidelineudvikling kan vurderes metodisk med AGREE II.",
+        "support": "supports",
+        "relevance": "direct",
+        "methodologicalStrengthOverride": "moderate",
+        "note": "York inkluderer SOC8 i den systematiske guideline-vurdering."
+      },
+      {
+        "claim": "Alle konkrete kliniske anbefalinger i SOC8 er derfor forkerte.",
+        "support": "does-not-support",
+        "relevance": "contextual",
+        "methodologicalStrengthOverride": "limited",
+        "note": "AGREE II vurderer guidelineudvikling og rapportering; det er ikke direkte effekt-evidens for hver enkelt anbefaling."
+      }
+    ]
   }
 ]

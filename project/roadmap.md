@@ -20,6 +20,7 @@
 - First structured Cass Review / Danish youth-treatment media pilot, with a fixed 9 April-10 May 2024 window, three verified public sample records and explicit verification limits.
 - First-class material-node model now covers Cass Review, its separate University of York review package, Sundhedsstyrelsens 2018 guidance, the 2024 revision draft, WPATH SOC8, the 2026-29 LGBT+ action plan and the 2024 Supreme Court prison judgment. Criticism, rebuttal, professional responses and cross-domain use attach to the document actually evaluated.
 - Explicit source-quality metadata for every material and material link: independence, peer-review status, methodological strength, evidence role and an explanatory quality note, with controlled vocabularies and release validation.
+- Evidentiary relevance is now separate from source quality on material links, with optional claim-level support assessments and methodological-strength overrides for high-risk assertions.
 
 ## Next
 

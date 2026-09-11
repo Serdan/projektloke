@@ -45,6 +45,10 @@ assert 'cass-york-reviews-2024' in material_by_id['cass-review-2024'].get('relat
 assert material_link_by_id['noone-cass-methodology-2025']['materialId'] == 'cass-york-reviews-2024', 'Noone ROBIS critique must target the York reviews'
 assert material_link_by_id['bma-cass-review-2026']['materialId'] == 'cass-review-2024', 'BMA statement audit must remain attached to Cass'
 assert material_link_by_id['bma-york-reanalysis-2026']['materialId'] == 'cass-york-reviews-2024', 'BMA method reanalysis must attach to York reviews'
+assert material_link_by_id['bma-cass-review-2026']['evidentiaryRelevance'] == 'direct'
+assert material_link_by_id['mcdeavitt-cass-factcheck-2025']['evidentiaryRelevance'] == 'contextual'
+assert any(c['support'] == 'does-not-support' for c in material_link_by_id['bma-cass-review-2026'].get('claimAssessments', [])), 'BMA Cass link must preserve negative claim-support boundary'
+assert any(c['support'] == 'disputes' for c in material_link_by_id['bma-york-reanalysis-2026'].get('claimAssessments', [])), 'BMA York link must preserve disputed-method claim'
 cass_page = pages[root / 'materiale/cass-review/index.html']
 york_page = pages[root / 'materiale/cass-york-reviews/index.html']
 for anchor in ('udtalelse-raabjerg-b12-evidence', 'udtalelse-toft-2024-activism-treatment', 'begivenhed-raabjerg-cass-b12-event'):
@@ -72,7 +76,7 @@ judgment_html = (root / 'materiale/hoejesteret-faengselsdom-2024/index.html').re
 assert '/politik/b47/' in judgment_html, 'Supreme Court material must link to B47 political uptake'
 b47_html = (root / 'politik/b47/index.html').read_text()
 assert '/materiale/hoejesteret-faengselsdom-2024/' in b47_html, 'B47 must link back to the Supreme Court material node'
-assert data['schemaVersion'] >= 14, 'Explicit material source-quality fields require schema version 14+'
+assert data['schemaVersion'] >= 15, 'Claim-level relevance and quality overrides require schema version 15+'
 b47_data = next(item for item in data['proposals'] if item['id'] == 'b47-2024-25')
 assert 'supreme-court-prison-gender-2024' in b47_data.get('materialIds', []), 'Public proposal data must preserve material links'
 statements = {item['id']: item for item in data['statements']}
@@ -102,6 +106,14 @@ for collection_name, source_items, public_items in (
             assert public_items[item['id']].get(field) == item[field], (f'public {collection_name} source-quality field mismatch', item['id'], field)
         for field, allowed in allowed_quality.items():
             assert item[field] in allowed, (f'unknown {collection_name} source-quality value', item['id'], field, item[field])
+        if collection_name == 'material link':
+            assert item.get('evidentiaryRelevance') in {'direct', 'substantial', 'contextual'}, ('invalid material-link evidentiary relevance', item['id'])
+            assert item.get('relevanceNote'), ('missing material-link relevance note', item['id'])
+            for claim in item.get('claimAssessments', []):
+                assert claim.get('support') in {'supports', 'partially-supports', 'disputes', 'does-not-support'}, ('invalid claim support', item['id'])
+                assert claim.get('relevance') in {'direct', 'substantial', 'contextual'}, ('invalid claim relevance', item['id'])
+                assert claim.get('methodologicalStrengthOverride') in {'strong', 'moderate', 'limited', 'not-applicable'}, ('invalid claim strength override', item['id'])
+                assert claim.get('claim') and claim.get('note'), ('incomplete claim assessment', item['id'])
 for material in source_materials:
     material_path = root / material['route'].lstrip('/') / 'index.html'
     assert material_path.is_file(), ('missing material page', material['id'], material['route'])

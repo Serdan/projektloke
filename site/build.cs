@@ -126,7 +126,7 @@ var publicDataRoot = Path.Combine(outputRoot, "data");
 Directory.CreateDirectory(publicDataRoot);
 var publicIndex = new
 {
-    schemaVersion = 14,
+    schemaVersion = 15,
     themeAliases,
     pageUpdates,
     proposals = proposals.OrderByDescending(proposal => proposal.Introduced).Select(proposal => new
@@ -296,6 +296,21 @@ static void Validate(
             throw new InvalidOperationException($"Material link {link.Id} has unknown category {link.Category}.");
         RequireSources($"material link {link.Id}", link.SourceIds, sourceById);
         ValidateSourceQuality($"material link {link.Id}", link.Independence, link.PeerReviewStatus, link.MethodologicalStrength, link.EvidenceRole, link.QualityNote);
+        if (link.EvidentiaryRelevance is not ("direct" or "substantial" or "contextual"))
+            throw new InvalidOperationException($"Material link {link.Id} has unknown evidentiary relevance {link.EvidentiaryRelevance}.");
+        if (string.IsNullOrWhiteSpace(link.RelevanceNote))
+            throw new InvalidOperationException($"Material link {link.Id} needs a relevance note.");
+        foreach (var claim in link.ClaimAssessments ?? [])
+        {
+            if (claim.Support is not ("supports" or "partially-supports" or "disputes" or "does-not-support"))
+                throw new InvalidOperationException($"Material link {link.Id} has unknown claim support {claim.Support}.");
+            if (claim.Relevance is not ("direct" or "substantial" or "contextual"))
+                throw new InvalidOperationException($"Material link {link.Id} has unknown claim relevance {claim.Relevance}.");
+            if (claim.MethodologicalStrengthOverride is not ("strong" or "moderate" or "limited" or "not-applicable"))
+                throw new InvalidOperationException($"Material link {link.Id} has unknown claim methodological-strength override {claim.MethodologicalStrengthOverride}.");
+            if (string.IsNullOrWhiteSpace(claim.Claim) || string.IsNullOrWhiteSpace(claim.Note))
+                throw new InvalidOperationException($"Material link {link.Id} has an incomplete claim assessment.");
+        }
     }
 
     foreach (var statement in statements)
@@ -474,6 +489,23 @@ static string RenderActorCards(IEnumerable<Actor> actors) => string.Join(
       </a>
     """));
 
+static string RelevanceLabel(string value) => value switch
+{
+    "direct" => "Direkte",
+    "substantial" => "Væsentlig",
+    "contextual" => "Kontekstuel",
+    _ => value
+};
+
+static string SupportLabel(string value) => value switch
+{
+    "supports" => "Understøtter",
+    "partially-supports" => "Understøtter delvist",
+    "disputes" => "Bestrider",
+    "does-not-support" => "Understøtter ikke",
+    _ => value
+};
+
 static string QualityLabel(string value) => value switch
 {
     "independent" => "Uafhængig",
@@ -505,6 +537,26 @@ static string RenderSourceQuality(string independence, string peerReviewStatus, 
     return compact
         ? $"<div class=\"source-quality compact-quality\" data-source-quality data-independence=\"{Encode(independence)}\" data-peer-review=\"{Encode(peerReviewStatus)}\" data-methodological-strength=\"{Encode(methodologicalStrength)}\" data-evidence-role=\"{Encode(evidenceRole)}\"><p class=\"evidence-meta\"><strong>Uafhængighed:</strong> {Encode(QualityLabel(independence))} · <strong>Peer review:</strong> {Encode(QualityLabel(peerReviewStatus))} · <strong>Metodisk styrke:</strong> {Encode(QualityLabel(methodologicalStrength))} · <strong>Rolle:</strong> {Encode(QualityLabel(evidenceRole))}</p><p class=\"evidence-meta\">{Encode(qualityNote)}</p></div>"
         : $"<section class=\"band subdued source-quality\"><div class=\"shell compact-block\"><p class=\"kicker\">Kildekvalitet</p>{facts}<p>{Encode(qualityNote)}</p></div></section>";
+}
+
+static string RenderClaimAssessments(IEnumerable<ClaimAssessment>? claims)
+{
+    var items = claims?.ToArray() ?? [];
+    if (items.Length == 0) return "";
+    return $"""
+      <div class="case-section claim-assessments">
+        <p class="kicker">Påstandsniveau</p>
+        <div class="evidence-list">
+          {string.Join(Environment.NewLine, items.Select(item => $"""
+            <article class="evidence-card" data-claim-assessment data-claim-support="{Encode(item.Support)}" data-claim-relevance="{Encode(item.Relevance)}" data-methodological-strength-override="{Encode(item.MethodologicalStrengthOverride)}">
+              <p class="evidence-meta">{Encode(SupportLabel(item.Support))} · relevans: {Encode(RelevanceLabel(item.Relevance))} · metodisk styrke for denne påstand: {Encode(QualityLabel(item.MethodologicalStrengthOverride))}</p>
+              <h3>{Encode(item.Claim)}</h3>
+              <p>{Encode(item.Note)}</p>
+            </article>
+          """))}
+        </div>
+      </div>
+    """;
 }
 
 static string RenderMaterialList(IEnumerable<Material> materials) => string.Join(
@@ -548,6 +600,8 @@ static string RenderMaterial(
         <h3>{Encode(item.Title)}</h3>
         <p>{Encode(item.Summary)} {RenderInlineSources(item.SourceIds, sourceById)}</p>
         {RenderSourceQuality(item.Independence, item.PeerReviewStatus, item.MethodologicalStrength, item.EvidenceRole, item.QualityNote, compact: true)}
+        <div class="source-quality compact-quality" data-evidentiary-relevance="{Encode(item.EvidentiaryRelevance)}"><p class="evidence-meta"><strong>Evidentiær relevans:</strong> {Encode(RelevanceLabel(item.EvidentiaryRelevance))}</p><p class="evidence-meta">{Encode(item.RelevanceNote)}</p></div>
+        {RenderClaimAssessments(item.ClaimAssessments)}
       </article>
     """));
 
@@ -1222,6 +1276,7 @@ sealed record Proposal(
 sealed record TimelineEvent(string Id, string Date, string Kind, string Title, string Summary, string[] ActorIds, string RelatedRoute, string[] SourceIds, string[]? MaterialIds);
 sealed record MediaItem(string Id, string Date, string Kind, string Title, string? AuthorActorId, string? AuthorLabel, string? OutletActorId, string? OutletLabel, string CorpusRole, string Summary, string[] Themes, string[] SourceIds, string[]? MaterialIds);
 sealed record Material(string Id, string Title, string ShortTitle, string Kind, string Date, string Route, string Summary, string[] Analysis, string[] SourceIds, string Independence, string PeerReviewStatus, string MethodologicalStrength, string EvidenceRole, string QualityNote, string[]? RelatedMaterialIds);
-sealed record MaterialLink(string Id, string MaterialId, string Category, string Kind, string Title, string Summary, string[] SourceIds, string Independence, string PeerReviewStatus, string MethodologicalStrength, string EvidenceRole, string QualityNote);
+sealed record MaterialLink(string Id, string MaterialId, string Category, string Kind, string Title, string Summary, string[] SourceIds, string Independence, string PeerReviewStatus, string MethodologicalStrength, string EvidenceRole, string QualityNote, string EvidentiaryRelevance, string RelevanceNote, ClaimAssessment[]? ClaimAssessments);
+sealed record ClaimAssessment(string Claim, string Support, string Relevance, string MethodologicalStrengthOverride, string Note);
 sealed record Statement(string Id, string Date, string ActorId, string Kind, string Excerpt, string Context, string Position, string[] Themes, string RelatedRoute, string[] SourceIds, string? Affiliation, string? Passage, string[]? MaterialIds);
 sealed record Relationship(string Id, string Date, string Kind, string FromActorId, string? ToActorId, string? ToRoute, string? ToLabel, string Summary, string[] SourceIds);
