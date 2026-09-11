@@ -18,12 +18,12 @@
 - Facebook hostility baseline from TrygFonden/Analyse & Tal.
 - 2026-29 LGBT+ action-plan review, including trans-specific healthcare/research measures and legal-gender limits.
 - First structured Cass Review / Danish youth-treatment media pilot, with a fixed 9 April-10 May 2024 window, three verified public sample records and explicit verification limits.
-- First-class material-node model now covers Cass Review, its separate University of York review package, Sundhedsstyrelsens 2018 guidance, the 2024 revision draft and WPATH SOC8. Criticism, rebuttal, professional responses and cross-domain use attach to the document actually evaluated.
+- First-class material-node model now covers Cass Review, its separate University of York review package, Sundhedsstyrelsens 2018 guidance, the 2024 revision draft, WPATH SOC8 and the 2026-29 LGBT+ action plan. Criticism, rebuttal, professional responses and cross-domain use attach to the document actually evaluated.
 
 ## Next
 
 1. Close the remaining archive gaps in the Cass pilot and full-text-code source plurality, trans/patient voices and headline/body alignment; extend the public sample only as verification improves.
-2. Continue promoting only recurring reference points that accumulate meaningful criticism, uptake or cross-domain links. Next evaluate the 2026-29 LGBT+ action plan and major institutional/legal decisions against the same threshold; avoid nodes for ordinary one-off sources.
+2. Continue promoting only recurring reference points that accumulate meaningful criticism, uptake or cross-domain links. Next evaluate major institutional/legal decisions against the same threshold; avoid nodes for ordinary one-off sources.
 3. Expand the Danish media map beyond the initial Berlingske/Dorte Toft and B47-cited corpus.
 4. Research positive/countervailing voices and representation gaps so the project can measure absence/presence rather than only hostile examples.
 5. Archive fragile primary sources locally where appropriate and record provenance.

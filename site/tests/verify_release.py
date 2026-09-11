@@ -60,6 +60,11 @@ for anchor in ('material-link-dps-paediatrics-sst-draft-2025', 'material-link-bu
 wpath_page = pages[root / 'materiale/wpath-soc8/index.html']
 for anchor in ('material-link-york-guideline-quality-wpath-2024', 'material-health-autism-caution', 'material-health-psychiatric-gate', 'material-health-youth-evidence-boundary'):
     assert anchor in wpath_page.ids, ('WPATH SOC8 missing linked critique or health analysis', anchor)
+action_plan_page = pages[root / 'materiale/lgbt-handlingsplan-2026-2029/index.html']
+for anchor in ('material-health-action-plan-trans-health-2026', 'begivenhed-lgbt-action-plan-2026', 'begivenhed-mf3-government-2026'):
+    assert anchor in action_plan_page.ids, ('LGBT action plan missing linked implementation/context record', anchor)
+politics_html = (root / 'politik/index.html').read_text()
+assert '/materiale/lgbt-handlingsplan-2026-2029/' in politics_html, 'Politics page must link to the action-plan material node'
 statements = {item['id']: item for item in data['statements']}
 source_statements = json.loads((root.parent / 'content/data/statements.json').read_text())
 source_ids = {item['id'] for item in source_statements}

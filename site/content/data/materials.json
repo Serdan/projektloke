@@ -112,5 +112,23 @@
       "cass-york-reviews-2024",
       "sst-draft-guidance-2024"
     ]
+  },
+  {
+    "id": "lgbt-action-plan-2026",
+    "title": "LGBT+ handlingsplan 2026-2029",
+    "shortTitle": "LGBT+ handlingsplan 2026-2029",
+    "kind": "regeringshandlingsplan",
+    "date": "2026-01-29",
+    "route": "/materiale/lgbt-handlingsplan-2026-2029/",
+    "summary": "Regeringens handlingsplan med 30 initiativer for 2026-2029. Planen er et selvstændigt referencepunkt på tværs af ligestillingspolitik og transrelateret sundhedspolitik.",
+    "analysis": [
+      "Planen skal læses som annonceret regeringspolitik, ikke som dokumentation for at initiativerne allerede er implementeret eller har haft effekt. Dens materialestatus gør det muligt at knytte senere implementering, kritik og politisk brug til den samme tekst uden at blande plan og resultat sammen.",
+      "På transområdet viderefører planen supplerende psykosocial rådgivning til personer på venteliste, i udredning eller behandling ved Center for Kønsidentitet og varsler forskning i langsigtede bivirkninger ved hormonbehandling til personer under 18 år. Den beskriver samtidig fortsat mulighed for stop- og krydshormoner til udvalgte mindreårige; forskningsinitiativet er derfor ikke i sig selv et behandlingsstop.",
+      "Planen rummer også bredere indsatser, som udtrykkeligt omfatter transfobi og kønsidentitet. Blandt de 30 initiativer har Projekt Loke ikke identificeret et nyt initiativ om juridisk kønsskifte; omtale af juridisk køn findes i tilbageblik på allerede gennemførte ændringer. Finansieringsaftalen fra 12. januar 2026 bruges som supplerende kilde til konkrete beløb."
+    ],
+    "sourceIds": [
+      "lgbt-action-plan-2026-2029",
+      "lgbt-action-plan-funding-2026"
+    ]
   }
 ]
