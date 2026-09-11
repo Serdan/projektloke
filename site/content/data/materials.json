@@ -130,5 +130,23 @@
       "lgbt-action-plan-2026-2029",
       "lgbt-action-plan-funding-2026"
     ]
+  },
+  {
+    "id": "supreme-court-prison-gender-2024",
+    "title": "Højesterets dom BS-60551/2023-HJR om afsoningsforhold og visitation",
+    "shortTitle": "Højesterets fængselsdom 2024",
+    "kind": "dom",
+    "date": "2024-09-10",
+    "route": "/materiale/hoejesteret-faengselsdom-2024/",
+    "summary": "Højesterets dom af 10. september 2024 om placering og afklædningsvisitation af en juridisk kvindelig transkønnet forvaringsdømt. Dommen blev senere brugt som del af argumentationsgrundlaget for B47.",
+    "analysis": [
+      "Dommen behandler to spørgsmål, som skal holdes adskilt. Placering på mandeafdeling blev opretholdt efter en konkret individuel helheds- og sikkerhedsvurdering. Højesteret opstillede ikke en generel regel om, at biologisk køn alene bestemmer fængselsplacering.",
+      "For afklædningsvisitation fastslog Højesteret særskilt, at ordet køn i straffuldbyrdelseslovens § 60, stk. 6, som udgangspunkt skal forstås som biologisk køn. Det er en konkret lovfortolkning på visitationsområdet og bør ikke uden videre generaliseres til andre institutioner eller rettighedsområder.",
+      "B47 brugte fængselssagen i et bredere argument om juridisk kønsskifte og rettigheder. Materialenoden gør det muligt at vise den senere politiske brug ved siden af dommens faktiske rækkevidde, uden at forslagsstillernes fortolkning tilskrives Højesteret."
+    ],
+    "sourceIds": [
+      "hoejesteret-prison-gender-2024",
+      "kriminalforsorgen-gender-minorities-2023"
+    ]
   }
 ]

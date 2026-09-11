@@ -130,7 +130,10 @@
       "ft-b47-proposal",
       "ft-b47-background"
     ],
-    "corpusRole": "politisk kildegrundlag"
+    "corpusRole": "politisk kildegrundlag",
+    "materialIds": [
+      "supreme-court-prison-gender-2024"
+    ]
   },
   {
     "id": "kd-prison-case-2023",

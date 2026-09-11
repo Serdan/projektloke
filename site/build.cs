@@ -108,13 +108,13 @@ foreach (var page in pages)
 }
 
 foreach (var proposal in proposals)
-    WritePage(proposal.Route, $"{proposal.Code}: {proposal.Title}", proposal.Summary, RenderProposal(proposal, statements, actorById, sourceById));
+    WritePage(proposal.Route, $"{proposal.Code}: {proposal.Title}", proposal.Summary, RenderProposal(proposal, statements, materialById, actorById, sourceById));
 
 foreach (var actor in actors)
     WritePage(actor.Route, actor.Name, actor.Summary, RenderActor(actor, proposals, events, relationships, media, statements, actorById, sourceById));
 
 foreach (var material in materials)
-    WritePage(material.Route, material.Title, material.Summary, RenderMaterial(material, materialLinks, media, relationships, events, statements, healthcare, materialById, actorById, sourceById));
+    WritePage(material.Route, material.Title, material.Summary, RenderMaterial(material, materialLinks, proposals, media, relationships, events, statements, healthcare, materialById, actorById, sourceById));
 
 WritePage(
     "/kilder/",
@@ -126,18 +126,18 @@ var publicDataRoot = Path.Combine(outputRoot, "data");
 Directory.CreateDirectory(publicDataRoot);
 var publicIndex = new
 {
-    schemaVersion = 12,
+    schemaVersion = 13,
     themeAliases,
     pageUpdates,
     proposals = proposals.OrderByDescending(proposal => proposal.Introduced).Select(proposal => new
     {
         proposal.Id, proposal.Code, proposal.Title, proposal.Route, proposal.Session, proposal.Introduced, proposal.FirstReading,
         proposal.FinalVote, proposal.Status, proposal.ProposerIds, proposal.SupportPartyIds, proposal.VoteFor, proposal.VoteAgainst,
-        proposal.VoteAbstain, proposal.VoteNote, proposal.Topics, proposal.SourceIds
+        proposal.VoteAbstain, proposal.VoteNote, proposal.Topics, proposal.SourceIds, proposal.MaterialIds
     }),
     events = events.OrderByDescending(item => item.Date).Select(item => new
     {
-        item.Id, item.Date, item.Kind, item.Title, item.Summary, item.ActorIds, item.RelatedRoute, item.SourceIds
+        item.Id, item.Date, item.Kind, item.Title, item.Summary, item.ActorIds, item.RelatedRoute, item.SourceIds, item.MaterialIds
     }),
     actors = actors.OrderBy(actor => actor.Name).Select(actor => new
     {
@@ -235,6 +235,9 @@ static void Validate(
         RequireSources($"proposal {proposal.Id}", proposal.SourceIds, sourceById);
         RequireActors($"proposal {proposal.Id}", proposal.ProposerIds, actorById);
         RequireActors($"proposal {proposal.Id}", proposal.SupportPartyIds, actorById);
+        foreach (var materialId in proposal.MaterialIds ?? [])
+            if (!materialById.ContainsKey(materialId))
+                throw new InvalidOperationException($"Proposal {proposal.Id} points to unknown material {materialId}.");
     }
 
     foreach (var item in events)
@@ -468,6 +471,7 @@ static string RenderMaterialList(IEnumerable<Material> materials) => string.Join
 static string RenderMaterial(
     Material material,
     IEnumerable<MaterialLink> materialLinks,
+    IEnumerable<Proposal> proposals,
     IEnumerable<MediaItem> media,
     IEnumerable<Relationship> relationships,
     IEnumerable<TimelineEvent> events,
@@ -481,6 +485,7 @@ static string RenderMaterial(
     var critiques = links.Where(item => item.Category == "critique").ToArray();
     var checks = links.Where(item => item.Category == "rebuttal").ToArray();
     var responses = links.Where(item => item.Category == "response").ToArray();
+    var relatedProposals = proposals.Where(item => (item.MaterialIds ?? []).Contains(material.Id, StringComparer.OrdinalIgnoreCase)).ToArray();
     var relatedMedia = media.Where(item => (item.MaterialIds ?? []).Contains(material.Id, StringComparer.OrdinalIgnoreCase)).ToArray();
     var relatedRelationships = relationships.Where(item => string.Equals(item.ToRoute, material.Route, StringComparison.OrdinalIgnoreCase)).ToArray();
     var relatedEvents = events.Where(item => (item.MaterialIds ?? []).Contains(material.Id, StringComparer.OrdinalIgnoreCase)).ToArray();
@@ -499,6 +504,7 @@ static string RenderMaterial(
     var critiqueHtml = critiques.Length == 0 ? "<p>Ingen særskilt registreret ekspertkritik endnu.</p>" : RenderLinkCards(critiques);
     var checkHtml = checks.Length == 0 ? "<p>Ingen særskilt registreret efterprøvning endnu.</p>" : RenderLinkCards(checks);
     var responseHtml = responses.Length == 0 ? "<p>Ingen særskilt registrerede faglige svar endnu.</p>" : RenderLinkCards(responses);
+    var proposalHtml = relatedProposals.Length == 0 ? "<p>Ingen direkte koblede politiske forslag endnu.</p>" : RenderProposalList(relatedProposals);
     var mediaHtml = relatedMedia.Length == 0 ? "<p>Ingen direkte koblede medieregistreringer endnu.</p>" : RenderMediaList(relatedMedia, actorById, sourceById);
     var relationshipHtml = relatedRelationships.Length == 0 ? "<p>Ingen direkte koblede politiske/netværksrelationer endnu.</p>" : RenderRelationships(relatedRelationships, actorById, sourceById);
     var eventHtml = relatedEvents.Length == 0 ? "<p>Ingen direkte koblede tidslinjepunkter endnu.</p>" : RenderTimeline(relatedEvents, actorById, sourceById);
@@ -557,6 +563,12 @@ static string RenderMaterial(
             <p class="kicker">Sundhed</p>
             <h2>Analyser der bruger materialet</h2>
             <div class="evidence-list">{healthcareHtml}</div>
+          </div>
+
+          <div class="case-section">
+            <p class="kicker">Politik</p>
+            <h2>Forslag der bruger materialet</h2>
+            <div class="evidence-list">{proposalHtml}</div>
           </div>
 
           <div class="case-section">
@@ -723,12 +735,21 @@ static string RenderStatementThemes(IEnumerable<Statement> statements)
 static string RenderProposal(
     Proposal proposal,
     IEnumerable<Statement> statements,
+    IReadOnlyDictionary<string, Material> materialById,
     IReadOnlyDictionary<string, Actor> actorById,
     IReadOnlyDictionary<string, Source> sourceById)
 {
     var proposers = proposal.ProposerIds.Select(id => actorById[id]).ToArray();
     var supporters = proposal.SupportPartyIds.Select(id => actorById[id]).ToArray();
     var relatedStatements = statements.Where(item => string.Equals(item.RelatedRoute, proposal.Route, StringComparison.OrdinalIgnoreCase)).ToArray();
+    var relatedMaterials = (proposal.MaterialIds ?? []).Select(id => materialById[id]).ToArray();
+    var materialSection = relatedMaterials.Length == 0 ? "" : $"""
+      <div class="case-section">
+        <p class="kicker">Relateret materiale</p>
+        <h2>Dokumenter brugt i sagen</h2>
+        <div class="entity-grid">{RenderMaterialList(relatedMaterials)}</div>
+      </div>
+    """;
     var statementSection = relatedStatements.Length == 0 ? "" : $"""
       <div class="case-section">
         <p class="kicker">Retorik i debatten</p>
@@ -827,6 +848,7 @@ static string RenderProposal(
 
           {baselineSection}
           {changingRoomSection}
+          {materialSection}
 
           <div class="case-section">
             <p class="kicker">Forslagsstillere</p>
@@ -1143,7 +1165,8 @@ sealed record Proposal(
     string? VoteSourceId,
     string? VoteNote,
     string[] SourceIds,
-    string[] Topics);
+    string[] Topics,
+    string[]? MaterialIds);
 sealed record TimelineEvent(string Id, string Date, string Kind, string Title, string Summary, string[] ActorIds, string RelatedRoute, string[] SourceIds, string[]? MaterialIds);
 sealed record MediaItem(string Id, string Date, string Kind, string Title, string? AuthorActorId, string? AuthorLabel, string? OutletActorId, string? OutletLabel, string CorpusRole, string Summary, string[] Themes, string[] SourceIds, string[]? MaterialIds);
 sealed record Material(string Id, string Title, string ShortTitle, string Kind, string Date, string Route, string Summary, string[] Analysis, string[] SourceIds, string[]? RelatedMaterialIds);

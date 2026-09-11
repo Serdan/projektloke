@@ -65,6 +65,16 @@ for anchor in ('material-health-action-plan-trans-health-2026', 'begivenhed-lgbt
     assert anchor in action_plan_page.ids, ('LGBT action plan missing linked implementation/context record', anchor)
 politics_html = (root / 'politik/index.html').read_text()
 assert '/materiale/lgbt-handlingsplan-2026-2029/' in politics_html, 'Politics page must link to the action-plan material node'
+judgment_page = pages[root / 'materiale/hoejesteret-faengselsdom-2024/index.html']
+for anchor in ('medie-dr-prison-case-2024', 'begivenhed-supreme-court-prison-gender-2024'):
+    assert anchor in judgment_page.ids, ('Supreme Court material missing direct media/event record', anchor)
+judgment_html = (root / 'materiale/hoejesteret-faengselsdom-2024/index.html').read_text()
+assert '/politik/b47/' in judgment_html, 'Supreme Court material must link to B47 political uptake'
+b47_html = (root / 'politik/b47/index.html').read_text()
+assert '/materiale/hoejesteret-faengselsdom-2024/' in b47_html, 'B47 must link back to the Supreme Court material node'
+assert data['schemaVersion'] >= 13, 'Material references on projected records require schema version 13+'
+b47_data = next(item for item in data['proposals'] if item['id'] == 'b47-2024-25')
+assert 'supreme-court-prison-gender-2024' in b47_data.get('materialIds', []), 'Public proposal data must preserve material links'
 statements = {item['id']: item for item in data['statements']}
 source_statements = json.loads((root.parent / 'content/data/statements.json').read_text())
 source_ids = {item['id'] for item in source_statements}
