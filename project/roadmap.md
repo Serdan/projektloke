@@ -22,6 +22,7 @@
 - Explicit source-quality metadata for every material and material link: independence, peer-review status, methodological strength, evidence role and an explanatory quality note, with controlled vocabularies and release validation.
 - Evidentiary relevance is now separate from source quality on material links, with optional claim-level support assessments and methodological-strength overrides for high-risk assertions.
 - Claim assessments now have stable IDs and source-level provenance; explicit evidence-conflict records distinguish direct contradiction from partial overlap and unresolved methodological/clinical disagreements.
+- Release verification is aligned on file-based C#: `dotnet run tests/verify_release.cs` independently checks generated HTML/JSON without a project file or Python dependency.
 
 ## Next
 

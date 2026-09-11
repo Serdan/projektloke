@@ -21,3 +21,12 @@ This GitHub repository is public. Working research, correspondence, archived sou
 - Preserve enough sourcing to make important claims independently verifiable.
 - Track corrections and uncertainty rather than silently smoothing over them.
 - Treat organized opposition to minority rights as a subject for investigation, not merely as one side of an abstract culture-war debate.
+
+## Build and verify
+
+From `site/`:
+
+```sh
+dotnet run build.cs
+dotnet run tests/verify_release.cs
+```
