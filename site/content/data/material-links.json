@@ -53,5 +53,71 @@
     "sourceIds": [
       "bma-cass-review-2026"
     ]
+  },
+  {
+    "id": "dps-paediatrics-sst-draft-2025",
+    "materialId": "sst-draft-guidance-2024",
+    "category": "response",
+    "kind": "fagligt høringssvar",
+    "title": "Dansk Pædiatrisk Selskab ønsker mere restriktiv og protokolleret ungdomspraksis",
+    "summary": "Dansk Pædiatrisk Selskab anbefalede i høringen større forsigtighed, en mere restriktiv praksis og mere protokolleret opfølgning for børn og unge. Selskabets svar er en faglig risikovurdering under evidensusikkerhed, ikke et dokumenteret fund af nul-effekt.",
+    "sourceIds": [
+      "dps-paediatrics-koensinkongruens-2025"
+    ]
+  },
+  {
+    "id": "bupdk-sst-draft-2025",
+    "materialId": "sst-draft-guidance-2024",
+    "category": "response",
+    "kind": "fagligt høringssvar",
+    "title": "BUP-DK fremhæver både evidensusikkerhed og risiko ved ikke-behandling",
+    "summary": "Børne- og Ungdomspsykiatrisk Selskab beskrev evidensen som usikker, men fremhævede samtidig positive observationsfund og sundhedsrisici ved ikke at behandle. Svaret viser, at lav evidenssikkerhed ikke blev omsat til én entydig klinisk anbefaling blandt faglige høringsparter.",
+    "sourceIds": [
+      "bup-dk-koensinkongruens-2025"
+    ]
+  },
+  {
+    "id": "dsam-sst-draft-2025",
+    "materialId": "sst-draft-guidance-2024",
+    "category": "response",
+    "kind": "fagligt høringssvar",
+    "title": "DSAM advarer mod et for rigidt toårigt varighedskriterium",
+    "summary": "Dansk Selskab for Almen Medicin advarede mod, at et foreslået toårigt varighedskriterium kan være for langt for nogle børn og unge. Indvendingen retter sig mod tærsklens kliniske konsekvenser, ikke mod behovet for grundig vurdering.",
+    "sourceIds": [
+      "dsam-koensinkongruens-2025"
+    ]
+  },
+  {
+    "id": "dp-sst-draft-autism-2025",
+    "materialId": "sst-draft-guidance-2024",
+    "category": "response",
+    "kind": "fagligt høringssvar",
+    "title": "Dansk Psykolog Forening afviser autisme som automatisk behandlingsbarriere",
+    "summary": "Dansk Psykolog Forening fremhævede, at autisme ikke i sig selv bør afskære reel udredning eller behandling. Det er direkte relevant for revisionen af den ældre vejlednings formulering om autisme med særinteresse.",
+    "sourceIds": [
+      "dp-koensinkongruens-2025"
+    ]
+  },
+  {
+    "id": "dps-psychiatry-sst-draft-autism-2025",
+    "materialId": "sst-draft-guidance-2024",
+    "category": "response",
+    "kind": "fagligt høringssvar",
+    "title": "Dansk Psykiatrisk Selskab efterlyser særlig forsigtighed ved autisme",
+    "summary": "Dansk Psykiatrisk Selskab ønskede særlig forsigtighed ved autismespektrumforstyrrelse. Sammenholdt med de øvrige høringssvar dokumenterer det reel faglig uenighed om, hvor meget autisme bør ændre behandlings- og udredningstærsklen.",
+    "sourceIds": [
+      "dps-psychiatry-koensinkongruens-2025"
+    ]
+  },
+  {
+    "id": "york-guideline-quality-wpath-2024",
+    "materialId": "wpath-soc8-2022",
+    "category": "critique",
+    "kind": "systematisk guideline-kvalitetsvurdering",
+    "title": "York-reviewet vurderer kvaliteten af WPATH SOC8 som klinisk retningslinje",
+    "summary": "University of Yorks systematiske review af guideline-kvalitet inkluderede WPATH SOC8 og vurderede retningslinjer med AGREE II. Relationen registrerer en metodisk kritik af guidelineudviklingen; den er ikke i sig selv evidens for, at alle konkrete SOC8-anbefalinger er klinisk forkerte.",
+    "sourceIds": [
+      "york-guideline-quality-review-2024"
+    ]
   }
 ]

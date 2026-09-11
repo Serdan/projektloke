@@ -27,9 +27,9 @@
     "title": "Cass-bestilte systematiske reviews fra University of York",
     "shortTitle": "York-reviewene",
     "kind": "systematisk reviewserie",
-    "date": "2024-10-30",
+    "date": "2024-04-09",
     "route": "/materiale/cass-york-reviews/",
-    "summary": "Syv systematiske reviews fra University of York, bestilt som del af evidensgrundlaget for Cass Review og senere publiceret i Archives of Disease in Childhood.",
+    "summary": "Syv systematiske reviews fra University of York, bestilt som del af evidensgrundlaget for Cass Review. Reviewserien blev publiceret online 9. april 2024 og senere samlet i et Archives of Disease in Childhood-supplement.",
     "analysis": [
       "Noone m.fl.s ROBIS-kritik retter sig direkte mod disse syv reviews. Det er derfor metodisk misvisende at registrere hele kritikken som en kritik af Cass-rapportens egen fortolkning; reviewseriens metode og Cass-rapportens brug af resultaterne er to forskellige led.",
       "De syv reviews dækker social transition, psykosocial støtte, kliniske retningslinjers kvalitet, pubertetssuppression, karakteristika ved henviste børn og unge, kønshormoner og care pathways. Projekt Loke registrerer dem samlet som ét materiale, fordi den centrale metodekritik vurderer reviewpakken på tværs med fælles protokol og ROBIS.",
@@ -45,7 +45,72 @@
       "york-care-pathways-review-2024"
     ],
     "relatedMaterialIds": [
-      "cass-review-2024"
+      "cass-review-2024",
+      "wpath-soc8-2022"
+    ]
+  },
+  {
+    "id": "sst-guidance-2018",
+    "title": "Sundhedsfaglig hjælp ved kønsidentitetsforhold",
+    "shortTitle": "SST-vejledningen 2018",
+    "kind": "national sundhedsfaglig vejledning",
+    "date": "2018-08-17",
+    "route": "/materiale/sst-vejledning-2018/",
+    "summary": "Sundhedsstyrelsens nationale vejledning fra 2018 om udredning og behandling ved kønsidentitetsforhold. Den er fortsat den gældende vejledning, mens en revision er under udarbejdelse.",
+    "analysis": [
+      "Vejledningen er et centralt normativt dokument for den danske behandlingsramme og bør derfor kunne efterprøves som et selvstændigt materiale frem for kun at optræde som kilde til enkelte sundhedsposter.",
+      "Flere af Projekt Lokes nuværende analyser vedrører konkrete spændinger mellem vejledningens ordlyd og nyere viden eller lokal praksis: blandt andet formuleringen om autisme med relevant særinteresse, psykiatriske adgangsbetingelser, målet om kort ventetid og manglende sporbar klinisk referenceliste.",
+      "At vejledningen er fra 2018 dokumenterer ikke i sig selv faglig forældelse. Relevansen ligger i, at den fortsat er gældende samtidig med at Sundhedsstyrelsen selv har igangsat en revision og udarbejdet et nyere høringsudkast."
+    ],
+    "sourceIds": [
+      "sst-koensidentitet-vejledning-2018",
+      "sst-koensidentitet-revision-2025"
+    ],
+    "relatedMaterialIds": [
+      "sst-draft-guidance-2024"
+    ]
+  },
+  {
+    "id": "sst-draft-guidance-2024",
+    "title": "Faglig ramme for sundhedsfaglig hjælp ved kønsinkongruens – høringsversion",
+    "shortTitle": "SST-høringsudkast 2024",
+    "kind": "høringsudkast til national faglig ramme",
+    "date": "2024-12-18",
+    "route": "/materiale/sst-hoeringsudkast-2024/",
+    "summary": "Sundhedsstyrelsens høringsversion til en revideret faglig ramme. Udkastet er ikke gældende vejledning, men danner grundlag for en dokumenteret faglig høringsproces.",
+    "analysis": [
+      "Høringsudkastet er et separat materiale fra 2018-vejledningen: det har en egentlig klinisk litteraturliste, inddrager nyere internationale retningslinjer og ændrer flere formuleringer om psykiatri, udviklingsforstyrrelser og ungdomsbehandling.",
+      "De faglige høringssvar peger ikke i én retning. Nogle ønsker mere restriktiv og protokolleret praksis, mens andre advarer mod for kategoriske kriterier eller mod at gøre autisme til en adgangsbarriere. Derfor bør hvert høringssvar knyttes direkte til udkastet og bevares som sin egen faglige position.",
+      "Udkastet er ikke en vedtaget national regel og må ikke bruges som dokumentation for gældende praksis. Dets betydning er, at det viser den retning Sundhedsstyrelsen sendte i høring, og hvilke faglige indvendinger den retning udløste."
+    ],
+    "sourceIds": [
+      "sst-koensinkongruens-hoeringsudkast-2024",
+      "hearing-koensinkongruens-2025"
+    ],
+    "relatedMaterialIds": [
+      "sst-guidance-2018",
+      "wpath-soc8-2022"
+    ]
+  },
+  {
+    "id": "wpath-soc8-2022",
+    "title": "Standards of Care for the Health of Transgender and Gender Diverse People, Version 8",
+    "shortTitle": "WPATH SOC8",
+    "kind": "international klinisk retningslinje",
+    "date": "2022-09-06",
+    "route": "/materiale/wpath-soc8/",
+    "summary": "WPATHs internationale Standards of Care Version 8 fra 2022. Retningslinjen bruges i Projekt Loke som fagligt sammenligningspunkt for blandt andet psykiatri, autisme, ungdomsbehandling og den danske revisionsproces.",
+    "analysis": [
+      "SOC8 er et relevant referencepunkt, fordi den danske 2018-vejledning blev udgivet før SOC8, mens Sundhedsstyrelsens senere høringsudkast inddrager nyere international klinisk litteratur. Projekt Loke behandler derfor SOC8 som et selvstændigt materiale frem for som et autoritetsstempel.",
+      "Retningslinjen anbefaler konkrete individuelle vurderinger af blandt andet diagnostisk klarhed, samtykkekompetence, psykiske forhold og neurodivergens. Den bruges på siden til at efterprøve, om danske lokale eller nationale kriterier er mere kategoriske end denne internationale ramme.",
+      "SOC8 er selv genstand for metodisk kritik. University of Yorks review af kliniske retningslinjers kvalitet vurderede blandt andet WPATHs guidelineudvikling. Den kritik registreres som en relation til SOC8 og skal holdes adskilt fra spørgsmålet om effekten af de enkelte behandlinger."
+    ],
+    "sourceIds": [
+      "wpath-soc8-2022"
+    ],
+    "relatedMaterialIds": [
+      "cass-york-reviews-2024",
+      "sst-draft-guidance-2024"
     ]
   }
 ]

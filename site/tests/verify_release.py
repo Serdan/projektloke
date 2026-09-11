@@ -51,6 +51,15 @@ for anchor in ('udtalelse-raabjerg-b12-evidence', 'udtalelse-toft-2024-activism-
     assert anchor in cass_page.ids, ('Cass material missing related record', anchor)
 for anchor in ('material-link-noone-cass-methodology-2025', 'material-link-bma-york-reanalysis-2026', 'material-health-youth-evidence-boundary'):
     assert anchor in york_page.ids, ('York material missing related record', anchor)
+sst2018_page = pages[root / 'materiale/sst-vejledning-2018/index.html']
+sst_draft_page = pages[root / 'materiale/sst-hoeringsudkast-2024/index.html']
+for anchor in ('material-health-autism-caution', 'material-health-psychiatric-gate', 'material-health-reference-traceability'):
+    assert anchor in sst2018_page.ids, ('2018 guidance missing linked health analysis', anchor)
+for anchor in ('material-link-dps-paediatrics-sst-draft-2025', 'material-link-bupdk-sst-draft-2025', 'material-link-dsam-sst-draft-2025', 'material-link-dp-sst-draft-autism-2025', 'material-link-dps-psychiatry-sst-draft-autism-2025', 'begivenhed-raabjerg-dps-hearing-question-2025', 'begivenhed-raabjerg-autism-hearing-question-2025'):
+    assert anchor in sst_draft_page.ids, ('SST draft missing direct response or uptake', anchor)
+wpath_page = pages[root / 'materiale/wpath-soc8/index.html']
+for anchor in ('material-link-york-guideline-quality-wpath-2024', 'material-health-autism-caution', 'material-health-psychiatric-gate', 'material-health-youth-evidence-boundary'):
+    assert anchor in wpath_page.ids, ('WPATH SOC8 missing linked critique or health analysis', anchor)
 statements = {item['id']: item for item in data['statements']}
 source_statements = json.loads((root.parent / 'content/data/statements.json').read_text())
 source_ids = {item['id'] for item in source_statements}

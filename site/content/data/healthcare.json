@@ -10,6 +10,11 @@
       "sst-koensidentitet-vejledning-2018",
       "sst-koensidentitet-revision-2025",
       "sst-koensinkongruens-hoeringsudkast-2024"
+    ],
+    "materialIds": [
+      "sst-guidance-2018",
+      "sst-draft-guidance-2024",
+      "wpath-soc8-2022"
     ]
   },
   {
@@ -21,6 +26,9 @@
     "analysis": "Det er et vigtigt udgangspunkt for vurderingen af den danske voksenmodel: den nyere forskning støtter fortsat selve behandlingen, men dokumenterer ikke dermed, at enhver konkret patient bør behandles uden vurdering, eller at én bestemt organisationsmodel er optimal. Restriktioner bør derfor vurderes efter, om de håndterer en dokumenteret individuel risiko eller blot fungerer som generelle barrierer.",
     "sourceIds": [
       "cooney-hormones-review-2025",
+      "wpath-soc8-2022"
+    ],
+    "materialIds": [
       "wpath-soc8-2022"
     ]
   },
@@ -40,6 +48,11 @@
       "cki-autism-concern-2025",
       "dps-paediatrics-koensinkongruens-2025",
       "sst-koensinkongruens-hoeringsudkast-2024"
+    ],
+    "materialIds": [
+      "sst-guidance-2018",
+      "sst-draft-guidance-2024",
+      "wpath-soc8-2022"
     ]
   },
   {
@@ -55,6 +68,9 @@
       "bup-dk-koensinkongruens-2025",
       "dsam-koensinkongruens-2025",
       "dp-koensinkongruens-2025"
+    ],
+    "materialIds": [
+      "sst-draft-guidance-2024"
     ]
   },
   {
@@ -68,6 +84,10 @@
       "sst-koensidentitet-vejledning-2018",
       "ouh-ckio-patientinformation",
       "wpath-soc8-2022"
+    ],
+    "materialIds": [
+      "sst-guidance-2018",
+      "wpath-soc8-2022"
     ]
   },
   {
@@ -80,6 +100,11 @@
     "sourceIds": [
       "sst-koensidentitet-vejledning-2018",
       "sst-koensinkongruens-hoeringsudkast-2024"
+    ],
+    "materialIds": [
+      "sst-guidance-2018",
+      "sst-draft-guidance-2024",
+      "wpath-soc8-2022"
     ]
   },
   {
@@ -119,6 +144,9 @@
       "minby-aalborg-ventetid-2026",
       "sst-ramboll-koensidentitet-2025",
       "sst-koensidentitet-vejledning-2018"
+    ],
+    "materialIds": [
+      "sst-guidance-2018"
     ]
   },
   {
@@ -159,7 +187,9 @@
       "wpath-soc8-2022"
     ],
     "materialIds": [
-      "cass-york-reviews-2024"
+      "cass-york-reviews-2024",
+      "sst-draft-guidance-2024",
+      "wpath-soc8-2022"
     ]
   },
   {
@@ -286,6 +316,9 @@
     "sourceIds": [
       "ouh-ckio-patientinformation",
       "sst-koensidentitet-vejledning-2018"
+    ],
+    "materialIds": [
+      "sst-guidance-2018"
     ]
   },
   {

@@ -418,6 +418,9 @@
     "sourceIds": [
       "ft-s820-hearing-2025",
       "dps-paediatrics-koensinkongruens-2025"
+    ],
+    "materialIds": [
+      "sst-draft-guidance-2024"
     ]
   },
   {
@@ -433,6 +436,9 @@
     "sourceIds": [
       "ft-s896-autism-hearing-2025",
       "dps-psychiatry-koensinkongruens-2025"
+    ],
+    "materialIds": [
+      "sst-draft-guidance-2024"
     ]
   },
   {

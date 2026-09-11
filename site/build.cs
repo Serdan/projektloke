@@ -288,7 +288,7 @@ static void Validate(
     {
         if (!materialById.ContainsKey(link.MaterialId))
             throw new InvalidOperationException($"Material link {link.Id} points to unknown material {link.MaterialId}.");
-        if (link.Category is not ("critique" or "rebuttal"))
+        if (link.Category is not ("critique" or "rebuttal" or "response"))
             throw new InvalidOperationException($"Material link {link.Id} has unknown category {link.Category}.");
         RequireSources($"material link {link.Id}", link.SourceIds, sourceById);
     }
@@ -480,6 +480,7 @@ static string RenderMaterial(
     var links = materialLinks.Where(item => string.Equals(item.MaterialId, material.Id, StringComparison.OrdinalIgnoreCase)).ToArray();
     var critiques = links.Where(item => item.Category == "critique").ToArray();
     var checks = links.Where(item => item.Category == "rebuttal").ToArray();
+    var responses = links.Where(item => item.Category == "response").ToArray();
     var relatedMedia = media.Where(item => (item.MaterialIds ?? []).Contains(material.Id, StringComparer.OrdinalIgnoreCase)).ToArray();
     var relatedRelationships = relationships.Where(item => string.Equals(item.ToRoute, material.Route, StringComparison.OrdinalIgnoreCase)).ToArray();
     var relatedEvents = events.Where(item => (item.MaterialIds ?? []).Contains(material.Id, StringComparer.OrdinalIgnoreCase)).ToArray();
@@ -497,6 +498,7 @@ static string RenderMaterial(
 
     var critiqueHtml = critiques.Length == 0 ? "<p>Ingen særskilt registreret ekspertkritik endnu.</p>" : RenderLinkCards(critiques);
     var checkHtml = checks.Length == 0 ? "<p>Ingen særskilt registreret efterprøvning endnu.</p>" : RenderLinkCards(checks);
+    var responseHtml = responses.Length == 0 ? "<p>Ingen særskilt registrerede faglige svar endnu.</p>" : RenderLinkCards(responses);
     var mediaHtml = relatedMedia.Length == 0 ? "<p>Ingen direkte koblede medieregistreringer endnu.</p>" : RenderMediaList(relatedMedia, actorById, sourceById);
     var relationshipHtml = relatedRelationships.Length == 0 ? "<p>Ingen direkte koblede politiske/netværksrelationer endnu.</p>" : RenderRelationships(relatedRelationships, actorById, sourceById);
     var eventHtml = relatedEvents.Length == 0 ? "<p>Ingen direkte koblede tidslinjepunkter endnu.</p>" : RenderTimeline(relatedEvents, actorById, sourceById);
@@ -543,6 +545,12 @@ static string RenderMaterial(
             <p class="kicker">Efterprøvning og modkritik</p>
             <h2>Uenighed om kritikken</h2>
             <div class="evidence-list">{checkHtml}</div>
+          </div>
+
+          <div class="case-section">
+            <p class="kicker">Faglige svar</p>
+            <h2>Høringssvar og andre direkte reaktioner</h2>
+            <div class="evidence-list">{responseHtml}</div>
           </div>
 
           <div class="case-section">
