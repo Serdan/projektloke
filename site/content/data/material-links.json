@@ -8,7 +8,12 @@
     "sourceIds": [
       "bma-cass-review-2026"
     ],
-    "category": "critique"
+    "category": "critique",
+    "independence": "commissioned-independent",
+    "peerReviewStatus": "not-peer-reviewed",
+    "methodologicalStrength": "moderate",
+    "evidenceRole": "commentary",
+    "qualityNote": "BMA-gennemgangen er en ekstern efterprøvning med en særskilt HEOR-reanalyse og claim-audit. Den er ikke journal-peer-reviewed, men bruger en eksplicit og efterprøvbar analyseproces."
   },
   {
     "id": "noone-cass-methodology-2025",
@@ -19,7 +24,12 @@
     "sourceIds": [
       "noone-cass-critique-2025"
     ],
-    "category": "critique"
+    "category": "critique",
+    "independence": "independent",
+    "peerReviewStatus": "peer-reviewed",
+    "methodologicalStrength": "moderate",
+    "evidenceRole": "commentary",
+    "qualityNote": "Peer-reviewed metodekritik uafhængig af York/Cass-teamet. ROBIS giver en struktureret ramme, men flere af kritikpunkterne er senere blevet bestridt, så vurderingen behandles som vægtig metodekritik frem for endelig facit."
   },
   {
     "id": "grijseels-cass-commentary-2024",
@@ -30,7 +40,12 @@
     "sourceIds": [
       "grijseels-cass-commentary-2024"
     ],
-    "category": "critique"
+    "category": "critique",
+    "independence": "independent",
+    "peerReviewStatus": "peer-reviewed",
+    "methodologicalStrength": "limited",
+    "evidenceRole": "commentary",
+    "qualityNote": "Peer-reviewed kritisk kommentar med konkrete claim-level eksempler, men ikke en fuld systematisk reanalyse af hele Cass-rapporten eller dens evidensgrundlag."
   },
   {
     "id": "mcdeavitt-cass-factcheck-2025",
@@ -41,7 +56,12 @@
     "sourceIds": [
       "mcdeavitt-cass-factcheck-2025"
     ],
-    "category": "rebuttal"
+    "category": "rebuttal",
+    "independence": "independent",
+    "peerReviewStatus": "peer-reviewed",
+    "methodologicalStrength": "moderate",
+    "evidenceRole": "commentary",
+    "qualityNote": "Peer-reviewed gennemgang af eksisterende Cass-kritikker. Den er uafhængig af Cass-teamet, men er primært en kritisk litteratur-/fact-check-øvelse snarere end ny primær effektforskning."
   },
   {
     "id": "bma-york-reanalysis-2026",
@@ -52,7 +72,12 @@
     "summary": "BMA bestilte en uafhængig HEOR-reanalyse af behandlingsreviewenes risikovurderinger. Den fastholdt, at evidensen er begrænset og usikker, men fandt ikke belæg for, at York systematisk havde udeladt høj-kvalitetsstudier eller skævvredet kvalitetsvurderinger. Det fungerer som direkte modgående efterprøvning af dele af den senere metodekritik.",
     "sourceIds": [
       "bma-cass-review-2026"
-    ]
+    ],
+    "independence": "commissioned-independent",
+    "peerReviewStatus": "not-peer-reviewed",
+    "methodologicalStrength": "moderate",
+    "evidenceRole": "evidence-synthesis",
+    "qualityNote": "BMA bestilte en særskilt HEOR-reanalyse af centrale metodiske spørgsmål. Den er ikke journal-peer-reviewed, men er en eksplicit sekundær efterprøvning af reviewmetode og studiekvalitet."
   },
   {
     "id": "dps-paediatrics-sst-draft-2025",
@@ -63,7 +88,12 @@
     "summary": "Dansk Pædiatrisk Selskab anbefalede i høringen større forsigtighed, en mere restriktiv praksis og mere protokolleret opfølgning for børn og unge. Selskabets svar er en faglig risikovurdering under evidensusikkerhed, ikke et dokumenteret fund af nul-effekt.",
     "sourceIds": [
       "dps-paediatrics-koensinkongruens-2025"
-    ]
+    ],
+    "independence": "stakeholder",
+    "peerReviewStatus": "not-peer-reviewed",
+    "methodologicalStrength": "limited",
+    "evidenceRole": "commentary",
+    "qualityNote": "Fagligt høringssvar fra en professionel interessent. Det dokumenterer selskabets vurdering af udkastet, men er ikke en systematisk eller peer-reviewed evidenssyntese."
   },
   {
     "id": "bupdk-sst-draft-2025",
@@ -74,7 +104,12 @@
     "summary": "Børne- og Ungdomspsykiatrisk Selskab beskrev evidensen som usikker, men fremhævede samtidig positive observationsfund og sundhedsrisici ved ikke at behandle. Svaret viser, at lav evidenssikkerhed ikke blev omsat til én entydig klinisk anbefaling blandt faglige høringsparter.",
     "sourceIds": [
       "bup-dk-koensinkongruens-2025"
-    ]
+    ],
+    "independence": "stakeholder",
+    "peerReviewStatus": "not-peer-reviewed",
+    "methodologicalStrength": "limited",
+    "evidenceRole": "commentary",
+    "qualityNote": "Fagligt høringssvar fra en professionel interessent. Det er relevant ekspertfortolkning, men ikke en selvstændig systematisk evidensanalyse."
   },
   {
     "id": "dsam-sst-draft-2025",
@@ -85,7 +120,12 @@
     "summary": "Dansk Selskab for Almen Medicin advarede mod, at et foreslået toårigt varighedskriterium kan være for langt for nogle børn og unge. Indvendingen retter sig mod tærsklens kliniske konsekvenser, ikke mod behovet for grundig vurdering.",
     "sourceIds": [
       "dsam-koensinkongruens-2025"
-    ]
+    ],
+    "independence": "stakeholder",
+    "peerReviewStatus": "not-peer-reviewed",
+    "methodologicalStrength": "limited",
+    "evidenceRole": "commentary",
+    "qualityNote": "Fagligt høringssvar fra en professionel interessent. Det dokumenterer en klinisk vurdering af tærskler og konsekvenser, ikke ny primær forskning."
   },
   {
     "id": "dp-sst-draft-autism-2025",
@@ -96,7 +136,12 @@
     "summary": "Dansk Psykolog Forening fremhævede, at autisme ikke i sig selv bør afskære reel udredning eller behandling. Det er direkte relevant for revisionen af den ældre vejlednings formulering om autisme med særinteresse.",
     "sourceIds": [
       "dp-koensinkongruens-2025"
-    ]
+    ],
+    "independence": "stakeholder",
+    "peerReviewStatus": "not-peer-reviewed",
+    "methodologicalStrength": "limited",
+    "evidenceRole": "commentary",
+    "qualityNote": "Fagligt høringssvar fra en professionel interessent. Det dokumenterer foreningens faglige position om autisme og adgang, men er ikke peer-reviewed eller systematisk evidenssyntese."
   },
   {
     "id": "dps-psychiatry-sst-draft-autism-2025",
@@ -107,7 +152,12 @@
     "summary": "Dansk Psykiatrisk Selskab ønskede særlig forsigtighed ved autismespektrumforstyrrelse. Sammenholdt med de øvrige høringssvar dokumenterer det reel faglig uenighed om, hvor meget autisme bør ændre behandlings- og udredningstærsklen.",
     "sourceIds": [
       "dps-psychiatry-koensinkongruens-2025"
-    ]
+    ],
+    "independence": "stakeholder",
+    "peerReviewStatus": "not-peer-reviewed",
+    "methodologicalStrength": "limited",
+    "evidenceRole": "commentary",
+    "qualityNote": "Fagligt høringssvar fra en professionel interessent. Det dokumenterer selskabets risikovurdering og anbefaling om forsigtighed, ikke et selvstændigt empirisk effektstudie."
   },
   {
     "id": "york-guideline-quality-wpath-2024",
@@ -118,6 +168,11 @@
     "summary": "University of Yorks systematiske review af guideline-kvalitet inkluderede WPATH SOC8 og vurderede retningslinjer med AGREE II. Relationen registrerer en metodisk kritik af guidelineudviklingen; den er ikke i sig selv evidens for, at alle konkrete SOC8-anbefalinger er klinisk forkerte.",
     "sourceIds": [
       "york-guideline-quality-review-2024"
-    ]
+    ],
+    "independence": "commissioned-independent",
+    "peerReviewStatus": "peer-reviewed",
+    "methodologicalStrength": "moderate",
+    "evidenceRole": "evidence-synthesis",
+    "qualityNote": "Peer-reviewed systematisk guideline-vurdering udført af York som del af det Cass-bestilte arbejde. AGREE II giver en struktureret metode, men vurderingen af guidelinekvalitet er ikke det samme som direkte evidens om behandlingseffekt."
   }
 ]

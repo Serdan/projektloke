@@ -19,6 +19,7 @@
 - 2026-29 LGBT+ action-plan review, including trans-specific healthcare/research measures and legal-gender limits.
 - First structured Cass Review / Danish youth-treatment media pilot, with a fixed 9 April-10 May 2024 window, three verified public sample records and explicit verification limits.
 - First-class material-node model now covers Cass Review, its separate University of York review package, Sundhedsstyrelsens 2018 guidance, the 2024 revision draft, WPATH SOC8, the 2026-29 LGBT+ action plan and the 2024 Supreme Court prison judgment. Criticism, rebuttal, professional responses and cross-domain use attach to the document actually evaluated.
+- Explicit source-quality metadata for every material and material link: independence, peer-review status, methodological strength, evidence role and an explanatory quality note, with controlled vocabularies and release validation.
 
 ## Next
 
@@ -28,8 +29,7 @@
 4. Research positive/countervailing voices and representation gaps so the project can measure absence/presence rather than only hostile examples.
 5. Archive fragile primary sources locally where appropriate and record provenance.
 6. Add correction/change history to published records.
-7. Add explicit evidence-strength/provenance fields where they improve auditability.
-8. Build an outreach package for LGBT+ Danmark and selected editors/reporters once the first structured media sample is stable.
+7. Build an outreach package for LGBT+ Danmark and selected editors/reporters once the first structured media sample is stable.
 
 ## Later
 

@@ -20,7 +20,12 @@
     ],
     "relatedMaterialIds": [
       "cass-york-reviews-2024"
-    ]
+    ],
+    "independence": "commissioned-independent",
+    "peerReviewStatus": "not-peer-reviewed",
+    "methodologicalStrength": "moderate",
+    "evidenceRole": "primary-evidence",
+    "qualityNote": "Bestilt af NHS England som en ekstern, uafhængigt ledet udredning. Rapporten er den primære kilde til Cass-anbefalingerne, men dens egen evidensfortolkning er ikke journal-peer-reviewed og er senere blevet efterprøvet kritisk."
   },
   {
     "id": "cass-york-reviews-2024",
@@ -47,7 +52,12 @@
     "relatedMaterialIds": [
       "cass-review-2024",
       "wpath-soc8-2022"
-    ]
+    ],
+    "independence": "commissioned-independent",
+    "peerReviewStatus": "peer-reviewed",
+    "methodologicalStrength": "moderate",
+    "evidenceRole": "evidence-synthesis",
+    "qualityNote": "Bestilt som del af Cass-arbejdet og udført af University of York. Reviewene er peer-reviewed systematiske synteser, men metodekritik og senere modkritik gør en samlet metodisk vurdering mere forsigtig end \"stærk\"."
   },
   {
     "id": "sst-guidance-2018",
@@ -68,7 +78,12 @@
     ],
     "relatedMaterialIds": [
       "sst-draft-guidance-2024"
-    ]
+    ],
+    "independence": "institutional",
+    "peerReviewStatus": "not-peer-reviewed",
+    "methodologicalStrength": "limited",
+    "evidenceRole": "primary-evidence",
+    "qualityNote": "Sundhedsstyrelsens egen gældende vejledning er stærk primær dokumentation for den nationale normtekst. Som evidenssyntese er sporbarheden begrænset, blandt andet fordi den ikke har en fuldt efterprøvbar klinisk referenceliste."
   },
   {
     "id": "sst-draft-guidance-2024",
@@ -90,7 +105,12 @@
     "relatedMaterialIds": [
       "sst-guidance-2018",
       "wpath-soc8-2022"
-    ]
+    ],
+    "independence": "institutional",
+    "peerReviewStatus": "not-peer-reviewed",
+    "methodologicalStrength": "moderate",
+    "evidenceRole": "primary-evidence",
+    "qualityNote": "Sundhedsstyrelsens eget høringsudkast er primær dokumentation for den foreslåede revisionsretning. Det har tydeligere klinisk litteraturgrundlag end 2018-vejledningen, men er et ikke-vedtaget høringsdokument og ikke peer-reviewed forskning."
   },
   {
     "id": "wpath-soc8-2022",
@@ -111,7 +131,12 @@
     "relatedMaterialIds": [
       "cass-york-reviews-2024",
       "sst-draft-guidance-2024"
-    ]
+    ],
+    "independence": "institutional",
+    "peerReviewStatus": "peer-reviewed",
+    "methodologicalStrength": "moderate",
+    "evidenceRole": "primary-evidence",
+    "qualityNote": "WPATH er selv ophavsorganisation for retningslinjen, så materialet er institutionelt snarere end uafhængigt af guidelineprocessen. SOC8 er publiceret peer-reviewed, men guidelineudviklingens kvalitet er senere blevet systematisk vurderet og kritiseret."
   },
   {
     "id": "lgbt-action-plan-2026",
@@ -129,7 +154,12 @@
     "sourceIds": [
       "lgbt-action-plan-2026-2029",
       "lgbt-action-plan-funding-2026"
-    ]
+    ],
+    "independence": "institutional",
+    "peerReviewStatus": "not-applicable",
+    "methodologicalStrength": "not-applicable",
+    "evidenceRole": "primary-evidence",
+    "qualityNote": "Regeringens egen handlingsplan er direkte primær dokumentation for annonceret politik. Peer review og empirisk metodestyrke er ikke relevante kvalitetsmål for en politisk handlingsplan; implementering og effekt kræver særskilt evidens."
   },
   {
     "id": "supreme-court-prison-gender-2024",
@@ -147,6 +177,11 @@
     "sourceIds": [
       "hoejesteret-prison-gender-2024",
       "kriminalforsorgen-gender-minorities-2023"
-    ]
+    ],
+    "independence": "institutional",
+    "peerReviewStatus": "not-applicable",
+    "methodologicalStrength": "not-applicable",
+    "evidenceRole": "primary-evidence",
+    "qualityNote": "Højesterets egen dom er den autoritative primærkilde til rettens afgørelse og begrundelse. Peer review og empirisk metodestyrke er ikke relevante mål for en dom; kvalitetsspørgsmålet er primært korrekt gengivelse af dens retlige rækkevidde."
   }
 ]

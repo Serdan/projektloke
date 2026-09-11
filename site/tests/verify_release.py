@@ -72,7 +72,7 @@ judgment_html = (root / 'materiale/hoejesteret-faengselsdom-2024/index.html').re
 assert '/politik/b47/' in judgment_html, 'Supreme Court material must link to B47 political uptake'
 b47_html = (root / 'politik/b47/index.html').read_text()
 assert '/materiale/hoejesteret-faengselsdom-2024/' in b47_html, 'B47 must link back to the Supreme Court material node'
-assert data['schemaVersion'] >= 13, 'Material references on projected records require schema version 13+'
+assert data['schemaVersion'] >= 14, 'Explicit material source-quality fields require schema version 14+'
 b47_data = next(item for item in data['proposals'] if item['id'] == 'b47-2024-25')
 assert 'supreme-court-prison-gender-2024' in b47_data.get('materialIds', []), 'Public proposal data must preserve material links'
 statements = {item['id']: item for item in data['statements']}
@@ -83,12 +83,35 @@ source_materials = json.loads((root.parent / 'content/data/materials.json').read
 source_material_links = json.loads((root.parent / 'content/data/material-links.json').read_text())
 assert {item['id'] for item in data['materials']} == {item['id'] for item in source_materials}, 'Public data index must contain every material exactly once'
 assert {item['id'] for item in data['materialLinks']} == {item['id'] for item in source_material_links}, 'Public data index must contain every material link exactly once'
+quality_fields = ('independence', 'peerReviewStatus', 'methodologicalStrength', 'evidenceRole', 'qualityNote')
+allowed_quality = {
+    'independence': {'independent', 'commissioned-independent', 'institutional', 'stakeholder'},
+    'peerReviewStatus': {'peer-reviewed', 'not-peer-reviewed', 'not-applicable'},
+    'methodologicalStrength': {'strong', 'moderate', 'limited', 'not-applicable'},
+    'evidenceRole': {'primary-evidence', 'evidence-synthesis', 'commentary'},
+}
+public_materials = {item['id']: item for item in data['materials']}
+public_material_links = {item['id']: item for item in data['materialLinks']}
+for collection_name, source_items, public_items in (
+    ('material', source_materials, public_materials),
+    ('material link', source_material_links, public_material_links),
+):
+    for item in source_items:
+        for field in quality_fields:
+            assert field in item and item[field], (f'missing {collection_name} source-quality field', item['id'], field)
+            assert public_items[item['id']].get(field) == item[field], (f'public {collection_name} source-quality field mismatch', item['id'], field)
+        for field, allowed in allowed_quality.items():
+            assert item[field] in allowed, (f'unknown {collection_name} source-quality value', item['id'], field, item[field])
 for material in source_materials:
     material_path = root / material['route'].lstrip('/') / 'index.html'
     assert material_path.is_file(), ('missing material page', material['id'], material['route'])
     material_page = pages[material_path]
     expected_links = {f"material-link-{item['id']}" for item in source_material_links if item['materialId'] == material['id']}
     assert expected_links.issubset(set(material_page.ids)), ('missing material links', material['id'], expected_links - set(material_page.ids))
+    material_html = material_path.read_text()
+    assert material_html.count('data-source-quality') == 1 + len(expected_links), ('missing rendered source-quality blocks', material['id'])
+    for field in ('data-independence', 'data-peer-review', 'data-methodological-strength', 'data-evidence-role'):
+        assert field in material_html, ('missing rendered source-quality attribute', material['id'], field)
 static_ids = {item.removeprefix('udtalelse-') for item in pages[root / 'retorik/index.html'].statements}
 assert static_ids == source_ids, 'Static HTML must retain every statement without JS'
 for key in ('edberg-b47-karen', 'edberg-b47-assigned-reality'):

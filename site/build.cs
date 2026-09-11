@@ -126,7 +126,7 @@ var publicDataRoot = Path.Combine(outputRoot, "data");
 Directory.CreateDirectory(publicDataRoot);
 var publicIndex = new
 {
-    schemaVersion = 13,
+    schemaVersion = 14,
     themeAliases,
     pageUpdates,
     proposals = proposals.OrderByDescending(proposal => proposal.Introduced).Select(proposal => new
@@ -276,6 +276,7 @@ static void Validate(
     foreach (var material in materials)
     {
         RequireSources($"material {material.Id}", material.SourceIds, sourceById);
+        ValidateSourceQuality($"material {material.Id}", material.Independence, material.PeerReviewStatus, material.MethodologicalStrength, material.EvidenceRole, material.QualityNote);
         if (!material.Route.StartsWith("/materiale/", StringComparison.OrdinalIgnoreCase))
             throw new InvalidOperationException($"Material {material.Id} has invalid route {material.Route}.");
         foreach (var relatedId in material.RelatedMaterialIds ?? [])
@@ -294,6 +295,7 @@ static void Validate(
         if (link.Category is not ("critique" or "rebuttal" or "response"))
             throw new InvalidOperationException($"Material link {link.Id} has unknown category {link.Category}.");
         RequireSources($"material link {link.Id}", link.SourceIds, sourceById);
+        ValidateSourceQuality($"material link {link.Id}", link.Independence, link.PeerReviewStatus, link.MethodologicalStrength, link.EvidenceRole, link.QualityNote);
     }
 
     foreach (var statement in statements)
@@ -337,6 +339,20 @@ static void Validate(
             throw new InvalidOperationException($"Youth treatment stat {item.Year} has no stages.");
         RequireSources($"youth treatment stat {item.Year}", item.SourceIds, sourceById);
     }
+}
+
+static void ValidateSourceQuality(string owner, string independence, string peerReviewStatus, string methodologicalStrength, string evidenceRole, string qualityNote)
+{
+    if (independence is not ("independent" or "commissioned-independent" or "institutional" or "stakeholder"))
+        throw new InvalidOperationException($"{owner} has unknown independence value {independence}.");
+    if (peerReviewStatus is not ("peer-reviewed" or "not-peer-reviewed" or "not-applicable"))
+        throw new InvalidOperationException($"{owner} has unknown peer-review status {peerReviewStatus}.");
+    if (methodologicalStrength is not ("strong" or "moderate" or "limited" or "not-applicable"))
+        throw new InvalidOperationException($"{owner} has unknown methodological strength {methodologicalStrength}.");
+    if (evidenceRole is not ("primary-evidence" or "evidence-synthesis" or "commentary"))
+        throw new InvalidOperationException($"{owner} has unknown evidence role {evidenceRole}.");
+    if (string.IsNullOrWhiteSpace(qualityNote))
+        throw new InvalidOperationException($"{owner} needs a source-quality note.");
 }
 
 static void RequireUnique(IEnumerable<string> values, string label)
@@ -458,6 +474,39 @@ static string RenderActorCards(IEnumerable<Actor> actors) => string.Join(
       </a>
     """));
 
+static string QualityLabel(string value) => value switch
+{
+    "independent" => "Uafhængig",
+    "commissioned-independent" => "Bestilt · uafhængig udførelse",
+    "institutional" => "Institutionel ophavsmand",
+    "stakeholder" => "Faglig/interesseret part",
+    "peer-reviewed" => "Peer-reviewed",
+    "not-peer-reviewed" => "Ikke peer-reviewed",
+    "not-applicable" => "Ikke relevant",
+    "strong" => "Stærk",
+    "moderate" => "Moderat",
+    "limited" => "Begrænset",
+    "primary-evidence" => "Primær dokumentation",
+    "evidence-synthesis" => "Evidenssyntese",
+    "commentary" => "Kommentar / fortolkning",
+    _ => value
+};
+
+static string RenderSourceQuality(string independence, string peerReviewStatus, string methodologicalStrength, string evidenceRole, string qualityNote, bool compact = false)
+{
+    var facts = $"""
+      <div class="fact-grid quality-grid" data-source-quality data-independence="{Encode(independence)}" data-peer-review="{Encode(peerReviewStatus)}" data-methodological-strength="{Encode(methodologicalStrength)}" data-evidence-role="{Encode(evidenceRole)}">
+        <div><span>Uafhængighed</span><strong>{Encode(QualityLabel(independence))}</strong></div>
+        <div><span>Peer review</span><strong>{Encode(QualityLabel(peerReviewStatus))}</strong></div>
+        <div><span>Metodisk styrke</span><strong>{Encode(QualityLabel(methodologicalStrength))}</strong></div>
+        <div><span>Rolle</span><strong>{Encode(QualityLabel(evidenceRole))}</strong></div>
+      </div>
+    """;
+    return compact
+        ? $"<div class=\"source-quality compact-quality\" data-source-quality data-independence=\"{Encode(independence)}\" data-peer-review=\"{Encode(peerReviewStatus)}\" data-methodological-strength=\"{Encode(methodologicalStrength)}\" data-evidence-role=\"{Encode(evidenceRole)}\"><p class=\"evidence-meta\"><strong>Uafhængighed:</strong> {Encode(QualityLabel(independence))} · <strong>Peer review:</strong> {Encode(QualityLabel(peerReviewStatus))} · <strong>Metodisk styrke:</strong> {Encode(QualityLabel(methodologicalStrength))} · <strong>Rolle:</strong> {Encode(QualityLabel(evidenceRole))}</p><p class=\"evidence-meta\">{Encode(qualityNote)}</p></div>"
+        : $"<section class=\"band subdued source-quality\"><div class=\"shell compact-block\"><p class=\"kicker\">Kildekvalitet</p>{facts}<p>{Encode(qualityNote)}</p></div></section>";
+}
+
 static string RenderMaterialList(IEnumerable<Material> materials) => string.Join(
     Environment.NewLine,
     materials.OrderByDescending(item => item.Date).Select(item => $"""
@@ -498,6 +547,7 @@ static string RenderMaterial(
         <p class="evidence-meta">{Encode(item.Kind)}</p>
         <h3>{Encode(item.Title)}</h3>
         <p>{Encode(item.Summary)} {RenderInlineSources(item.SourceIds, sourceById)}</p>
+        {RenderSourceQuality(item.Independence, item.PeerReviewStatus, item.MethodologicalStrength, item.EvidenceRole, item.QualityNote, compact: true)}
       </article>
     """));
 
@@ -532,6 +582,8 @@ static string RenderMaterial(
         <h1>{Encode(material.Title)}</h1>
         <p class="lede">{Encode(material.Summary)} {RenderInlineSources([material.SourceIds[0]], sourceById)}</p>
       </section>
+
+      {RenderSourceQuality(material.Independence, material.PeerReviewStatus, material.MethodologicalStrength, material.EvidenceRole, material.QualityNote)}
 
       <section class="shell section-block case-layout">
         <div class="case-main">
@@ -1169,7 +1221,7 @@ sealed record Proposal(
     string[]? MaterialIds);
 sealed record TimelineEvent(string Id, string Date, string Kind, string Title, string Summary, string[] ActorIds, string RelatedRoute, string[] SourceIds, string[]? MaterialIds);
 sealed record MediaItem(string Id, string Date, string Kind, string Title, string? AuthorActorId, string? AuthorLabel, string? OutletActorId, string? OutletLabel, string CorpusRole, string Summary, string[] Themes, string[] SourceIds, string[]? MaterialIds);
-sealed record Material(string Id, string Title, string ShortTitle, string Kind, string Date, string Route, string Summary, string[] Analysis, string[] SourceIds, string[]? RelatedMaterialIds);
-sealed record MaterialLink(string Id, string MaterialId, string Category, string Kind, string Title, string Summary, string[] SourceIds);
+sealed record Material(string Id, string Title, string ShortTitle, string Kind, string Date, string Route, string Summary, string[] Analysis, string[] SourceIds, string Independence, string PeerReviewStatus, string MethodologicalStrength, string EvidenceRole, string QualityNote, string[]? RelatedMaterialIds);
+sealed record MaterialLink(string Id, string MaterialId, string Category, string Kind, string Title, string Summary, string[] SourceIds, string Independence, string PeerReviewStatus, string MethodologicalStrength, string EvidenceRole, string QualityNote);
 sealed record Statement(string Id, string Date, string ActorId, string Kind, string Excerpt, string Context, string Position, string[] Themes, string RelatedRoute, string[] SourceIds, string? Affiliation, string? Passage, string[]? MaterialIds);
 sealed record Relationship(string Id, string Date, string Kind, string FromActorId, string? ToActorId, string? ToRoute, string? ToLabel, string Summary, string[] SourceIds);
