@@ -12,6 +12,12 @@
     "source": "politik.html"
   },
   {
+    "route": "/sundhed/",
+    "title": "Sundhed",
+    "description": "Dokumentation af den danske behandlingsramme for transpersoner: teori, evidens, adgang og praksis.",
+    "source": "sundhed.html"
+  },
+  {
     "route": "/medier/",
     "title": "Medier",
     "description": "Analyse af journalistisk dækning, dagsordenssætning og medieaktører.",

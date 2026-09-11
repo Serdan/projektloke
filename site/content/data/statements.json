@@ -998,5 +998,69 @@
       "df-press-children-transition-2023"
     ],
     "affiliation": "Dansk Folkeparti"
+  },
+  {
+    "id": "jakobsen-s188-sexualized-material",
+    "date": "2023-01-27",
+    "actorId": "solbjoerg-jakobsen",
+    "kind": "§ 20-spørgsmål",
+    "excerpt": "seksualiserende undervisningsmateriale helt ned i indskolingen",
+    "context": "Sólbjørg Jakobsen brugte formuleringen i selve S 188 om Normstormerne. Spørgsmålet blev officielt begrundet med en Berlingske-artikel fra dagen før og gjorde undervisningens alder og ideologiske karakter til konfliktpunkt.",
+    "position": "trans-critical",
+    "themes": [
+      "uddannelse",
+      "børn og unge",
+      "Normstormerne",
+      "ideologi",
+      "medie → politik"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-s188-normstormerne-2023"
+    ],
+    "affiliation": "Liberal Alliance"
+  },
+  {
+    "id": "jessen-b145-normstormerne-dangerous",
+    "date": "2025-05-02",
+    "actorId": "susie-jessen",
+    "kind": "kort bemærkning",
+    "excerpt": "meget farlige tendenser i skolen",
+    "context": "Under B145 brugte Susie Jessen Normstormerne som eksempel og hævdede, at børn blev presset til at acceptere flere køn. Uddannelsessporet blev dermed koblet direkte til den bredere debat om statens kønsforståelse og behandling af børn.",
+    "position": "restriction",
+    "themes": [
+      "uddannelse",
+      "Normstormerne",
+      "børn og unge",
+      "flere køn",
+      "moralsk fare"
+    ],
+    "relatedRoute": "/politik/b145/",
+    "sourceIds": [
+      "ft-b145-debate"
+    ],
+    "affiliation": "Danmarksdemokraterne"
+  },
+  {
+    "id": "jakobsen-kuu-d-dbu-physical-advantage",
+    "date": "2024-11-18",
+    "actorId": "solbjoerg-jakobsen",
+    "kind": "samrådsspørgsmål",
+    "excerpt": "biologiske mænd ... får ret til at spille på breddefodboldens kvindehold",
+    "context": "Sólbjørg Jakobsen indrammede DBU’s foreslåede selvidentifikationsmodel som et spørgsmål om fysisk fordel og fairness. Samrådsspørgsmålets egen ordlyd siger samtidig, at DBU “overvejer” politikken; på dette tidspunkt var der ikke dokumenteret én ensartet landsdækkende selvidentifikationsregel.",
+    "position": "restriction",
+    "themes": [
+      "sport",
+      "selvidentifikation",
+      "fair konkurrence",
+      "transkvinder som mænd"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-kuu-d-dbu-2024",
+      "dbu-gender-board-2023"
+    ],
+    "affiliation": "Liberal Alliance",
+    "passage": "KUU alm. del, samrådsspørgsmål D, 18. november 2024."
   }
 ]

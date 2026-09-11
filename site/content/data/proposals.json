@@ -2,15 +2,15 @@
   {
     "id": "b62-2022-23",
     "code": "B62",
-    "title": "Forbud mod kirurgisk eller medicinsk k\u00F8nsskiftebehandling af b\u00F8rn under 18 \u00E5r",
+    "title": "Forbud mod kirurgisk eller medicinsk kønsskiftebehandling af børn under 18 år",
     "route": "/politik/b62/",
-    "session": "2022\u201323 (2. samling)",
+    "session": "2022–23 (2. samling)",
     "introduced": "2023-03-14",
     "firstReading": "2023-05-09",
     "finalVote": "2023-06-02",
     "status": "Forkastet",
-    "summary": "B62 ville p\u00E5l\u00E6gge regeringen at forbyde kirurgisk eller medicinsk k\u00F8nsskiftebehandling af b\u00F8rn under 18 \u00E5r inden udgangen af 2023.",
-    "analysis": "B62 er det tidligste forslag i den publicerede k\u00E6de. Det var afgr\u00E6nset til mindre\u00E5rige og sundhedsbehandling, men gik l\u00E6ngere end krav om sk\u00E6rpet evidens eller kliniske retningslinjer ved at foresl\u00E5 et generelt lovforbud.",
+    "summary": "B62 ville pålægge regeringen at forbyde kirurgisk eller medicinsk kønsskiftebehandling af børn under 18 år inden udgangen af 2023.",
+    "analysis": "B62 er det tidligste forslag i den publicerede kæde. Det var afgrænset til mindreårige og sundhedsbehandling, men gik længere end krav om skærpet evidens eller kliniske retningslinjer ved at foreslå et generelt lovforbud.",
     "proposerIds": [
       "kim-edberg-andersen",
       "peter-seier-christensen",
@@ -42,7 +42,7 @@
       "ft-b62-vote"
     ],
     "topics": [
-      "mindre\u00E5rige",
+      "mindreårige",
       "sundhed",
       "behandlingsforbud"
     ]
@@ -50,15 +50,15 @@
   {
     "id": "b12-2024-25",
     "code": "B12",
-    "title": "For\u00E6ldresamtykke til k\u00F8nsskiftebehandling for 15\u201317-\u00E5rige",
+    "title": "Forældresamtykke til kønsskiftebehandling for 15–17-årige",
     "route": "/politik/b12/",
-    "session": "2024\u201325",
+    "session": "2024–25",
     "introduced": "2024-10-02",
     "firstReading": "2024-11-14",
     "finalVote": "2025-01-23",
     "status": "Forkastet",
-    "summary": "B12 ville \u00E6ndre samtykkereglerne, s\u00E5 15\u201317-\u00E5rige ikke kunne igangs\u00E6tte k\u00F8nsskiftebehandling uden for\u00E6ldresamtykke.",
-    "analysis": "B12 var sn\u00E6vrere end B62: ikke et generelt behandlingsforbud, men en s\u00E6rregel om for\u00E6ldresamtykke. Sagen er samtidig vigtig, fordi forslaget blev fremsat af fem konservative medlemmer, herunder partileder Mona Juul, og fik st\u00F8tte fra DD, LA, KF, DF og BP ved den endelige afstemning.",
+    "summary": "B12 ville ændre samtykkereglerne, så 15–17-årige ikke kunne igangsætte kønsskiftebehandling uden forældresamtykke.",
+    "analysis": "B12 var snævrere end B62: ikke et generelt behandlingsforbud, men en særregel om forældresamtykke. Sagen er samtidig vigtig, fordi forslaget blev fremsat af fem konservative medlemmer, herunder partileder Mona Juul, og fik støtte fra DD, LA, KF, DF og BP ved den endelige afstemning.",
     "proposerIds": [
       "dina-raabjerg",
       "birgitte-bergman",
@@ -86,30 +86,30 @@
     "voteAgainst": 79,
     "voteAbstain": 1,
     "voteSourceId": "ft-b12-vote",
-    "voteNote": "Jeppe S\u00F8e (UFG) stemte ogs\u00E5 for. Mike Villa Fonseca (UFG) stemte hverken for eller imod.",
+    "voteNote": "Jeppe Søe (UFG) stemte også for. Mike Villa Fonseca (UFG) stemte hverken for eller imod.",
     "sourceIds": [
       "ft-b12-proposal",
       "ft-b12-debate",
       "ft-b12-vote"
     ],
     "topics": [
-      "mindre\u00E5rige",
+      "mindreårige",
       "sundhed",
-      "for\u00E6ldresamtykke"
+      "forældresamtykke"
     ]
   },
   {
     "id": "b47-2024-25",
     "code": "B47",
-    "title": "Begr\u00E6nsning af retten til juridisk k\u00F8nsskifte",
+    "title": "Begrænsning af retten til juridisk kønsskifte",
     "route": "/politik/b47/",
-    "session": "2024\u201325",
+    "session": "2024–25",
     "introduced": "2024-11-13",
     "firstReading": "2025-02-25",
     "finalVote": "2025-05-15",
     "status": "Forkastet",
-    "summary": "B47 ville p\u00E5l\u00E6gge regeringen at begr\u00E6nse retten til og muligheden for juridisk k\u00F8nsskifte mest muligt inden for rammerne af Den Europ\u00E6iske Menneskerettighedskonvention.",
-    "analysis": "Forslaget er et centralt datapunkt, fordi det ikke kun handler om behandling af mindre\u00E5rige eller andre afgr\u00E6nsede konflikter. Det retter sig direkte mod voksnes adgang til juridisk k\u00F8nsskifte og blev fremsat i f\u00E6llesskab af fire partier.",
+    "summary": "B47 ville pålægge regeringen at begrænse retten til og muligheden for juridisk kønsskifte mest muligt inden for rammerne af Den Europæiske Menneskerettighedskonvention.",
+    "analysis": "Forslaget er et centralt datapunkt, fordi det retter sig direkte mod voksnes adgang til juridisk kønsskifte og blev fremsat i fællesskab af fire partier. Det har samtidig en dokumenteret forhistorie: I august 2023 ændrede Indenrigs- og Sundhedsministeriet praksis for mindreåriges juridiske kønsskifte efter en EMRK-vurdering og genoptog 16 tidligere aldersafviste sager. Mette Thiesen og Mikkel Bjørn rejste derefter ændringen parlamentarisk. B47 blev året efter formuleret som et krav om at begrænse juridisk kønsskifte mest muligt inden for EMRK. Forslaget bruger også fængselssagen, der endte i Højesteret i september 2024. Dommen viser, at juridisk køn ikke automatisk bestemmer fængselsplacering, men Højesterets faktiske placeringsregel var en konkret individuel helheds- og sikkerhedsvurdering, hvor både biologisk køn, kønsidentitet, kriminalitet og risiko indgik. Ved afklædningsvisitation fastslog Højesteret særskilt, at 'køn' i straffuldbyrdelseslovens § 60, stk. 6, som udgangspunkt forstås som biologisk køn. B47's bredere slutning om transpersoners rettigheder går derfor videre end dommens konkrete rækkevidde. Kronologien og dommen dokumenterer politiske reaktioner og retlige grænser; de dokumenterer ikke i sig selv, at praksisændringen forårsagede B47 eller en generel regel om behandling efter biologisk køn på tværs af institutioner.",
     "proposerIds": [
       "solbjoerg-jakobsen",
       "susie-jessen",
@@ -136,30 +136,41 @@
     "voteAgainst": 79,
     "voteAbstain": 0,
     "voteSourceId": "ft-b47-vote",
-    "voteNote": "Mike Villa Fonseca (UFG) og Jeppe S\u00F8e (UFG) stemte ogs\u00E5 for. Jon Stephensen (UFG) stemte imod.",
+    "voteNote": "Mike Villa Fonseca (UFG) og Jeppe Søe (UFG) stemte også for. Jon Stephensen (UFG) stemte imod.",
     "sourceIds": [
       "ft-b47-proposal",
       "ft-b47-debate",
-      "ft-b47-vote"
+      "ft-b47-vote",
+      "ft-inu-minors-legal-gender-2023",
+      "ft-inu-minors-samraad-2023",
+      "ft-s9-emrk-2023",
+      "hoejesteret-prison-gender-2024",
+      "kriminalforsorgen-gender-minorities-2023",
+      "ft-b47-spm1-baseline-2025",
+      "cpr-legal-gender-stats-2025",
+      "ft-liu77-legal-gender-review-2020",
+      "lbn-changing-room-2016",
+      "lbn-changing-room-2023",
+      "lbn-annual-report-2023"
     ],
     "topics": [
       "voksne",
-      "juridisk k\u00F8nsskifte",
+      "juridisk kønsskifte",
       "civil registrering"
     ]
   },
   {
     "id": "b145-2024-25",
     "code": "B145",
-    "title": "Staten og offentlige myndigheder skal kun anerkende to k\u00F8n",
+    "title": "Staten og offentlige myndigheder skal kun anerkende to køn",
     "route": "/politik/b145/",
-    "session": "2024\u201325",
+    "session": "2024–25",
     "introduced": "2025-02-27",
     "firstReading": "2025-05-02",
     "finalVote": null,
     "status": "Bortfaldet",
-    "summary": "B145 foreslog at afskaffe juridisk k\u00F8nsskifte og X som k\u00F8nsbetegnelse i pas, stoppe offentligt finansieret transitionbehandling og \u00E6ndre myndigheders, institutioners og offentligt finansierede organisationers k\u00F8nspraksis.",
-    "analysis": "B145 udvider dagsordenen markant fra afgr\u00E6nsede sp\u00F8rgsm\u00E5l om mindre\u00E5riges behandling og B47s juridiske k\u00F8nsskifte til voksnes sundhedsbehandling, pas, offentlige institutioner og en gennemgang af lovgivningen. Forslaget blev alene fremsat af DF-medlemmer og bortfaldt uden endelig afstemning; det kan derfor ikke bruges som dokumentation for, at de \u00F8vrige partier bag B47 st\u00F8ttede hele dette program.",
+    "summary": "B145 foreslog at afskaffe juridisk kønsskifte og X som kønsbetegnelse i pas, stoppe offentligt finansieret transitionbehandling og ændre myndigheders, institutioners og offentligt finansierede organisationers kønspraksis.",
+    "analysis": "B145 udvider dagsordenen markant fra afgrænsede spørgsmål om mindreåriges behandling og B47s juridiske kønsskifte til voksnes sundhedsbehandling, pas, offentlige institutioner og en gennemgang af lovgivningen. Forslaget blev alene fremsat af DF-medlemmer og bortfaldt uden endelig afstemning; det kan derfor ikke bruges som dokumentation for, at de øvrige partier bag B47 støttede hele dette program.",
     "proposerIds": [
       "mette-thiesen",
       "alex-ahrendtsen",
@@ -183,7 +194,7 @@
     ],
     "topics": [
       "voksne",
-      "juridisk k\u00F8nsskifte",
+      "juridisk kønsskifte",
       "pas",
       "sundhed",
       "offentlige institutioner"

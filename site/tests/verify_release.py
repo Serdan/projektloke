@@ -39,8 +39,11 @@ for path, page in pages.items():
 
 data = json.loads((root / 'data/index.json').read_text())
 statements = {item['id']: item for item in data['statements']}
-assert len(statements) == 50
-assert len(pages[root / 'retorik/index.html'].statements) == 50, 'Static HTML must retain all statements without JS'
+source_statements = json.loads((root.parent / 'content/data/statements.json').read_text())
+source_ids = {item['id'] for item in source_statements}
+assert set(statements) == source_ids, 'Public data index must contain every source statement exactly once'
+static_ids = {item.removeprefix('udtalelse-') for item in pages[root / 'retorik/index.html'].statements}
+assert static_ids == source_ids, 'Static HTML must retain every statement without JS'
 for key in ('edberg-b47-karen', 'edberg-b47-assigned-reality'):
     assert statements[key]['affiliation'] == 'Danmarksdemokraterne'
 for key in ('vermund-l61-how-many-sexes', 'vermund-l61-strategic-identity'):
@@ -53,6 +56,9 @@ for item in data['statements']:
     assert len(item['themes']) == len(set(item['themes']))
     assert not set(item['themes']).intersection(data['themeAliases'])
     themes.update(item['themes'])
-assert themes['børn og unge'] == 15
-assert themes['faglighed kontra aktivisme'] == 3
+aliases = data['themeAliases']
+expected_themes = Counter()
+for item in source_statements:
+    expected_themes.update({aliases.get(theme, theme) for theme in item['themes']})
+assert themes == expected_themes, 'Published theme counts must match normalized source data'
 print(f'Passed: {len(pages)} pages, {checked} internal links, historical affiliations, quotations, theme counts and complete static content.')

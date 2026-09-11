@@ -668,5 +668,975 @@
     "published": "2023-06-17",
     "accessed": "2026-09-09",
     "note": "Gengivelse af pressemeddelelse fra Dansk Folkepartis folketingsgruppe fra Folkemødet. Indeholder direkte citater fra Morten Messerschmidt om behandling af transunge."
+  },
+  {
+    "id": "sst-koensidentitet-vejledning-2018",
+    "title": "Sundhedsfaglig hjælp ved kønsidentitetsforhold",
+    "publisher": "Sundhedsstyrelsen",
+    "type": "primærkilde · gældende vejledning",
+    "url": "https://www.sst.dk/udgivelser/2018/sundhedsfaglig-hjaelp-ved-koensidentitetsforhold",
+    "published": "2018-08-17",
+    "accessed": "2026-09-10",
+    "note": "Den fortsat gældende nationale vejledning. Dokumenterer bl.a. principper om lige adgang og kort ventetid, psykiatriske vurderinger og formuleringen om autisme med relevant særinteresse."
+  },
+  {
+    "id": "sst-koensidentitet-revision-2025",
+    "title": "Kønsidentitet – ny vejledning på vej",
+    "publisher": "Sundhedsstyrelsen",
+    "type": "primærkilde · institutionsside",
+    "url": "https://www.sst.dk/vidensbase/seksuel-sundhed-seksualitet-og-koensidentitet/koensidentitet",
+    "published": "2025-11-04",
+    "accessed": "2026-09-10",
+    "note": "Sundhedsstyrelsens aktuelle oversigt, som fortsat henviser til 2018-vejledningen og beskriver den igangværende revision."
+  },
+  {
+    "id": "sst-koensinkongruens-hoeringsudkast-2024",
+    "title": "Faglig ramme for sundhedsfaglig hjælp ved kønsinkongruens – høringsversion",
+    "publisher": "Sundhedsstyrelsen / Folketinget",
+    "type": "høringsudkast",
+    "url": "https://www.ft.dk/samling/20241/almdel/SUU/bilag/101/2958764.pdf",
+    "published": "2024-12-18",
+    "accessed": "2026-09-10",
+    "note": "Ikke gældende vejledning. Høringsudkastet beskriver nyere klinisk viden, har en klinisk litteraturliste og ændrer bl.a. formuleringerne om udviklingsforstyrrelser og psykiatriske kontraindikationer."
+  },
+  {
+    "id": "wpath-soc8-2022",
+    "title": "Standards of Care for the Health of Transgender and Gender Diverse People, Version 8",
+    "publisher": "World Professional Association for Transgender Health",
+    "type": "international klinisk retningslinje",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9553112/",
+    "published": "2022-09-06",
+    "accessed": "2026-09-10",
+    "note": "International klinisk retningslinje. Psykiske og neurodivergente forhold vurderes ud fra konkret betydning for diagnostisk klarhed, samtykkekompetence, støttebehov og behandlingsresultat."
+  },
+  {
+    "id": "bouzy-autism-review-2023",
+    "title": "Transidentities and autism spectrum disorder: A systematic review",
+    "publisher": "Psychiatry Research",
+    "type": "systematisk litteraturgennemgang",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36996732/",
+    "published": "2023-03-28",
+    "accessed": "2026-09-10",
+    "note": "Systematisk review af litteraturen om autisme og kønsidentitet. Konkluderer, at autisme ikke i sig selv er en kontraindikation for kønsbekræftende behandling, men kan kræve tilpasset vurdering og støtte."
+  },
+  {
+    "id": "sst-koensmodificerende-behandling-2023",
+    "title": "Kønsmodificerende behandling",
+    "publisher": "Sundhedsstyrelsen",
+    "type": "primærkilde · institutionsside",
+    "url": "https://www.sst.dk/vidensbase/seksuel-sundhed-seksualitet-og-koensidentitet/koensidentitet/koensmodificerende-behandling",
+    "published": "2023-11-13",
+    "accessed": "2026-09-10",
+    "note": "Sundhedsstyrelsens oversigt over den højt specialiserede organisering: tre behandlingssteder for voksne og én national funktion for personer under 18 år."
+  },
+  {
+    "id": "ouh-ckio-patientinformation",
+    "title": "Generel patientinformation om CKIO",
+    "publisher": "Odense Universitetshospital",
+    "type": "primærkilde · løbende institutionsside",
+    "url": "https://ouh.dk/til-patienter-og-parorende/odense/centre/center-for-konsidentitet-ckio/generel-patient-information",
+    "published": null,
+    "accessed": "2026-09-10",
+    "note": "Løbende patientinformation uden angivet publikationsdato. Oplyser aktuelt mere end to års ventetid og et krav om mindst seks måneders velbehandlet og stabil tilstand før henvisning for personer i psykiatrisk behandling."
+  },
+  {
+    "id": "aalborg-cfk-patientinformation",
+    "title": "Center for Kønsidentitet",
+    "publisher": "Aalborg Universitetshospital",
+    "type": "primærkilde · løbende institutionsside",
+    "url": "https://aalborguh.rn.dk/da/Afsnit-og-ambulatorier/Sexologisk-Center/Afsnit/Center-for-Koensidentitet",
+    "published": null,
+    "accessed": "2026-09-10",
+    "note": "Løbende institutionsside uden angivet publikationsdato. Hospitalet oplyser, at ressourcemangel betyder få tider og længere ventetid for nyhenviste patienter."
+  },
+  {
+    "id": "minby-aalborg-ventetid-2026",
+    "title": "Ventetider på kønsbekræftende behandling rammer to et halvt år",
+    "publisher": "MinByHjallerup",
+    "type": "sekundær lokal nyhedsrapportering",
+    "url": "https://minbyhjallerup.dk/ventetider-paa-koensbekraeftende-behandling-rammer-to-et-halvt-aar",
+    "published": "2026-06-16",
+    "accessed": "2026-09-10",
+    "note": "Sekundær kilde, som angiver cirka 2,5 år fra henvisning til behandlingsstart og 788 personer på venteliste i Aalborg. Bruges med tydelig markering af kildetypen."
+  },
+  {
+    "id": "sst-ramboll-koensidentitet-2025",
+    "title": "Vidensafdækning af årsager til afbrydelse af medicinsk behandling, selvmedicinering m.v. ved kønsidentitetsforhold",
+    "publisher": "Sundhedsstyrelsen / Rambøll",
+    "type": "myndighedsbestilt vidensafdækning",
+    "url": "https://www.sst.dk/udgivelser/2025/Vidensafdaekning-aarsager-afbrydelse-medicinsk-behandling-selvmedicinering-koensidentitetsforhold",
+    "published": "2025-07-04",
+    "accessed": "2026-09-10",
+    "note": "Sundhedsstyrelsens vidensafdækning baseret bl.a. på en ikke-repræsentativ spørgeskemaundersøgelse og kvalitative interviews. Dokumenterer datamangler og lang ventetid som den hyppigst angivne årsag til hormoner uden om det offentlige system blandt relevante respondenter."
+  },
+  {
+    "id": "rh-youth-hormone-treatment",
+    "title": "Transkønnede unge under 18 år – hormonbehandling",
+    "publisher": "Rigshospitalet",
+    "type": "primærkilde · løbende institutionsside",
+    "url": "https://www.rigshospitalet.dk/undersoegelse-og-behandling/find-undersoegelse-og-behandling/Sider/Transkoennede-unge-under-18-aar---hormonbehandling-af-28469.aspx",
+    "published": null,
+    "accessed": "2026-09-10",
+    "note": "Aktuel patientinformation, som beskriver pubertetsblokkere og kønshormoner til udvalgte unge under 18 år og angiver, at denne behandling ikke tilbydes andre steder i Danmark."
+  },
+  {
+    "id": "ft-regionh-youth-treatment-2024",
+    "title": "Region Hovedstaden: behandlingstal for børn og unge med kønsidentitetsforhold",
+    "publisher": "Region Hovedstaden / Folketinget",
+    "type": "primærkilde · parlamentarisk bilag",
+    "url": "https://www.ft.dk/samling/20241/almdel/SUU/bilag/91/2947143/index.htm",
+    "published": "2024-11-22",
+    "accessed": "2026-09-10",
+    "note": "Region Hovedstadens svar om behandlingstal. Oplyser, at 239 unge startede pubertetsblokkere eller kønshormoner i 2016-2023, mens præcise årlige opstartstal ikke kunne opgøres."
+  },
+  {
+    "id": "ft-s820-youth-2025",
+    "title": "Svar på S 820 om hormonbehandling af børn og unge",
+    "publisher": "Indenrigs- og Sundhedsministeriet / Folketinget",
+    "type": "primærkilde · ministersvar",
+    "url": "https://www.ft.dk/samling/20241/spoergsmaal/s820/svar/2122151/2992671/index.htm",
+    "published": "2025-03-20",
+    "accessed": "2026-09-10",
+    "note": "Ministersvar, der beskriver den danske tilgang som restriktiv og oplyser, at meget få børn og unge starter hormonbehandling."
+  },
+  {
+    "id": "rh-cki-statistik-2026",
+    "title": "Tal og statistikker – Center for Kønsidentitet",
+    "publisher": "Rigshospitalet",
+    "type": "primærkilde · institutionsside",
+    "url": "https://www.rigshospitalet.dk/afdelinger-og-klinikker/julianemarie/center-for-koensidentitet/om-centret/sider/tal-og-statistikker.aspx",
+    "published": "2026-08-12",
+    "accessed": "2026-09-10",
+    "note": "Rigshospitalets statistikside. Oplyser bl.a., at henvisninger for personer under 18 år siden 1. februar 2025 går til Børne- og Ungdomspsykiatrisk Center Bispebjerg."
+  },
+  {
+    "id": "cooney-hormones-review-2025",
+    "title": "Provision of gender-affirming hormones for trans and gender-diverse adults: a systematic review of health and quality of life outcomes, values and preferences, and costs",
+    "publisher": "eClinicalMedicine",
+    "type": "systematisk litteraturgennemgang",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12418855/",
+    "published": "2025-08-30",
+    "accessed": "2026-09-10",
+    "note": "Systematisk review finansieret af WHO. Tretten opfølgningsstudier, herunder ét randomiseret forsøg, peger på mulige forbedringer i bl.a. depression, livskvalitet og suicidalitet hos voksne; evidenssikkerheden er begrænset, og forfatterne efterlyser bedre kontrollerede studier."
+  },
+  {
+    "id": "van-de-grift-waiting-2024",
+    "title": "Waiting for transgender care and its effects on health and equality: a mixed-methods population study in the Netherlands",
+    "publisher": "The Lancet Regional Health – Europe / PubMed",
+    "type": "peer-reviewed observationsstudie",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38873631/",
+    "published": "2024-06-11",
+    "accessed": "2026-09-10",
+    "note": "Nederlandsk mixed-methods studie af 975 deltagere. Blandt personer på venteliste blev lang ventetid forbundet med psykosocial belastning, dårligere helbred, øget sundhedsforbrug og større ulighed. Kan ikke direkte omsættes til danske effektstørrelser."
+  },
+  {
+    "id": "ft-b62-debate",
+    "title": "B 62 – 1. behandling om medicinsk kønsskiftebehandling af børn under 18 år",
+    "publisher": "Folketinget",
+    "type": "primærkilde · folketingsforhandling",
+    "url": "https://www.ft.dk/samling/20222/beslutningsforslag/B62/BEH1-57/forhandling.htm",
+    "published": "2023-05-11",
+    "accessed": "2026-09-11",
+    "note": "Folketingets forhandling. Sundhedsministeren oplyser, at 352 børn og unge blev henvist til udredning i 2022, 22 blev henvist videre til hormonbehandling, og 7 startede hormonbehandling samme år."
+  },
+  {
+    "id": "regionh-youth-organization-2023",
+    "title": "Møde i sundhedsudvalget den 27. september 2023 – behandling af børn og unge for kønsidentitetsforhold",
+    "publisher": "Region Hovedstaden",
+    "type": "primærkilde · regionsmateriale",
+    "url": "https://www.regionh.dk/politik/nye-moeder/sider/moede-i-sundhedsudvalget-den-27-september-2023.aspx",
+    "published": "2023-09-27",
+    "accessed": "2026-09-11",
+    "note": "Beskriver den daværende landsdækkende organisering som et samarbejde mellem Sexologisk Klinik, Børne- og Ungdomspsykiatrisk Center og Vækst og Reproduktion, med Sexologisk Klinik som koordinerende funktion og modtager af henvisninger."
+  },
+  {
+    "id": "regionh-youth-reorg-job-2024",
+    "title": "Team for Kønsubehag – stillingsopslag om gradvis forankring i Børne- og Ungdomspsykiatrisk Center",
+    "publisher": "Region Hovedstaden / Sundhedsjobs.dk",
+    "type": "primærkilde · regionalt stillingsopslag",
+    "url": "https://www.sundhedsjobs.dk/jobopslag/466661/2-stillinger-til-hhv-laeger-uklassificeret-stilling-eller-psykologer-med-interesse-for-udredning-og-behandling-af-boern-og-unge-med-koensubehag-soeges-til-stilling-delt-mellem-forskning-og-kliniske-opgaver-i-team-f",
+    "published": "2024-08-29",
+    "accessed": "2026-09-11",
+    "note": "Region Hovedstadens stillingsopslag oplyser, at den højt specialiserede funktion på daværende tidspunkt var forankret ved Sexologisk Klinik, men gradvist skulle forankres i Børne- og Ungdomspsykiatrisk Center i efteråret 2024 og være fuldt forankret dér i starten af 2025. Opslaget angiver samtidig en forventet aktivitet på ca. 100-200 børn og unge årligt fra hele landet og beskriver teamet som en speciallæge, psykologer og yngre læger."
+  },
+  {
+    "id": "regionh-kkbu-2026",
+    "title": "Kompetencecenter for Kønsidentitet hos Børn og Unge",
+    "publisher": "Region Hovedstadens Psykiatri",
+    "type": "primærkilde · løbende institutionsside",
+    "url": "https://www.psykiatri-regionh.dk/centre-og-social-tilbud/psykiatriske-centre/boerne-og-ungdomspsykiatrisk-center/om-centret/sider/kompetencecenter_k%C3%B8nsidentitet.aspx",
+    "published": "2026-04-10",
+    "accessed": "2026-09-11",
+    "note": "Aktuel beskrivelse af KKBU som landsdækkende funktion under Børne- og Ungdomspsykiatrisk Center. Beskriver støttende samtaler, psykiatrisk og kønsidentitetsrelateret udredning samt fælles stillingtagen til medicinsk behandling med Vækst og Reproduktion, som varetager selve den medicinske behandling."
+  },
+  {
+    "id": "regionh-kkbu-job-2026",
+    "title": "Speciallæge til Ambulatorium for større børn B193 med mulighed for delt stilling i KKBU",
+    "publisher": "Region Hovedstaden / Sundhedsjobs.dk",
+    "type": "primærkilde · regionalt stillingsopslag",
+    "url": "https://www.sundhedsjobs.dk/jobopslag/495762/speciallaege-soeges-til-ambulatorium-for-stoerre-boern-b193-boerne-og-ungdomspsykiatrisk-center-bispebjerg-med-mulighed-for-delt-stilling-mellem-ambulatoriet-og-kompetencecenter-for-koensidentitet-hos-boern-og-unge",
+    "published": "2026-08-27",
+    "accessed": "2026-09-11",
+    "note": "Aktuelt stillingsopslag fra Region Hovedstaden. Oplyser, at KKBU følger omkring 200 børn og unge fra hele landet og beskriver funktionen som et mindre team bestående af en overlæge samt psykologer og yngre læger. Tallet er et aktuelt antal fulgte patienter og er derfor ikke direkte sammenligneligt med årlige henvisningstal."
+  },
+  {
+    "id": "ft-inu-minors-legal-gender-2023",
+    "title": "INU alm. del – bilag 37 om juridisk kønsskifte for mindreårige",
+    "publisher": "Indenrigs- og Sundhedsministeriet / Folketinget",
+    "type": "primærkilde · ministerielt brev",
+    "url": "https://www.ft.dk/samling/20222/almdel/INU/bilag/37/2738666/index.htm",
+    "published": "2023-08-11",
+    "accessed": "2026-09-11",
+    "note": "Ministeriets orientering dokumenterer, at 16 ansøgninger fra mindreårige tidligere var blevet afvist på alder alene. Efter Justitsministeriets vurdering af Danmarks EMRK-forpligtelser besluttede Indenrigs- og Sundhedsministeriet 4. august 2023 at genoptage sagerne og ændre administrativ praksis."
+  },
+  {
+    "id": "ft-inu-minors-samraad-2023",
+    "title": "INU – åbent samråd om juridisk kønsskifte for mindreårige",
+    "publisher": "Folketinget",
+    "type": "primærkilde · samråd",
+    "url": "https://www.ft.dk/samling/20222/almdel/INU/samspm/C/index.htm",
+    "published": "2023-09-19",
+    "accessed": "2026-09-11",
+    "note": "Mette Thiesen rejste den ændrede praksis for mindreåriges juridiske kønsskifte i et åbent samråd med indenrigs- og sundhedsministeren."
+  },
+  {
+    "id": "ft-s9-emrk-2023",
+    "title": "S 9 om EMRK og juridisk kønsskifte for mindreårige",
+    "publisher": "Folketinget",
+    "type": "primærkilde · § 20-spørgsmål",
+    "url": "https://www.ft.dk/samling/20231/spoergsmaal/S9/index.htm",
+    "published": "2023-10-03",
+    "accessed": "2026-09-11",
+    "note": "Mikkel Bjørn spurgte justitsministeren, om en ændret fortolkning af EMRK kunne ændre administrativ praksis om juridisk kønsskifte for mindreårige uden om Folketinget."
+  },
+  {
+    "id": "ft-liu-bilag64-drr",
+    "title": "LIU bilag 64 – Dansk Regnbueråds klage over støtte til FSTB",
+    "publisher": "Folketinget",
+    "type": "primærkilde · parlamentarisk bilag",
+    "url": "https://www.ft.dk/samling/20241/almdel/LIU/bilag/64/index.htm",
+    "published": "2025-07-30",
+    "accessed": "2026-09-11",
+    "note": "Dansk Regnbueråds henvendelse til Ligestillingsudvalget om organisationens klage over offentlig økonomisk støtte til FSTB."
+  },
+  {
+    "id": "ft-liu-bilag66-fstb",
+    "title": "LIU bilag 66 – FSTB’s svar på Dansk Regnbueråds henvendelse",
+    "publisher": "Folketinget",
+    "type": "primærkilde · parlamentarisk bilag",
+    "url": "https://www.ft.dk/samling/20241/almdel/liu/bilag/66/index.htm",
+    "published": "2025-08-13",
+    "accessed": "2026-09-11",
+    "note": "FSTB’s svar til Ligestillingsudvalget på Dansk Regnbueråds henvendelse af 30. juli 2025."
+  },
+  {
+    "id": "civilstyrelsen-folkemoede-2024",
+    "title": "Trykkefrihedsselskabet af 2004 – indsamlingsgodkendelse til Folkemødet 2024",
+    "publisher": "Civilstyrelsen",
+    "type": "primærkilde · indsamlingsgodkendelse",
+    "url": "https://www.civilstyrelsen.dk/sagsomraader/indsamlingsnaevnet/godkendte-indsamlinger/2024/trykkefrihedsselskabet-af-2004-07056",
+    "published": "2024-06-15",
+    "accessed": "2026-09-11",
+    "note": "Indsamlingsnævnets registrering dokumenterer fælles fundraising til Folkemødet 2024 via bl.a. Trykkefrihedsselskabets, Manderådets, Dansk Regnbueråds og Jaleh Tavakolis hjemmesider samt et fælles betalingssetup. Ved manglende opfyldelse af formålet skulle midler fordeles mellem seks navngivne deltagende organisationer."
+  },
+  {
+    "id": "civilstyrelsen-folkemoede-2025",
+    "title": "Trykkefrihedsselskabet af 2004 – indsamlingsgodkendelse til Folkemødet 2025",
+    "publisher": "Civilstyrelsen",
+    "type": "primærkilde · indsamlingsgodkendelse",
+    "url": "https://www.civilstyrelsen.dk/sagsomraader/indsamlingsnaevnet/godkendte-indsamlinger/2025/trykkefrihedsselskabet-af-2004-09233",
+    "published": "2025-07-01",
+    "accessed": "2026-09-11",
+    "note": "Indsamlingsnævnets registrering dokumenterer endnu en fælles Folkemødeindsamling gennem Trykkefrihedsselskabet, Dansk Regnbueråd, Jaleh og Ord mod Ord. Overskud kunne bruges til Folkemødet 2026 eller fordeles mellem deltagende organisationer."
+  },
+  {
+    "id": "hearing-koensinkongruens-2025",
+    "title": "Høring af vejledning og faglig ramme for sundhedsfaglig hjælp ved kønsinkongruens",
+    "publisher": "Høringsportalen / Sundhedsstyrelsen",
+    "type": "primærkilde · høringsportal",
+    "url": "https://hoeringsportalen.dk/Hearing/Details/69532",
+    "published": "2024-12-18",
+    "accessed": "2026-09-11",
+    "note": "Officiel høringsside. Høringen løb 18. december 2024 til 24. februar 2025 og samler høringsmateriale og indsendte høringssvar."
+  },
+  {
+    "id": "dps-paediatrics-koensinkongruens-2025",
+    "title": "Høringssvar til Faglig ramme for sundhedsfaglig hjælp ved kønsinkongruens",
+    "publisher": "Dansk Pædiatrisk Selskab",
+    "type": "primærkilde · fagligt høringssvar",
+    "url": "https://paediatri.dk/images/dokumenter/hoeringssvar/2025/H%C3%B8ringssvar_faglige_rammer.pdf",
+    "published": "2025-02-24",
+    "accessed": "2026-09-11",
+    "note": "Ungdomsmedicinsk udvalgs høringssvar. Beskriver evidensen for hormonbehandling af mindreårige som spinkel, efterlyser større forsigtighed og protokolleret opfølgning og anbefaler generelt en mere restriktiv behandlingspraksis ved psykisk sygdom og udviklingsforstyrrelser."
+  },
+  {
+    "id": "bup-dk-koensinkongruens-2025",
+    "title": "Høringssvar vedr. udkast til vejledning og faglig ramme for sundhedsfaglig hjælp ved kønsinkongruens",
+    "publisher": "Børne- og Ungdomspsykiatrisk Selskab (BUP-DK)",
+    "type": "primærkilde · fagligt høringssvar",
+    "url": "https://bupnet.dk/wp-content/uploads/2025/02/Hoeringssvar-SST-koensinkongruens-22.02.25.pdf",
+    "published": "2025-02-22",
+    "accessed": "2026-09-11",
+    "note": "BUP-DK beskriver evidensen for både psykosociale og medicinske interventioner som usikker, men fremhæver både observerede positive effekter i nogle studier og sundhedsrisici ved at undlade behandling."
+  },
+  {
+    "id": "dsam-koensinkongruens-2025",
+    "title": "Høringssvar vedr. vejledning og faglig ramme for sundhedsfaglig hjælp ved kønsinkongruens",
+    "publisher": "Dansk Selskab for Almen Medicin",
+    "type": "primærkilde · fagligt høringssvar",
+    "url": "https://content.dsam.dk/guides/basissider/h%C3%B8ringer/h2024-98-horingssvar.pdf",
+    "published": "2025-02-24",
+    "accessed": "2026-09-11",
+    "note": "DSAM efterlyser større støtte før behandling og advarer om, at et toårigt varighedskriterium for børn før puberteten kan være for langt for nogle. Selskabet ønsker mulighed for henvisning uanset varighed i relevante tilfælde."
+  },
+  {
+    "id": "dp-koensinkongruens-2025",
+    "title": "Dansk Psykolog Forenings høringssvar til den nye faglige ramme for sundhedsfaglig hjælp ved kønsinkongruens",
+    "publisher": "Dansk Psykolog Forening / Høringsportalen",
+    "type": "primærkilde · fagligt høringssvar",
+    "url": "https://prodstoragehoeringspo.blob.core.windows.net/36b453f4-60ab-408d-aeb4-be0ff2dc6b56/H%C3%B8ringssvar%20SAMLET%20240325.pdf",
+    "published": "2025-02-21",
+    "accessed": "2026-09-11",
+    "note": "Akt 63 i den samlede officielle hørings-PDF. Foreningen siger, at autisme og andre udviklingsforstyrrelser ikke i sig selv bør blokere reel udredning, og efterlyser specialviden og tilpassede forløb."
+  },
+  {
+    "id": "dps-psychiatry-koensinkongruens-2025",
+    "title": "Høringssvar om vejledning og faglig ramme for sundhedsfaglig hjælp ved kønsinkongruens",
+    "publisher": "Dansk Psykiatrisk Selskab",
+    "type": "primærkilde · fagligt høringssvar",
+    "url": "https://dpsnet.dk/wp-content/uploads/2025/03/Hoeringssvar-koensinkongruens.pdf",
+    "published": "2025-02-24",
+    "accessed": "2026-09-11",
+    "note": "Dansk Psykiatrisk Selskab ønsker fortsat særlig forsigtighed ved autismespektrumforstyrrelse eller mistanke herom før kønsbekræftende behandling og mere specifik vejledning for patienter med komorbid ASF."
+  },
+  {
+    "id": "cki-autism-concern-2025",
+    "title": "Bekymringshenvendelse om patienter med autismespektrumforstyrrelse",
+    "publisher": "Klinikere ved CKI Odense og CKI København / Høringsportalen",
+    "type": "primærkilde · faglig høringshenvendelse",
+    "url": "https://prodstoragehoeringspo.blob.core.windows.net/36b453f4-60ab-408d-aeb4-be0ff2dc6b56/H%C3%B8ringssvar%20SAMLET%20240325.pdf",
+    "published": "2025-02-24",
+    "accessed": "2026-09-11",
+    "note": "Fælles bekymringshenvendelse i den officielle samlede hørings-PDF. Efterlyser særlig forsigtighed og autismekompetence. Bekymringen om senere stop eller fortrydelse beskrives udtrykkeligt som baseret på klinisk erfaring, fordi evidens fortsat mangler."
+  },
+  {
+    "id": "ft-s820-hearing-2025",
+    "title": "S 820 om hormonbehandling af børn og Dansk Pædiatrisk Selskabs høringssvar",
+    "publisher": "Folketinget",
+    "type": "primærkilde · § 20-spørgsmål",
+    "url": "https://www.ft.dk/samling/20241/spoergsmaal/S820/index.htm",
+    "published": "2025-03-12",
+    "accessed": "2026-09-11",
+    "note": "Dina Raabjerg spørger, om hormonbehandling af børn og unge bør stoppes, med henvisning til Dansk Pædiatrisk Selskabs kritik af evidensgrundlaget."
+  },
+  {
+    "id": "ft-s896-autism-hearing-2025",
+    "title": "S 896 om autisme og høringssvar til den faglige ramme",
+    "publisher": "Folketinget",
+    "type": "primærkilde · § 20-spørgsmål",
+    "url": "https://www.ft.dk/samling/20241/spoergsmaal/S896/index.htm",
+    "published": "2025-03-27",
+    "accessed": "2026-09-11",
+    "note": "Dina Raabjerg henviser både til Dansk Psykiatrisk Selskabs ønske om særlig forsigtighed ved autisme og til en privat forældreberetning indsendt som høringssvar. De to kildetyper er metodisk forskellige."
+  },
+  {
+    "id": "york-puberty-suppression-review-2024",
+    "title": "Interventions to suppress puberty in adolescents experiencing gender dysphoria or incongruence: a systematic review",
+    "publisher": "Archives of Disease in Childhood / PubMed",
+    "type": "systematisk litteraturgennemgang",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38594047/",
+    "published": "2024-10-30",
+    "accessed": "2026-09-11",
+    "note": "York-review af pubertetssuppression. Konkluderer, at der mangler forskning af høj kvalitet; der kan ikke drages sikre konklusioner om kønsdysfori, mental/psykosocial sundhed eller kognition. Flere studier viste reduceret knoglemineraltæthed under behandling."
+  },
+  {
+    "id": "york-adolescent-hormones-review-2024",
+    "title": "Masculinising and feminising hormone interventions for adolescents experiencing gender dysphoria or incongruence: a systematic review",
+    "publisher": "Archives of Disease in Childhood / PubMed",
+    "type": "systematisk litteraturgennemgang",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38594053/",
+    "published": "2024-10-30",
+    "accessed": "2026-09-11",
+    "note": "York-review af testosteron/østrogen til unge. Fandt de forventede fysiske effekter og vurderede, at moderat-kvalitets evidens peger på mulig forbedring af mental sundhed under behandling; for flere andre outcomes kunne der ikke drages sikre konklusioner."
+  },
+  {
+    "id": "york-youth-psychosocial-review-2024",
+    "title": "Psychosocial support interventions for children and adolescents experiencing gender dysphoria or incongruence: a systematic review",
+    "publisher": "Archives of Disease in Childhood / PubMed",
+    "type": "systematisk litteraturgennemgang",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38594045/",
+    "published": "2024-10-30",
+    "accessed": "2026-09-11",
+    "note": "Review af ti studier om psykosocial støtte, de fleste af lav kvalitet. De fleste analyser viste gevinst eller ingen ændring; ingen viste negative/adverse effekter. Evidensen var for begrænset til sikre effektkonklusioner eller valg af optimal model."
+  },
+  {
+    "id": "ludvigsson-youth-hormone-review-2023",
+    "title": "A systematic review of hormone treatment for children with gender dysphoria and recommendations for research",
+    "publisher": "Acta Paediatrica / PubMed",
+    "type": "systematisk litteraturgennemgang",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37069492/",
+    "published": "2023-05-01",
+    "accessed": "2026-09-11",
+    "note": "Systematisk review af 24 studier. Ingen RCT'er; få longitudinelle studier med små samples og stort frafald. Langsigtede psykosociale effekter kunne ikke vurderes. GnRHa forsinkede knoglemodning og BMD-gain, med delvis genvinding under efterfølgende kønshormonbehandling i tilgængelige data."
+  },
+  {
+    "id": "rand-youth-interventions-review-2025",
+    "title": "Interventions for Gender Dysphoria and Related Health Problems in Transgender and Gender-Expansive Youth: A Systematic Review of Benefits and Risks",
+    "publisher": "RAND Health Quarterly / PubMed Central",
+    "type": "systematisk litteraturgennemgang",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11916081/",
+    "published": "2025-03-17",
+    "accessed": "2026-09-11",
+    "note": "Bredt review af 105 studier hos unge op til 25 år. Mange observerede udfald var neutrale eller positive for kønsbekræftende interventioner, men evidenssikkerheden var overvejende lav eller meget lav. Reviewet havde ikke en preregistreret protokol."
+  },
+  {
+    "id": "mcmasters-puberty-blockers-review-2025",
+    "title": "Puberty blockers for gender dysphoria in youth: A systematic review and meta-analysis",
+    "publisher": "Archives of Disease in Childhood / PubMed",
+    "type": "systematisk litteraturgennemgang og meta-analyse",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39855724/",
+    "published": "2025-05-16",
+    "accessed": "2026-09-11",
+    "note": "Review af ti studier. De centrale psykiske og fysiske outcomes var baseret på meget lav evidenssikkerhed. Forfatterne konkluderer, at der fortsat er betydelig usikkerhed om effekterne af pubertetsblokkere."
+  },
+  {
+    "id": "mcmasters-youth-hormones-review-2025",
+    "title": "Gender affirming hormone therapy for individuals with gender dysphoria aged <26 years: a systematic review and meta-analysis",
+    "publisher": "Archives of Disease in Childhood / PubMed",
+    "type": "systematisk litteraturgennemgang og meta-analyse",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39855725/",
+    "published": "2025-05-16",
+    "accessed": "2026-09-11",
+    "note": "Review af 24 studier. De fleste centrale outcomes havde meget lav evidenssikkerhed; ét komparativt studie fandt lavere odds for depression ved GAHT med lav evidenssikkerhed. Forfatterne konkluderer, at både nytte og skade fortsat ikke kan udelukkes."
+  },
+  {
+    "id": "tornese-puberty-blockers-review-2025",
+    "title": "Use of gonadotropin-releasing hormone agonists in transgender and gender diverse youth: a systematic review",
+    "publisher": "Frontiers in Endocrinology / PubMed",
+    "type": "systematisk litteraturgennemgang",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40438403/",
+    "published": "2025-05-14",
+    "accessed": "2026-09-11",
+    "note": "Review af 51 studier. Forfatterne konkluderer, at GnRHa effektivt stopper pubertetsudvikling og rapporterer forbedringer i mental sundhed, især når GnRHa efterfølges af kønshormoner, men understreger fortsat usikkerhed om blandt andet langtidsskelet-, fertilitets- og kræftrisici."
+  },
+  {
+    "id": "ft-b47-background",
+    "title": "B 47 – baggrundsmateriale",
+    "publisher": "Folketingets Bibliotek",
+    "type": "primærkilde · bibliografisk servicedokument",
+    "url": "https://www.ft.dk/samling/20241/beslutningsforslag/B47/baggrund.htm",
+    "published": "2025-02-25",
+    "accessed": "2026-09-11",
+    "note": "Folketingets Biblioteks link- og litteraturpakke til B47. Under 'Nævnt i forslaget' registreres de fire medietekster, som omtales i forslagets bemærkninger. Biblioteket understreger, at siden er et servicedokument og ikke selv et parlamentarisk dokument."
+  },
+  {
+    "id": "jp-bjerre-legal-gender-2024",
+    "title": "Ibi-Pippi har fået mine øjne op for, hvor problematisk juridisk kønsskifte er",
+    "publisher": "Jyllands-Posten",
+    "type": "kronik · debatindlæg",
+    "url": "https://jyllands-posten.dk/debat/kronik/ECE17337761/ibipippi-har-faaet-mine-oejne-op-for-hvor-problematisk-juridisk-koensskifte-er/",
+    "published": "2024-08-14",
+    "accessed": "2026-09-11",
+    "note": "Kronik af daværende ligestillingsminister Marie Bjerre. B47 nævner teksten direkte i bemærkningerne. Som debatindlæg dokumenterer den Bjerres position, ikke Jyllands-Postens redaktionelle holdning."
+  },
+  {
+    "id": "aau-dr-prison-clipping-2024",
+    "title": "Mediedækning: For tredje gang går voldtægtsdømt transkvinde rettens vej for at kunne afsone i et kvindefængsel",
+    "publisher": "Aalborg Universitet / Infomedia-metadata",
+    "type": "bibliografisk metadata · sekundær kilde",
+    "url": "https://vbn.aau.dk/da/clippings/indsat-har-f%C3%A5et-juridisk-k%C3%B8nsskifte-og-identificerer-sig-som-kvin/",
+    "published": "2024-09-03",
+    "accessed": "2026-09-11",
+    "note": "AAU's forskningsportal gengiver Infomedia-metadata for DR.dk-artiklen 3. september 2024, herunder Jakob Slyngborg Trolle som forfatter og Birgit Feldtmann som medvirkende professor i strafferet. Bruges fordi DR-originalens direkte URL ikke kunne verificeres maskinelt i researchpasset."
+  },
+  {
+    "id": "bibliotek-kd-fahrendorff-2022",
+    "title": "Modstand mod særrettigheder til transkønnede vokser",
+    "publisher": "bibliotek.dk",
+    "type": "bibliografisk metadata",
+    "url": "https://bibliotek.dk/en/materiale/modstand-mod-saerrettigheder-til-transkoennede-vokser_rasmus-fahrendorff/work-of%3A870971-avis%3A134112158",
+    "published": "2022-07-30",
+    "accessed": "2026-09-11",
+    "note": "Bibliotek.dk registrerer Rasmus Fahrendorff som forfatter og 30. juli 2022 som dato. B47 citerer samme emne under den online-lignende titel 'Der har i årevis været støtte til særrettigheder til transkønnede. Men nu falder tolerancen' med dato 29. juli. Forskellen behandles som en mulig editions-/headlinevariant og er ikke normaliseret væk."
+  },
+  {
+    "id": "faengselsforbundet-kd-trans-prison-2023",
+    "title": "Kort nyt: Transkønnet skal blive i mandefængsel",
+    "publisher": "Fængselsforbundet",
+    "type": "sekundær fagbladsomtale",
+    "url": "https://faengselsforbundet.dk/wordpress/wp-content/uploads/2023/08/Fagbladet-August-2023.pdf",
+    "published": "2023-08-01",
+    "accessed": "2026-09-11",
+    "note": "Fængselsforbundets fagblad opsummerer Østre Landsrets afgørelse og gengiver et citat, som Jesper W. Rasmussen fra Dansk Regnbueråd gav til Kristeligt Dagblad i den oprindelige dækning. Bruges som sekundær dokumentation for, at DRR optrådte som citeret stemme i artiklen."
+  },
+  {
+    "id": "hoejesteret-prison-gender-2024",
+    "title": "Højesterets dom BS-60551/2023-HJR om afsoningsforhold og visitation",
+    "publisher": "Højesteret",
+    "type": "primærkilde · dom",
+    "url": "https://www.domstol.dk/media/dqvlrhlb/bs-60551-anonymiseret-dom.pdf",
+    "published": "2024-09-10",
+    "accessed": "2026-09-11",
+    "note": "Højesterets dom om en juridisk kvindelig transkønnet forvaringsdømt. Placeringen på mandeafdeling blev opretholdt efter en konkret individuel helheds- og sikkerhedsvurdering. Højesteret fandt særskilt, at 'køn' i straffuldbyrdelseslovens § 60, stk. 6, som udgangspunkt skal forstås som biologisk køn ved afklædningsvisitation."
+  },
+  {
+    "id": "kriminalforsorgen-gender-minorities-2023",
+    "title": "Ny vejledning om kønsminoriteter i fængsler og arresthuse",
+    "publisher": "Danmarks Fængsler / Kriminalforsorgen",
+    "type": "primærkilde · myndighedsmeddelelse",
+    "url": "https://via.ritzau.dk/pressemeddelelse/13749054/ny-vejledning-om-konsminoriteter-i-faengsler-og-arresthuse?lang=da&publisherId=13560989",
+    "published": "2023-11-17",
+    "accessed": "2026-09-11",
+    "note": "Kriminalforsorgens beskrivelse af vejledningen fra oktober 2023. Placering sker som udgangspunkt efter juridisk køn, men når juridisk køn, kønsidentitet og biologisk køn ikke stemmer overens, foretages en konkret individuel vurdering med vægt på sikkerhed for den indsatte, medindsatte og personale."
+  },
+  {
+    "id": "emu-lgbt-fagene",
+    "title": "LGBT+ i fagene",
+    "publisher": "EMU / Børne- og Undervisningsministeriet",
+    "type": "primærkilde · officiel undervisningsportal",
+    "url": "https://emu.dk/grundskole/sundheds-og-seksualundervisning-og-familiekundskab/koen-krop-og-seksualitet/lgbt-i",
+    "published": null,
+    "accessed": "2026-09-11",
+    "note": "Officiel undervisningsportal. Oplyser, at undervisning i mangfoldighed i forhold til køn, krop og seksualitet er obligatorisk fra børnehaveklasse til 9. klasse som del af SSF. Siden giver eksempler på LGBT+-perspektiver i fagene; den gør ikke en bestemt ekstern udbyder obligatorisk."
+  },
+  {
+    "id": "normstormerne-elevundervisning",
+    "title": "Elevundervisning",
+    "publisher": "Normstormerne",
+    "type": "primærkilde · organisationsside",
+    "url": "https://www.normstormerne.dk/elevundervisning",
+    "published": null,
+    "accessed": "2026-09-11",
+    "note": "Normstormernes egen aktuelle beskrivelse af normkritisk elevundervisning for 0.-9. klasse. Bruges som selvbeskrivelse af organisationens tilbud og tilgang, ikke som uafhængig effektevaluering."
+  },
+  {
+    "id": "normstormerne-om-os",
+    "title": "Om os",
+    "publisher": "Normstormerne",
+    "type": "primærkilde · organisationsside",
+    "url": "https://www.normstormerne.dk/om-os/",
+    "published": null,
+    "accessed": "2026-09-11",
+    "note": "Organisationens egen historik: etableret i 2012, kommunal bevilling 2020-2023 og fra 2024 beskrevet som 100 pct. frivilligdrevet uden bevilling."
+  },
+  {
+    "id": "ft-buu107-normkritik-2022",
+    "title": "BUU alm. del – spørgsmål 107 om normkritisk tilgang til køn",
+    "publisher": "Folketinget",
+    "type": "primærkilde · udvalgsspørgsmål",
+    "url": "https://www.ft.dk/samling/20211/almdel/buu/spm/107/index.htm",
+    "published": "2022-02-04",
+    "accessed": "2026-09-11",
+    "note": "Marie Krarup (DF) spørger, om folkeskolen bør undervise i en normkritisk tilgang til køn."
+  },
+  {
+    "id": "ft-buu346-normstormerne-2022",
+    "title": "BUU alm. del – spørgsmål 346 om Normstormerne",
+    "publisher": "Folketinget",
+    "type": "primærkilde · udvalgsspørgsmål",
+    "url": "https://www.ft.dk/samling/20211/almdel/buu/spm/346/index.htm",
+    "published": "2022-07-18",
+    "accessed": "2026-09-11",
+    "note": "Morten Messerschmidt (DF) beder om en liste over folkeskoler, hvor Normstormerne har bidraget til undervisningen, samt en oversigt over offentlige støttemidler."
+  },
+  {
+    "id": "ft-buu375-normstormerne-2022",
+    "title": "BUU alm. del – spørgsmål 375 om indkøb af Normstormerne-materiale",
+    "publisher": "Folketinget",
+    "type": "primærkilde · udvalgsspørgsmål",
+    "url": "https://www.ft.dk/samling/20211/almdel/buu/spm/375/index.htm",
+    "published": "2022-08-26",
+    "accessed": "2026-09-11",
+    "note": "Tværborgerligt spørgsmål fra V, KF, DF, LA og NB om at undersøge de udbudsretlige forhold ved Københavns Kommunes indkøb af Normstormernes materiale. Dokumenterer kontrol af indkøb/transparens; spørgsmålet klassificeres ikke i sig selv som transfobisk."
+  },
+  {
+    "id": "ft-s188-normstormerne-2023",
+    "title": "S 188 om Normstormerne og undervisning i indskolingen",
+    "publisher": "Folketinget",
+    "type": "primærkilde · § 20-spørgsmål",
+    "url": "https://www.ft.dk/samling/20222/spoergsmaal/S188/index.htm",
+    "published": "2023-01-27",
+    "accessed": "2026-09-11",
+    "note": "Sólbjørg Jakobsen (LA) spørger til det, hun kalder seksualiserende undervisningsmateriale i indskolingen. Den officielle skriftlige begrundelse henviser direkte til en Berlingske-artikel publiceret dagen før om Normstormerne. Ministerens svar understreger, at der ikke er centralt fastsat pensum, og at lærer og skoleledelse har ansvaret ved brug af eksterne aktører."
+  },
+  {
+    "id": "ft-s430-gender-education-2023",
+    "title": "S 430 om køn og seksualitet på lærer- og pædagoguddannelser",
+    "publisher": "Folketinget",
+    "type": "primærkilde · § 20-spørgsmål",
+    "url": "https://www.ft.dk/samling/20222/spoergsmaal/S430/index.htm",
+    "published": "2023-03-24",
+    "accessed": "2026-09-11",
+    "note": "Mette Thiesen (DF) spørger til undervisning af lærer- og pædagogstuderende om normer, heteroseksualitet, køn som konstruktion og statens kønning af borgere med henvisning til to fagbøger."
+  },
+  {
+    "id": "ft-f1-background-2024",
+    "title": "F 1 om begrebet køn – baggrundsmateriale",
+    "publisher": "Folketingets Bibliotek",
+    "type": "primærkilde · bibliografisk servicedokument",
+    "url": "https://www.ft.dk/samling/20231/forespoergsel/F1/baggrund.htm",
+    "published": "2024-01-23",
+    "accessed": "2026-09-11",
+    "note": "Folketingets Biblioteks baggrundsmateriale til F1. Medtager bl.a. S 188 og S 430 som tidligere relevante debatter. Materialet er et arbejdsredskab, ikke selv et parlamentarisk dokument."
+  },
+  {
+    "id": "ft-b145-background",
+    "title": "B 145 – baggrundsmateriale",
+    "publisher": "Folketingets Bibliotek",
+    "type": "primærkilde · bibliografisk servicedokument",
+    "url": "https://www.ft.dk/samling/20241/beslutningsforslag/B145/baggrund.htm",
+    "published": "2025-05-02",
+    "accessed": "2026-09-11",
+    "note": "Folketingets Biblioteks baggrundsmateriale til B145. Medtager F1, S 430 og S 188 som tidligere relevante debatter. Listen dokumenterer bibliografisk forhistorie, ikke kausalitet."
+  },
+  {
+    "id": "vive-controversial-topics-2025",
+    "title": "Læreres erfaringer med undervisning i emner, der kan opleves som kontroversielle",
+    "publisher": "VIVE / Børne- og Undervisningsministeriet",
+    "type": "myndighedsbestilt undersøgelse",
+    "url": "https://uvm.dk/media/4ebh12zs/laereres-erfaringer-med-undervisning-i-emner-der-kan-opleves-som-kontroversielle.pdf",
+    "published": "2025-06-19",
+    "accessed": "2026-09-11",
+    "note": "Undersøgelse baseret på 721 lærere og 127 ledere i relevante fag på 7.-9. klassetrin og gymnasiale uddannelser. Kønsidentitet var blandt de hyppigt oplevede kontroversielle emner. For den lille undergruppe, som havde udeladt kønsidentitet (N ca. 19-21), var de hyppigste angivne hensyn elevtrivsel, konflikt i klassen og manglende faglig forberedelse."
+  },
+  {
+    "id": "uvm-vive-news-2025",
+    "title": "Ny undersøgelse: Lærere fravælger at undervise i emner, der kan opleves som kontroversielle",
+    "publisher": "Børne- og Undervisningsministeriet",
+    "type": "myndighedsnyhed",
+    "url": "https://uvm.dk/aktuelt/nyheder/2025/juni/250619-ny-undersoegelse-laerere-fravaelger-at-undervise-i-emner-der-kan-opleves-som-kontroversiell/",
+    "published": "2025-06-19",
+    "accessed": "2026-09-11",
+    "note": "Ministeriets sammenfatning af VIVE-undersøgelsen og dens population. Bruges som supplement til selve rapporten."
+  },
+  {
+    "id": "dbu-gender-workgroup-2023",
+    "title": "Nyt fokus på køn i dansk fodbold",
+    "publisher": "DBU",
+    "type": "primærkilde · organisationsnyhed",
+    "url": "https://www.dbu.dk/nyheder/2023/januar/nyt-fokus-paa-koen-i-dansk-fodbold/",
+    "published": "2023-01-24",
+    "accessed": "2026-09-11",
+    "note": "DBU nedsætter arbejdsgruppe om inklusion af transkønnede, interkønnede og nonbinære. Beskriver arbejdsgruppens mandat som en afvejning af inklusion, lige konkurrence og sikkerhed."
+  },
+  {
+    "id": "dbu-gender-hearing-2023",
+    "title": "Anbefalinger til inklusion af flere kønsidentiteter i dansk fodbold er i høring",
+    "publisher": "DBU",
+    "type": "primærkilde · organisationsnyhed",
+    "url": "https://www.dbu.dk/nyheder/2023/september/anbefalinger-til-inklusion-af-flere-koensidentiteter-i-dansk-fodbold-er-i-hoering/",
+    "published": "2023-09-14",
+    "accessed": "2026-09-11",
+    "note": "DBU beskriver arbejdsgruppens forslag om selvidentifikation i breddefodbold. Siden siger udtrykkeligt, at anbefalingerne endnu ikke var endeligt vedtaget, og at kønsidentitetssager fortsat var meget sjældne."
+  },
+  {
+    "id": "dbu-gender-board-2023",
+    "title": "Alle køn er velkomne i dansk fodbold",
+    "publisher": "DBU",
+    "type": "primærkilde · organisationsnyhed",
+    "url": "https://www.dbu.dk/nyheder/2023/november/alle-koen-er-velkomne-i-dansk-fodbold/",
+    "published": "2023-11-24",
+    "accessed": "2026-09-11",
+    "note": "DBU-bestyrelsen bakker enstemmigt op om anbefalingerne og starter implementeringsprocessen. DBU beskriver implementeringen som flerårig, målet om selvidentifikation i bredde som noget der skal skabes rammer for frem mod 2025, og den præcise implementeringsplan som kommende."
+  },
+  {
+    "id": "dbu-gender-report-2023",
+    "title": "Inklusion af transkønnede, interkønnede og non-binære i dansk fodbold",
+    "publisher": "DBU",
+    "type": "primærkilde · arbejdsgrupperapport",
+    "url": "https://www.dbu.dk/media/wc1ggpzx/dbu-rapport-om-inklusion-af-trans-interkoennede-og-non-binaere-i-dansk-fodbold_final.pdf",
+    "published": "2023-09-14",
+    "accessed": "2026-09-11",
+    "note": "Arbejdsgruppens anbefalinger. Skelner mellem bredde- og elitefodbold og anbefaler selvidentifikation som princip i breddefodbold uden for licenssystemet."
+  },
+  {
+    "id": "dbufyn-gender-report-2024",
+    "title": "Forpersonens beretning for 2024",
+    "publisher": "DBU Fyn",
+    "type": "primærkilde · årsberetning",
+    "url": "https://www.dbufyn.dk/media/g5mbfl2a/forpersonens-beretning-for-2024.pdf",
+    "published": null,
+    "accessed": "2026-09-11",
+    "note": "DBU Fyn beskriver kønsidentitetssager som forventeligt meget få og siger, at unionen ikke for nuværende ønsker at fastsætte generelle regler, men vil søge pragmatiske løsninger i konkrete tilfælde."
+  },
+  {
+    "id": "dbujylland-self-id-reject-2025",
+    "title": "Jyske klubber: Nej tak til selvidentifikation af kønsidentitet",
+    "publisher": "DBU Jylland",
+    "type": "primærkilde · organisationsnyhed",
+    "url": "https://www.dbujylland.dk/nyheder/2025/januar/jyske-klubber-nej-tak-til-selvidentifikation-af-koensidentitet/",
+    "published": "2025-01-11",
+    "accessed": "2026-09-11",
+    "note": "DBU Jyllands delegeretmøde forkaster med betydelig margin en foreslået toårig forsøgsperiode med selvidentifikation. Unionen oplyser, at turneringskampe fortsætter under de hidtidige kønsbestemmelser."
+  },
+  {
+    "id": "dbusjaelland-gender-rules-2025",
+    "title": "Retningslinjer for kønsidentiteter i DBU Sjællands turneringer",
+    "publisher": "DBU Sjælland",
+    "type": "primærkilde · organisationsnyhed",
+    "url": "https://www.dbusjaelland.dk/nyheder/2025/september/retningslinjer-for-koensidentiteter-i-dbu-sjaellands-turneringer/",
+    "published": "2025-09-17",
+    "accessed": "2026-09-11",
+    "note": "Efter drøftelser med over 110 klubber vedtager DBU Sjælland, at CPR-nummeret/juridisk køn er styrende for kønskategorien i turneringer. Siden understreger, at særlige dispensationer fortsat er mulige."
+  },
+  {
+    "id": "dbusjaelland-gender-dispensation",
+    "title": "Dispensationer – køn",
+    "publisher": "DBU Sjælland",
+    "type": "primærkilde · gældende regelside",
+    "url": "https://www.dbusjaelland.dk/love-og-regler/reglementer/dispensationer/",
+    "published": null,
+    "accessed": "2026-09-11",
+    "note": "Aktuel dispensationsside. DBU Sjælland bruger CPR/juridisk køn som hovedregel og kan i særlige tilfælde dispensere til pige-/kvindeturneringer efter en konkret vurdering bl.a. af fysisk indvirkning og transitionsforhold."
+  },
+  {
+    "id": "ft-kuu-d-dbu-2024",
+    "title": "KUU alm. del – samrådsspørgsmål D om DBU og kønskategorier",
+    "publisher": "Folketinget",
+    "type": "primærkilde · samrådsspørgsmål",
+    "url": "https://www.ft.dk/samling/20241/almdel/KUU/samspm/D/index.htm",
+    "published": "2024-11-18",
+    "accessed": "2026-09-11",
+    "note": "Sólbjørg Jakobsen (LA) spørger kulturministeren til DBU’s overvejede politik for transkvinders deltagelse i kvindehold i breddefodbold. Spørgsmålets egen ordlyd siger, at DBU overvejer politikken; det blev stillet fem dage efter B47 blev fremsat."
+  },
+  {
+    "id": "ft-kuu-d-dbu-hearing-2024",
+    "title": "Åbent samråd om kønsfordeling hos DBU",
+    "publisher": "Folketinget",
+    "type": "primærkilde · udvalgskalender",
+    "url": "https://www.ft.dk/udvalg/udvalgene/KUU/kalender/76263/samraad.htm",
+    "published": "2024-11-27",
+    "accessed": "2026-09-11",
+    "note": "Kulturudvalgets samråd 27. november 2024 om DBU’s kønskategorier, afholdt efter Sólbjørg Jakobsens samrådsspørgsmål D."
+  },
+  {
+    "id": "ft-s61-screening-2026",
+    "title": "S 61 om screening for livmoderhalskræft for transkønnede",
+    "publisher": "Folketinget",
+    "type": "primærkilde · § 20-spørgsmål",
+    "url": "https://www.ft.dk/samling/20252/spoergsmaal/S61/index.htm",
+    "published": "2026-06-18",
+    "accessed": "2026-09-11",
+    "note": "Jan Herskov (DF) spørger, hvordan man undgår at indkalde transpersoner uden livmoder/livmoderhals til livmoderhalskræftscreening. Besvaret 24. juni 2026 sammen med den komplementære problemstilling i S 63."
+  },
+  {
+    "id": "ft-s63-screening-2026",
+    "title": "S 63 om transkønnede med livmoder og livmoderhalskræftscreening",
+    "publisher": "Folketinget",
+    "type": "primærkilde · § 20-spørgsmål og debat",
+    "url": "https://www.ft.dk/samling/20252/spoergsmaal/S63/index.htm",
+    "published": "2026-06-18",
+    "accessed": "2026-09-11",
+    "note": "Jan Herskov (DF) spørger, hvordan transpersoner med relevant anatomi sikres korrekt screening efter skift til mandligt personnummer. I debatten efterspørger han en digital løsning med automatisk relevant indkaldelse. Ministeren beskriver den nuværende løsning som vejledning til selv at opsøge eller fravælge kønsspecifik screening og siger, at en teknisk løsning søges."
+  },
+  {
+    "id": "ft-suu-bilag46-youth-access-2026",
+    "title": "SUU alm. del – bilag 46: forældrehenvendelse om manglende adgang for transkønnede børn og unge",
+    "publisher": "Folketinget",
+    "type": "primærkilde · registreret udvalgshenvendelse",
+    "url": "https://www.ft.dk/udvalg/udvalgene/SUU/dokumenter/Almdel_bilag",
+    "published": "2026-06-30",
+    "accessed": "2026-09-11",
+    "note": "Folketingets dokumentregister registrerer en henvendelse af 24. juni 2026 fra en gruppe forældre om manglende adgang til udredning og behandling for transkønnede børn og unge. Detaljer fra vedhæftningen gengives ikke uden særskilt dokumentverifikation."
+  },
+  {
+    "id": "ft-suu94-youth-access-2026",
+    "title": "SUU alm. del – spørgsmål 94 om manglende adgang til udredning og behandling for transkønnede børn og unge",
+    "publisher": "Folketinget",
+    "type": "primærkilde · udvalgsspørgsmål",
+    "url": "https://www.ft.dk/samling/20252/almdel/SUU/spm/94/index.htm",
+    "published": "2026-07-30",
+    "accessed": "2026-09-11",
+    "note": "Marie Brixtofte (V) beder ministeren kommentere forældrehenvendelsen i bilag 46 og punkt for punkt forholde sig til dens fem forslag til handlinger."
+  },
+  {
+    "id": "ft-suu94-answer-youth-access-2026",
+    "title": "SUU alm. del – endeligt svar på spørgsmål 94",
+    "publisher": "Folketinget",
+    "type": "primærkilde · ministerielt svar",
+    "url": "https://www.ft.dk/samling/20252/almdel/SUU/spm/94/svar/2224963/index.htm",
+    "published": "2026-08-27",
+    "accessed": "2026-09-11",
+    "note": "Folketingets side registrerer endeligt ministerielt svar 27. august 2026 på spørgsmålet om forældrehenvendelsen og manglende adgang. I denne publiceringsrunde bruges dokumentet til at dokumentere proces/status; svarindholdet citeres ikke uden verificering af vedhæftningen."
+  },
+  {
+    "id": "ft-suu145-crossborder-hormones-2026",
+    "title": "SUU alm. del – spørgsmål 145 om unge transkønnede og udenlandske recepter",
+    "publisher": "Folketinget",
+    "type": "primærkilde · udvalgsspørgsmål",
+    "url": "https://www.ft.dk/samling/20252/almdel/SUU/spm/145/index.htm",
+    "published": "2026-08-26",
+    "accessed": "2026-09-11",
+    "note": "Jan Herskov (DF) spørger, om unge transpersoner, der ikke er i medicinsk transitionbehandling i Danmark, kan få kønsregulerende medicin ordineret i andre europæiske lande og udleveret i Danmark efter tilskudsreglerne. Står som ikke besvaret pr. 11. september 2026."
+  },
+  {
+    "id": "ft-mf-jan-herskov",
+    "title": "Jan Herskov",
+    "publisher": "Folketinget",
+    "type": "primærkilde · medlemsbiografi",
+    "url": "https://www.ft.dk/medlemmer/mf/j/jan-herskov",
+    "published": null,
+    "accessed": "2026-09-11",
+    "note": "Folketingets aktuelle biografi: DF-medlem fra 24. marts 2026; sundheds- og psykiatriordfører fra 2026."
+  },
+  {
+    "id": "ft-mf-marie-brixtofte",
+    "title": "Marie Brixtofte",
+    "publisher": "Folketinget",
+    "type": "primærkilde · medlemsbiografi",
+    "url": "https://www.ft.dk/da/medlemmer/mf/m/marie-brixtofte",
+    "published": null,
+    "accessed": "2026-09-11",
+    "note": "Folketingets aktuelle biografi: Venstre-medlem fra 24. marts 2026 og medlem af Sundheds- og Ældreudvalget."
+  },
+  {
+    "id": "ft-b47-spm1-baseline-2025",
+    "title": "B 47 – svar på spørgsmål 1",
+    "publisher": "Miljø- og Ligestillingsministeriet / Folketinget",
+    "type": "primærkilde · ministerielt svar",
+    "url": "https://www.ft.dk/samling/20241/beslutningsforslag/b47/spm/1/svar/2124907/2996967/index.htm",
+    "published": "2025-03-28",
+    "accessed": "2026-09-11",
+    "note": "Ligestillingsministeren oplyser, at 2.691 personer pr. 31. august 2024 havde fået tildelt nyt personnummer siden lovgivningen om juridisk kønsskifte trådte i kraft i 2014."
+  },
+  {
+    "id": "ft-liu77-legal-gender-review-2020",
+    "title": "LIU alm. del – svar på spørgsmål 77 med tværministeriel lovgennemgang",
+    "publisher": "Folketinget / Social- og Indenrigsministeriet",
+    "type": "primærkilde · ministerielt svar og lovgennemgang",
+    "url": "https://www.ft.dk/samling/20191/almdel/liu/spm/77/svar/1693128/2251678/index.htm",
+    "published": "2020-09-09",
+    "accessed": "2026-09-11",
+    "note": "Indeholder den daværende administrative opgørelse for 2014-2019: 1.247 ansøgninger og 948 tildelinger; 24 gentildelinger af oprindeligt personnummer vedrørende 22 personer, hovedsageligt efter fortrydelse. CPR-kontorets 2025-serie korrigerer enkelte af de historiske årstal og giver 1.249 ansøgninger og 949 tildelinger for de samme fem opgørelsesår. Kilden bruges derfor især til de ældre oplysninger om afslag og gentildelinger."
+  },
+  {
+    "id": "cpr-legal-gender-stats-2025",
+    "title": "Opgørelse vedrørende sager om juridisk kønsskifte – 2025",
+    "publisher": "Digitaliseringsministeriet / CPR-kontoret",
+    "type": "primærkilde · administrativ statistik",
+    "url": "https://www.cpr.dk/Media/638948262102085540/Opg%C3%B8relse%20vedr%C3%B8rende%20sager%20om%20juridisk%20k%C3%B8nsskifte%20-%202025.pdf",
+    "published": "2025-09-30",
+    "accessed": "2026-09-11",
+    "note": "Den nyeste fundne CPR-opgørelse dækker 1. september 2014 til 31. august 2025: 3.797 ansøgninger og 3.129 tildelinger af nyt personnummer. Den indeholder en årlig serie og oplyser, at mindre korrektioner af tidligere offentliggjorte tal kan forekomme på grund af manuel sagsbehandling, fejlrettelser og justeringer."
+  },
+  {
+    "id": "retsinfo-cpr-law-current-2026",
+    "title": "CPR-loven – gældende lovbekendtgørelse",
+    "publisher": "Retsinformation",
+    "type": "primærkilde · gældende lov",
+    "url": "https://www.retsinformation.dk/eli/lta/2023/1010",
+    "published": "2023-06-23",
+    "accessed": "2026-09-11",
+    "note": "Retsinformation markerer LBK nr. 1010 af 23. juni 2023 som gældende og oplister senere ændringer gennem 2025. § 3, stk. 7, kræver fortsat efter ordlyden, at ansøgeren er fyldt 18 år på ansøgningstidspunktet; de oplistede senere ændringslove ændrer andre bestemmelser og bilag, ikke denne aldersbetingelse."
+  },
+  {
+    "id": "cpr-minor-legal-gender-guidance-current",
+    "title": "Vejledning til ansøgning om nyt personnummer – personer under 18 år",
+    "publisher": "Digitaliseringsministeriet / CPR-kontoret",
+    "type": "primærkilde · administrativ vejledning",
+    "url": "https://www.cpr.dk/Media/638621535747172686/Vejledning%20til%20ans%C3%B8gning%20om%20nyt%20personnummer%20til%20personer%20under%2018%20%C3%A5r%20begrundet%20i%20en%20oplevelse%20af%20at%20tilh%C3%B8re%20det%20andet%20k%C3%B8n.pdf",
+    "published": null,
+    "accessed": "2026-09-11",
+    "note": "CPR-kontorets aktuelle vejledning til mindreårige. Efter ansøgning vurderer CPR-kontoret, om kravene til juridisk kønsskifte er opfyldt på grundlag af Danmarks internationale forpligtelser efter EMRK."
+  },
+  {
+    "id": "ft-inu94-minor-legal-gender-law-2024",
+    "title": "INU alm. del – svar på spørgsmål 94 om CPR-loven og juridisk kønsskifte for mindreårige",
+    "publisher": "Digitaliseringsministeriet / Folketinget",
+    "type": "primærkilde · ministerielt svar",
+    "url": "https://www.ft.dk/samling/20231/almdel/inu/spm/94/svar/2066723/2902520.pdf",
+    "published": "2024-09-06",
+    "accessed": "2026-09-11",
+    "note": "Digitaliseringsminister Caroline Stage oplyser, at et planlagt lovforslag om en CPR-ordning for mindreårige var udskudt, og at regeringen ville tage stilling til en lovændring, når Sundhedsstyrelsens reviderede vejledning om kønsidentitetsforhold forelå."
+  },
+  {
+    "id": "jp-minor-legal-gender-2024",
+    "title": "11-årige Eva er en af de få, der har fået lov til at skifte køn",
+    "publisher": "Jyllands-Posten",
+    "url": "https://jyllands-posten.dk/politik/ECE17374418/eva-er-et-af-de-foerste-11-boern-der-har-faaet-et-juridisk-koensskifte-og-det-er-hun-glad-for/",
+    "note": "Artiklen gengiver en status for mindreåriges juridiske kønsskifte efter praksisændringen i 2023: 41 børn og unge havde søgt, inklusive de 16 genoptagne sager; 11 havde foreløbig fået godkendt ansøgningen og 6 havde fået afslag. Tallene er journalistisk formidlet og kan ikke i sig selv fordele udfaldene på de 16 genoptagne sager.",
+    "type": "sekundærkilde · nyhedsartikel",
+    "published": "2024-08-24",
+    "accessed": "2026-09-11"
+  },
+  {
+    "id": "lbn-changing-room-2016",
+    "title": "Ligebehandlingsnævnets afgørelse om køn – adgangsbegrænsning – ej medhold",
+    "publisher": "Ligebehandlingsnævnet / Retsinformation",
+    "type": "primærkilde · administrativ afgørelse",
+    "url": "https://www.retsinformation.dk/api/pdf/179999",
+    "published": "2016-03-02",
+    "accessed": "2026-09-11",
+    "note": "Sag 2015-6811-22682. En person med juridisk kønsskifte og kvindeligt CPR-nummer blev henvist til separat omklædningsrum i en svømmehal. Nævnet fandt, at dette ikke var i strid med ligestillingsloven af hensyn til blufærdighed."
+  },
+  {
+    "id": "lbn-changing-room-2023",
+    "title": "Ligebehandlingsnævnets afgørelse om køn – adgangsbegrænsning – kommuner – kønsidentitet, kønsudtryk og kønskarakteristika – sport – ej medhold",
+    "publisher": "Ligebehandlingsnævnet / Retsinformation",
+    "type": "primærkilde · administrativ afgørelse",
+    "url": "https://www.retsinformation.dk/eli/retsinfo/2023/9110",
+    "published": "2023-01-18",
+    "accessed": "2026-09-11",
+    "note": "Sag 22-37799. Nævnet fandt faktiske omstændigheder, der gav anledning til at formode direkte forskelsbehandling, men accepterede hensynet til øvrige gæsters blufærdighed som legitimt og henvisningen til familieomklædningsrum som hensigtsmæssig og nødvendig. Klager fik ikke medhold."
+  },
+  {
+    "id": "lbn-annual-report-2023",
+    "title": "Ligebehandlingsnævnets årsberetning 2023",
+    "publisher": "Ligebehandlingsnævnet / Ankestyrelsen",
+    "type": "primærkilde · årsberetning",
+    "url": "https://www.ast.dk/for-myndigheder/publikationer/2024/jan/ligebehandlingsnaevnets-aarsberetning-2023",
+    "published": "2024-01-01",
+    "accessed": "2026-09-11",
+    "note": "Årsberetningen fremhæver sag 22-37799 som en afgørelse om kønsidentitet, kønsudtryk og kønskarakteristika og om adgang til kvindernes omklædningsrum i en svømmehal."
+  },
+  {
+    "id": "trygfonden-facebook-hate-2025",
+    "title": "Angreb og had i den offentlige debat på Facebook",
+    "publisher": "TrygFonden / Analyse & Tal",
+    "type": "kvantitativ kortlægning",
+    "url": "https://www.tryghed.dk/-/media/files/pdf/publikationer/2025/2025-angreb-og-had-i-den-offentlige-debat.pdf",
+    "published": "2025-03-03",
+    "accessed": "2026-09-11",
+    "note": "Kortlægning af Facebook-debatten med data fra bl.a. 467 mediers og 192 politikeres/partiers sider i 2021-2024. Emnet kønsminoriteter havde 12 pct. angreb blandt omtaler, lå nr. 19 af 94 efter angrebsandel og nr. 77 efter volumen; angrebsandelen steg relativt 50 pct. fra 2021 til første halvår 2024, mens omtalen steg 31 pct. En særskilt nærlæst hate-target-analyse estimerer 398 hadefulde kommentarer om måneden baseret på tilhørsforhold til den brede kategori kønsminoriteter. Rapportens metode- og kategoribegrænsninger er afgørende for fortolkningen."
+  },
+  {
+    "id": "regeringen-mf3-2026",
+    "title": "Regeringen Mette Frederiksen III",
+    "publisher": "Regeringen.dk",
+    "type": "primærkilde · regeringsoversigt",
+    "url": "https://regeringen.dk/om-regeringen/regeringer-siden-1848/regeringen-mette-frederiksen-iii/",
+    "published": "2026-06-03",
+    "accessed": "2026-09-11",
+    "note": "Officiel oversigt over regeringen fra 3. juni 2026: Socialdemokratiet, Socialistisk Folkeparti, Moderaterne og Radikale Venstre."
+  },
+  {
+    "id": "firkloever-regeringsgrundlag-2026",
+    "title": "Det politiske grundlag for firkløverregeringen",
+    "publisher": "Statsministeriet / Regeringen",
+    "type": "primærkilde · regeringsgrundlag",
+    "url": "https://regeringen.dk/media/rc1ktdmg/det-politiske-grundlag-for-firkloeverregeringen.pdf",
+    "published": "2026-06-02",
+    "accessed": "2026-09-11",
+    "note": "Regeringsgrundlaget for S-SF-M-RV. Ud over den allerede aftalte LGBT+ handlingsplan 2026-2029 varsler det monitorering af hadforbrydelser mod LGBT+ personer, støtte mod homofobi i skoler, styrket indsats for LGBT+ personer med minoritetsbaggrund og forbud mod omvendelsesterapi for børn under 18 år."
+  },
+  {
+    "id": "lgbt-action-plan-2026-2029",
+    "title": "LGBT+ handlingsplan 2026-2029",
+    "publisher": "Regeringen / Miljø- og Ligestillingsministeriet",
+    "type": "primærkilde · handlingsplan",
+    "url": "https://mim.dk/media/tgshtc1y/lgbtplus-handlingsplan-2026-2029.pdf",
+    "published": "2026-01-29",
+    "accessed": "2026-09-11",
+    "note": "Regeringens handlingsplan med 30 initiativer. På transområdet videreføres supplerende psykosocial rådgivning til personer på venteliste, i udredning eller behandling ved Center for Kønsidentitet, og der igangsættes forskning i langsigtede bivirkninger ved hormonbehandling til personer under 18 år. Planen rummer også bredere indsatser mod bl.a. transfobi. Blandt de 30 initiativer er der ikke identificeret et initiativ om juridisk kønsskifte; juridisk køn omtales i et tilbageblik på allerede gennemførte familiepolitiske ændringer."
+  },
+  {
+    "id": "lgbt-action-plan-funding-2026",
+    "title": "Aftale om udmøntning af rammen til en LGBT+ indsats for 2026-2029",
+    "publisher": "Regeringen / Det Konservative Folkeparti",
+    "type": "primærkilde · politisk aftale",
+    "url": "https://mim.dk/media/ra5m43wm/aftale-om-udmoentning-af-rammen-til-en-lgbtplus-indsats-for-2026-2029.pdf",
+    "published": "2026-01-12",
+    "accessed": "2026-09-11",
+    "note": "SVM-regeringen og Det Konservative Folkeparti fordelte en ramme på 24,4 mio. kr. i 2026-2029. Aftalen afsætter 1,6 mio. kr. til at fortsætte LGBT+ Danmarks supplerende rådgivning til transpersoner på venteliste, i udredning eller behandling ved Center for Kønsidentitet."
   }
 ]

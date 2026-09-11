@@ -28,6 +28,8 @@ var events = Read<TimelineEvent[]>(Path.Combine(dataRoot, "events.json"));
 var relationships = Read<Relationship[]>(Path.Combine(dataRoot, "relationships.json"));
 var media = Read<MediaItem[]>(Path.Combine(dataRoot, "media.json"));
 var statements = Read<Statement[]>(Path.Combine(dataRoot, "statements.json"));
+var healthcare = Read<HealthcareRecord[]>(Path.Combine(dataRoot, "healthcare.json"));
+var youthTreatmentStats = Read<YouthTreatmentStat[]>(Path.Combine(dataRoot, "youth-treatment.json"));
 var layout = File.ReadAllText(templatePath);
 var themeAliases = Read<Dictionary<string, string>>(Path.Combine(dataRoot, "theme-aliases.json"));
 var pageUpdates = Read<Dictionary<string, string>>(Path.Combine(contentRoot, "page-updates.json"));
@@ -45,7 +47,7 @@ var allRoutes = pages.Select(page => page.Route)
     .Append("/kilder/")
     .ToArray();
 
-Validate(site, pages, sources, actors, proposals, events, relationships, media, statements, sourceById, actorById, allRoutes);
+Validate(site, pages, sources, actors, proposals, events, relationships, media, statements, healthcare, youthTreatmentStats, sourceById, actorById, allRoutes);
 
 foreach (var route in allRoutes)
     if (!pageUpdates.TryGetValue(route, out var date) || !DateOnly.TryParseExact(date, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out _))
@@ -63,8 +65,20 @@ foreach (var page in pages)
 {
     var bodyPath = Path.Combine(contentRoot, "pages", page.Source);
     var body = File.ReadAllText(bodyPath)
-        .Replace("{{proposalList}}", RenderProposalList(proposals))
+        .Replace("{{proposalList}}", RenderProposalList(proposals, chronological: page.Route == "/"))
         .Replace("{{progression}}", RenderProgression(proposals))
+        .Replace("{{politicsPrehistorySources}}", RenderInlineSources(["ft-b80-2021", "ft-inu-minors-legal-gender-2023", "ft-inu-minors-samraad-2023", "ft-s9-emrk-2023"], sourceById))
+        .Replace("{{currentGovernmentSources}}", RenderInlineSources(["regeringen-mf3-2026", "firkloever-regeringsgrundlag-2026"], sourceById))
+        .Replace("{{lgbtActionPlanSources}}", RenderInlineSources(["lgbt-action-plan-2026-2029", "lgbt-action-plan-funding-2026", "firkloever-regeringsgrundlag-2026"], sourceById))
+        .Replace("{{minorLegalGenderSources}}", RenderInlineSources(["retsinfo-cpr-law-current-2026", "cpr-minor-legal-gender-guidance-current", "ft-s9-emrk-2023", "ft-inu94-minor-legal-gender-law-2024", "sst-koensidentitet-revision-2025"], sourceById))
+        .Replace("{{minorLegalGenderSnapshotSources}}", RenderInlineSources(["jp-minor-legal-gender-2024"], sourceById))
+        .Replace("{{b72Sources}}", RenderInlineSources(["ft-b72-proposal"], sourceById))
+        .Replace("{{educationSources}}", RenderInlineSources(["emu-lgbt-fagene", "normstormerne-elevundervisning", "ft-buu107-normkritik-2022", "ft-buu346-normstormerne-2022", "ft-s188-normstormerne-2023", "ft-s430-gender-education-2023", "ft-f1-background-2024", "ft-b145-background", "vive-controversial-topics-2025"], sourceById))
+        .Replace("{{sportSources}}", RenderInlineSources(["dbu-gender-hearing-2023", "dbu-gender-board-2023", "dbufyn-gender-report-2024", "dbujylland-self-id-reject-2025", "dbusjaelland-gender-rules-2025", "dbusjaelland-gender-dispensation", "ft-kuu-d-dbu-2024"], sourceById))
+        .Replace("{{facebookHostilitySources}}", RenderInlineSources(["trygfonden-facebook-hate-2025"], sourceById))
+        .Replace("{{b47MediaSources}}", RenderInlineSources(["ft-b47-proposal", "ft-b47-background"], sourceById))
+        .Replace("{{drrTransmissionSources}}", RenderInlineSources(["ft-liu-bilag64-drr", "ft-liu-spm21-drr", "ft-liu-bilag66-fstb"], sourceById))
+        .Replace("{{folkemoedeSources}}", RenderInlineSources(["civilstyrelsen-folkemoede-2024", "civilstyrelsen-folkemoede-2025"], sourceById))
         .Replace("{{timeline}}", RenderTimeline(events, actorById, sourceById))
         .Replace("{{actorList}}", RenderActorList(actors))
         .Replace("{{relationships}}", RenderRelationships(relationships, actorById, sourceById))
@@ -76,6 +90,11 @@ foreach (var page in pages)
         .Replace("{{statementCount}}", statements.Length.ToString(CultureInfo.InvariantCulture))
         .Replace("{{relationshipCount}}", relationships.Length.ToString(CultureInfo.InvariantCulture))
         .Replace("{{sourceCount}}", sources.Length.ToString(CultureInfo.InvariantCulture))
+        .Replace("{{healthcareTheory}}", RenderHealthcare(healthcare, "teori", sourceById))
+        .Replace("{{healthcarePractice}}", RenderHealthcare(healthcare, "praksis", sourceById))
+        .Replace("{{healthcareQuestions}}", RenderHealthcare(healthcare, "spørgsmål", sourceById))
+        .Replace("{{healthcareSources}}", RenderSources(healthcare.SelectMany(item => item.SourceIds).Distinct(StringComparer.OrdinalIgnoreCase), sourceById))
+        .Replace("{{youthTreatmentStats}}", RenderYouthTreatmentStats(youthTreatmentStats, sourceById))
         .Replace("{{proposalCount}}", proposals.Length.ToString(CultureInfo.InvariantCulture));
 
     WritePage(page.Route, page.Title, page.Description, body);
@@ -97,7 +116,7 @@ var publicDataRoot = Path.Combine(outputRoot, "data");
 Directory.CreateDirectory(publicDataRoot);
 var publicIndex = new
 {
-    schemaVersion = 9,
+    schemaVersion = 11,
     themeAliases,
     pageUpdates,
     proposals = proposals.OrderByDescending(proposal => proposal.Introduced).Select(proposal => new
@@ -117,7 +136,9 @@ var publicIndex = new
     media = media.OrderByDescending(item => item.Date),
     statements = statements.OrderByDescending(item => item.Date),
     relationships = relationships.OrderByDescending(item => item.Date),
-    sources = sources.OrderByDescending(source => source.Published)
+    healthcare,
+    youthTreatmentStats,
+    sources = sources.OrderByDescending(source => source.Published ?? "")
 };
 File.WriteAllText(Path.Combine(publicDataRoot, "index.json"), JsonSerializer.Serialize(publicIndex, new JsonSerializerOptions(JsonSerializerDefaults.Web) { WriteIndented = true }));
 
@@ -157,6 +178,8 @@ static void Validate(
     Relationship[] relationships,
     MediaItem[] media,
     Statement[] statements,
+    HealthcareRecord[] healthcare,
+    YouthTreatmentStat[] youthTreatmentStats,
     IReadOnlyDictionary<string, Source> sourceById,
     IReadOnlyDictionary<string, Actor> actorById,
     string[] allRoutes)
@@ -172,6 +195,7 @@ static void Validate(
     RequireUnique(relationships.Select(item => item.Id), "relationship id");
     RequireUnique(media.Select(item => item.Id), "media id");
     RequireUnique(statements.Select(item => item.Id), "statement id");
+    RequireUnique(healthcare.Select(item => item.Id), "healthcare id");
     RequireUnique(allRoutes, "generated route");
 
     foreach (var route in allRoutes)
@@ -213,7 +237,10 @@ static void Validate(
     foreach (var item in media)
     {
         RequireSources($"media {item.Id}", item.SourceIds, sourceById);
-        RequireActors($"media {item.Id}", [item.AuthorActorId], actorById);
+        if (item.CorpusRole is not ("aktørspor" or "politisk kildegrundlag" or "struktureret prøve"))
+            throw new InvalidOperationException($"Media item {item.Id} has unknown corpus role {item.CorpusRole}.");
+        if (item.AuthorActorId is not null)
+            RequireActors($"media {item.Id}", [item.AuthorActorId], actorById);
         if (item.OutletActorId is not null)
             RequireActors($"media {item.Id}", [item.OutletActorId], actorById);
         if (item.OutletActorId is null && string.IsNullOrWhiteSpace(item.OutletLabel))
@@ -241,6 +268,20 @@ static void Validate(
         if (relation.ToActorId is null && relation.ToRoute is null && string.IsNullOrWhiteSpace(relation.ToLabel))
             throw new InvalidOperationException($"Relationship {relation.Id} has no target.");
     }
+
+    foreach (var item in healthcare)
+    {
+        if (item.Track is not ("teori" or "praksis" or "spørgsmål"))
+            throw new InvalidOperationException($"Healthcare item {item.Id} has unknown track {item.Track}.");
+        RequireSources($"healthcare {item.Id}", item.SourceIds, sourceById);
+    }
+
+    foreach (var item in youthTreatmentStats)
+    {
+        if (item.Stages.Length == 0)
+            throw new InvalidOperationException($"Youth treatment stat {item.Year} has no stages.");
+        RequireSources($"youth treatment stat {item.Year}", item.SourceIds, sourceById);
+    }
 }
 
 static void RequireUnique(IEnumerable<string> values, string label)
@@ -267,9 +308,9 @@ static void RequireActors(string owner, IEnumerable<string> ids, IReadOnlyDictio
             throw new InvalidOperationException($"Unknown actor '{id}' referenced by {owner}.");
 }
 
-static string RenderProposalList(IEnumerable<Proposal> proposals) => string.Join(
+static string RenderProposalList(IEnumerable<Proposal> proposals, bool chronological = false) => string.Join(
     Environment.NewLine,
-    proposals.OrderByDescending(proposal => proposal.Introduced).Select(proposal =>
+    (chronological ? proposals.OrderBy(proposal => proposal.Introduced) : proposals.OrderByDescending(proposal => proposal.Introduced)).Select(proposal =>
     {
         var progression = proposal.FinalVote is null
             ? $"Fremsat {FormatDate(proposal.Introduced)} · {Encode(proposal.Status)}"
@@ -369,18 +410,26 @@ static string RenderMediaList(
     Environment.NewLine,
     media.OrderByDescending(item => item.Date).Select(item =>
     {
-        var author = actorById[item.AuthorActorId];
+        var authorName = item.AuthorActorId is not null
+            ? actorById[item.AuthorActorId].Name
+            : item.AuthorLabel;
+        var author = item.AuthorActorId is not null
+            ? $"<a href=\"{Encode(actorById[item.AuthorActorId].Route)}\">{Encode(actorById[item.AuthorActorId].Name)}</a>"
+            : string.IsNullOrWhiteSpace(item.AuthorLabel) ? "" : Encode(item.AuthorLabel);
         var outlet = item.OutletActorId is not null
             ? $"<a href=\"{Encode(actorById[item.OutletActorId].Route)}\">{Encode(actorById[item.OutletActorId].Name)}</a>"
             : Encode(item.OutletLabel ?? "Ukendt medie");
+        var byline = string.IsNullOrWhiteSpace(author) ? outlet : $"{author} · {outlet}";
+        var actorData = string.IsNullOrWhiteSpace(authorName) ? Array.Empty<string>() : new[] { authorName };
         return $"""
-          <article class="media-record" id="medie-{Encode(item.Id)}" data-record data-date="{Encode(item.Date)}" data-actors="{Encode(JsonSerializer.Serialize(new[] { author.Name }))}" data-themes="{Encode(JsonSerializer.Serialize(item.Themes))}">
+          <article class="media-record" id="medie-{Encode(item.Id)}" data-record data-date="{Encode(item.Date)}" data-actors="{Encode(JsonSerializer.Serialize(actorData))}" data-themes="{Encode(JsonSerializer.Serialize(item.Themes))}">
             <div class="media-record-meta">
               <time datetime="{Encode(item.Date)}">{FormatDate(item.Date)}</time>
               <span>{Encode(item.Kind)}</span>
+              <span>{Encode(item.CorpusRole)}</span>
             </div>
             <h3><a href="/medier/#medie-{Encode(item.Id)}">{Encode(item.Title)}</a></h3>
-            <p class="media-byline"><a href="{Encode(author.Route)}">{Encode(author.Name)}</a> · {outlet}</p>
+            <p class="media-byline">{byline}</p>
             <p>{Encode(item.Summary)} {RenderInlineSources(item.SourceIds, sourceById)}</p>
             <div class="topic-row">{RenderTopicLinks(item.Themes, "/medier/")}</div>
           </article>
@@ -496,6 +545,31 @@ static string RenderProposal(
         <div class="statement-list compact-statements">{RenderStatementList(relatedStatements, actorById, sourceById)}</div>
       </div>
     """;
+    var baselineSection = proposal.Code == "B47" ? $"""
+      <div class="case-section">
+        <p class="kicker">Omfang · grundtal</p>
+        <h2>Hvor stor er ordningen?</h2>
+        <div class="fact-grid">
+          <div><span>2014–2025</span><strong>3.129</strong><span>tildelinger af nyt personnummer</span></div>
+          <div><span>2024/25</span><strong>455</strong><span>ansøgninger</span></div>
+          <div><span>2024/25</span><strong>438</strong><span>tildelinger</span></div>
+        </div>
+        <p>Digitaliseringsministeriets nyeste fundne CPR-opgørelse dækker 1. september 2014 til 31. august 2025 og registrerer i alt 3.797 ansøgninger og 3.129 tildelinger. For de seneste seks opgørelsesår var ansøgninger/tildelinger: 326/280 i 2019/20, 423/321 i 2020/21, 425/370 i 2021/22, 448/381 i 2022/23, 471/390 i 2023/24 og 455/438 i 2024/25. Opgørelsen advarer om, at enkelte tidligere tal kan blive korrigeret som følge af manuel sagsbehandling, fejlrettelser og justeringer. {RenderInlineSources(["cpr-legal-gender-stats-2025"], sourceById)}</p>
+        <p>Ved B47's førstebehandling oplyste ligestillingsministeren, at 80 af de daværende 2.691 tildelinger frem til 31. august 2024 var efterfulgt af gentildeling af det oprindelige personnummer, hvilket ministeren beskrev som cirka 3 pct. Det er et ældre, særskilt opgørelsestidspunkt og skal ikke genberegnes mod 2025-totalen. Gentildeling af oprindeligt personnummer er desuden ikke i sig selv en fuldstændig måling af alle former for fortrydelse eller utilfredshed. {RenderInlineSources(["ft-b47-spm1-baseline-2025", "ft-b47-debate"], sourceById)}</p>
+      </div>
+    """ : "";
+    var changingRoomSection = proposal.Code == "B47" ? $"""
+      <div class="case-section">
+        <p class="kicker">Institutionel praksis · omklædningsrum</p>
+        <h2>Juridisk køn gav ikke automatisk adgang til kvindernes omklædningsrum</h2>
+        <p>Ligebehandlingsnævnet havde allerede før B47 behandlet konkrete konflikter mellem transpersoners ligebehandling og andre brugeres blufærdighed. I 2016 fik en person med juridisk kønsskifte ikke medhold i en klage over henvisning til separat omklædning. I 2023 anvendte nævnet de nyere udtrykkelige beskyttelser af kønsidentitet, kønsudtryk og kønskarakteristika: nævnet fandt en formodning om direkte forskelsbehandling, men vurderede, at hensynet til andre gæsters blufærdighed var et legitimt mål, og at familieomklædning i den konkrete sag var en hensigtsmæssig og nødvendig løsning. {RenderInlineSources(["lbn-changing-room-2016", "lbn-changing-room-2023", "lbn-annual-report-2023"], sourceById)}</p>
+        <div class="notice compact-notice">
+          <p class="label">Rækkevidde</p>
+          <p>Afgørelserne viser ikke, at enhver udelukkelse fra et kønsopdelt rum er lovlig, og de må ikke bruges som mål for hvor ofte sådanne konflikter opstår. De viser derimod, at dansk ligestillingsret allerede havde en konkret proportionalitetsmekanisme: juridisk køn eller kønsidentitet tilsidesatte ikke automatisk blufærdighedshensyn, og institutioner stod ikke uden et retligt redskab til at afveje hensynene.</p>
+        </div>
+      </div>
+    """ : "";
+
     var hasVote = proposal.FinalVote is not null && proposal.VoteFor is not null && proposal.VoteAgainst is not null && proposal.VoteAbstain is not null;
     var statusDetail = hasVote
         ? $"<strong>{proposal.VoteFor}–{proposal.VoteAgainst}</strong><span>endelig afstemning</span>"
@@ -560,6 +634,9 @@ static string RenderProposal(
           <p class="kicker">Analyse</p>
           <h2>Hvorfor sagen er central</h2>
           <p class="analysis-text">{Encode(proposal.Analysis)}</p>
+
+          {baselineSection}
+          {changingRoomSection}
 
           <div class="case-section">
             <p class="kicker">Forslagsstillere</p>
@@ -682,6 +759,41 @@ static string RenderActor(
     """;
 }
 
+static string RenderHealthcare(
+    IEnumerable<HealthcareRecord> records,
+    string track,
+    IReadOnlyDictionary<string, Source> sourceById) => string.Join(
+    Environment.NewLine,
+    records.Where(item => string.Equals(item.Track, track, StringComparison.OrdinalIgnoreCase)).Select(item => $"""
+      <article class="evidence-card" id="sundhed-{Encode(item.Id)}">
+        <p class="evidence-meta">{Encode(item.Status)}</p>
+        <h3>{Encode(item.Title)}</h3>
+        <p>{Encode(item.Summary)}</p>
+        <p><strong>Vurdering:</strong> {Encode(item.Analysis)}</p>
+        <p class="evidence-meta">Kilder: {RenderInlineSources(item.SourceIds, sourceById)}</p>
+      </article>
+    """));
+
+static string RenderYouthTreatmentStats(
+    IEnumerable<YouthTreatmentStat> stats,
+    IReadOnlyDictionary<string, Source> sourceById) => string.Join(
+    Environment.NewLine,
+    stats.Select(item => $"""
+      <article class="evidence-card">
+        <p class="kicker">{Encode(item.Year)}</p>
+        <div class="card-grid three">
+          {string.Join(Environment.NewLine, item.Stages.Select((stage, index) => $"""
+            <div class="card static-card">
+              <span class="card-index">{index + 1:00}</span>
+              <h3>{Encode(stage.Value)}</h3>
+              <p>{Encode(stage.Label)}</p>
+            </div>
+          """))}
+        </div>
+        <p class="evidence-meta">{Encode(item.Note)} {RenderInlineSources(item.SourceIds, sourceById)}</p>
+      </article>
+    """));
+
 static string RenderSourceIndex(IEnumerable<Source> sources) => $"""
   <section class="page-hero shell">
     <p class="kicker">Dokumentation</p>
@@ -704,16 +816,69 @@ static string RenderSource(Source source, int? number = null)
     return $"""
       <article class="source-record" id="source-{Encode(source.Id)}" data-record data-kind="{Encode(source.Type)}">
         <p>{prefix}<a href="{Encode(source.Url)}" rel="external noreferrer">{Encode(source.Title)}</a></p>
-        <p class="source-meta">{Encode(source.Publisher)} · {Encode(source.Type)} · {FormatDate(source.Published)} · hentet {FormatDate(source.Accessed)}</p>
+        <p class="source-meta">{Encode(source.Publisher)} · {Encode(source.Type)} · {(source.Published is null ? "uden angivet publikationsdato" : FormatDate(source.Published))} · hentet {FormatDate(source.Accessed)}</p>
         <p>{Encode(source.Note)}</p>
         <code>{Encode(source.Id)}</code>
       </article>
     """;
 }
 
-static string RenderInlineSources(IEnumerable<string> sourceIds, IReadOnlyDictionary<string, Source> sourceById) => string.Join(
-    " ",
-    sourceIds.Select((id, index) => $"<a class=\"citation\" href=\"{Encode(sourceById[id].Url)}\" rel=\"external noreferrer\" aria-label=\"Kilde: {Encode(sourceById[id].Title)}\">[kilde]</a>"));
+static string RenderInlineSources(IEnumerable<string> sourceIds, IReadOnlyDictionary<string, Source> sourceById)
+{
+    var sources = sourceIds.Select(id => sourceById[id]).ToArray();
+    var baseLabels = sources.Select(CitationLabelBase).ToArray();
+    var totals = baseLabels
+        .GroupBy(label => label, StringComparer.OrdinalIgnoreCase)
+        .ToDictionary(group => group.Key, group => group.Count(), StringComparer.OrdinalIgnoreCase);
+    var seen = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
+
+    return string.Join(
+        " ",
+        sources.Select((source, index) =>
+        {
+            var label = baseLabels[index];
+            if (totals[label] > 1)
+            {
+                var occurrence = seen.GetValueOrDefault(label) + 1;
+                seen[label] = occurrence;
+                label += occurrence <= 26
+                    ? ((char)('a' + occurrence - 1)).ToString()
+                    : occurrence.ToString(CultureInfo.InvariantCulture);
+            }
+
+            return $"<a class=\"citation\" href=\"{Encode(source.Url)}\" rel=\"external noreferrer\" aria-label=\"Kilde: {Encode(source.Title)}\">[{Encode(label)}]</a>";
+        }));
+}
+
+static string CitationLabelBase(Source source)
+{
+    var publisher = source.Publisher switch
+    {
+        "Folketinget" => "FT",
+        "Folketingstidende" => "FT",
+        "Sundhedsstyrelsen" => "SST",
+        "World Professional Association for Transgender Health" => "WPATH",
+        "Odense Universitetshospital" => "OUH",
+        "Aalborg Universitetshospital" => "AAUH",
+        "Region Hovedstaden" => "Region H",
+        "Region Hovedstadens Psykiatri" => "Region H",
+        "Region Hovedstaden / Sundhedsjobs.dk" => "Region H",
+        "Region Hovedstaden / Folketinget" => "Region H / FT",
+        "Sundhedsstyrelsen / Folketinget" => "SST / FT",
+        "Sundhedsstyrelsen / Rambøll" => "SST / Rambøll",
+        "Indenrigs- og Sundhedsministeriet / Folketinget" => "ISM / FT",
+        "The Lancet Regional Health – Europe / PubMed" => "Lancet RH Europe",
+        "POV International" => "POV",
+        "Det Konservative Folkeparti" => "Konservative",
+        "Dansk Folkepartis folketingsgruppe / LOCAL EYES" => "DF / LOCAL EYES",
+        "LGB Alliance UK" => "LGB Alliance",
+        "Højesteret" => "Højesteret",
+        "Danmarks Fængsler / Kriminalforsorgen" => "Kriminalforsorgen",
+        _ => source.Publisher
+    };
+    var year = source.Published is { Length: >= 4 } ? $" {source.Published[..4]}" : "";
+    return $"{publisher}{year}";
+}
 
 static string RenderNavigation(NavigationItem[] items, string currentRoute) => string.Join(
     Environment.NewLine,
@@ -762,7 +927,10 @@ static string Encode(string value) => HtmlEncoder.Default.Encode(value);
 sealed record Site(string Title, string Language, NavigationItem[] Navigation);
 sealed record NavigationItem(string Label, string Route);
 sealed record Page(string Route, string Title, string Description, string Source);
-sealed record Source(string Id, string Title, string Publisher, string Type, string Url, string Published, string Accessed, string Note);
+sealed record Source(string Id, string Title, string Publisher, string Type, string Url, string? Published, string Accessed, string Note);
+sealed record HealthcareRecord(string Id, string Track, string Status, string Title, string Summary, string Analysis, string[] SourceIds);
+sealed record YouthTreatmentStat(string Year, YouthTreatmentStage[] Stages, string Note, string[] SourceIds);
+sealed record YouthTreatmentStage(string Value, string Label);
 sealed record Actor(string Id, string Name, string Kind, string? ShortName, string? Affiliation, string Route, string Summary, string[]? Profile, string[]? ProfileSourceIds, string[] SourceIds);
 sealed record Proposal(
     string Id,
@@ -787,6 +955,6 @@ sealed record Proposal(
     string[] SourceIds,
     string[] Topics);
 sealed record TimelineEvent(string Id, string Date, string Kind, string Title, string Summary, string[] ActorIds, string RelatedRoute, string[] SourceIds);
-sealed record MediaItem(string Id, string Date, string Kind, string Title, string AuthorActorId, string? OutletActorId, string? OutletLabel, string Summary, string[] Themes, string[] SourceIds);
+sealed record MediaItem(string Id, string Date, string Kind, string Title, string? AuthorActorId, string? AuthorLabel, string? OutletActorId, string? OutletLabel, string CorpusRole, string Summary, string[] Themes, string[] SourceIds);
 sealed record Statement(string Id, string Date, string ActorId, string Kind, string Excerpt, string Context, string Position, string[] Themes, string RelatedRoute, string[] SourceIds, string? Affiliation, string? Passage);
 sealed record Relationship(string Id, string Date, string Kind, string FromActorId, string? ToActorId, string? ToRoute, string? ToLabel, string Summary, string[] SourceIds);

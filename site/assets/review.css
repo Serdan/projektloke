@@ -36,3 +36,37 @@ article:target { outline: 2px solid var(--accent); outline-offset: .5rem; }
   .primary-nav a { min-height: 44px; display: inline-flex; align-items: center; }
   .collection-filters { padding: 1rem; }
 }
+
+
+/* Evidence usability */
+.citation { font-size: .78rem; line-height: 1.4; vertical-align: baseline; padding: .1rem .2rem; margin-inline: .08rem; border-bottom: 1px solid currentColor; text-decoration: none; }
+.citation:hover, .citation:focus-visible { text-decoration: none; background: var(--paper-strong); }
+.card { display: flex; flex-direction: column; }
+.card-link { position: static; margin-top: auto; padding-top: 1.5rem; }
+.page-toc { padding-block: 0 1.5rem; }
+.page-toc .label { margin-bottom: .6rem; }
+.page-toc ul { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0; padding: 0; list-style: none; }
+.page-toc a { display: inline-block; padding: .4rem .6rem; border: 1px solid var(--line); font-size: .88rem; font-weight: 700; text-decoration: none; }
+.page-toc a:hover, .page-toc a:focus-visible { background: var(--paper-strong); text-decoration: underline; text-underline-offset: .18em; }
+
+/* Allow multiple explanatory paragraphs in section headings to flow instead of occupying the same grid cell. */
+.section-heading > p:not(.kicker) { grid-row: auto; }
+
+
+/* Mobile evidence navigation */
+.mobile-frame-index { display: none; }
+.mobile-frame-index summary { cursor: pointer; font-weight: 800; }
+.mobile-frame-index summary:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
+.mobile-frame-index-body { padding: 0 1rem 1rem; }
+.timeline-preview[data-collection] .timeline-item::before { display: none; }
+
+@media (max-width: 56rem) {
+  .mobile-frame-index { display: block; margin-bottom: 1.5rem; border-top: 4px solid var(--accent); background: var(--paper-strong); }
+  .mobile-frame-index summary { min-height: 44px; padding: .8rem 1rem; }
+  .rhetoric-layout > .frame-index { display: none; }
+}
+
+@media (max-width: 36rem) {
+  .timeline-item { grid-template-columns: 4.5rem minmax(0, 1fr); gap: 1rem; }
+  .timeline-date { writing-mode: horizontal-tb; white-space: nowrap; }
+}

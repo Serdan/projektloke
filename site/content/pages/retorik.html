@@ -18,6 +18,15 @@
       <h2>{{statementCount}} kontekstualiserede udtalelser</h2>
       <p>Uddragene er korte og ledsages af kontekst og analyse. Kontekstteksten beskriver den konkrete argumentation, mens kildehenvisningen fører til den fulde primærkilde eller, når originalen ikke er offentligt tilgængelig, en dokumenteret gengivelse.</p>
     </div>
+    <details class="mobile-frame-index">
+      <summary>Temaer og argumentationsmønstre</summary>
+      <div class="mobile-frame-index-body">
+        <div class="frame-list">
+          {{statementThemes}}
+        </div>
+        <p class="evidence-meta">Optællingen gælder kun de udtalelser, Projekt Loke allerede har registreret. Den er ikke en frekvensanalyse af hele den offentlige debat.</p>
+      </div>
+    </details>
     <div class="statement-list" id="materiale" data-collection="statements">
       {{statementList}}
     </div>

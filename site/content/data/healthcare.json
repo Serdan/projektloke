@@ -1,0 +1,318 @@
+[
+  {
+    "id": "current-guidance-2018",
+    "track": "teori",
+    "status": "dokumenteret faktum",
+    "title": "Den gældende vejledning er fortsat fra 2018",
+    "summary": "Sundhedsstyrelsen henviser fortsat til vejledningen fra august 2018 som den nuværende vejledning. Styrelsen igangsatte en revision i 2023, og høringsudkastet fra 2024 siger selv, at området i dag er et andet sted end i 2018, og at den nyeste viden og erfaring skal beskrives.",
+    "analysis": "En vejlednings alder dokumenterer ikke i sig selv, at indholdet er fagligt forkert. Men den gældende tekst er udformet før blandt andet WPATH SOC8 fra 2022, mens den offentlige revision endnu ikke er afsluttet. Derfor skal konkrete uoverensstemmelser mellem den gældende tekst og nyere viden vurderes punkt for punkt.",
+    "sourceIds": [
+      "sst-koensidentitet-vejledning-2018",
+      "sst-koensidentitet-revision-2025",
+      "sst-koensinkongruens-hoeringsudkast-2024"
+    ]
+  },
+  {
+    "id": "adult-hormone-evidence",
+    "track": "teori",
+    "status": "forskningskontekst",
+    "title": "Nyere systematisk evidens understøtter fortsat hormonbehandling til voksne",
+    "summary": "Et systematisk review fra 2025 fandt 13 longitudinelle opfølgningsstudier, herunder ét randomiseret forsøg. Resultaterne peger på, at kønsbekræftende hormoner kan forbedre blandt andet depression, livskvalitet og suicidalitet hos voksne, uden at de inkluderede studier identificerede væsentlige skadevirkninger. Evidenssikkerheden var samtidig begrænset, især i de ukontrollerede studier.",
+    "analysis": "Det er et vigtigt udgangspunkt for vurderingen af den danske voksenmodel: den nyere forskning støtter fortsat selve behandlingen, men dokumenterer ikke dermed, at enhver konkret patient bør behandles uden vurdering, eller at én bestemt organisationsmodel er optimal. Restriktioner bør derfor vurderes efter, om de håndterer en dokumenteret individuel risiko eller blot fungerer som generelle barrierer.",
+    "sourceIds": [
+      "cooney-hormones-review-2025",
+      "wpath-soc8-2022"
+    ]
+  },
+  {
+    "id": "autism-caution",
+    "track": "teori",
+    "status": "syntese",
+    "title": "Autisme er ikke en generel kontraindikation, men høringen viste reel faglig uenighed",
+    "summary": "Den gældende vejledning nævner \"autisme med særinteresse af relevans for behandlingen\" som et muligt psykiatrisk forsigtighedsforhold. Nyere forskning og Dansk Psykolog Forenings høringssvar siger, at autisme ikke i sig selv bør udelukke udredning eller behandling. Dansk Psykiatrisk Selskab og klinikere ved CKI Odense og København efterlyste samtidig i 2025 særlig forsigtighed ved ASF og mere autismespecifik ekspertise.",
+    "analysis": "Uenigheden handler derfor ikke om, hvorvidt autisme kan være klinisk relevant, men om hvor meget diagnosen bør ændre tærsklen for behandling, og hvordan diagnostisk klarhed, samtykkekompetence og støttebehov vurderes. WPATH SOC8 anbefaler konkret differentialdiagnostik og autismekompetence uden at gøre autisme til en generel kontraindikation. CKI-klinikernes bekymring for, at især patienter med ASF senere kan stoppe eller fortryde behandling, beskrives i deres eget høringssvar som klinisk erfaring på et område, hvor evidens endnu mangler. Det kan begrunde et forsknings- og kompetencebehov, men ikke i sig selv en automatisk behandlingsbarriere.",
+    "sourceIds": [
+      "sst-koensidentitet-vejledning-2018",
+      "wpath-soc8-2022",
+      "bouzy-autism-review-2023",
+      "dp-koensinkongruens-2025",
+      "dps-psychiatry-koensinkongruens-2025",
+      "cki-autism-concern-2025",
+      "dps-paediatrics-koensinkongruens-2025",
+      "sst-koensinkongruens-hoeringsudkast-2024"
+    ]
+  },
+  {
+    "id": "consultation-professional-disagreement",
+    "track": "teori",
+    "status": "dokumenteret faglig uenighed",
+    "title": "Høringssvarene gav ikke én samlet faglig konklusion",
+    "summary": "De faglige høringssvar fra 2025 peger i forskellige retninger. Dansk Pædiatrisk Selskab ønskede mere restriktiv praksis og mere protokolleret behandling af mindreårige. BUP-DK beskrev evidensen som usikker, men fremhævede både positive observationsfund og sundhedsrisici ved ikke at behandle. DSAM advarede mod, at et toårigt varighedskriterium kan være for langt for nogle børn, mens Dansk Psykolog Forening afviste autisme som en automatisk barriere for reel udredning.",
+    "analysis": "Høringen kan derfor ikke redeligt sammenfattes som en fælles professionel anbefaling om hverken behandlingsstop eller mere liberal adgang. Den dokumenterer uenighed om, hvordan evidensusikkerhed skal omsættes til kliniske tærskler. Særligt BUP-DK viser den evidenslogiske forskel: lav sikkerhed og blandede resultater er ikke det samme som evidens for, at behandling ikke har nytte. Dansk Pædiatrisk Selskab kommer til en mere restriktiv praktisk anbefaling på baggrund af usikkerheden; det er en klinisk risikovurdering, ikke et fund af dokumenteret nul-effekt.",
+    "sourceIds": [
+      "hearing-koensinkongruens-2025",
+      "dps-paediatrics-koensinkongruens-2025",
+      "bup-dk-koensinkongruens-2025",
+      "dsam-koensinkongruens-2025",
+      "dp-koensinkongruens-2025"
+    ]
+  },
+  {
+    "id": "psychiatric-gate",
+    "track": "teori",
+    "status": "dokumenteret uoverensstemmelse",
+    "title": "En regional henvisningsregel er mere kategorisk end den nationale ramme",
+    "summary": "Den nationale vejledning siger, at psykiatrisk udredning ikke generelt er en betingelse, og at bestående psykisk sygdom ikke i sig selv er en kontraindikation. CKIO i Odense oplyser derimod, at personer i psykiatrisk behandling tidligst kan henvises, når de har været velbehandlede og stabile i mindst seks måneder.",
+    "analysis": "CKIO's offentlige regel opstiller dermed en generel tidsmæssig adgangsbetingelse for en gruppe, som den nationale vejledning beskriver som et spørgsmål om konkret individuel vurdering. WPATH SOC8 knytter tilsvarende psykiske forhold til, om de påvirker behandlingsresultat, diagnostisk klarhed eller evnen til informeret samtykke. Den offentlige CKIO-side oplyser ikke den faglige begrundelse for seksmånederskravet eller eventuelle undtagelser.",
+    "sourceIds": [
+      "sst-koensidentitet-vejledning-2018",
+      "ouh-ckio-patientinformation",
+      "wpath-soc8-2022"
+    ]
+  },
+  {
+    "id": "reference-traceability",
+    "track": "teori",
+    "status": "dokumenteret faktum",
+    "title": "Det kliniske evidensgrundlag kan ikke spores i 2018-vejledningens referenceliste",
+    "summary": "2018-vejledningens referenceliste består af lovgivning, bekendtgørelser og administrative vejledninger. Den indeholder ingen kliniske studier eller internationale kliniske retningslinjer.",
+    "analysis": "Det dokumenterer ikke, at Sundhedsstyrelsen ikke brugte klinisk viden i arbejdet med vejledningen. Det betyder derimod, at læseren ikke kan efterprøve den kliniske evidenskæde ud fra dokumentets referencer. Høringsudkastet fra 2024 har en egentlig litteraturliste med nyere kliniske kilder, herunder WPATH SOC8.",
+    "sourceIds": [
+      "sst-koensidentitet-vejledning-2018",
+      "sst-koensinkongruens-hoeringsudkast-2024"
+    ]
+  },
+  {
+    "id": "centres-national",
+    "track": "praksis",
+    "status": "dokumenteret faktum",
+    "title": "Tre centre for voksne og én national funktion for børn og unge",
+    "summary": "Sundhedsstyrelsen angiver tre højt specialiserede behandlingssteder for voksne: København, Odense og Aalborg. For personer under 18 år findes kun én højt specialiseret national funktion i København.",
+    "analysis": "Den geografiske koncentration er i sig selv ikke dokumentation for utilstrækkelig behandling. Den betyder dog, at kapacitet og ventetid på få enheder får direkte betydning for den praktiske adgang til behandling i hele landet.",
+    "sourceIds": [
+      "sst-koensmodificerende-behandling-2023",
+      "rh-cki-statistik-2026"
+    ]
+  },
+  {
+    "id": "action-plan-trans-health-2026",
+    "track": "praksis",
+    "status": "dokumenteret regeringspolitik",
+    "title": "2026-planen støtter patienter omkring CKI og finansierer forskning i ungdomsbehandling",
+    "summary": "LGBT+ handlingsplanen 2026-2029 viderefører supplerende psykosocial rådgivning til personer med kønsidentitetsforhold, som er på venteliste, i udredning eller behandling ved Center for Kønsidentitet. Finansieringsaftalen afsætter 1,6 mio. kr. til rådgivningen. Et andet initiativ styrker forskning i langsigtede bivirkninger ved hormonbehandling til personer under 18 år via Forskningsreserven for 2026.",
+    "analysis": "Rådgivningen er udtrykkeligt et supplement til det eksisterende behandlingssystem og dokumenterer derfor ikke øget CKI-kapacitet eller kortere ventetider. Forskningsinitiativet er heller ikke et behandlingsstop: planen beskriver fortsat, at mindreårige ved vedholdende og langvarig uoverensstemmelse mellem biologisk køn og kønsidentitet kan modtage stop- og krydshormoner, samtidig med at den kalder viden om langsigtede bivirkninger sparsom og vil styrke evidensgrundlaget.",
+    "sourceIds": [
+      "lgbt-action-plan-2026-2029",
+      "lgbt-action-plan-funding-2026"
+    ]
+  },
+  {
+    "id": "adult-waiting-times",
+    "track": "praksis",
+    "status": "syntese",
+    "title": "Ventetider på over to år er dokumenteret i Odense og rapporteret i Aalborg",
+    "summary": "CKIO oplyser aktuelt, at ventelisten er estimeret til mere end to år før det videre afklaringsforløb kan begynde. Aalborg Universitetshospital oplyser selv, at ressourcemangel giver længere ventetid; en regional nyhedsartikel fra juni 2026 angiver gennemsnitligt cirka to et halvt år fra henvisning til behandlingsstart og 788 personer på venteliste.",
+    "analysis": "Kildegrundlaget er ikke lige stærkt for de to tal: Odense-tallet kommer direkte fra centret, mens det konkrete Aalborg-tal foreløbig bygger på sekundær rapportering. Sundhedsstyrelsens egen vidensafdækning fra 2025 konstaterer samtidig, at den samlede ventetid ved landets tre centre ikke er offentligt tilgængelig. Det står i tydelig spænding med 2018-vejledningens mål om et gennemsigtigt sundhedsvæsen og kort ventetid.",
+    "sourceIds": [
+      "ouh-ckio-patientinformation",
+      "aalborg-cfk-patientinformation",
+      "minby-aalborg-ventetid-2026",
+      "sst-ramboll-koensidentitet-2025",
+      "sst-koensidentitet-vejledning-2018"
+    ]
+  },
+  {
+    "id": "waiting-harms",
+    "track": "praksis",
+    "status": "forskningskontekst",
+    "title": "Flerårig ventetid er ikke administrativt neutral",
+    "summary": "Et nederlandsk mixed-methods studie fra 2024 fandt, at lange ventetider på kønsbekræftende behandling var forbundet med psykosocial belastning, dårligere helbred, øget brug af sundhedsydelser og større ulighed. Sundhedsstyrelsens danske vidensafdækning beskriver samtidig lang ventetid som den hyppigste angivne årsag til at søge hormoner uden om det offentlige system blandt relevante respondenter.",
+    "analysis": "Det udenlandske studie kan ikke fastslå en dansk effektstørrelse eller bevise, at alle observerede problemer skyldes ventetiden. Sammen med de danske patientdata viser det dog, at flerårig ventetid ikke bør behandles som et rent administrativt mål: den kan påvirke både helbred, adfærd og ulighed i adgang til behandling.",
+    "sourceIds": [
+      "van-de-grift-waiting-2024",
+      "sst-ramboll-koensidentitet-2025"
+    ]
+  },
+  {
+    "id": "self-sourced-hormones",
+    "track": "praksis",
+    "status": "dokumenteret undersøgelsesfund",
+    "title": "Lange ventetider er den hyppigste angivne grund til at skaffe hormoner uden om systemet",
+    "summary": "I Sundhedsstyrelsens vidensafdækning fra 2025 havde hver fjerde respondent erfaring med at anskaffe kønshormoner uden om det offentlige danske sundhedsvæsen. Blandt 109 respondenter, der havde gjort det eller ønskede at gøre det, angav 61 procent lang ventetid som en central årsag.",
+    "analysis": "Undersøgelsen er en convenience sample og kan ikke bruges til at estimere andelen blandt alle transpersoner i Danmark. Den kan derimod dokumentere et mønster blandt de adspurgte: ventetid er den hyppigst rapporterede årsag til at søge hormoner uden om det offentlige system, og de kvalitative interviews beskriver selvmedicinering både før første udredningssamtale og før behandlingsstart.",
+    "sourceIds": [
+      "sst-ramboll-koensidentitet-2025"
+    ]
+  },
+  {
+    "id": "youth-evidence-boundary",
+    "track": "teori",
+    "status": "afgrænsning",
+    "title": "Evidensen for børn og unge er mindre sikker end voksenområdet",
+    "summary": "Nyere systematiske reviews er enige om, at evidensen for medicinsk behandling af mindreårige i høj grad bygger på observationsstudier, og at langsigtede effekter er usikre. De finder imidlertid ikke alle samme retning: York-reviewet af kønshormoner vurderer, at moderat-kvalitets evidens peger på mulig forbedring af mental sundhed, mens York-reviewet af pubertetsblokkere ikke finder grundlag for en sikker konklusion om mental eller psykosocial effekt.",
+    "analysis": "Projekt Loke behandler derfor ungdomsområdet særskilt fra voksenområdet og outcome for outcome. Pubertetssuppression har en klar fysiologisk effekt og et dokumenteret spørgsmål om knoglemineraltæthed; den psykiske effekt er langt mere usikker. For kønshormoner findes positive mentale signaler, men kausal sikkerhed og langtidsdata er begrænsede. Den korrekte faglige konklusion er ikke, at evidensen er stærk, men heller ikke at reviews ensartet viser ingen nytte.",
+    "sourceIds": [
+      "sst-koensinkongruens-hoeringsudkast-2024",
+      "york-puberty-suppression-review-2024",
+      "york-adolescent-hormones-review-2024",
+      "ludvigsson-youth-hormone-review-2023",
+      "wpath-soc8-2022"
+    ]
+  },
+  {
+    "id": "youth-evidence-certainty-vs-direction",
+    "track": "teori",
+    "status": "forskningssyntese",
+    "title": "Lav evidenssikkerhed er ikke det samme som evidens for ingen effekt",
+    "summary": "RANDs brede review fandt overvejende lav eller meget lav evidenssikkerhed, men samtidig flere neutrale eller positive observerede sammenhænge. McMaster-reviewene fra 2025 vurderer de fleste centrale outcomes som meget usikre og konkluderer, at nytte eller skade ikke kan udelukkes. Yorks 2024-review af kønshormoner fandt et muligt positivt mental-health signal ved moderat studiekvalitet. Reviews kan derfor være enige om usikkerheden uden at være enige om den kliniske fortolkning.",
+    "analysis": "Evidenssikkerhed beskriver, hvor stor tillid man kan have til den estimerede effekt; den beskriver ikke automatisk effektens retning. Et positivt observationsfund beviser ikke en kausal gevinst, men meget lav sikkerhed beviser heller ikke nul-effekt eller skade. Politiske og kliniske argumenter bør derfor skelne mellem observeret retning, kausal sikkerhed, kendte fysiske tradeoffs og den risikotærskel man mener bør gælde under usikkerhed. Det er netop på den sidste vurdering, de danske høringssvar divergerer.",
+    "sourceIds": [
+      "rand-youth-interventions-review-2025",
+      "mcmasters-puberty-blockers-review-2025",
+      "mcmasters-youth-hormones-review-2025",
+      "york-adolescent-hormones-review-2024",
+      "york-puberty-suppression-review-2024",
+      "bup-dk-koensinkongruens-2025",
+      "dps-paediatrics-koensinkongruens-2025"
+    ]
+  },
+  {
+    "id": "youth-review-disagreement-blockers",
+    "track": "teori",
+    "status": "åbent forskningsspørgsmål",
+    "title": "Nyere reviews når forskellige konklusioner om pubertetsblokkeres mentale effekt",
+    "summary": "York-reviewet fra 2024 fandt de psykiske og psykosociale resultater for pubertetssuppression begrænsede eller inkonsistente og mente, at der ikke kunne drages en sikker konklusion. McMaster-reviewet fra 2025 vurderede de centrale outcomes som meget lav sikkerhed og fastholdt betydelig usikkerhed. Et andet systematisk review fra 2025, Tornese m.fl., konkluderede derimod, at mental sundhed forbedredes, især i forløb hvor pubertetsblokkere blev efterfulgt af kønshormoner, samtidig med at langtidssikkerheden fortsat blev vurderet som usikker.",
+    "analysis": "Uenigheden betyder ikke, at alle reviews er metodisk lige stærke eller at sandheden nødvendigvis ligger midt imellem dem. Den viser, at samme brede observationslitteratur kan syntetiseres forskelligt afhængigt af inklusionskriterier, kvalitetsvurdering, outcomes og hvordan sekventielle behandlingsforløb håndteres. Projektet behandler derfor den mentale effekt af pubertetsblokkere som et åbent evidensspørgsmål og undgår både et sikkert benefit- og et sikkert harm-udsagn.",
+    "sourceIds": [
+      "york-puberty-suppression-review-2024",
+      "mcmasters-puberty-blockers-review-2025",
+      "tornese-puberty-blockers-review-2025"
+    ]
+  },
+  {
+    "id": "youth-reorganisation-2025",
+    "track": "praksis",
+    "status": "dokumenteret faktum",
+    "title": "Den nationale ungdomsfunktion blev organisatorisk flyttet i 2024–2025",
+    "summary": "I 2023 havde Sexologisk Klinik den koordinerende rolle i det landsdækkende samarbejde og modtog henvisninger. Region Hovedstaden beskrev i august 2024, at funktionen gradvist skulle forankres i Børne- og Ungdomspsykiatrisk Center gennem efteråret og være fuldt forankret dér i starten af 2025. Fra 1. februar 2025 blev henvisninger for personer under 18 år sendt til Børne- og Ungdomspsykiatrisk Center Bispebjerg.",
+    "analysis": "Omlægningen flyttede den organisatoriske forankring og indgangen til forløbet ind i børne- og ungdomspsykiatrien. Den flyttede ikke selve hormonbehandlingen til KKBU: den aktuelle institutionsside beskriver, at endelig stillingtagen til medicinsk behandling sker i samarbejde med Vækst og Reproduktion, som varetager behandlingen. De offentlige kilder dokumenterer derimod ikke i sig selv, hvorfor omlægningen blev besluttet, eller om de kliniske kriterier blev ændret.",
+    "sourceIds": [
+      "regionh-youth-organization-2023",
+      "regionh-youth-reorg-job-2024",
+      "rh-cki-statistik-2026",
+      "regionh-kkbu-2026"
+    ]
+  },
+  {
+    "id": "youth-treatment-counts-2022-2023",
+    "track": "praksis",
+    "status": "dokumenterede årstal",
+    "title": "Meget få unge startede hormonbehandling allerede før omlægningen",
+    "summary": "I 2022 blev 352 børn og unge henvist til udredning, 22 blev samme år henvist videre til hormonbehandling, og 7 startede hormonbehandling. I 2023 blev 300 børn og unge henvist til udredning, mens færre end 10 startede hormonbehandling. Sundhedsministeren beskrev i begge sammenhænge udviklingen som udtryk for en mere tilbageholdende eller restriktiv dansk tilgang.",
+    "analysis": "Tallene viser, at den stærkt begrænsede brug af hormonbehandling var etableret før KKBU overtog den koordinerende funktion i 2025. Derfor kan den lave behandlingsandel ikke uden videre tilskrives reorganiseringen. Årsopgørelserne er heller ikke en egentlig kohorte: henvisninger og behandlingsstarter samme kalenderår er ikke nødvendigvis de samme personer.",
+    "sourceIds": [
+      "ft-b62-debate",
+      "ft-b12-debate"
+    ]
+  },
+  {
+    "id": "youth-planned-scale",
+    "track": "praksis",
+    "status": "dokumenteret sammenstilling · forklaring mangler",
+    "title": "Den planlagte skala lå under de foregående års henvisningstal",
+    "summary": "I 2022 blev 352 børn og unge henvist til udredning, og i 2023 var tallet 300. Da Region Hovedstaden i august 2024 beskrev den nye landsdækkende funktion, forventede den at se ca. 100–200 børn og unge årligt fra hele landet. Et stillingsopslag fra august 2026 oplyser desuden, at KKBU følger omkring 200 børn og unge og beskriver funktionen som et mindre team.",
+    "analysis": "Tallene kan ikke uden videre behandles som samme mål: \"at se\" 100–200 årligt er ikke defineret som et loft over henvisninger, og \"omkring 200\" i 2026 er et aktuelt antal fulgte patienter, ikke et årligt flow. Men planlægningsmaterialet beskriver en årlig skala på 100–200 på et tidspunkt, hvor de seneste offentliggjorte henvisningstal lå omkring 300–350. Det offentlige materiale forklarer ikke forskellen. Det oplagte dokumentationsspørgsmål er derfor, hvilke efterspørgselsprognoser, visitationsforudsætninger og kapacitetsberegninger der lå bag planlægningen af den nye funktion.",
+    "sourceIds": [
+      "ft-b62-debate",
+      "ft-b12-debate",
+      "regionh-youth-reorg-job-2024",
+      "regionh-kkbu-job-2026"
+    ]
+  },
+  {
+    "id": "youth-post-reorg-transparency",
+    "track": "praksis",
+    "status": "dokumenteret ramme · datamangler",
+    "title": "Efter omlægningen er den faktiske adgang fortsat svær at efterprøve",
+    "summary": "KKBU beskriver støttende samtaler som et tilbud til de børn og unge, der følges i centret. Patienter, hvor der vurderes at være indikation for kønsmodificerende behandling, tilbydes yderligere udredning, og en eventuel medicinsk behandling besluttes sammen med Vækst og Reproduktion. Rigshospitalet beskriver fortsat pubertetsblokkere og kønshormoner som mulige behandlinger. I marts 2025 oplyste sundhedsministeren samtidig, at den primære behandling er psykosocial, og at meget få børn og unge starter hormonbehandling.",
+    "analysis": "Det offentlige materiale gør det derfor muligt at fastslå, at medicinsk behandling formelt findes, men ikke hvor tilgængelig den reelt er efter reorganiseringen. Der mangler let tilgængelige aktuelle årstal for henvisninger, visitation, ventetid, viderehenvisning til Vækst og Reproduktion og opstart af pubertetsblokkere eller kønshormoner. Det er netop de data, Projekt Loke vil forsøge at indhente.",
+    "sourceIds": [
+      "regionh-kkbu-2026",
+      "rh-youth-hormone-treatment",
+      "ft-s820-youth-2025",
+      "rh-cki-statistik-2026"
+    ]
+  },
+  {
+    "id": "question-waiting-data",
+    "track": "spørgsmål",
+    "status": "åbent spørgsmål",
+    "title": "Hvad er den reelle ventetid ved hvert voksen-center?",
+    "summary": "Der mangler sammenlignelige offentlige data for tiden fra henvisning til første samtale, afsluttet udredning og eventuel behandlingsstart ved København, Odense og Aalborg.",
+    "analysis": "Sammenlignelige tidsserier ville gøre det muligt at skelne mellem ventetid til visitation, ventetid skabt af selve udredningsforløbet og ventetid efter en beslutning om behandling.",
+    "sourceIds": [
+      "sst-ramboll-koensidentitet-2025"
+    ]
+  },
+  {
+    "id": "question-youth-data",
+    "track": "spørgsmål",
+    "status": "åbent spørgsmål",
+    "title": "Hvor mange unge får faktisk medicinsk behandling nu?",
+    "summary": "Der bør indhentes aktuelle årlige tal for henvisninger, ventetid, behandlingsafgørelser og opstart af henholdsvis pubertetsblokkere og kønshormoner efter omlægningen af ungdomsforløbet i 2025.",
+    "analysis": "Det er den nødvendige dokumentation for at afgøre, om den formelt beskrevne behandling også er reelt tilgængelig i praksis.",
+    "sourceIds": [
+      "ft-regionh-youth-treatment-2024",
+      "ft-s820-youth-2025",
+      "rh-cki-statistik-2026"
+    ]
+  },
+  {
+    "id": "question-psychiatric-rule",
+    "track": "spørgsmål",
+    "status": "åbent spørgsmål",
+    "title": "Hvad er evidensgrundlaget for CKIO's seksmånedersregel?",
+    "summary": "CKIO offentliggør et krav om mindst seks måneders velbehandlet og stabil tilstand før henvisning for personer i psykiatrisk behandling, men siden angiver ikke det faglige grundlag eller eventuelle undtagelser.",
+    "analysis": "Det bør afklares, om reglen er en lokal visitationspraksis, hvordan den anvendes, og hvordan centret mener, at den harmonerer med den nationale vejlednings krav om konkret individuel vurdering.",
+    "sourceIds": [
+      "ouh-ckio-patientinformation",
+      "sst-koensidentitet-vejledning-2018"
+    ]
+  },
+  {
+    "id": "screening-personnumber-2026",
+    "track": "praksis",
+    "status": "dokumenteret systemproblem · modgående politisk eksempel",
+    "title": "Juridisk køn og anatomibaseret screening passer ikke automatisk sammen",
+    "summary": "I juni 2026 behandlede Folketinget to spørgsmål om livmoderhalskræftscreening efter juridisk kønsskifte. Den ene fejltype er irrelevante indkaldelser til personer uden relevant anatomi; den anden er, at transpersoner med relevant anatomi og mandligt personnummer ikke automatisk indkaldes og selv må opsøge screening.",
+    "analysis": "Sagen viser en konkret praktisk følge af, at kønsspecifikke screeningssystemer bruger personnummer som proxy for anatomi. Den er samtidig vigtig som modgående politisk dokumentation: DF-sundhedsordfører Jan Herskov efterspurgte udtrykkeligt en digital løsning, der automatisk indkalder relevante transpersoner. Ikke enhver transrelateret intervention fra et parti, der andre steder støtter restriktioner, har derfor samme politiske retning.",
+    "sourceIds": [
+      "ft-s61-screening-2026",
+      "ft-s63-screening-2026"
+    ]
+  },
+  {
+    "id": "youth-access-parliament-2026",
+    "track": "praksis",
+    "status": "dokumenteret parlamentarisk proces",
+    "title": "Påstande om manglende ungdomsadgang blev løftet ind i Sundhedsudvalget i 2026",
+    "summary": "En gruppe forældres henvendelse af 24. juni 2026 blev registreret i Sundheds- og Ældreudvalget som en henvendelse om manglende adgang til udredning og behandling for transkønnede børn og unge. Marie Brixtofte (V) bad derefter ministeren kommentere henvendelsen og dens fem forslag punkt for punkt; endeligt svar blev registreret 27. august.",
+    "analysis": "Dokumentkæden viser, at spørgsmålet om reel adgang efter omlægningen fortsat var en aktuel parlamentarisk sag i 2026. Registertitlerne dokumenterer emnet og processen, men Projekt Loke gengiver ikke de fem konkrete krav eller ministerens detaljerede svar, før vedhæftningerne er særskilt verificeret.",
+    "sourceIds": [
+      "ft-suu-bilag46-youth-access-2026",
+      "ft-suu94-youth-access-2026",
+      "ft-suu94-answer-youth-access-2026"
+    ]
+  },
+  {
+    "id": "question-crossborder-youth-prescriptions-2026",
+    "track": "spørgsmål",
+    "status": "åbent spørgsmål · ubesvaret 11. september 2026",
+    "title": "Kan den danske ungdomsmodel omgås via recepter fra andre europæiske lande?",
+    "summary": "SUU spørgsmål 145 spørger, om unge transpersoner, der ikke er under medicinsk transitionbehandling i Danmark, kan få kønsregulerende medicin ordineret i et andet europæisk land og derefter få den udleveret i Danmark efter tilskudsreglerne.",
+    "analysis": "Spørgsmålet er relevant for grænsen mellem den restriktive danske adgang og EU-/grænseoverskridende receptpraksis, men det står endnu ubesvaret. Det dokumenterer derfor et parlamentarisk spørgsmål, ikke at en sådan praksis faktisk er mulig, udbredt eller på vej til at blive begrænset.",
+    "sourceIds": [
+      "ft-suu145-crossborder-hormones-2026"
+    ]
+  }
+]

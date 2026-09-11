@@ -58,7 +58,10 @@
       "Hun var medforslagsstiller til B12 om forældresamtykke til kønsskiftebehandling for 15-17-årige og til B47 om at begrænse juridisk kønsskifte. I november 2024 fremsatte hun desuden B72 sammen med Birgitte Bergman og Mona Juul; forslaget ville indføre et administrationsgebyr ved juridisk kønsskifte og blev trukket tilbage i januar 2025.",
       "I august 2025 bragte Raabjerg også en henvendelse fra Dansk Regnbueråd ind i Folketingets arbejde ved at bede ligestillingsministeren kommentere organisationens kritik af FSTB-materiale. Det dokumenterer en konkret forbindelse mellem en udenparlamentarisk aktør og et parlamentarisk spørgsmål, uden i sig selv at vise at organisationen styrede den konservative politik."
     ],
-    "profileSourceIds": []
+    "profileSourceIds": [
+      "ft-liu-bilag64-drr",
+      "ft-liu-spm21-drr"
+    ]
   },
   {
     "id": "mette-thiesen",
@@ -74,11 +77,13 @@
     ],
     "profile": [
       "Mette Thiesen har været folketingsmedlem for Dansk Folkeparti siden februar 2023 efter tidligere at have siddet for Nye Borgerlige. Hun har været næstformand for Dansk Folkepartis folketingsgruppe siden 2023.",
+      "Allerede i september 2023 rejste Thiesen den nye administrative praksis for mindreåriges juridiske kønsskifte i et åbent samråd, efter at ministeriet havde ændret praksis på baggrund af en EMRK-vurdering. Det giver B47 en dokumenteret parlamentarisk forhistorie før selve forslaget blev fremsat.",
       "I Projekt Lokes materiale forbinder hun to forskellige stadier af den parlamentariske udvikling: Hun var medforslagsstiller til det tværborgerlige B47 om juridisk kønsskifte og førsteforslagsstiller til B145, hvor Dansk Folkeparti samlede en langt bredere pakke af krav om juridisk køn, pas, behandling og offentlige institutioner.",
       "Thiesens taler er samtidig blandt de tydeligste eksempler i materialet på en konfrontatorisk retorisk linje. Projektet adskiller denne retorik fra den formelle politik: profilen viser både hendes konkrete forslag og de udsagn, der allerede er registreret fra Folketingets debatter."
     ],
     "profileSourceIds": [
-      "ft-mf-mette-thiesen"
+      "ft-mf-mette-thiesen",
+      "ft-inu-minors-samraad-2023"
     ]
   },
   {
@@ -400,11 +405,13 @@
     ],
     "profile": [
       "Mikkel Bjørn blev valgt for Nye Borgerlige i 2022 og skiftede til Dansk Folkeparti i januar 2023. Han var Dansk Folkepartis ligestillingsordfører i 2023-2024.",
+      "I oktober 2023 udfordrede Bjørn den ændrede administrative praksis for mindreåriges juridiske kønsskifte med et § 20-spørgsmål om EMRK-grundlaget. Det placerer hans engagement i juridisk kønsskifte før F1-debatten i januar 2024.",
       "I januar 2024 var Bjørn en central aktør i Folketingets F1-debat om kønsbegrebet, hvor Dansk Folkeparti gjorde definitionen af køn til et selvstændigt parlamentarisk tema. Året efter var han medforslagsstiller til B145, som ville pålægge staten og offentlige myndigheder kun at anerkende to køn og samtidig ændre en række regler og offentlige praksisser.",
       "Forløbet gør Bjørn relevant som forbindelse mellem den retoriske dagsordenssætning i F1 og den senere formulering af et bredt beslutningsforslag."
     ],
     "profileSourceIds": [
-      "ft-mf-mikkel-bjoern"
+      "ft-mf-mikkel-bjoern",
+      "ft-s9-emrk-2023"
     ]
   },
   {
@@ -504,10 +511,14 @@
     "profile": [
       "Dansk Regnbueråd blev lanceret i 2022 som en alternativ LGBT-organisation. Organisationens egen oversigt over 12 politiske hovedmål angiver stop for medicinsk kønsskifte til børn og modstand mod juridisk kønsskifte til børn som to tidlige hovedprioriteter.",
       "Organisationen har ikke kun deltaget i den offentlige debat. Under B62 dokumenterede dens egne henvendelser til Folketinget møder, telefonsamtaler og e-mails med medlemmer af Sundhedsudvalget samt planlagt foretræde for udvalget. Det gør DRR relevant som organiseret politisk aktør snarere end alene som kommentator.",
+      "Civilstyrelsens indsamlingsregistre dokumenterer desuden, at Dansk Regnbueråd i både 2024 og 2025 indgik i fælles fundraising og eventinfrastruktur omkring Folkemødet sammen med Trykkefrihedsselskabet og andre organisationer. Det er dokumentation for gentaget operationelt samarbejde om de konkrete Folkemødeprojekter, ikke i sig selv for generel koordinering på tværs af alle organisationernes aktiviteter.",
       "I 2025 sluttede Dansk Regnbueråd sig til LGB Alliance International. Foreningen oplyste samtidig, at det internationale samarbejde lå hos Jesper W. Rasmussen; hans formandsberetning beskrev både kontakt med LGB Alliance UK-medstifter Bev Jackson og at LGB Alliance International havde bedt DRR repræsentere Danmark. Projekt Loke registrerer disse forbindelser som dokumenterede kontakter, ikke som bevis for udenlandsk styring."
     ],
     "profileSourceIds": [
-      "drr-12-goals"
+      "drr-12-goals",
+      "ft-liu-bilag64-drr",
+      "civilstyrelsen-folkemoede-2024",
+      "civilstyrelsen-folkemoede-2025"
     ]
   },
   {
@@ -747,5 +758,112 @@
       "Projekt Loke bruger ikke henvendelsen som bevis for, at Kvinderettigheder.dk formulerede B47 eller kontrollerede forslagsstillerne. Den registreres som et efterprøvbart eksempel på kontakt mellem aktivistisk mediearbejde og Folketingets udvalgsproces."
     ],
     "profileSourceIds": []
+  },
+  {
+    "id": "normstormerne",
+    "name": "Normstormerne",
+    "kind": "organization",
+    "shortName": "Normstormerne",
+    "affiliation": null,
+    "route": "/aktoerer/normstormerne/",
+    "summary": "Normkritisk LGBTQ+-organisation, som tilbyder undervisning til skoler og fagpersonale og siden 2022 gentagne gange er blevet genstand for parlamentariske spørgsmål om køn, undervisning og offentlig støtte.",
+    "sourceIds": [
+      "normstormerne-elevundervisning",
+      "normstormerne-om-os",
+      "ft-s188-normstormerne-2023"
+    ],
+    "profile": [
+      "Normstormerne beskriver sig som en LGBTQ+-drevet, normkritisk organisation. Den aktuelle elevundervisning omfatter 0.-9. klasse og arbejder efter organisationens egen beskrivelse med normer, diskrimination, trivsel og inklusion. Organisationens egen historik angiver kommunal bevilling i 2020-2023 og frivillig drift uden bevilling fra 2024.",
+      "Den officielle undervisningsramme skal holdes adskilt fra den eksterne udbyder. EMU beskriver mangfoldighed i forhold til køn, krop og seksualitet som obligatorisk i SSF fra børnehaveklasse til 9. klasse, men Normstormerne er ikke et obligatorisk pensum eller en obligatorisk leverandør. Under S 188 understregede ministeren, at skole og lærer har ansvaret for valg og gennemførelse af undervisningen, også når eksterne aktører bruges.",
+      "Fra 2022 blev Normstormerne og normkritisk kønsundervisning gentagne gange taget op i Folketinget. S 188 i januar 2023 er et særligt stærkt transmissionspunkt: spørgsmålets skriftlige begrundelse henviser direkte til en Berlingske-artikel om Normstormerne fra dagen før. Senere optræder S 188 og S 430 i Folketingets Biblioteks baggrundsmateriale til både F1 om kønsbegrebet og B145."
+    ],
+    "profileSourceIds": [
+      "emu-lgbt-fagene",
+      "normstormerne-elevundervisning",
+      "normstormerne-om-os",
+      "ft-buu346-normstormerne-2022",
+      "ft-s188-normstormerne-2023",
+      "ft-s430-gender-education-2023",
+      "ft-f1-background-2024",
+      "ft-b145-background"
+    ]
+  },
+  {
+    "id": "dbu",
+    "name": "Dansk Boldspil-Union",
+    "kind": "organization",
+    "shortName": "DBU",
+    "affiliation": null,
+    "route": "/aktoerer/dbu/",
+    "summary": "Dansk fodbolds nationale specialforbund. DBU’s bestyrelse bakkede i 2023 op om en retning mod selvidentifikation i breddefodbold, men den efterfølgende lokale implementering udviklede sig forskelligt.",
+    "sourceIds": [
+      "dbu-gender-workgroup-2023",
+      "dbu-gender-board-2023",
+      "dbujylland-self-id-reject-2025",
+      "dbusjaelland-gender-rules-2025"
+    ],
+    "profile": [
+      "I januar 2023 nedsatte DBU en arbejdsgruppe om inklusion af transkønnede, interkønnede og nonbinære. Arbejdsgruppen skulle efter DBU’s egen beskrivelse afveje inklusion, lige konkurrence og sikkerhed og omfattede både fodboldens egne organer og eksterne organisationer.",
+      "Arbejdsgruppen anbefalede selvidentifikation som princip i breddefodbold. En enig DBU-bestyrelse bakkede i november 2023 op om anbefalingerne, men beskrev samtidig implementeringen som en proces over de kommende år og selvidentifikation i bredde som et mål, der skulle skabes rammer for frem mod 2025. Beslutningen er derfor ikke det samme som dokumentation for, at én landsdækkende turneringsregel trådte i kraft i 2023.",
+      "Den efterfølgende udvikling viser lokal variation. DBU Jyllands klubber forkastede i januar 2025 en toårig selvidentifikationspilot. DBU Sjælland vedtog i september 2025 CPR/juridisk køn som hovedregel for turneringer med mulighed for konkret dispensation. DBU Fyn beskrev i sin 2024-beretning en pragmatisk tilgang uden en generel lokal regel. Projekt Loke generaliserer derfor ikke fra én lokalunion til hele dansk fodbold."
+    ],
+    "profileSourceIds": [
+      "dbu-gender-hearing-2023",
+      "dbu-gender-report-2023",
+      "dbu-gender-board-2023",
+      "dbufyn-gender-report-2024",
+      "dbujylland-self-id-reject-2025",
+      "dbusjaelland-gender-rules-2025",
+      "dbusjaelland-gender-dispensation"
+    ]
+  },
+  {
+    "id": "jan-herskov",
+    "name": "Jan Herskov",
+    "kind": "person",
+    "shortName": null,
+    "affiliation": "Dansk Folkeparti",
+    "route": "/aktoerer/jan-herskov/",
+    "summary": "Dansk Folkepartis sundheds- og psykiatriordfører fra 2026. Har i den nye valgperiode rejst både praktiske screeningsproblemer for transpersoner og spørgsmål om unges adgang til medicin på udenlandske recepter.",
+    "sourceIds": [
+      "ft-mf-jan-herskov",
+      "ft-s61-screening-2026",
+      "ft-s63-screening-2026",
+      "ft-suu145-crossborder-hormones-2026"
+    ],
+    "profile": [
+      "Jan Herskov blev medlem af Folketinget for Dansk Folkeparti 24. marts 2026 og er partiets sundheds- og psykiatriordfører. Det gør hans transrelaterede sundhedsspørgsmål relevante som formelle ordførerinterventioner i den nye valgperiode.",
+      "I juni 2026 rejste Herskov to komplementære problemer ved kønsspecifik livmoderhalskræftscreening efter juridisk kønsskifte: irrelevante indkaldelser til personer uden relevant anatomi og manglende automatisk indkaldelse af transpersoner med relevant anatomi og mandligt personnummer. I S 63 efterspurgte han specifikt en digital løsning, så relevante transpersoner indkaldes automatisk. Det er et eksempel på en transrelateret DF-intervention, der søger at afhjælpe en sundhedsulempe snarere end at indskrænke adgang.",
+      "I august 2026 stillede Herskov samtidig et endnu ubesvaret udvalgsspørgsmål om, hvorvidt unge, som ikke er i medicinsk transitionbehandling i Danmark, kan få kønsregulerende medicin på recept i andre europæiske lande og derefter få den udleveret i Danmark. Projektet registrerer spørgsmålet som åbent og udleder ikke endnu en bestemt restriktiv konsekvens."
+    ],
+    "profileSourceIds": [
+      "ft-mf-jan-herskov",
+      "ft-s63-screening-2026",
+      "ft-suu145-crossborder-hormones-2026"
+    ]
+  },
+  {
+    "id": "marie-brixtofte",
+    "name": "Marie Brixtofte",
+    "kind": "person",
+    "shortName": null,
+    "affiliation": "Venstre",
+    "route": "/aktoerer/marie-brixtofte/",
+    "summary": "Venstre-medlem af Sundheds- og Ældreudvalget fra 2026. Gjorde i juli 2026 en forældrehenvendelse om manglende adgang til udredning og behandling for transkønnede børn og unge til et formelt udvalgsspørgsmål.",
+    "sourceIds": [
+      "ft-mf-marie-brixtofte",
+      "ft-suu94-youth-access-2026"
+    ],
+    "profile": [
+      "Marie Brixtofte blev medlem af Folketinget for Venstre 24. marts 2026 og er medlem af Sundheds- og Ældreudvalget.",
+      "Den 30. juli 2026 bad hun sundhedsministeren kommentere en henvendelse fra en gruppe forældre om manglende adgang til udredning og behandling for transkønnede børn og unge og punkt for punkt kommentere gruppens fem forslag til handlinger. Spørgsmålet blev endeligt besvaret 27. august.",
+      "Denne registrering dokumenterer, at kritik af ungdomsbehandlingens faktiske adgang blev løftet ind i Folketingets udvalgsarbejde fra en Venstre-politiker. Projektet gengiver ikke de fem krav eller ministerens detaljerede svar, før de vedhæftede dokumenter er særskilt verificeret."
+    ],
+    "profileSourceIds": [
+      "ft-mf-marie-brixtofte",
+      "ft-suu-bilag46-youth-access-2026",
+      "ft-suu94-youth-access-2026",
+      "ft-suu94-answer-youth-access-2026"
+    ]
   }
 ]

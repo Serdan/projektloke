@@ -1,0 +1,57 @@
+[
+  {
+    "year": "2022",
+    "stages": [
+      {
+        "value": "352",
+        "label": "henvist til udredning"
+      },
+      {
+        "value": "22",
+        "label": "henvist videre til hormonbehandling"
+      },
+      {
+        "value": "7",
+        "label": "startede hormonbehandling"
+      }
+    ],
+    "note": "Årstal oplyst af sundhedsministeren under førstebehandlingen af B62.",
+    "sourceIds": [
+      "ft-b62-debate"
+    ]
+  },
+  {
+    "year": "2023",
+    "stages": [
+      {
+        "value": "300",
+        "label": "henvist til udredning"
+      },
+      {
+        "value": "—",
+        "label": "viderehenvisninger ikke oplyst her"
+      },
+      {
+        "value": "<10",
+        "label": "startede hormonbehandling"
+      }
+    ],
+    "note": "Årstal oplyst af sundhedsministeren under førstebehandlingen af B12.",
+    "sourceIds": [
+      "ft-b12-debate"
+    ]
+  },
+  {
+    "year": "Plan 2024",
+    "stages": [
+      {
+        "value": "100–200",
+        "label": "forventet børn og unge årligt i den nye landsdækkende funktion"
+      }
+    ],
+    "note": "Planlægningsoplysning fra Region Hovedstadens stillingsopslag under reorganiseringen. \"At se\" 100–200 årligt er ikke defineret som det samme som modtagne henvisninger og dokumenterer ikke et formelt loft.",
+    "sourceIds": [
+      "regionh-youth-reorg-job-2024"
+    ]
+  }
+]

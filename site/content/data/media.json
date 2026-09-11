@@ -8,8 +8,18 @@
     "outletActorId": null,
     "outletLabel": "dortetoft.dk",
     "summary": "Dorte Toft beskrev, at hun i flere år havde fulgt det, hun kalder transideologien, blandt andet ved at studere udviklingen i Storbritannien, USA og Canada, og kritiserede samtidig DR, TV 2 og Politiken for efter hendes vurdering at dække emnet ensidigt.",
-    "themes": ["transideologi", "UK/USA/Canada", "unge", "kvinders rum", "mediekritik"],
-    "sourceIds": ["toft-det-der-braender-paa"]
+    "themes": [
+      "transideologi",
+      "UK/USA/Canada",
+      "unge",
+      "kvinders rum",
+      "mediekritik"
+    ],
+    "sourceIds": [
+      "toft-det-der-braender-paa"
+    ],
+    "authorLabel": null,
+    "corpusRole": "aktørspor"
   },
   {
     "id": "toft-berlingske-contract-2025",
@@ -20,8 +30,15 @@
     "outletActorId": "berlingske",
     "outletLabel": null,
     "summary": "I et indlæg om at stoppe sin faste klumme beskrev Dorte Toft, at Berlingskes daværende debatredaktør Pierre Collignon i 2022 havde inviteret hende til at skrive månedligt for avisen.",
-    "themes": ["platforming", "kommentarstof"],
-    "sourceIds": ["toft-et-skifte-2025"]
+    "themes": [
+      "platforming",
+      "kommentarstof"
+    ],
+    "sourceIds": [
+      "toft-et-skifte-2025"
+    ],
+    "authorLabel": null,
+    "corpusRole": "aktørspor"
   },
   {
     "id": "toft-berlingske-return-2025",
@@ -32,8 +49,18 @@
     "outletActorId": "berlingske",
     "outletLabel": null,
     "summary": "Dorte Toft oplyste, at hun var vendt tilbage til Berlingske med en månedlig klumme fra august 2025. I samme indlæg beskrev hun detransition, omklædningsrum, retssager om køn og DBU som centrale emner i sit transrelaterede arbejde.",
-    "themes": ["detransition", "omklædningsrum", "ytringsfrihed", "sport", "transbevægelsen"],
-    "sourceIds": ["toft-back-berlingske-2025"]
+    "themes": [
+      "detransition",
+      "omklædningsrum",
+      "ytringsfrihed",
+      "sport",
+      "transbevægelsen"
+    ],
+    "sourceIds": [
+      "toft-back-berlingske-2025"
+    ],
+    "authorLabel": null,
+    "corpusRole": "aktørspor"
   },
   {
     "id": "toft-fonsmark-2026",
@@ -44,7 +71,113 @@
     "outletActorId": "berlingske",
     "outletLabel": null,
     "summary": "Dorte Toft offentliggjorde, at hun var indstillet til Berlingskes Fonsmarkpris, og gengav en begrundelse, som fremhævede hendes arbejde om transrelaterede spørgsmål, kvinder og unge. Denne registrering dokumenterer Tofts egen gengivelse af indstillingen.",
-    "themes": ["transideologi", "kvinder", "unge", "ytringsfrihed", "institutionel anerkendelse"],
-    "sourceIds": ["toft-fonsmark-2026"]
+    "themes": [
+      "transideologi",
+      "kvinder",
+      "unge",
+      "ytringsfrihed",
+      "institutionel anerkendelse"
+    ],
+    "sourceIds": [
+      "toft-fonsmark-2026"
+    ],
+    "authorLabel": null,
+    "corpusRole": "aktørspor"
+  },
+  {
+    "id": "bjerre-jp-legal-gender-2024",
+    "date": "2024-08-14",
+    "kind": "kronik / debatindlæg",
+    "title": "Ligestillingsminister gør juridisk kønsskifte til rettighedskonflikt",
+    "authorActorId": null,
+    "authorLabel": "Marie Bjerre",
+    "outletActorId": null,
+    "outletLabel": "Jyllands-Posten",
+    "summary": "Daværende ligestillingsminister Marie Bjerre brugte Ibi-Pippi-sagen til at argumentere for, at biologisk køn sætter grænser for, hvilke rettigheder der bør følge af juridisk kønsskifte. Teksten var et signeret politisk debatindlæg, ikke Jyllands-Postens redaktionelle position. B47 nævnte senere kronikken direkte i sine bemærkninger og brugte den som del af argumentet om særbehandling og konflikter mellem rettigheder.",
+    "themes": [
+      "juridisk kønsskifte",
+      "biologisk køn",
+      "rettighedskonflikt",
+      "politisk uptake",
+      "kommentarstof"
+    ],
+    "sourceIds": [
+      "jp-bjerre-legal-gender-2024",
+      "ft-b47-proposal",
+      "ft-b47-background"
+    ],
+    "corpusRole": "politisk kildegrundlag"
+  },
+  {
+    "id": "dr-prison-case-2024",
+    "date": "2024-09-03",
+    "kind": "nyhedsartikel / retsstof",
+    "title": "Højesteretssag om afsoning og visitation bliver kilde i B47",
+    "authorActorId": null,
+    "authorLabel": "Jakob Slyngborg Trolle",
+    "outletActorId": null,
+    "outletLabel": "DR",
+    "summary": "DR dækkede en principiel Højesteretssag om en juridisk kønsskiftet indsat og citerede ifølge Infomedia-metadata professor i strafferet Birgit Feldtmann om behovet for klare retningslinjer og den mulige belastning ved afsoning i et mandefængsel. B47 citerede artiklen, men forslagets bredere konklusion om biologisk køn og hvilke rettigheder transpersoner skal have er forslagsstillernes egen fortolkning, ikke dokumenteret som DR's eller Feldtmanns konklusion.",
+    "themes": [
+      "juridisk kønsskifte",
+      "fængsler",
+      "rettighedskonflikt",
+      "politisk uptake",
+      "retsstof"
+    ],
+    "sourceIds": [
+      "aau-dr-prison-clipping-2024",
+      "ft-b47-proposal",
+      "ft-b47-background"
+    ],
+    "corpusRole": "politisk kildegrundlag"
+  },
+  {
+    "id": "kd-prison-case-2023",
+    "date": "2023-05-24",
+    "kind": "nyhedsartikel / retsstof",
+    "title": "Kristeligt Dagblad dækker landsretsafgørelse om transkønnet indsat",
+    "authorActorId": null,
+    "authorLabel": null,
+    "outletActorId": null,
+    "outletLabel": "Kristeligt Dagblad",
+    "summary": "B47 citerer en Kristeligt Dagblad-artikel om Østre Landsrets afgørelse i sagen om en transkønnet indsat. En senere omtale i Fængselsforbundets fagblad dokumenterer, at Dansk Regnbueråds daværende næstformand Jesper W. Rasmussen optrådte som citeret stemme og hilste afgørelsen velkommen. De åbne kilder i dette researchpas identificerer ikke artiklens forfatter sikkert; B47's karakteristik af sagen som et 'grelt tilfælde' er forslagets egen vurdering.",
+    "themes": [
+      "juridisk kønsskifte",
+      "fængsler",
+      "Dansk Regnbueråd",
+      "politisk uptake",
+      "retsstof"
+    ],
+    "sourceIds": [
+      "ft-b47-background",
+      "ft-b47-proposal",
+      "faengselsforbundet-kd-trans-prison-2023"
+    ],
+    "corpusRole": "politisk kildegrundlag"
+  },
+  {
+    "id": "kd-fahrendorff-backlash-2022",
+    "date": "2022-07-29",
+    "kind": "artikel / analyse",
+    "title": "Backlash mod transrettigheder og sport bliver senere kilde i B47",
+    "authorActorId": null,
+    "authorLabel": "Rasmus Fahrendorff",
+    "outletActorId": null,
+    "outletLabel": "Kristeligt Dagblad",
+    "summary": "B47 citerer en Kristeligt Dagblad-tekst fra 29. juli 2022 under overskriften 'Der har i årevis været støtte til særrettigheder til transkønnede. Men nu falder tolerancen'. Bibliotek.dk registrerer Rasmus Fahrendorff som forfatter til en artikel 30. juli under den alternative titel 'Modstand mod særrettigheder til transkønnede vokser'. Projekt Loke bevarer editionsforskellen. B47 bruger Lia Thomas-eksemplet til sin egen konklusion om lige konkurrencevilkår; den konklusion tilskrives ikke automatisk artiklen.",
+    "themes": [
+      "sport",
+      "særrettigheder",
+      "transrettigheder",
+      "politisk uptake",
+      "medieframing"
+    ],
+    "sourceIds": [
+      "bibliotek-kd-fahrendorff-2022",
+      "ft-b47-proposal",
+      "ft-b47-background"
+    ],
+    "corpusRole": "politisk kildegrundlag"
   }
 ]

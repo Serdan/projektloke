@@ -2,12 +2,12 @@
   {
     "id": "drr-b62-contact",
     "date": "2023-05-12",
-    "kind": "parlamentarisk p\u00E5virkning",
+    "kind": "parlamentarisk påvirkning",
     "fromActorId": "dansk-regnbueraad",
     "toActorId": null,
     "toRoute": "/politik/b62/",
     "toLabel": "B62 / Sundhedsudvalget",
-    "summary": "I sit B62-materiale oplyste Dansk Regnbuer\u00E5d, at foreningen allerede havde v\u00E6ret i kontakt med udvalgsmedlemmer gennem m\u00F8der, telefonsamtaler og e-mails, og at den skulle have foretr\u00E6de for Sundhedsudvalget.",
+    "summary": "I sit B62-materiale oplyste Dansk Regnbueråd, at foreningen allerede havde været i kontakt med udvalgsmedlemmer gennem møder, telefonsamtaler og e-mails, og at den skulle have foretræde for Sundhedsudvalget.",
     "sourceIds": [
       "ft-b62-drr-submissions"
     ]
@@ -19,8 +19,8 @@
     "fromActorId": "dansk-regnbueraad",
     "toActorId": null,
     "toRoute": null,
-    "toLabel": "amerikanske transpolitiske akt\u00F8rer",
-    "summary": "I samme B62-bilag beskrev foreningen Marcus Dib Jensen som v\u00E6rende i USA p\u00E5 konference med ligesindede amerikanske transpolitiske akt\u00F8rer.",
+    "toLabel": "amerikanske transpolitiske aktører",
+    "summary": "I samme B62-bilag beskrev foreningen Marcus Dib Jensen som værende i USA på konference med ligesindede amerikanske transpolitiske aktører.",
     "sourceIds": [
       "ft-b62-drr-submissions"
     ]
@@ -33,7 +33,7 @@
     "toActorId": "lgb-alliance-international",
     "toRoute": null,
     "toLabel": null,
-    "summary": "Dansk Regnbuer\u00E5ds generalforsamling vedtog at tilslutte sig LGB Alliance International; foreningen oplyste samtidig, at netv\u00E6rket havde bedt den repr\u00E6sentere Danmark.",
+    "summary": "Dansk Regnbueråds generalforsamling vedtog at tilslutte sig LGB Alliance International; foreningen oplyste samtidig, at netværket havde bedt den repræsentere Danmark.",
     "sourceIds": [
       "drr-lgbai-2025",
       "drr-chair-report-2025"
@@ -42,13 +42,14 @@
   {
     "id": "raabjerg-drr-question",
     "date": "2025-08-12",
-    "kind": "parlamentarisk videref\u00F8relse",
+    "kind": "parlamentarisk videreførelse",
     "fromActorId": "dina-raabjerg",
     "toActorId": "dansk-regnbueraad",
     "toRoute": null,
     "toLabel": null,
-    "summary": "Dina Raabjerg gjorde Dansk Regnbuer\u00E5ds klage over st\u00F8tte til FSTB til et formelt udvalgssp\u00F8rgsm\u00E5l og bad ministeren forholde sig til foreningens krav om at tr\u00E6kke videoer tilbage eller revidere dem v\u00E6sentligt.",
+    "summary": "Efter Dansk Regnbueråds henvendelse 30. juli 2025 gjorde Dina Raabjerg 12. august klagen over støtte til FSTB til et formelt udvalgsspørgsmål og bad ministeren forholde sig til foreningens krav om at trække videoer tilbage eller revidere dem væsentligt.",
     "sourceIds": [
+      "ft-liu-bilag64-drr",
       "ft-liu-spm21-drr"
     ]
   },
@@ -60,7 +61,7 @@
     "toActorId": null,
     "toRoute": null,
     "toLabel": "UK, USA og Canada",
-    "summary": "Toft skrev, at hun i flere \u00E5r havde fulgt det, hun kalder transideologien, blandt andet ved at studere situationen i Storbritannien, USA og Canada.",
+    "summary": "Toft skrev, at hun i flere år havde fulgt det, hun kalder transideologien, blandt andet ved at studere situationen i Storbritannien, USA og Canada.",
     "sourceIds": [
       "toft-det-der-braender-paa"
     ]
@@ -73,7 +74,7 @@
     "toActorId": null,
     "toRoute": "/politik/b12/",
     "toLabel": "Cass Review i B12-debatten",
-    "summary": "Under f\u00F8rstebehandlingen af B12 henviste Dina Raabjerg eksplicit til Cass Review som international evaluering af behandling af transk\u00F8nnede b\u00F8rn og unge.",
+    "summary": "Under førstebehandlingen af B12 henviste Dina Raabjerg eksplicit til Cass Review som international evaluering af behandling af transkønnede børn og unge.",
     "sourceIds": [
       "ft-b12-debate"
     ]
@@ -86,7 +87,7 @@
     "toActorId": "berlingske",
     "toRoute": null,
     "toLabel": null,
-    "summary": "Toft oplyste, at hendes m\u00E5nedlige Berlingske-klumme var blevet genoptaget fra august 2025.",
+    "summary": "Toft oplyste, at hendes månedlige Berlingske-klumme var blevet genoptaget fra august 2025.",
     "sourceIds": [
       "toft-back-berlingske-2025"
     ]
@@ -99,7 +100,7 @@
     "toActorId": "dorte-toft",
     "toRoute": null,
     "toLabel": null,
-    "summary": "If\u00F8lge Tofts egen gengivelse blev hun indstillet til Berlingskes Fonsmarkpris med en begrundelse, der fremh\u00E6vede hendes arbejde om transrelaterede sp\u00F8rgsm\u00E5l, kvinder og unge.",
+    "summary": "Ifølge Tofts egen gengivelse blev hun indstillet til Berlingskes Fonsmarkpris med en begrundelse, der fremhævede hendes arbejde om transrelaterede spørgsmål, kvinder og unge.",
     "sourceIds": [
       "toft-fonsmark-2026"
     ]
@@ -128,6 +129,74 @@
     "summary": "Kvinderettigheder.dk indsendte en henvendelse under Folketingets behandling af B47. Dagen efter bad Ligestillingsudvalget ligestillingsministeren kommentere henvendelsen.",
     "sourceIds": [
       "ft-b47-kvinderettigheder-spm2"
+    ]
+  },
+  {
+    "id": "drr-folkemoede-2024",
+    "date": "2024-06-15",
+    "kind": "fælles fundraising / eventinfrastruktur",
+    "fromActorId": "dansk-regnbueraad",
+    "toActorId": null,
+    "toRoute": null,
+    "toLabel": "Folkemødet 2024 med Trykkefrihedsselskabet m.fl.",
+    "summary": "Civilstyrelsen dokumenterer fælles fundraising til Folkemødet 2024 gennem donationselementer hos Trykkefrihedsselskabet, Manderådet, Dansk Regnbueråd og Jaleh Tavakoli samt fælles betalingsinfrastruktur. Registreringen nævner også Ord mod Ord, Islamisk Dialogkaffe og Dansk Ligestilling i fordelingen af eventuelle restmidler. Det dokumenterer operationelt samarbejde om dette projekt, ikke generel organisatorisk koordinering.",
+    "sourceIds": [
+      "civilstyrelsen-folkemoede-2024"
+    ]
+  },
+  {
+    "id": "drr-folkemoede-2025",
+    "date": "2025-07-01",
+    "kind": "gentaget fælles fundraising",
+    "fromActorId": "dansk-regnbueraad",
+    "toActorId": null,
+    "toRoute": null,
+    "toLabel": "Folkemødet 2025 med Trykkefrihedsselskabet m.fl.",
+    "summary": "Civilstyrelsen dokumenterer en ny fælles indsamling til Folkemødet 2025 via Trykkefrihedsselskabet, Dansk Regnbueråd, Jaleh og Ord mod Ord. Overskud kunne bruges på Folkemødet 2026 eller fordeles mellem deltagende organisationer. Gentagelsen dokumenterer vedvarende operationelt samarbejde omkring Folkemødet, ikke nødvendigvis uden for projektet.",
+    "sourceIds": [
+      "civilstyrelsen-folkemoede-2025"
+    ]
+  },
+  {
+    "id": "drr-fstb-complaint",
+    "date": "2025-07-30",
+    "kind": "parlamentarisk henvendelse",
+    "fromActorId": "dansk-regnbueraad",
+    "toActorId": null,
+    "toRoute": null,
+    "toLabel": "Ligestillingsudvalget / klage over støtte til FSTB",
+    "summary": "Dansk Regnbueråd indsendte 30. juli 2025 en klage om offentlig støtte til FSTB. Den 12. august bad Dina Raabjerg ministeren kommentere netop henvendelsen og dens krav om tilbagetrækning eller væsentlig revision af videoer; 13. august indsendte FSTB et svar. Forløbet dokumenterer organisation → formel parlamentarisk henvendelse → navngiven parlamentarisk videreførelse, men ikke kontrol over politikeren.",
+    "sourceIds": [
+      "ft-liu-bilag64-drr",
+      "ft-liu-spm21-drr",
+      "ft-liu-bilag66-fstb"
+    ]
+  },
+  {
+    "id": "berlingske-s188-question",
+    "date": "2023-01-27",
+    "kind": "medie → parlamentarisk spørgsmål",
+    "fromActorId": "berlingske",
+    "toActorId": "solbjoerg-jakobsen",
+    "toRoute": null,
+    "toLabel": null,
+    "summary": "Den officielle skriftlige begrundelse for S 188 henviser direkte til en Berlingske-artikel om Normstormerne publiceret dagen før. Det dokumenterer, at artiklen blev brugt som eksplicit kilde til spørgsmålet; det dokumenterer ikke i sig selv, at Berlingske bestemte Liberal Alliances bredere politik.",
+    "sourceIds": [
+      "ft-s188-normstormerne-2023"
+    ]
+  },
+  {
+    "id": "jakobsen-dbu-samraad-2024",
+    "date": "2024-11-18",
+    "kind": "parlamentarisk kontrol",
+    "fromActorId": "solbjoerg-jakobsen",
+    "toActorId": "dbu",
+    "toRoute": null,
+    "toLabel": null,
+    "summary": "Sólbjørg Jakobsen gjorde DBU’s planlagte kønsregler i breddefodbolden til et formelt samrådsspørgsmål. Spørgsmålet blev stillet fem dage efter B47’s fremsættelse og dokumenterer derfor et parallelt sportspolitisk spor, ikke en årsag til B47.",
+    "sourceIds": [
+      "ft-kuu-d-dbu-2024",
+      "ft-kuu-d-dbu-hearing-2024"
     ]
   }
 ]

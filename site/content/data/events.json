@@ -192,13 +192,14 @@
     "date": "2025-08-12",
     "kind": "parlamentarisk videreførelse",
     "title": "Dina Raabjerg rejser Dansk Regnbueråds klage i Folketinget",
-    "summary": "Raabjerg bad ligestillingsministeren kommentere Dansk Regnbueråds henvendelse og tage stilling til foreningens ønske om tilbagetrækning eller væsentlig revision af FSTB-videoer.",
+    "summary": "Den 12. august bad Dina Raabjerg ligestillingsministeren kommentere Dansk Regnbueråds henvendelse af 30. juli og tage stilling til foreningens ønske om tilbagetrækning eller væsentlig revision af FSTB-videoer.",
     "actorIds": [
       "dina-raabjerg",
       "dansk-regnbueraad"
     ],
     "relatedRoute": "/netvaerk/#relation-raabjerg-drr-question",
     "sourceIds": [
+      "ft-liu-bilag64-drr",
       "ft-liu-spm21-drr"
     ]
   },
@@ -272,6 +273,449 @@
     "relatedRoute": "/netvaerk/#relation-kvinderettigheder-b47-submission",
     "sourceIds": [
       "ft-b47-kvinderettigheder-spm2"
+    ]
+  },
+  {
+    "id": "b80-introduced",
+    "date": "2020-11-10",
+    "kind": "tidligere forslag",
+    "title": "B80 fremsættes om juridisk kønsskifte for børn",
+    "summary": "Medlemmer fra DF, KF, Nye Borgerlige og Liberal Alliance fremsætter et fælles forslag om ikke at indføre juridisk kønsskifte for personer under 18 år. Forslaget blev senere forkastet 21–74.",
+    "actorIds": [
+      "dansk-folkeparti",
+      "konservative",
+      "nye-borgerlige",
+      "liberal-alliance"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-b80-2021"
+    ]
+  },
+  {
+    "id": "minor-legal-gender-practice-change-2023",
+    "date": "2023-08-04",
+    "kind": "administrativ praksis",
+    "title": "Ministeriet ændrer praksis for mindreåriges juridiske kønsskifte",
+    "summary": "Efter Justitsministeriets vurdering af Danmarks EMRK-forpligtelser besluttede Indenrigs- og Sundhedsministeriet at genoptage 16 tidligere aldersafviste sager og ændre den administrative praksis.",
+    "actorIds": [],
+    "relatedRoute": "/politik/b47/",
+    "sourceIds": [
+      "ft-inu-minors-legal-gender-2023"
+    ]
+  },
+  {
+    "id": "thiesen-minor-legal-gender-samraad-2023",
+    "date": "2023-09-19",
+    "kind": "folketingskontrol",
+    "title": "Mette Thiesen rejser praksisændringen i åbent samråd",
+    "summary": "Mette Thiesen bad indenrigs- og sundhedsministeren redegøre for den ændrede praksis for mindreåriges adgang til juridisk kønsskifte efter EMRK-vurderingen.",
+    "actorIds": [
+      "mette-thiesen"
+    ],
+    "relatedRoute": "/politik/b47/",
+    "sourceIds": [
+      "ft-inu-minors-samraad-2023"
+    ]
+  },
+  {
+    "id": "bjoern-emrk-s9-2023",
+    "date": "2023-10-03",
+    "kind": "folketingsspørgsmål",
+    "title": "Mikkel Bjørn udfordrer EMRK-grundlaget for praksisændringen",
+    "summary": "Mikkel Bjørn spurgte justitsministeren, om en ændret fortolkning af EMRK kunne ændre dansk administrativ praksis om juridisk kønsskifte for mindreårige uden om Folketinget.",
+    "actorIds": [
+      "mikkel-bjoern"
+    ],
+    "relatedRoute": "/politik/b47/",
+    "sourceIds": [
+      "ft-s9-emrk-2023"
+    ]
+  },
+  {
+    "id": "minor-legal-gender-law-delay-2024",
+    "date": "2024-09-06",
+    "kind": "lovgivningsopfølgning",
+    "title": "Regeringen kobler CPR-lovændring for mindreårige til ny sundhedsvejledning",
+    "summary": "Digitaliseringsministeren oplyste, at et planlagt lovforslag om en ordning for juridisk kønsskifte for mindreårige var blevet udskudt. Regeringen ville tage stilling til CPR-lovændringen, når Sundhedsstyrelsens reviderede vejledning forelå.",
+    "actorIds": [],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-inu94-minor-legal-gender-law-2024"
+    ]
+  },
+  {
+    "id": "b72-introduced",
+    "date": "2024-11-15",
+    "kind": "parallel forslag",
+    "title": "B72 fremsættes: gebyr ved juridisk kønsskifte",
+    "summary": "Dina Raabjerg, Birgitte Bergman og Mona Juul fremsatte et forslag om administrationsgebyr ved juridisk kønsskifte. Forslaget blev trukket tilbage 9. januar 2025.",
+    "actorIds": [
+      "dina-raabjerg",
+      "birgitte-bergman",
+      "mona-juul"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-b72-proposal"
+    ]
+  },
+  {
+    "id": "drr-folkemoede-cooperation-2024",
+    "date": "2024-06-15",
+    "kind": "fælles fundraising",
+    "title": "Fælles Folkemødeindsamling dokumenterer operationelt samarbejde",
+    "summary": "Civilstyrelsens registrering viser fælles fundraising til Folkemødet 2024 via bl.a. Dansk Regnbueråd, Trykkefrihedsselskabet, Manderådet og Jaleh Tavakolis platform med fælles betalingsinfrastruktur.",
+    "actorIds": [
+      "dansk-regnbueraad"
+    ],
+    "relatedRoute": "/netvaerk/#relation-drr-folkemoede-2024",
+    "sourceIds": [
+      "civilstyrelsen-folkemoede-2024"
+    ]
+  },
+  {
+    "id": "drr-folkemoede-cooperation-2025",
+    "date": "2025-07-01",
+    "kind": "fælles fundraising",
+    "title": "Fælles Folkemødeindsamling gentages i 2025",
+    "summary": "Civilstyrelsen registrerede igen fælles Folkemøde-fundraising med Dansk Regnbueråd og flere af de samme samarbejdspartnere.",
+    "actorIds": [
+      "dansk-regnbueraad"
+    ],
+    "relatedRoute": "/netvaerk/#relation-drr-folkemoede-2025",
+    "sourceIds": [
+      "civilstyrelsen-folkemoede-2025"
+    ]
+  },
+  {
+    "id": "drr-fstb-complaint-2025",
+    "date": "2025-07-30",
+    "kind": "parlamentarisk henvendelse",
+    "title": "Dansk Regnbueråd indsender klage om støtte til FSTB",
+    "summary": "Dansk Regnbueråd sendte sin klage over offentlig økonomisk støtte til FSTB til Ligestillingsudvalget. Den blev kort efter taget direkte op i et udvalgsspørgsmål af Dina Raabjerg.",
+    "actorIds": [
+      "dansk-regnbueraad"
+    ],
+    "relatedRoute": "/netvaerk/#relation-drr-fstb-complaint",
+    "sourceIds": [
+      "ft-liu-bilag64-drr"
+    ]
+  },
+  {
+    "id": "raabjerg-dps-hearing-question-2025",
+    "date": "2025-03-12",
+    "kind": "parlamentarisk videreførelse",
+    "title": "Pædiatrisk høringssvar bruges i spørgsmål om behandlingsstop",
+    "summary": "Dina Raabjerg spurgte i S 820, om hormonbehandling af børn og unge burde stoppes med henvisning til Dansk Pædiatrisk Selskabs kritik af evidensgrundlaget. Selskabets eget høringssvar anbefalede øget forsigtighed, mere restriktiv praksis og protokolleret opfølgning, men formulerede ikke selv et generelt krav om at stoppe al hormonbehandling.",
+    "actorIds": [
+      "dina-raabjerg"
+    ],
+    "relatedRoute": "/sundhed/",
+    "sourceIds": [
+      "ft-s820-hearing-2025",
+      "dps-paediatrics-koensinkongruens-2025"
+    ]
+  },
+  {
+    "id": "raabjerg-autism-hearing-question-2025",
+    "date": "2025-03-27",
+    "kind": "parlamentarisk videreførelse",
+    "title": "Autismehøringssvar løftes ind i et § 20-spørgsmål",
+    "summary": "I S 896 henviste Dina Raabjerg korrekt til Dansk Psykiatrisk Selskabs ønske om særlig forsigtighed ved autisme. Spørgsmålet koblede samtidig denne faglige position med en privat forældreberetning fra høringen; Projekt Loke registrerer de to som forskellige kildetyper.",
+    "actorIds": [
+      "dina-raabjerg"
+    ],
+    "relatedRoute": "/sundhed/",
+    "sourceIds": [
+      "ft-s896-autism-hearing-2025",
+      "dps-psychiatry-koensinkongruens-2025"
+    ]
+  },
+  {
+    "id": "supreme-court-prison-gender-2024",
+    "date": "2024-09-10",
+    "kind": "dom",
+    "title": "Højesteret stadfæster konkret placering på mandeafdeling",
+    "summary": "Højesteret opretholdt placeringen af en juridisk kvindelig transkønnet forvaringsdømt på mandeafdeling efter en konkret individuel helheds- og sikkerhedsvurdering, hvor blandt andet alvorlig kriminalitet mod kvinder og høj recidivrisiko indgik. Retten fastslog særskilt, at 'køn' i straffuldbyrdelseslovens regel om afklædningsvisitation som udgangspunkt skal forstås som biologisk køn. Dommen opstiller ikke en generel regel om, at biologisk køn alene bestemmer fængselsplacering.",
+    "actorIds": [],
+    "relatedRoute": "/politik/b47/",
+    "sourceIds": [
+      "hoejesteret-prison-gender-2024",
+      "kriminalforsorgen-gender-minorities-2023"
+    ]
+  },
+  {
+    "id": "normcritical-gender-buu107-2022",
+    "date": "2022-02-04",
+    "kind": "udvalgsspørgsmål",
+    "title": "Normkritisk kønsundervisning bliver udvalgsspørgsmål",
+    "summary": "Marie Krarup (DF) spørger, om folkeskolen bør undervise i en normkritisk tilgang til køn. Det er et tidligt dokumenteret parlamentarisk punkt i uddannelsessporet.",
+    "actorIds": [
+      "dansk-folkeparti"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-buu107-normkritik-2022"
+    ]
+  },
+  {
+    "id": "normstormerne-buu346-2022",
+    "date": "2022-07-18",
+    "kind": "udvalgsspørgsmål",
+    "title": "Messerschmidt spørger til Normstormernes skolebrug og støtte",
+    "summary": "Morten Messerschmidt beder om en oversigt over skoler, hvor Normstormerne har bidraget, og over organisationens offentlige støttemidler.",
+    "actorIds": [
+      "morten-messerschmidt",
+      "dansk-folkeparti",
+      "normstormerne"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-buu346-normstormerne-2022"
+    ]
+  },
+  {
+    "id": "normstormerne-s188-media-politics-2023",
+    "date": "2023-01-27",
+    "kind": "medie → parlament",
+    "title": "Berlingske-artikel følges dagen efter af S 188 om Normstormerne",
+    "summary": "Sólbjørg Jakobsens § 20-spørgsmål om Normstormerne henviser i den officielle begrundelse direkte til en Berlingske-artikel fra 26. januar 2023. Det dokumenterer et konkret medie-til-parlament-led, uden i sig selv at vise en bredere kausal påvirkning.",
+    "actorIds": [
+      "solbjoerg-jakobsen",
+      "liberal-alliance",
+      "normstormerne",
+      "berlingske"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-s188-normstormerne-2023"
+    ]
+  },
+  {
+    "id": "gender-education-s430-2023",
+    "date": "2023-03-24",
+    "kind": "§ 20-spørgsmål",
+    "title": "Thiesen rejser køns- og normundervisning på professionsuddannelser",
+    "summary": "Mette Thiesen spørger til lærer- og pædagogstuderendes undervisning om køn, seksualitet, normer og køn som social konstruktion.",
+    "actorIds": [
+      "mette-thiesen",
+      "dansk-folkeparti"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-s430-gender-education-2023"
+    ]
+  },
+  {
+    "id": "vive-gender-identity-controversial-2025",
+    "date": "2025-06-19",
+    "kind": "undersøgelse",
+    "title": "VIVE kortlægger kønsidentitet som kontroversielt undervisningsemne",
+    "summary": "VIVEs undersøgelse viser, at kønsidentitet er blandt de emner, lærere hyppigt oplever som kontroversielle. Blandt den lille undergruppe, der havde udeladt netop emnet, var de hyppigste angivne hensyn elevtrivsel, konflikt i klassen og manglende faglig forberedelse.",
+    "actorIds": [],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "vive-controversial-topics-2025"
+    ]
+  },
+  {
+    "id": "dbu-gender-workgroup-2023",
+    "date": "2023-01-24",
+    "kind": "institutionsproces",
+    "title": "DBU nedsætter arbejdsgruppe om flere kønsidentiteter",
+    "summary": "DBU nedsætter en arbejdsgruppe om inklusion af transkønnede, interkønnede og nonbinære med inklusion, fair konkurrence og sikkerhed som udtrykkelige hensyn.",
+    "actorIds": [
+      "dbu"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "dbu-gender-workgroup-2023"
+    ]
+  },
+  {
+    "id": "dbu-gender-board-2023",
+    "date": "2023-11-24",
+    "kind": "institutionsbeslutning",
+    "title": "DBU-bestyrelsen bakker op om retning mod selvidentifikation i bredde",
+    "summary": "En enig DBU-bestyrelse bakker op om arbejdsgruppens anbefalinger og starter en flerårig implementeringsproces. Målet er at skabe rammer for selvidentifikation i breddefodbold frem mod 2025; den præcise implementeringsplan er endnu ikke fastlagt.",
+    "actorIds": [
+      "dbu"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "dbu-gender-board-2023"
+    ]
+  },
+  {
+    "id": "jakobsen-dbu-kuu-2024",
+    "date": "2024-11-18",
+    "kind": "samrådsspørgsmål",
+    "title": "Jakobsen rejser DBU’s foreslåede kønsregler i Kulturudvalget",
+    "summary": "Fem dage efter B47’s fremsættelse spørger Sólbjørg Jakobsen kulturministeren til DBU’s overvejede model for transkvinders deltagelse på kvindehold i breddefodbold. Sportssporet fortsætter dermed parlamentarisk, men spørgsmålet kan ikke være forhistorie til B47.",
+    "actorIds": [
+      "solbjoerg-jakobsen",
+      "liberal-alliance",
+      "dbu"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "ft-kuu-d-dbu-2024",
+      "ft-kuu-d-dbu-hearing-2024"
+    ]
+  },
+  {
+    "id": "dbujylland-reject-self-id-2025",
+    "date": "2025-01-11",
+    "kind": "lokal regelproces",
+    "title": "DBU Jyllands klubber forkaster selvidentifikationspilot",
+    "summary": "DBU Jyllands delegeretmøde forkaster en toårig forsøgsperiode med selvidentifikation med betydelig margin. Unionen fortsætter med de hidtidige kønsbestemmelser.",
+    "actorIds": [
+      "dbu"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "dbujylland-self-id-reject-2025"
+    ]
+  },
+  {
+    "id": "dbusjaelland-cpr-rule-2025",
+    "date": "2025-09-17",
+    "kind": "lokal regelbeslutning",
+    "title": "DBU Sjælland gør CPR/juridisk køn til hovedregel",
+    "summary": "Efter drøftelser med over 110 klubber vedtager DBU Sjælland CPR/juridisk køn som styrende for turneringskategorien. Særlige dispensationer til pige-/kvindeturneringer er fortsat mulige.",
+    "actorIds": [
+      "dbu"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "dbusjaelland-gender-rules-2025",
+      "dbusjaelland-gender-dispensation"
+    ]
+  },
+  {
+    "id": "herskov-screening-s61-s63-2026",
+    "date": "2026-06-18",
+    "kind": "§ 20-spørgsmål",
+    "title": "Herskov rejser kønsspecifik screening efter juridisk kønsskifte",
+    "summary": "Jan Herskov (DF) rejser både fejlagtige indkaldelser til transpersoner uden relevant anatomi og manglende automatisk livmoderhalskræftscreening af transpersoner med mandligt personnummer. I S 63 efterspørger han en digital løsning, der indkalder de relevante personer automatisk.",
+    "actorIds": [
+      "jan-herskov",
+      "dansk-folkeparti"
+    ],
+    "relatedRoute": "/sundhed/",
+    "sourceIds": [
+      "ft-s61-screening-2026",
+      "ft-s63-screening-2026"
+    ]
+  },
+  {
+    "id": "parents-youth-access-submission-2026",
+    "date": "2026-06-30",
+    "kind": "parlamentarisk henvendelse",
+    "title": "Forældrehenvendelse om manglende adgang til ungdomsbehandling registreres i SUU",
+    "summary": "Folketingets register offentliggør en henvendelse af 24. juni fra en gruppe forældre om manglende adgang til udredning og behandling for transkønnede børn og unge.",
+    "actorIds": [],
+    "relatedRoute": "/sundhed/",
+    "sourceIds": [
+      "ft-suu-bilag46-youth-access-2026"
+    ]
+  },
+  {
+    "id": "brixtofte-youth-access-question-2026",
+    "date": "2026-07-30",
+    "kind": "udvalgsspørgsmål",
+    "title": "Brixtofte løfter forældrehenvendelsen ind i et formelt udvalgsspørgsmål",
+    "summary": "Marie Brixtofte (V) beder sundhedsministeren kommentere forældrehenvendelsen og punkt for punkt forholde sig til dens fem forslag til handlinger. Det dokumenterer en konkret henvendelse-til-parlament-kæde om den faktiske ungdomsadgang.",
+    "actorIds": [
+      "marie-brixtofte"
+    ],
+    "relatedRoute": "/sundhed/",
+    "sourceIds": [
+      "ft-suu-bilag46-youth-access-2026",
+      "ft-suu94-youth-access-2026"
+    ]
+  },
+  {
+    "id": "youth-access-answer-2026",
+    "date": "2026-08-27",
+    "kind": "ministerielt svar",
+    "title": "SUU 94 om ungdomsadgang får endeligt ministerielt svar",
+    "summary": "Sundhedsministerens endelige svar på spørgsmålet om forældrehenvendelsen registreres 27. august. Projektet bruger foreløbig svaret til proces/status og gengiver ikke detaljer fra vedhæftningen uden særskilt dokumentverifikation.",
+    "actorIds": [
+      "marie-brixtofte"
+    ],
+    "relatedRoute": "/sundhed/",
+    "sourceIds": [
+      "ft-suu94-answer-youth-access-2026"
+    ]
+  },
+  {
+    "id": "herskov-crossborder-youth-hormones-2026",
+    "date": "2026-08-26",
+    "kind": "åbent udvalgsspørgsmål",
+    "title": "Herskov spørger til udenlandske recepter på kønsregulerende medicin til unge",
+    "summary": "Jan Herskov (DF) spørger, om unge uden medicinsk transitionbehandling i Danmark kan få recept i andre europæiske lande og få medicinen udleveret i Danmark efter tilskudsreglerne. Spørgsmålet er endnu ubesvaret pr. 11. september 2026.",
+    "actorIds": [
+      "jan-herskov",
+      "dansk-folkeparti"
+    ],
+    "relatedRoute": "/sundhed/",
+    "sourceIds": [
+      "ft-suu145-crossborder-hormones-2026"
+    ]
+  },
+  {
+    "id": "lbn-changing-room-2016",
+    "date": "2016-03-02",
+    "kind": "administrativ afgørelse",
+    "title": "Ligebehandlingsnævnet tillader separat omklædningsrum efter juridisk kønsskifte",
+    "summary": "Ligebehandlingsnævnet fandt, at en svømmehal ikke handlede i strid med ligestillingsloven ved at henvise en person med juridisk kønsskifte til separat omklædning af hensyn til blufærdighed.",
+    "actorIds": [],
+    "relatedRoute": "/politik/b47/",
+    "sourceIds": [
+      "lbn-changing-room-2016"
+    ]
+  },
+  {
+    "id": "lbn-changing-room-2023",
+    "date": "2023-01-18",
+    "kind": "administrativ afgørelse",
+    "title": "Ligebehandlingsnævnet afvejer kønsidentitet mod blufærdighed i svømmehal",
+    "summary": "Nævnet fandt en formodning om direkte forskelsbehandling, men vurderede henvisning af en transkvinde til familieomklædning som legitim, hensigtsmæssig og nødvendig af hensyn til andre gæsters blufærdighed. Klager fik ikke medhold.",
+    "actorIds": [],
+    "relatedRoute": "/politik/b47/",
+    "sourceIds": [
+      "lbn-changing-room-2023"
+    ]
+  },
+  {
+    "id": "lgbt-action-plan-2026",
+    "date": "2026-01-29",
+    "kind": "regeringsplan",
+    "title": "Ny LGBT+ handlingsplan for 2026-2029",
+    "summary": "Regeringen offentliggjorde en handlingsplan med 30 initiativer. På transområdet viderefører den supplerende psykosocial rådgivning omkring Center for Kønsidentitet og styrker forskning i langsigtede bivirkninger ved hormonbehandling til personer under 18 år; bredere indsatser omfatter bl.a. bekæmpelse af transfobi. Der er ikke identificeret et initiativ om juridisk kønsskifte blandt planens 30 initiativer.",
+    "actorIds": [
+      "konservative"
+    ],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "lgbt-action-plan-2026-2029",
+      "lgbt-action-plan-funding-2026"
+    ]
+  },
+  {
+    "id": "mf3-government-2026",
+    "date": "2026-06-03",
+    "kind": "regeringsdannelse",
+    "title": "S-SF-M-RV danner ny regering",
+    "summary": "Regeringen Mette Frederiksen III tiltrådte med S, SF, Moderaterne og Radikale Venstre. Alle fire partier havde stemt imod B62, B12 og B47; regeringsgrundlaget viderefører LGBT+ handlingsplanen og tilføjer nye initiativer mod had og omvendelsesterapi.",
+    "actorIds": [],
+    "relatedRoute": "/politik/",
+    "sourceIds": [
+      "regeringen-mf3-2026",
+      "firkloever-regeringsgrundlag-2026",
+      "lgbt-action-plan-2026-2029"
     ]
   }
 ]

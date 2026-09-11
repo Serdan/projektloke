@@ -7,15 +7,19 @@
       "route": "/politik/"
     },
     {
+      "label": "Sundhed",
+      "route": "/sundhed/"
+    },
+    {
       "label": "Medier",
       "route": "/medier/"
     },
     {
-      "label": "Akt\u00F8rer",
+      "label": "Aktører",
       "route": "/aktoerer/"
     },
     {
-      "label": "Netv\u00E6rk",
+      "label": "Netværk",
       "route": "/netvaerk/"
     },
     {
