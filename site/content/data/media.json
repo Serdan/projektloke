@@ -206,7 +206,8 @@
     "corpusRole": "struktureret prøve",
     "materialIds": [
       "cass-review-2024"
-    ]
+    ],
+    "sampleId": "cass-youth-treatment-2024"
   },
   {
     "id": "information-youth-treatment-2024",
@@ -228,7 +229,8 @@
     "sourceIds": [
       "aau-information-youth-treatment-2024"
     ],
-    "corpusRole": "struktureret prøve"
+    "corpusRole": "struktureret prøve",
+    "sampleId": "cass-youth-treatment-2024"
   },
   {
     "id": "dr-genstart-cass-2024",
@@ -253,6 +255,7 @@
     "corpusRole": "struktureret prøve",
     "materialIds": [
       "cass-review-2024"
-    ]
+    ],
+    "sampleId": "cass-youth-treatment-2024"
   }
 ]

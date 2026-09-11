@@ -27,6 +27,7 @@ var proposals = Read<Proposal[]>(Path.Combine(dataRoot, "proposals.json"));
 var events = Read<TimelineEvent[]>(Path.Combine(dataRoot, "events.json"));
 var relationships = Read<Relationship[]>(Path.Combine(dataRoot, "relationships.json"));
 var media = Read<MediaItem[]>(Path.Combine(dataRoot, "media.json"));
+var mediaSamples = Read<MediaSample[]>(Path.Combine(dataRoot, "media-samples.json"));
 var materials = Read<Material[]>(Path.Combine(dataRoot, "materials.json"));
 var materialLinks = Read<MaterialLink[]>(Path.Combine(dataRoot, "material-links.json"));
 var evidenceConflicts = Read<EvidenceConflict[]>(Path.Combine(dataRoot, "evidence-conflicts.json"));
@@ -52,7 +53,7 @@ var allRoutes = pages.Select(page => page.Route)
     .Append("/kilder/")
     .ToArray();
 
-Validate(site, pages, sources, actors, proposals, events, relationships, media, materials, materialLinks, evidenceConflicts, statements, healthcare, youthTreatmentStats, sourceById, actorById, materialById, allRoutes);
+Validate(site, pages, sources, actors, proposals, events, relationships, media, mediaSamples, materials, materialLinks, evidenceConflicts, statements, healthcare, youthTreatmentStats, sourceById, actorById, materialById, allRoutes);
 
 foreach (var route in allRoutes)
     if (!pageUpdates.TryGetValue(route, out var date) || !DateOnly.TryParseExact(date, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out _))
@@ -91,6 +92,7 @@ foreach (var page in pages)
         .Replace("{{materialCount}}", materials.Length.ToString(CultureInfo.InvariantCulture))
         .Replace("{{relationships}}", RenderRelationships(relationships, actorById, sourceById))
         .Replace("{{mediaList}}", RenderMediaList(media, actorById, sourceById))
+        .Replace("{{mediaSampleList}}", RenderMediaSamples(mediaSamples, media))
         .Replace("{{mediaThemes}}", RenderMediaThemes(media))
         .Replace("{{mediaCount}}", media.Length.ToString(CultureInfo.InvariantCulture))
         .Replace("{{statementList}}", RenderStatementList(statements, actorById, sourceById))
@@ -127,7 +129,7 @@ var publicDataRoot = Path.Combine(outputRoot, "data");
 Directory.CreateDirectory(publicDataRoot);
 var publicIndex = new
 {
-    schemaVersion = 16,
+    schemaVersion = 17,
     themeAliases,
     pageUpdates,
     proposals = proposals.OrderByDescending(proposal => proposal.Introduced).Select(proposal => new
@@ -145,6 +147,7 @@ var publicIndex = new
         actor.Id, actor.Name, actor.Kind, actor.ShortName, actor.Affiliation, actor.Route, actor.Summary, actor.Profile, actor.ProfileSourceIds, actor.SourceIds
     }),
     media = media.OrderByDescending(item => item.Date),
+    mediaSamples,
     materials = materials.OrderByDescending(item => item.Date),
     materialLinks,
     evidenceConflicts,
@@ -191,6 +194,7 @@ static void Validate(
     TimelineEvent[] events,
     Relationship[] relationships,
     MediaItem[] media,
+    MediaSample[] mediaSamples,
     Material[] materials,
     MaterialLink[] materialLinks,
     EvidenceConflict[] evidenceConflicts,
@@ -212,6 +216,7 @@ static void Validate(
     RequireUnique(events.Select(item => item.Id), "event id");
     RequireUnique(relationships.Select(item => item.Id), "relationship id");
     RequireUnique(media.Select(item => item.Id), "media id");
+    RequireUnique(mediaSamples.Select(item => item.Id), "media sample id");
     RequireUnique(materials.Select(item => item.Id), "material id");
     RequireUnique(materialLinks.Select(item => item.Id), "material link id");
     RequireUnique(evidenceConflicts.Select(item => item.Id), "evidence conflict id");
@@ -278,6 +283,49 @@ static void Validate(
         foreach (var materialId in item.MaterialIds ?? [])
             if (!materialById.ContainsKey(materialId))
                 throw new InvalidOperationException($"Media item {item.Id} points to unknown material {materialId}.");
+    }
+
+    var mediaById = media.ToDictionary(item => item.Id, StringComparer.OrdinalIgnoreCase);
+    var mediaSampleById = mediaSamples.ToDictionary(item => item.Id, StringComparer.OrdinalIgnoreCase);
+    foreach (var sample in mediaSamples)
+    {
+        if (sample.Status is not ("pilot" or "active" or "complete"))
+            throw new InvalidOperationException($"Media sample {sample.Id} has unknown status {sample.Status}.");
+        if (!DateOnly.TryParse(sample.EventDate, out var eventDate) || !DateOnly.TryParse(sample.WindowStart, out var windowStart) || !DateOnly.TryParse(sample.WindowEnd, out var windowEnd) || windowStart > eventDate || eventDate > windowEnd)
+            throw new InvalidOperationException($"Media sample {sample.Id} has invalid event/window dates.");
+        if (sample.TargetOutlets.Length < 2)
+            throw new InvalidOperationException($"Media sample {sample.Id} needs at least two target outlets.");
+        RequireUnique(sample.TargetOutlets.Select(item => item.Name), $"media sample {sample.Id} outlet");
+        foreach (var outlet in sample.TargetOutlets)
+        {
+            if (outlet.Status is not ("verified" or "partial" or "not-verified"))
+                throw new InvalidOperationException($"Media sample {sample.Id} has unknown outlet status {outlet.Status}.");
+            if (outlet.Status == "verified" && outlet.MediaIds.Length == 0)
+                throw new InvalidOperationException($"Verified outlet {outlet.Name} in sample {sample.Id} needs a media observation.");
+            foreach (var mediaId in outlet.MediaIds)
+            {
+                if (!mediaById.TryGetValue(mediaId, out var observation))
+                    throw new InvalidOperationException($"Media sample {sample.Id} points to unknown media item {mediaId}.");
+                if (!string.Equals(observation.SampleId, sample.Id, StringComparison.OrdinalIgnoreCase))
+                    throw new InvalidOperationException($"Media sample {sample.Id} and media item {mediaId} do not point to each other.");
+                var observationDate = DateOnly.Parse(observation.Date, CultureInfo.InvariantCulture);
+                if (observationDate < windowStart || observationDate > windowEnd)
+                    throw new InvalidOperationException($"Media item {mediaId} falls outside sample {sample.Id} window.");
+            }
+        }
+    }
+
+    foreach (var item in media)
+    {
+        if (item.CorpusRole == "struktureret prøve")
+        {
+            if (string.IsNullOrWhiteSpace(item.SampleId) || !mediaSampleById.ContainsKey(item.SampleId))
+                throw new InvalidOperationException($"Structured media item {item.Id} needs a known sample id.");
+            if (!mediaSamples.Single(sample => string.Equals(sample.Id, item.SampleId, StringComparison.OrdinalIgnoreCase)).TargetOutlets.Any(outlet => outlet.MediaIds.Contains(item.Id, StringComparer.OrdinalIgnoreCase)))
+                throw new InvalidOperationException($"Structured media item {item.Id} is not listed by its sample.");
+        }
+        else if (!string.IsNullOrWhiteSpace(item.SampleId))
+            throw new InvalidOperationException($"Non-structured media item {item.Id} cannot belong to a structured sample.");
     }
 
     foreach (var material in materials)
@@ -789,6 +837,45 @@ static string RenderMaterial(
       </section>
     """;
 }
+
+static string MediaSampleStatusLabel(string value) => value switch
+{
+    "verified" => "Verificeret observation",
+    "partial" => "Delvist verificeret",
+    "not-verified" => "Ikke verificeret i åbne kilder",
+    _ => value
+};
+
+static string RenderMediaSamples(IEnumerable<MediaSample> samples, IEnumerable<MediaItem> media) => string.Join(
+    Environment.NewLine,
+    samples.OrderByDescending(sample => sample.EventDate).Select(sample =>
+    {
+        var verified = sample.TargetOutlets.Count(outlet => outlet.Status == "verified");
+        var partial = sample.TargetOutlets.Count(outlet => outlet.Status == "partial");
+        var notVerified = sample.TargetOutlets.Count(outlet => outlet.Status == "not-verified");
+        return $"""
+          <article class="evidence-card media-sample" id="medieproeve-{Encode(sample.Id)}" data-media-sample data-sample-status="{Encode(sample.Status)}">
+            <p class="kicker">Sampling frame · {FormatDate(sample.WindowStart)}–{FormatDate(sample.WindowEnd)}</p>
+            <h3>{Encode(sample.Title)}</h3>
+            <p>{Encode(sample.Method)}</p>
+            <div class="fact-grid">
+              <div><span>Målmedier</span><strong>{sample.TargetOutlets.Length}</strong></div>
+              <div><span>Verificeret</span><strong>{verified}</strong></div>
+              <div><span>Delvist</span><strong>{partial}</strong></div>
+              <div><span>Ikke verificeret</span><strong>{notVerified}</strong></div>
+            </div>
+            <div class="evidence-list">
+              {string.Join(Environment.NewLine, sample.TargetOutlets.Select(outlet => $"""
+                <div class="source-record" data-sample-outlet data-verification-status="{Encode(outlet.Status)}">
+                  <p><strong>{Encode(outlet.Name)}</strong> · {Encode(MediaSampleStatusLabel(outlet.Status))}</p>
+                  <p>{Encode(outlet.Note)}</p>
+                  {(outlet.MediaIds.Length == 0 ? "" : $"<p class=\"evidence-meta\">Observationer: {string.Join(" · ", outlet.MediaIds.Select(id => $"<a href=\"/medier/#medie-{Encode(id)}\">{Encode(media.First(item => string.Equals(item.Id, id, StringComparison.OrdinalIgnoreCase)).Title)}</a>"))}</p>")}
+                </div>
+              """))}
+            </div>
+          </article>
+        """;
+    }));
 
 static string RenderMediaList(
     IEnumerable<MediaItem> media,
@@ -1353,7 +1440,9 @@ sealed record Proposal(
     string[] Topics,
     string[]? MaterialIds);
 sealed record TimelineEvent(string Id, string Date, string Kind, string Title, string Summary, string[] ActorIds, string RelatedRoute, string[] SourceIds, string[]? MaterialIds);
-sealed record MediaItem(string Id, string Date, string Kind, string Title, string? AuthorActorId, string? AuthorLabel, string? OutletActorId, string? OutletLabel, string CorpusRole, string Summary, string[] Themes, string[] SourceIds, string[]? MaterialIds);
+sealed record MediaItem(string Id, string Date, string Kind, string Title, string? AuthorActorId, string? AuthorLabel, string? OutletActorId, string? OutletLabel, string CorpusRole, string Summary, string[] Themes, string[] SourceIds, string[]? MaterialIds, string? SampleId);
+sealed record MediaSample(string Id, string Title, string EventDate, string WindowStart, string WindowEnd, string Status, string Method, MediaSampleOutlet[] TargetOutlets);
+sealed record MediaSampleOutlet(string Name, string Status, string[] MediaIds, string Note);
 sealed record Material(string Id, string Title, string ShortTitle, string Kind, string Date, string Route, string Summary, string[] Analysis, string[] SourceIds, string Independence, string PeerReviewStatus, string MethodologicalStrength, string EvidenceRole, string QualityNote, string[]? RelatedMaterialIds);
 sealed record MaterialLink(string Id, string MaterialId, string Category, string Kind, string Title, string Summary, string[] SourceIds, string Independence, string PeerReviewStatus, string MethodologicalStrength, string EvidenceRole, string QualityNote, string EvidentiaryRelevance, string RelevanceNote, ClaimAssessment[]? ClaimAssessments);
 sealed record ClaimAssessment(string Id, string Claim, string Support, string Relevance, string MethodologicalStrengthOverride, string Note, string[] SourceIds, string? Locator);

@@ -2,7 +2,7 @@
 
 ## Current
 
-- Expand structured media sampling: close the remaining Cass archive/full-text gaps, then add two or three event-based samples across different issue domains using the same outlet set and coding protocol.
+- Use the new first-class sampling-frame model for the next legal-gender and sport media pilots; promote observations only when outlet verification is strong enough, while preserving explicit null/partial coverage states.
 - Pursue administrative data on youth-treatment capacity, throughput, waiting-time distributions and treatment outcomes, plus minor legal-gender outcomes.
 - Prepare the all-party 2026 position survey for public presentation as a multidimensional matrix separating formal/current text, parliamentary behaviour and source date.
 - Keep corpus roles separate: actor trail, political source material, and structured sample; use primary legal/institutional sources as the baseline when evaluating media framing.
@@ -18,6 +18,7 @@
 - Facebook hostility baseline from TrygFonden/Analyse & Tal.
 - 2026-29 LGBT+ action-plan review, including trans-specific healthcare/research measures and legal-gender limits.
 - First structured Cass Review / Danish youth-treatment media pilot, with a fixed 9 April-10 May 2024 window, three verified public sample records and explicit verification limits.
+- Media sampling frames are now first-class data: the Cass pilot exposes its fixed event/window, seven-outlet denominator and per-outlet verification status, and structured observations link back to the sample.
 - First-class material-node model now covers Cass Review, its separate University of York review package, Sundhedsstyrelsens 2018 guidance, the 2024 revision draft, WPATH SOC8, the 2026-29 LGBT+ action plan and the 2024 Supreme Court prison judgment. Criticism, rebuttal, professional responses and cross-domain use attach to the document actually evaluated.
 - Explicit source-quality metadata for every material and material link: independence, peer-review status, methodological strength, evidence role and an explanatory quality note, with controlled vocabularies and release validation.
 - Evidentiary relevance is now separate from source quality on material links, with optional claim-level support assessments and methodological-strength overrides for high-risk assertions.

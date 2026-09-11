@@ -1,5 +1,18 @@
 [
   {
+    "year": "2016–2023 samlet",
+    "stages": [
+      {
+        "value": "239",
+        "label": "unge startet i pubertetsblokkere eller kønshormoner"
+      }
+    ],
+    "note": "Region Hovedstaden oplyste i 2024 et samlet antal for 2016–2023, men kunne ikke opgøre præcise årlige behandlingsstarter. Tallet kan derfor ikke bruges til at rekonstruere en årlig trend eller et henvisningsårskohorteforløb.",
+    "sourceIds": [
+      "ft-regionh-youth-treatment-2024"
+    ]
+  },
+  {
     "year": "2022",
     "stages": [
       {

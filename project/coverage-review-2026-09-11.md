@@ -152,3 +152,17 @@ The project should no longer optimize primarily for raw record count. The highes
 3. **Publish the all-party position matrix.** Preserve the distinction between formal/current text, parliamentary behaviour and source date, and avoid a one-dimensional ideological score.
 
 These three would improve inferential strength more than simply increasing the number of examples already represented well in the corpus.
+## Follow-up — 11 September 2026
+
+The first recommendation has now been addressed structurally. Structured media observations belong to explicit sampling-frame records rather than carrying `struktureret prøve` as an ungrounded label. The Cass pilot exposes its fixed 9 April–10 May 2024 window, all seven target outlets and per-outlet verification state: three verified observations, two partial archive trails and two not verified in the available open sources. Null findings remain search-coverage metadata, not evidence of no coverage.
+
+Two additional cross-domain media candidates were probed: Marie Bjerre's August 2024 legal-gender intervention and DBU Sjælland's September 2025 tournament rules. Both have strong event baselines and downstream reaction, but neither currently has sufficiently uniform seven-outlet archive coverage for public promotion. This means the immediate media constraint is now archive/full-text access rather than an underspecified sampling method.
+
+The administrative-data sweep also reconfirmed a useful denominator: Region Hovedstaden reported that 239 young people started puberty blockers or gender-affirming hormones during 2016–2023, while stating that precise annual treatment-start counts could not be produced. That aggregate is now public on the health page with the limitation attached. Current KKBU material continues to describe medical treatment as formally available through Vækst og Reproduktion, but the project still lacks comparable annual post-reorganisation data for referral, waiting time, treatment recommendation and treatment start.
+
+### Updated priority implication
+
+1. Keep the media sampling frame and continue archive work, but do not spend open-web search effort pretending it can substitute for uniform archive access.
+2. Administrative youth-treatment data are now the highest-value unresolved denominator because public sources have reached their limit.
+3. The all-party matrix remains publication-ready in concept and is the strongest workstream that does not depend on external data access.
+

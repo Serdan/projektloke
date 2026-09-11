@@ -1,0 +1,61 @@
+[
+  {
+    "id": "cass-youth-treatment-2024",
+    "title": "Cass Review og dansk behandling af børn og unge",
+    "eventDate": "2024-04-10",
+    "windowStart": "2024-04-09",
+    "windowEnd": "2024-05-10",
+    "status": "pilot",
+    "method": "Samme søgeprotokol og tidsvindue på tværs af syv målmedier. Manglende åbne fund registreres som søgedækning, ikke som bevis for fravær af dækning.",
+    "targetOutlets": [
+      {
+        "name": "DR",
+        "status": "verified",
+        "mediaIds": [
+          "dr-genstart-cass-2024"
+        ],
+        "note": "Genstart-episoden er verificeret med dato, format og episodebeskrivelse; Weekendavisens Christoffer Zieler er den navngivne explainer."
+      },
+      {
+        "name": "Berlingske",
+        "status": "partial",
+        "mediaIds": [],
+        "note": "Der findes et sekundært arkivspor til en leder omkring 26. april 2024, men original eller tilstrækkelig uafhængig arkivmetadata er ikke verificeret."
+      },
+      {
+        "name": "Jyllands-Posten",
+        "status": "not-verified",
+        "mediaIds": [],
+        "note": "Ingen sikker inkluderbar observation er verificeret i åbne kilder for det faste vindue; dette er ikke dokumentation for manglende dækning."
+      },
+      {
+        "name": "Kristeligt Dagblad",
+        "status": "verified",
+        "mediaIds": [
+          "kd-cass-review-2024"
+        ],
+        "note": "Direkte Cass-nyhed 10. april 2024 er verificeret via bibliografisk mediemetadata og original-URL."
+      },
+      {
+        "name": "Politiken",
+        "status": "not-verified",
+        "mediaIds": [],
+        "note": "Ingen sikker inkluderbar observation er verificeret i åbne kilder for det faste vindue; dette er ikke dokumentation for manglende dækning."
+      },
+      {
+        "name": "Information",
+        "status": "verified",
+        "mediaIds": [
+          "information-youth-treatment-2024"
+        ],
+        "note": "Et samtidigt signeret debatindlæg om dansk ungdomsbehandling er verificeret. Cass er ikke verificeret som eksplicit kilde i den tilgængelige metadata."
+      },
+      {
+        "name": "Weekendavisen",
+        "status": "partial",
+        "mediaIds": [],
+        "note": "DR dokumenterer Christoffer Zieler som Cass-fortolker, men en eksakt Weekendavisen-artikel i vinduet er endnu ikke sikkert identificeret."
+      }
+    ]
+  }
+]

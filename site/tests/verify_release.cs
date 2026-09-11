@@ -93,6 +93,8 @@ var evidenceConflicts = data["evidenceConflicts"]?.AsArray() ?? throw new Invali
 var statementsArray = data["statements"]?.AsArray() ?? throw new InvalidOperationException("Missing statements in public index.");
 var sourcesArray = data["sources"]?.AsArray() ?? throw new InvalidOperationException("Missing sources in public index.");
 var proposalsArray = data["proposals"]?.AsArray() ?? throw new InvalidOperationException("Missing proposals in public index.");
+var mediaArray = data["media"]?.AsArray() ?? throw new InvalidOperationException("Missing media in public index.");
+var mediaSamplesArray = data["mediaSamples"]?.AsArray() ?? throw new InvalidOperationException("Missing mediaSamples in public index.");
 
 var materialById = ById(materials);
 var materialLinkById = ById(materialLinks);
@@ -138,7 +140,12 @@ var judgmentPage = Page("materiale/hoejesteret-faengselsdom-2024/index.html");
 RequireAnchors(judgmentPage, ["medie-dr-prison-case-2024", "begivenhed-supreme-court-prison-gender-2024"], "Supreme Court material missing direct media/event record");
 Assert(judgmentPage.Text.Contains("/politik/b47/", StringComparison.Ordinal), "Supreme Court material must link to B47 political uptake.");
 Assert(Page("politik/b47/index.html").Text.Contains("/materiale/hoejesteret-faengselsdom-2024/", StringComparison.Ordinal), "B47 must link back to the Supreme Court material node.");
-Assert((data["schemaVersion"]?.GetValue<int>() ?? 0) >= 16, "Claim provenance and evidence conflicts require schema version 16+.");
+Assert((data["schemaVersion"]?.GetValue<int>() ?? 0) >= 17, "First-class media sampling frames require schema version 17+.");
+
+var youthStats = data["youthTreatmentStats"]?.AsArray() ?? throw new InvalidOperationException("Missing youthTreatmentStats in public index.");
+var aggregateYouth = youthStats.Select(node => node!.AsObject()).Single(item => RequiredString(item, "year") == "2016–2023 samlet");
+Assert(Array(aggregateYouth, "stages").Any(node => RequiredString(node!.AsObject(), "value") == "239"), "Youth-treatment aggregate must preserve the 239 treatment-start baseline.");
+Assert(Page("sundhed/index.html").Text.Contains(">239<", StringComparison.Ordinal), "Health page must render the 2016–2023 treatment-start aggregate.");
 
 var b47Data = proposalsArray.Select(node => node!.AsObject()).Single(item => RequiredString(item, "id") == "b47-2024-25");
 Assert(Strings(b47Data, "materialIds").Contains("supreme-court-prison-gender-2024", StringComparer.OrdinalIgnoreCase), "Public proposal data must preserve material links.");
@@ -146,6 +153,37 @@ Assert(Strings(b47Data, "materialIds").Contains("supreme-court-prison-gender-202
 var sourceStatements = ReadArray(Path.Combine(contentDataRoot, "statements.json"));
 var sourceStatementIds = StringSet(sourceStatements.Select(node => RequiredString(node!.AsObject(), "id")));
 Assert(StringSet(statementById.Keys).SetEquals(sourceStatementIds), "Public data index must contain every source statement exactly once.");
+
+var sourceMedia = ReadArray(Path.Combine(contentDataRoot, "media.json"));
+var sourceMediaSamples = ReadArray(Path.Combine(contentDataRoot, "media-samples.json"));
+var mediaById = ById(mediaArray);
+var mediaSampleById = ById(mediaSamplesArray);
+Assert(StringSet(mediaById.Keys).SetEquals(sourceMedia.Select(node => RequiredString(node!.AsObject(), "id"))), "Public data index must contain every media record exactly once.");
+Assert(StringSet(mediaSampleById.Keys).SetEquals(sourceMediaSamples.Select(node => RequiredString(node!.AsObject(), "id"))), "Public data index must contain every media sample exactly once.");
+var cassSample = mediaSampleById["cass-youth-treatment-2024"];
+var cassTargets = Array(cassSample, "targetOutlets").Select(node => node!.AsObject()).ToArray();
+Assert(StringSet(cassTargets.Select(item => RequiredString(item, "name"))).SetEquals(["DR", "Berlingske", "Jyllands-Posten", "Kristeligt Dagblad", "Politiken", "Information", "Weekendavisen"]), "Cass sample must preserve its seven-outlet denominator.");
+var expectedCassStatuses = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase)
+{
+    ["DR"] = "verified", ["Berlingske"] = "partial", ["Jyllands-Posten"] = "not-verified",
+    ["Kristeligt Dagblad"] = "verified", ["Politiken"] = "not-verified", ["Information"] = "verified", ["Weekendavisen"] = "partial"
+};
+foreach (var target in cassTargets)
+    Assert(RequiredString(target, "status") == expectedCassStatuses[RequiredString(target, "name")], $"Cass outlet verification status regression: {RequiredString(target, "name")}");
+foreach (var node in sourceMedia)
+{
+    var item = node!.AsObject();
+    var role = RequiredString(item, "corpusRole");
+    var sampleId = item["sampleId"]?.GetValue<string>();
+    if (role == "struktureret prøve")
+        Assert(sampleId == "cass-youth-treatment-2024", $"Structured media item must point to Cass sample: {RequiredString(item, "id")}");
+    else
+        Assert(string.IsNullOrWhiteSpace(sampleId), $"Non-structured media item must not have sample id: {RequiredString(item, "id")}");
+}
+var mediaPage = Page("medier/index.html");
+RequireAnchors(mediaPage, ["medieproeve-cass-youth-treatment-2024", "medie-dr-genstart-cass-2024", "medie-kd-cass-review-2024", "medie-information-youth-treatment-2024"], "Media page missing sampling frame or verified observation");
+foreach (var outlet in expectedCassStatuses.Keys)
+    Assert(mediaPage.Text.Contains(outlet, StringComparison.Ordinal), $"Media page missing Cass target outlet: {outlet}");
 
 var sourceMaterials = ReadArray(Path.Combine(contentDataRoot, "materials.json"));
 var sourceMaterialLinks = ReadArray(Path.Combine(contentDataRoot, "material-links.json"));
