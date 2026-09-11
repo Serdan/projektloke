@@ -32,7 +32,7 @@ Create DNS A records (and AAAA records when IPv6 is enabled) for both `projektlo
 ./deploy/deploy.sh <droplet-ip>
 ```
 
-The deploy script connects as `projektloke-deploy`, rebuilds `wwwroot`, publishes `site/app.cs` as a self-contained Linux x64 native executable, uploads the release, replaces `/srv/projektloke`, and restarts `projektloke.service`.
+The deploy script connects as `projektloke-deploy`, rebuilds `wwwroot`, runs the file-based C# release verifier (`dotnet run tests/verify_release.cs`), publishes `site/app.cs` as a self-contained Linux x64 native executable, uploads the release, replaces `/srv/projektloke`, and restarts `projektloke.service`. A failed release verification stops deployment before anything is uploaded.
 
 `check.sh` verifies that the systemd service is active and that the application returns HTTP 200 on its localhost-only endpoint.
 

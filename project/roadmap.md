@@ -2,10 +2,10 @@
 
 ## Current
 
-- Extend the now-public Cass Review / youth-treatment structured pilot with archive/full-text verification: Berlingske, Weekendavisen, Jyllands-Posten and Politiken remain incomplete in open sources.
-- Keep corpus roles separate: actor trail, political source material, and structured sample.
-- Use primary legal/institutional sources as the baseline when evaluating media framing.
-- Continue targeted access-to-information work on youth-treatment capacity, throughput, waiting time, and minor legal-gender outcomes.
+- Expand structured media sampling: close the remaining Cass archive/full-text gaps, then add two or three event-based samples across different issue domains using the same outlet set and coding protocol.
+- Pursue administrative data on youth-treatment capacity, throughput, waiting-time distributions and treatment outcomes, plus minor legal-gender outcomes.
+- Prepare the all-party 2026 position survey for public presentation as a multidimensional matrix separating formal/current text, parliamentary behaviour and source date.
+- Keep corpus roles separate: actor trail, political source material, and structured sample; use primary legal/institutional sources as the baseline when evaluating media framing.
 
 ## Recently completed / substantially advanced
 
@@ -26,13 +26,12 @@
 
 ## Next
 
-1. Close the remaining archive gaps in the Cass pilot and full-text-code source plurality, trans/patient voices and headline/body alignment; extend the public sample only as verification improves.
-2. Continue promoting only recurring reference points that accumulate meaningful criticism, uptake or cross-domain links. The 2024 Supreme Court prison judgment now establishes the legal-decision pattern; evaluate further decisions individually rather than promoting case law wholesale.
-3. Expand the Danish media map beyond the initial Berlingske/Dorte Toft and B47-cited corpus.
-4. Research positive/countervailing voices and representation gaps so the project can measure absence/presence rather than only hostile examples.
-5. Archive fragile primary sources locally where appropriate and record provenance.
-6. Add correction/change history to published records.
-7. Build an outreach package for LGBT+ Danmark and selected editors/reporters once the first structured media sample is stable.
+1. Extend network sampling beyond Dansk Regnbueråd to other organizations, recurring experts/commentators, parties, media, international organizations, events and funding relationships; do not assume one unified network.
+2. Add denominator-bearing rhetoric work by coding complete debates, including opposing speakers, rather than simply collecting additional striking quotations.
+3. Continue promoting only recurring reference points that accumulate meaningful criticism, uptake or cross-domain links; evaluate legal decisions individually rather than promoting case law wholesale.
+4. Archive fragile primary sources locally where appropriate and record provenance.
+5. Add correction/change history to published records.
+6. Build an outreach package for LGBT+ Danmark and selected editors/reporters once the structured media sample is stable enough to support the pitch.
 
 ## Later
 

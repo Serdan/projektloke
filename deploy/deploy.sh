@@ -11,6 +11,7 @@ trap 'rm -f "$artifact"' EXIT
   cd site
   rm -rf publish
   dotnet run build.cs
+  dotnet run tests/verify_release.cs
   dotnet publish app.cs -c Release -r linux-x64 --self-contained true -o publish
   tar -czf "$artifact" -C publish app app.staticwebassets.endpoints.json wwwroot
 )
