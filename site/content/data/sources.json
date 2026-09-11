@@ -1718,5 +1718,45 @@
     "published": "2025-02-04",
     "accessed": "2026-09-11",
     "note": "McDeavitt, Cohn og Levine gennemgår flere Cass-kritikker og argumenterer for, at en række udbredte indvendinger er faktuelt forkerte eller mangler væsentlig kontekst. Bruges som modgående ekspertvurdering."
+  },
+  {
+    "id": "york-social-transition-review-2024",
+    "title": "Impact of social transition in relation to gender for children and adolescents: a systematic review",
+    "publisher": "Archives of Disease in Childhood / PubMed",
+    "type": "systematisk litteraturgennemgang",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38594055/",
+    "published": "2024-10-30",
+    "accessed": "2026-09-11",
+    "note": "Et af de syv University of York-reviews bestilt til Cass Review. Gennemgår outcomes efter social transition hos børn og unge med kønsdysfori eller kønsinkongruens."
+  },
+  {
+    "id": "york-guideline-quality-review-2024",
+    "title": "Clinical guidelines for children and adolescents experiencing gender dysphoria or incongruence: a systematic review of guideline quality (part 1)",
+    "publisher": "Archives of Disease in Childhood / PubMed",
+    "type": "systematisk review af kliniske retningslinjer",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38594049/",
+    "published": "2024-10-30",
+    "accessed": "2026-09-11",
+    "note": "Et af de syv University of York-reviews vurderet af Noone m.fl. Undersøger kvalitet og udviklingsmetode i kliniske retningslinjer for børn og unge."
+  },
+  {
+    "id": "york-characteristics-review-2024",
+    "title": "Characteristics of children and adolescents referred to specialist gender services: a systematic review",
+    "publisher": "Archives of Disease in Childhood / PubMed",
+    "type": "systematisk litteraturgennemgang",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38594046/",
+    "published": "2024-10-30",
+    "accessed": "2026-09-11",
+    "note": "Et af de syv University of York-reviews bestilt til Cass Review. Kortlægger karakteristika ved børn og unge henvist til specialiserede kønsidentitetstilbud."
+  },
+  {
+    "id": "york-care-pathways-review-2024",
+    "title": "Care pathways of children and adolescents referred to specialist gender services: a systematic review",
+    "publisher": "Archives of Disease in Childhood / PubMed",
+    "type": "systematisk litteraturgennemgang",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38594052/",
+    "published": "2024-10-30",
+    "accessed": "2026-09-11",
+    "note": "Et af de syv University of York-reviews bestilt til Cass Review. Gennemgår forløb og behandlingsveje for børn og unge henvist til specialiserede kønsidentitetstilbud."
   }
 ]

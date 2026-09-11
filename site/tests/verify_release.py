@@ -38,6 +38,19 @@ for path, page in pages.items():
         checked += 1
 
 data = json.loads((root / 'data/index.json').read_text())
+material_by_id = {item['id']: item for item in data['materials']}
+material_link_by_id = {item['id']: item for item in data['materialLinks']}
+assert {'cass-review-2024', 'cass-york-reviews-2024'} <= set(material_by_id), 'Core Cass materials must remain first-class nodes'
+assert 'cass-york-reviews-2024' in material_by_id['cass-review-2024'].get('relatedMaterialIds', []), 'Cass must link to its commissioned York evidence package'
+assert material_link_by_id['noone-cass-methodology-2025']['materialId'] == 'cass-york-reviews-2024', 'Noone ROBIS critique must target the York reviews'
+assert material_link_by_id['bma-cass-review-2026']['materialId'] == 'cass-review-2024', 'BMA statement audit must remain attached to Cass'
+assert material_link_by_id['bma-york-reanalysis-2026']['materialId'] == 'cass-york-reviews-2024', 'BMA method reanalysis must attach to York reviews'
+cass_page = pages[root / 'materiale/cass-review/index.html']
+york_page = pages[root / 'materiale/cass-york-reviews/index.html']
+for anchor in ('udtalelse-raabjerg-b12-evidence', 'udtalelse-toft-2024-activism-treatment', 'begivenhed-raabjerg-cass-b12-event'):
+    assert anchor in cass_page.ids, ('Cass material missing related record', anchor)
+for anchor in ('material-link-noone-cass-methodology-2025', 'material-link-bma-york-reanalysis-2026', 'material-health-youth-evidence-boundary'):
+    assert anchor in york_page.ids, ('York material missing related record', anchor)
 statements = {item['id']: item for item in data['statements']}
 source_statements = json.loads((root.parent / 'content/data/statements.json').read_text())
 source_ids = {item['id'] for item in source_statements}

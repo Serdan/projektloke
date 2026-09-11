@@ -17,6 +17,35 @@
       "york-puberty-suppression-review-2024",
       "york-adolescent-hormones-review-2024",
       "york-youth-psychosocial-review-2024"
+    ],
+    "relatedMaterialIds": [
+      "cass-york-reviews-2024"
+    ]
+  },
+  {
+    "id": "cass-york-reviews-2024",
+    "title": "Cass-bestilte systematiske reviews fra University of York",
+    "shortTitle": "York-reviewene",
+    "kind": "systematisk reviewserie",
+    "date": "2024-10-30",
+    "route": "/materiale/cass-york-reviews/",
+    "summary": "Syv systematiske reviews fra University of York, bestilt som del af evidensgrundlaget for Cass Review og senere publiceret i Archives of Disease in Childhood.",
+    "analysis": [
+      "Noone m.fl.s ROBIS-kritik retter sig direkte mod disse syv reviews. Det er derfor metodisk misvisende at registrere hele kritikken som en kritik af Cass-rapportens egen fortolkning; reviewseriens metode og Cass-rapportens brug af resultaterne er to forskellige led.",
+      "De syv reviews dækker social transition, psykosocial støtte, kliniske retningslinjers kvalitet, pubertetssuppression, karakteristika ved henviste børn og unge, kønshormoner og care pathways. Projekt Loke registrerer dem samlet som ét materiale, fordi den centrale metodekritik vurderer reviewpakken på tværs med fælles protokol og ROBIS.",
+      "Den senere BMA/HEOR-gennemgang er vigtig modkritik: den accepterer fortsat betydelig usikkerhed i evidensen og fandt ikke belæg for den stærkeste påstand om systematisk skæv kvalitetsvurdering eller udeladelse af gode studier. Det efterlader reel metodeuenighed snarere end et enkelt afgjort resultat."
+    ],
+    "sourceIds": [
+      "york-social-transition-review-2024",
+      "york-youth-psychosocial-review-2024",
+      "york-guideline-quality-review-2024",
+      "york-puberty-suppression-review-2024",
+      "york-characteristics-review-2024",
+      "york-adolescent-hormones-review-2024",
+      "york-care-pathways-review-2024"
+    ],
+    "relatedMaterialIds": [
+      "cass-review-2024"
     ]
   }
 ]

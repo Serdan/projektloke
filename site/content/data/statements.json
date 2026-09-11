@@ -195,7 +195,10 @@
     "sourceIds": [
       "toft-cass-review-2024"
     ],
-    "affiliation": "Journalist og kommentator"
+    "affiliation": "Journalist og kommentator",
+    "materialIds": [
+      "cass-review-2024"
+    ]
   },
   {
     "id": "toft-2025-movement-cost",
@@ -298,7 +301,10 @@
     "sourceIds": [
       "toft-cass-bma-2026"
     ],
-    "affiliation": "Journalist og kommentator"
+    "affiliation": "Journalist og kommentator",
+    "materialIds": [
+      "cass-review-2024"
+    ]
   },
   {
     "id": "drr-2023-transvanviddet",
@@ -677,7 +683,10 @@
       "nhs-cass-implementation-2024",
       "nhs-puberty-blockers-policy-2024"
     ],
-    "affiliation": "Det Konservative Folkeparti"
+    "affiliation": "Det Konservative Folkeparti",
+    "materialIds": [
+      "cass-review-2024"
+    ]
   },
   {
     "id": "raabjerg-b12-evidence",
@@ -698,7 +707,10 @@
       "ft-b12-debate",
       "nhs-cass-implementation-2024"
     ],
-    "affiliation": "Det Konservative Folkeparti"
+    "affiliation": "Det Konservative Folkeparti",
+    "materialIds": [
+      "cass-review-2024"
+    ]
   },
   {
     "id": "kjaersgaard-b80-changing-room",

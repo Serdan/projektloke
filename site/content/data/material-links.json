@@ -12,10 +12,10 @@
   },
   {
     "id": "noone-cass-methodology-2025",
-    "materialId": "cass-review-2024",
+    "materialId": "cass-york-reviews-2024",
     "kind": "peer-reviewed metodekritik",
-    "title": "Noone m.fl.: kritik med ROBIS af de Cass-bestilte reviews",
-    "summary": "Noone m.fl. anvender ROBIS på de syv Cass-bestilte systematiske reviews og vurderer dem alle til høj risiko for bias, med kritik af blandt andet protokolafvigelser, kriterier, studiesøgning og syntese. Denne konklusion er omstridt og skal læses sammen med senere efterprøvning, herunder BMA/HEOR.",
+    "title": "Noone m.fl.: ROBIS-kritik af de syv Cass-bestilte York-reviews",
+    "summary": "Noone m.fl. anvender ROBIS på de syv Cass-bestilte systematiske reviews og vurderer dem alle til høj risiko for bias, med kritik af blandt andet protokolafvigelser, kriterier, studiesøgning og syntese. Kritikken retter sig direkte mod York-reviewpakken og er omstridt i senere efterprøvning.",
     "sourceIds": [
       "noone-cass-critique-2025"
     ],
@@ -42,5 +42,16 @@
       "mcdeavitt-cass-factcheck-2025"
     ],
     "category": "rebuttal"
+  },
+  {
+    "id": "bma-york-reanalysis-2026",
+    "materialId": "cass-york-reviews-2024",
+    "category": "rebuttal",
+    "kind": "uafhængig metode-efterprøvning",
+    "title": "BMA/HEOR: senere reanalyse afviser de stærkeste metodeanklager mod York-reviewene",
+    "summary": "BMA bestilte en uafhængig HEOR-reanalyse af behandlingsreviewenes risikovurderinger. Den fastholdt, at evidensen er begrænset og usikker, men fandt ikke belæg for, at York systematisk havde udeladt høj-kvalitetsstudier eller skævvredet kvalitetsvurderinger. Det fungerer som direkte modgående efterprøvning af dele af den senere metodekritik.",
+    "sourceIds": [
+      "bma-cass-review-2026"
+    ]
   }
 ]
