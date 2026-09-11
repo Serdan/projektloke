@@ -42,6 +42,16 @@ statements = {item['id']: item for item in data['statements']}
 source_statements = json.loads((root.parent / 'content/data/statements.json').read_text())
 source_ids = {item['id'] for item in source_statements}
 assert set(statements) == source_ids, 'Public data index must contain every source statement exactly once'
+source_materials = json.loads((root.parent / 'content/data/materials.json').read_text())
+source_material_links = json.loads((root.parent / 'content/data/material-links.json').read_text())
+assert {item['id'] for item in data['materials']} == {item['id'] for item in source_materials}, 'Public data index must contain every material exactly once'
+assert {item['id'] for item in data['materialLinks']} == {item['id'] for item in source_material_links}, 'Public data index must contain every material link exactly once'
+for material in source_materials:
+    material_path = root / material['route'].lstrip('/') / 'index.html'
+    assert material_path.is_file(), ('missing material page', material['id'], material['route'])
+    material_page = pages[material_path]
+    expected_links = {f"material-link-{item['id']}" for item in source_material_links if item['materialId'] == material['id']}
+    assert expected_links.issubset(set(material_page.ids)), ('missing material links', material['id'], expected_links - set(material_page.ids))
 static_ids = {item.removeprefix('udtalelse-') for item in pages[root / 'retorik/index.html'].statements}
 assert static_ids == source_ids, 'Static HTML must retain every statement without JS'
 for key in ('edberg-b47-karen', 'edberg-b47-assigned-reality'):

@@ -27,6 +27,8 @@ var proposals = Read<Proposal[]>(Path.Combine(dataRoot, "proposals.json"));
 var events = Read<TimelineEvent[]>(Path.Combine(dataRoot, "events.json"));
 var relationships = Read<Relationship[]>(Path.Combine(dataRoot, "relationships.json"));
 var media = Read<MediaItem[]>(Path.Combine(dataRoot, "media.json"));
+var materials = Read<Material[]>(Path.Combine(dataRoot, "materials.json"));
+var materialLinks = Read<MaterialLink[]>(Path.Combine(dataRoot, "material-links.json"));
 var statements = Read<Statement[]>(Path.Combine(dataRoot, "statements.json"));
 var healthcare = Read<HealthcareRecord[]>(Path.Combine(dataRoot, "healthcare.json"));
 var youthTreatmentStats = Read<YouthTreatmentStat[]>(Path.Combine(dataRoot, "youth-treatment.json"));
@@ -41,13 +43,15 @@ media = media.Select(item => item with { Themes = NormalizeThemes(item.Themes) }
 
 var sourceById = sources.ToDictionary(source => source.Id, StringComparer.OrdinalIgnoreCase);
 var actorById = actors.ToDictionary(actor => actor.Id, StringComparer.OrdinalIgnoreCase);
+var materialById = materials.ToDictionary(material => material.Id, StringComparer.OrdinalIgnoreCase);
 var allRoutes = pages.Select(page => page.Route)
     .Concat(proposals.Select(proposal => proposal.Route))
     .Concat(actors.Select(actor => actor.Route))
+    .Concat(materials.Select(material => material.Route))
     .Append("/kilder/")
     .ToArray();
 
-Validate(site, pages, sources, actors, proposals, events, relationships, media, statements, healthcare, youthTreatmentStats, sourceById, actorById, allRoutes);
+Validate(site, pages, sources, actors, proposals, events, relationships, media, materials, materialLinks, statements, healthcare, youthTreatmentStats, sourceById, actorById, materialById, allRoutes);
 
 foreach (var route in allRoutes)
     if (!pageUpdates.TryGetValue(route, out var date) || !DateOnly.TryParseExact(date, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out _))
@@ -77,10 +81,13 @@ foreach (var page in pages)
         .Replace("{{sportSources}}", RenderInlineSources(["dbu-gender-hearing-2023", "dbu-gender-board-2023", "dbufyn-gender-report-2024", "dbujylland-self-id-reject-2025", "dbusjaelland-gender-rules-2025", "dbusjaelland-gender-dispensation", "ft-kuu-d-dbu-2024"], sourceById))
         .Replace("{{facebookHostilitySources}}", RenderInlineSources(["trygfonden-facebook-hate-2025"], sourceById))
         .Replace("{{b47MediaSources}}", RenderInlineSources(["ft-b47-proposal", "ft-b47-background"], sourceById))
+        .Replace("{{cassMediaPilotSources}}", RenderInlineSources(["cass-final-report-2024", "dr-genstart-koentrovers-2024", "rug-kd-cass-2024", "aau-information-youth-treatment-2024", "york-puberty-suppression-review-2024", "york-adolescent-hormones-review-2024"], sourceById))
         .Replace("{{drrTransmissionSources}}", RenderInlineSources(["ft-liu-bilag64-drr", "ft-liu-spm21-drr", "ft-liu-bilag66-fstb"], sourceById))
         .Replace("{{folkemoedeSources}}", RenderInlineSources(["civilstyrelsen-folkemoede-2024", "civilstyrelsen-folkemoede-2025"], sourceById))
         .Replace("{{timeline}}", RenderTimeline(events, actorById, sourceById))
         .Replace("{{actorList}}", RenderActorList(actors))
+        .Replace("{{materialList}}", RenderMaterialList(materials))
+        .Replace("{{materialCount}}", materials.Length.ToString(CultureInfo.InvariantCulture))
         .Replace("{{relationships}}", RenderRelationships(relationships, actorById, sourceById))
         .Replace("{{mediaList}}", RenderMediaList(media, actorById, sourceById))
         .Replace("{{mediaThemes}}", RenderMediaThemes(media))
@@ -106,6 +113,9 @@ foreach (var proposal in proposals)
 foreach (var actor in actors)
     WritePage(actor.Route, actor.Name, actor.Summary, RenderActor(actor, proposals, events, relationships, media, statements, actorById, sourceById));
 
+foreach (var material in materials)
+    WritePage(material.Route, material.Title, material.Summary, RenderMaterial(material, materialLinks, media, relationships, actorById, sourceById));
+
 WritePage(
     "/kilder/",
     "Kilder",
@@ -116,7 +126,7 @@ var publicDataRoot = Path.Combine(outputRoot, "data");
 Directory.CreateDirectory(publicDataRoot);
 var publicIndex = new
 {
-    schemaVersion = 11,
+    schemaVersion = 12,
     themeAliases,
     pageUpdates,
     proposals = proposals.OrderByDescending(proposal => proposal.Introduced).Select(proposal => new
@@ -134,6 +144,8 @@ var publicIndex = new
         actor.Id, actor.Name, actor.Kind, actor.ShortName, actor.Affiliation, actor.Route, actor.Summary, actor.Profile, actor.ProfileSourceIds, actor.SourceIds
     }),
     media = media.OrderByDescending(item => item.Date),
+    materials = materials.OrderByDescending(item => item.Date),
+    materialLinks,
     statements = statements.OrderByDescending(item => item.Date),
     relationships = relationships.OrderByDescending(item => item.Date),
     healthcare,
@@ -142,7 +154,7 @@ var publicIndex = new
 };
 File.WriteAllText(Path.Combine(publicDataRoot, "index.json"), JsonSerializer.Serialize(publicIndex, new JsonSerializerOptions(JsonSerializerDefaults.Web) { WriteIndented = true }));
 
-Console.WriteLine($"Built {generated} pages from {proposals.Length} proposals, {events.Length} events, {media.Length} media records, {statements.Length} statements, {relationships.Length} relationships, {actors.Length} actors and {sources.Length} sources.");
+Console.WriteLine($"Built {generated} pages from {proposals.Length} proposals, {events.Length} events, {media.Length} media records, {materials.Length} materials, {materialLinks.Length} material links, {statements.Length} statements, {relationships.Length} relationships, {actors.Length} actors and {sources.Length} sources.");
 
 void WritePage(string route, string pageTitle, string description, string body)
 {
@@ -177,11 +189,14 @@ static void Validate(
     TimelineEvent[] events,
     Relationship[] relationships,
     MediaItem[] media,
+    Material[] materials,
+    MaterialLink[] materialLinks,
     Statement[] statements,
     HealthcareRecord[] healthcare,
     YouthTreatmentStat[] youthTreatmentStats,
     IReadOnlyDictionary<string, Source> sourceById,
     IReadOnlyDictionary<string, Actor> actorById,
+    IReadOnlyDictionary<string, Material> materialById,
     string[] allRoutes)
 {
     if (string.IsNullOrWhiteSpace(site.Title))
@@ -194,6 +209,8 @@ static void Validate(
     RequireUnique(events.Select(item => item.Id), "event id");
     RequireUnique(relationships.Select(item => item.Id), "relationship id");
     RequireUnique(media.Select(item => item.Id), "media id");
+    RequireUnique(materials.Select(item => item.Id), "material id");
+    RequireUnique(materialLinks.Select(item => item.Id), "material link id");
     RequireUnique(statements.Select(item => item.Id), "statement id");
     RequireUnique(healthcare.Select(item => item.Id), "healthcare id");
     RequireUnique(allRoutes, "generated route");
@@ -245,6 +262,25 @@ static void Validate(
             RequireActors($"media {item.Id}", [item.OutletActorId], actorById);
         if (item.OutletActorId is null && string.IsNullOrWhiteSpace(item.OutletLabel))
             throw new InvalidOperationException($"Media item {item.Id} has no outlet.");
+        foreach (var materialId in item.MaterialIds ?? [])
+            if (!materialById.ContainsKey(materialId))
+                throw new InvalidOperationException($"Media item {item.Id} points to unknown material {materialId}.");
+    }
+
+    foreach (var material in materials)
+    {
+        RequireSources($"material {material.Id}", material.SourceIds, sourceById);
+        if (!material.Route.StartsWith("/materiale/", StringComparison.OrdinalIgnoreCase))
+            throw new InvalidOperationException($"Material {material.Id} has invalid route {material.Route}.");
+    }
+
+    foreach (var link in materialLinks)
+    {
+        if (!materialById.ContainsKey(link.MaterialId))
+            throw new InvalidOperationException($"Material link {link.Id} points to unknown material {link.MaterialId}.");
+        if (link.Category is not ("critique" or "rebuttal"))
+            throw new InvalidOperationException($"Material link {link.Id} has unknown category {link.Category}.");
+        RequireSources($"material link {link.Id}", link.SourceIds, sourceById);
     }
 
     foreach (var statement in statements)
@@ -402,6 +438,90 @@ static string RenderActorCards(IEnumerable<Actor> actors) => string.Join(
         <span>{Encode(actor.Summary)}</span>
       </a>
     """));
+
+static string RenderMaterialList(IEnumerable<Material> materials) => string.Join(
+    Environment.NewLine,
+    materials.OrderByDescending(item => item.Date).Select(item => $"""
+      <a class="entity-card" data-record data-kind="{Encode(item.Kind)}" href="{Encode(item.Route)}">
+        <span class="entity-kind">{Encode(item.Kind)}</span>
+        <strong>{Encode(item.Title)}</strong>
+        <span>{Encode(item.Summary)}</span>
+      </a>
+    """));
+
+static string RenderMaterial(
+    Material material,
+    IEnumerable<MaterialLink> materialLinks,
+    IEnumerable<MediaItem> media,
+    IEnumerable<Relationship> relationships,
+    IReadOnlyDictionary<string, Actor> actorById,
+    IReadOnlyDictionary<string, Source> sourceById)
+{
+    var links = materialLinks.Where(item => string.Equals(item.MaterialId, material.Id, StringComparison.OrdinalIgnoreCase)).ToArray();
+    var critiques = links.Where(item => item.Category == "critique").ToArray();
+    var checks = links.Where(item => item.Category == "rebuttal").ToArray();
+    var relatedMedia = media.Where(item => (item.MaterialIds ?? []).Contains(material.Id, StringComparer.OrdinalIgnoreCase)).ToArray();
+    var relatedRelationships = relationships.Where(item => string.Equals(item.ToRoute, material.Route, StringComparison.OrdinalIgnoreCase)).ToArray();
+
+    string RenderLinkCards(IEnumerable<MaterialLink> items) => string.Join(Environment.NewLine, items.Select(item => $"""
+      <article class="evidence-card" id="material-link-{Encode(item.Id)}">
+        <p class="evidence-meta">{Encode(item.Kind)}</p>
+        <h3>{Encode(item.Title)}</h3>
+        <p>{Encode(item.Summary)} {RenderInlineSources(item.SourceIds, sourceById)}</p>
+      </article>
+    """));
+
+    var critiqueHtml = critiques.Length == 0 ? "<p>Ingen særskilt registreret ekspertkritik endnu.</p>" : RenderLinkCards(critiques);
+    var checkHtml = checks.Length == 0 ? "<p>Ingen særskilt registreret efterprøvning endnu.</p>" : RenderLinkCards(checks);
+    var mediaHtml = relatedMedia.Length == 0 ? "<p>Ingen direkte koblede medieregistreringer endnu.</p>" : RenderMediaList(relatedMedia, actorById, sourceById);
+    var relationshipHtml = relatedRelationships.Length == 0 ? "<p>Ingen direkte koblede politiske/netværksrelationer endnu.</p>" : RenderRelationships(relatedRelationships, actorById, sourceById);
+
+    return $"""
+      <section class="page-hero shell case-hero">
+        <p class="kicker">{Encode(material.Kind)} · {FormatDate(material.Date)}</p>
+        <h1>{Encode(material.Title)}</h1>
+        <p class="lede">{Encode(material.Summary)} {RenderInlineSources([material.SourceIds[0]], sourceById)}</p>
+      </section>
+
+      <section class="shell section-block case-layout">
+        <div class="case-main">
+          <p class="kicker">Analyse</p>
+          <h2>Hvad materialet er — og ikke er</h2>
+          <div class="profile-copy">{string.Join(Environment.NewLine, material.Analysis.Select(paragraph => $"<p>{Encode(paragraph)}</p>"))}</div>
+
+          <div class="case-section">
+            <p class="kicker">Ekspertkritik</p>
+            <h2>Kritik knyttet direkte til materialet</h2>
+            <div class="evidence-list">{critiqueHtml}</div>
+          </div>
+
+          <div class="case-section">
+            <p class="kicker">Efterprøvning og modkritik</p>
+            <h2>Uenighed om kritikken</h2>
+            <div class="evidence-list">{checkHtml}</div>
+          </div>
+
+          <div class="case-section">
+            <p class="kicker">Medier</p>
+            <h2>Direkte koblet dækning</h2>
+            <div class="media-list compact-media">{mediaHtml}</div>
+          </div>
+
+          <div class="case-section">
+            <p class="kicker">Politisk og organisatorisk uptake</p>
+            <h2>Dokumenterede forbindelser</h2>
+            <div class="relationship-list compact-relations">{relationshipHtml}</div>
+          </div>
+        </div>
+
+        <aside class="case-sources">
+          <p class="kicker">Grundmateriale</p>
+          <h2>Primære og centrale kilder</h2>
+          {RenderSources(material.SourceIds, sourceById)}
+        </aside>
+      </section>
+    """;
+}
 
 static string RenderMediaList(
     IEnumerable<MediaItem> media,
@@ -955,6 +1075,8 @@ sealed record Proposal(
     string[] SourceIds,
     string[] Topics);
 sealed record TimelineEvent(string Id, string Date, string Kind, string Title, string Summary, string[] ActorIds, string RelatedRoute, string[] SourceIds);
-sealed record MediaItem(string Id, string Date, string Kind, string Title, string? AuthorActorId, string? AuthorLabel, string? OutletActorId, string? OutletLabel, string CorpusRole, string Summary, string[] Themes, string[] SourceIds);
+sealed record MediaItem(string Id, string Date, string Kind, string Title, string? AuthorActorId, string? AuthorLabel, string? OutletActorId, string? OutletLabel, string CorpusRole, string Summary, string[] Themes, string[] SourceIds, string[]? MaterialIds);
+sealed record Material(string Id, string Title, string ShortTitle, string Kind, string Date, string Route, string Summary, string[] Analysis, string[] SourceIds);
+sealed record MaterialLink(string Id, string MaterialId, string Category, string Kind, string Title, string Summary, string[] SourceIds);
 sealed record Statement(string Id, string Date, string ActorId, string Kind, string Excerpt, string Context, string Position, string[] Themes, string RelatedRoute, string[] SourceIds, string? Affiliation, string? Passage);
 sealed record Relationship(string Id, string Date, string Kind, string FromActorId, string? ToActorId, string? ToRoute, string? ToLabel, string Summary, string[] SourceIds);

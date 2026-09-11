@@ -15,6 +15,10 @@
       "route": "/medier/"
     },
     {
+      "label": "Materiale",
+      "route": "/materiale/"
+    },
+    {
       "label": "Aktører",
       "route": "/aktoerer/"
     },

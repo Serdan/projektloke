@@ -1638,5 +1638,85 @@
     "published": "2026-01-12",
     "accessed": "2026-09-11",
     "note": "SVM-regeringen og Det Konservative Folkeparti fordelte en ramme på 24,4 mio. kr. i 2026-2029. Aftalen afsætter 1,6 mio. kr. til at fortsætte LGBT+ Danmarks supplerende rådgivning til transpersoner på venteliste, i udredning eller behandling ved Center for Kønsidentitet."
+  },
+  {
+    "id": "dr-genstart-koentrovers-2024",
+    "title": "Køntrovers",
+    "publisher": "DR / Genstart via Apple Podcasts",
+    "type": "syndikeret episodebeskrivelse · sekundær metadata",
+    "url": "https://podcasts.apple.com/gb/podcast/k%C3%B8ntrovers/id1500746737?i=1000654746411",
+    "published": "2024-05-03",
+    "accessed": "2026-09-11",
+    "note": "Syndikeret episodebeskrivelse for DR Genstart. Oplyser, at programmet blev publiceret i DR Lyd 3. maj 2024, beskriver Cass Review som udløser af debat også i Danmark og navngiver Weekendavisens Christoffer Zieler som explainer."
+  },
+  {
+    "id": "rug-kd-cass-2024",
+    "title": "Mediedækning: Ny britisk rapport om behandling af børn med kønstvivl",
+    "publisher": "University of Groningen research portal / Kristeligt Dagblad-metadata",
+    "type": "bibliografisk metadata · sekundær kilde",
+    "url": "https://research.rug.nl/en/clippings/gendertwijfels-onder-jongeren-zijn-normaal-verdwijnen-vaak-in-de-",
+    "published": "2024-04-10",
+    "accessed": "2026-09-11",
+    "note": "Universitetsportal med bibliografiske metadata og original-URL til Kristeligt Dagblads Cass-artikel 10. april 2024. Dokumenterer titel, outlet, dato og web-publicering."
+  },
+  {
+    "id": "aau-information-youth-treatment-2024",
+    "title": "Debat: Lad ikke børn med kønsdysfori lide",
+    "publisher": "Aalborg Universitet / Infomedia-metadata",
+    "type": "bibliografisk metadata · sekundær kilde",
+    "url": "https://vbn.aau.dk/da/clippings/debat-lad-ikke-b%C3%B8rn-med-k%C3%B8nsdysfori-lide/",
+    "published": "2024-04-10",
+    "accessed": "2026-09-11",
+    "note": "AAU-portalen gengiver Infomedia-metadata for Anita Andersens debatindlæg hos Information 10.-11. april 2024, inklusive online-/printtitel, forfatter og resumé. Posten dokumenterer samtidig dansk debat om behandling af transunge; metadata etablerer ikke en eksplicit Cass-reference."
+  },
+  {
+    "id": "cass-final-report-2024",
+    "title": "Independent Review of Gender Identity Services for Children and Young People: Final Report",
+    "publisher": "The Cass Review / NHS England",
+    "type": "primærkilde · arkiveret slutrapport",
+    "url": "https://webarchive.nationalarchives.gov.uk/ukgwa/20250310144409mp_/https://cass.independent-review.uk/wp-content/uploads/2024/04/CassReview_Final.pdf",
+    "published": "2024-04-10",
+    "accessed": "2026-09-11",
+    "note": "Den officielle slutrapport fra den NHS England-bestilte Cass Review, bevaret i UK Government Web Archive. Rapporten anbefaler bl.a. at pubertetsblokkere kun tilbydes i forskningsramme og stor forsigtighed med maskuliniserende/feminiserende hormoner til personer under 18 år."
+  },
+  {
+    "id": "bma-cass-review-2026",
+    "title": "Cass Review: Evidence, Interpretation, and Implementation",
+    "publisher": "British Medical Association",
+    "type": "faglig institutionsrapport · uafhængig reanalyse",
+    "url": "https://cdn.intelligencebank.com/eu/share/qMbw14/VEeb4/XeJDR/original/20260347%2BCass%2BReview%2Bupdate%2Bdocument",
+    "published": null,
+    "accessed": "2026-09-11",
+    "note": "BMA-gennemgang med uafhængig HEOR-reanalyse. Bekræfter betydelig usikkerhed i behandlingsevidensen, men finder ved audit af 28 behandlingsrelaterede udsagn i Cass, at 15 var fuldt understøttet, 10 delvist understøttet og 3 ikke understøttet af de citerede kilder."
+  },
+  {
+    "id": "noone-cass-critique-2025",
+    "title": "Critically appraising the Cass report: methodological flaws and unsupported claims",
+    "publisher": "BMC Medical Research Methodology / PubMed Central",
+    "type": "peer-reviewed metodekritik",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12065279/",
+    "published": "2025-05-10",
+    "accessed": "2026-09-11",
+    "note": "Noone m.fl. anvender ROBIS på de Cass-bestilte systematiske reviews og argumenterer for høj risiko for bias samt en række unsupported claims. Kritikken er selv blevet mødt af peer-reviewed rebuttal og senere BMA/HEOR-efterprøvning."
+  },
+  {
+    "id": "grijseels-cass-commentary-2024",
+    "title": "Biological and psychosocial evidence in the Cass Review: A critical commentary",
+    "publisher": "International Journal of Transgender Health",
+    "type": "peer-reviewed kritisk kommentar",
+    "url": "https://doi.org/10.1080/26895269.2024.2362304",
+    "published": "2024-06-08",
+    "accessed": "2026-09-11",
+    "note": "Kritisk kommentar med claim-level eksempler på påstået mangelfuld substans, kausal overfortolkning og forskellige evidenstærskler for mulige gevinster og skader."
+  },
+  {
+    "id": "mcdeavitt-cass-factcheck-2025",
+    "title": "Critiques of the Cass Review: Fact-Checking the Peer-Reviewed and Grey Literature",
+    "publisher": "Journal of Sex & Marital Therapy / PubMed",
+    "type": "peer-reviewed rebuttal / litteraturgennemgang",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39903043/",
+    "published": "2025-02-04",
+    "accessed": "2026-09-11",
+    "note": "McDeavitt, Cohn og Levine gennemgår flere Cass-kritikker og argumenterer for, at en række udbredte indvendinger er faktuelt forkerte eller mangler væsentlig kontekst. Bruges som modgående ekspertvurdering."
   }
 ]

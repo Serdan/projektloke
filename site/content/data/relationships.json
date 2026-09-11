@@ -72,8 +72,8 @@
     "kind": "international reference",
     "fromActorId": "dina-raabjerg",
     "toActorId": null,
-    "toRoute": "/politik/b12/",
-    "toLabel": "Cass Review i B12-debatten",
+    "toRoute": "/materiale/cass-review/",
+    "toLabel": "Cass Review",
     "summary": "Under førstebehandlingen af B12 henviste Dina Raabjerg eksplicit til Cass Review som international evaluering af behandling af transkønnede børn og unge.",
     "sourceIds": [
       "ft-b12-debate"

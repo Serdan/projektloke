@@ -24,6 +24,12 @@
     "source": "medier.html"
   },
   {
+    "route": "/materiale/",
+    "title": "Materiale",
+    "description": "Centrale rapporter, udredninger og dokumenter som selvstændige noder med dokumenterede reaktioner, kritik og politisk uptake.",
+    "source": "materiale.html"
+  },
+  {
     "route": "/aktoerer/",
     "title": "Aktører",
     "description": "Profiler af politikere, organisationer og netværk med dokumenterede roller i udviklingen.",

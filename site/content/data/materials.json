@@ -1,0 +1,22 @@
+[
+  {
+    "id": "cass-review-2024",
+    "title": "Cass Review",
+    "shortTitle": "Cass Review",
+    "kind": "uafhængig britisk sundhedsudredning",
+    "date": "2024-04-10",
+    "route": "/materiale/cass-review/",
+    "summary": "Uafhængig britisk gennemgang af NHS-behandlingstilbud til børn og unge med kønsinkongruens eller kønsdysfori. Rapporten blev hurtigt et internationalt og dansk referencepunkt i debatten om ungdomsbehandling.",
+    "analysis": [
+      "Cass Review skal holdes adskilt fra de systematiske reviews, rapporten bestilte hos University of York. York-reviewene vurderer den tilgængelige evidens; Cass samler evidensen med kliniske, organisatoriske og etiske vurderinger og omsætter den til anbefalinger.",
+      "Den mest robuste senere kritik af Cass afviser ikke hovedfundet om betydelig evidensusikkerhed. British Medical Associations 2026-gennemgang accepterer i store træk York-reviewenes evidensvurdering, men finder samtidig, at en del af Cass-rapportens udsagn om behandling kun delvist eller slet ikke understøttes af de citerede kilder, og at potentielle risici flere steder fremhæves uden tilsvarende kontekst om mulige gevinster.",
+      "Ekspertkritikken er selv omstridt. Projekt Loke registrerer derfor både kritik og efterprøvning/rebuttal som direkte relationer til materialet i stedet for at klassificere Cass som enten dokumenteret eller tilbagevist i ét samlet mærkat."
+    ],
+    "sourceIds": [
+      "cass-final-report-2024",
+      "york-puberty-suppression-review-2024",
+      "york-adolescent-hormones-review-2024",
+      "york-youth-psychosocial-review-2024"
+    ]
+  }
+]

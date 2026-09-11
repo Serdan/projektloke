@@ -1,0 +1,46 @@
+[
+  {
+    "id": "bma-cass-review-2026",
+    "materialId": "cass-review-2024",
+    "kind": "ekspertkritik / uafhængig efterprøvning",
+    "title": "BMA: evidensusikkerheden består, men Cass overfortolker nogle kilder",
+    "summary": "British Medical Associations 2026-gennemgang, med uafhængig HEOR-reanalyse, bekræfter at behandlingsstudierne overvejende er observationelle og usikre. Ved en særskilt audit af 28 behandlingsrelaterede udsagn i Cass blev 15 vurderet fuldt understøttet, 10 delvist understøttet og 3 ikke understøttet af de citerede kilder. BMA beskriver også tilfælde af asymmetrisk kontekstualisering af potentielle risici og gevinster.",
+    "sourceIds": [
+      "bma-cass-review-2026"
+    ],
+    "category": "critique"
+  },
+  {
+    "id": "noone-cass-methodology-2025",
+    "materialId": "cass-review-2024",
+    "kind": "peer-reviewed metodekritik",
+    "title": "Noone m.fl.: kritik med ROBIS af de Cass-bestilte reviews",
+    "summary": "Noone m.fl. anvender ROBIS på de syv Cass-bestilte systematiske reviews og vurderer dem alle til høj risiko for bias, med kritik af blandt andet protokolafvigelser, kriterier, studiesøgning og syntese. Denne konklusion er omstridt og skal læses sammen med senere efterprøvning, herunder BMA/HEOR.",
+    "sourceIds": [
+      "noone-cass-critique-2025"
+    ],
+    "category": "critique"
+  },
+  {
+    "id": "grijseels-cass-commentary-2024",
+    "materialId": "cass-review-2024",
+    "kind": "peer-reviewed kritisk kommentar",
+    "title": "Grijseels: biologiske og psykosociale påstande vurderes inkonsistent",
+    "summary": "Grijseels gennemgår konkrete påstande i Cass og kritiserer blandt andet utilstrækkelig substans for visse demografiske og kausale udsagn samt forskellige evidenstærskler for potentielle gevinster og potentielle skader.",
+    "sourceIds": [
+      "grijseels-cass-commentary-2024"
+    ],
+    "category": "critique"
+  },
+  {
+    "id": "mcdeavitt-cass-factcheck-2025",
+    "materialId": "cass-review-2024",
+    "kind": "peer-reviewed rebuttal / efterprøvning",
+    "title": "McDeavitt m.fl.: flere tidlige Cass-kritikker indeholder fejl eller mangler kontekst",
+    "summary": "McDeavitt, Cohn og Levine gennemgår peer-reviewed og grå Cass-kritik og argumenterer for, at flere udbredte indvendinger er faktuelt forkerte eller mangler nødvendig kontekst. Posten registreres som modgående ekspertvurdering, ikke som endelig afgørelse af hele metodekonflikten.",
+    "sourceIds": [
+      "mcdeavitt-cass-factcheck-2025"
+    ],
+    "category": "rebuttal"
+  }
+]

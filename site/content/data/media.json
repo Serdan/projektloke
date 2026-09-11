@@ -179,5 +179,77 @@
       "ft-b47-background"
     ],
     "corpusRole": "politisk kildegrundlag"
+  },
+  {
+    "id": "kd-cass-review-2024",
+    "date": "2024-04-10",
+    "kind": "nyhedsartikel / udland",
+    "title": "Cass Review bliver dansk nyhed samme dag som slutrapporten",
+    "authorActorId": null,
+    "authorLabel": null,
+    "outletActorId": null,
+    "outletLabel": "Kristeligt Dagblad",
+    "summary": "Kristeligt Dagblad publicerede 10. april 2024 en direkte nyhedsartikel om Cass Review. Den verificerede overskrift foregrounder en kritisk fortolkning af det britiske behandlingssystem: en giftig kultur, svigt og at børn blev behandlet for hurtigt. Registreringen dokumenterer vinklingen af denne konkrete nyhedsartikel, ikke en samlet redaktionel linje for avisen.",
+    "themes": [
+      "Cass Review",
+      "unge",
+      "hormonbehandling",
+      "evidens",
+      "medieframing"
+    ],
+    "sourceIds": [
+      "rug-kd-cass-2024"
+    ],
+    "corpusRole": "struktureret prøve",
+    "materialIds": [
+      "cass-review-2024"
+    ]
+  },
+  {
+    "id": "information-youth-treatment-2024",
+    "date": "2024-04-10",
+    "kind": "debatindlæg",
+    "title": "Samtidig modframe fremhæver risikoen ved ikke-behandling",
+    "authorActorId": null,
+    "authorLabel": "Anita Andersen",
+    "outletActorId": null,
+    "outletLabel": "Information",
+    "summary": "Et signeret debatindlæg hos Information 10. april 2024 fremhævede mistrivsel, selvskade, selvmordstanker, angst og ensomhed blandt unge med kønsdysfori og spurgte, hvad modstandere af de eksisterende behandlinger ville tilbyde i stedet. Cass Review kan ikke verificeres som eksplicit kilde i de tilgængelige metadata. Posten dokumenterer derfor en samtidig dansk modframe om ungdomsbehandling, ikke Informations redaktionelle position.",
+    "themes": [
+      "unge",
+      "hormonbehandling",
+      "ikke-behandling",
+      "mistrivsel",
+      "kommentarstof"
+    ],
+    "sourceIds": [
+      "aau-information-youth-treatment-2024"
+    ],
+    "corpusRole": "struktureret prøve"
+  },
+  {
+    "id": "dr-genstart-cass-2024",
+    "date": "2024-05-03",
+    "kind": "nyhedspodcast / explainer",
+    "title": "DR gør Cass til dansk forklaringshistorie",
+    "authorActorId": null,
+    "authorLabel": "Simon Stefanski (vært)",
+    "outletActorId": null,
+    "outletLabel": "DR / Genstart",
+    "summary": "Genstart byggede 3. maj 2024 en episode omkring Cass Review og beskrev rapporten som udløser af en debat også i Danmark. Episodebeskrivelsen sammenfatter rapportens hovedpointe som, at børn med kønsdysfori var blevet hormonbehandlet på et for løst grundlag. Weekendavisens Christoffer Zieler var den navngivne explainer, hvilket betyder, at DR og Weekendavisen ikke kan behandles som fuldt uafhængige observationspunkter i denne case.",
+    "themes": [
+      "Cass Review",
+      "unge",
+      "hormonbehandling",
+      "evidens",
+      "cross-outlet sourcing"
+    ],
+    "sourceIds": [
+      "dr-genstart-koentrovers-2024"
+    ],
+    "corpusRole": "struktureret prøve",
+    "materialIds": [
+      "cass-review-2024"
+    ]
   }
 ]
